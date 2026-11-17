@@ -1,12 +1,11 @@
-# Kiniwa Shop — kiniwa.ir style storefront
+# Kiniwa Shop
 
-TypeScript + Vite multi-page site (pure front-end, no backend).
+TypeScript + Vite multi-page storefront (pure front-end).
 
-- `src/` — TypeScript source (data layer, components, pages, styles)
-- `assets/` — built CSS/JS + images + YekanBakh fonts
-- `*.html` — 21 built pages (GitHub Pages entry points)
+- `src/` — TypeScript source
+- `assets/` — built CSS/JS, images, fonts
+- `*.html` — 21 built pages
 
 ```bash
-npm install
-npm run build     # tsc --noEmit && vite build  → dist/
+npm install && npm run build
 ```

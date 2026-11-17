@@ -18,7 +18,12 @@ export default defineConfig({
       output: {
         entryFileNames: 'assets/js/[name]-[hash].js',
         chunkFileNames: 'assets/js/[name]-[hash].js',
-        assetFileNames: 'assets/css/[name]-[hash][extname]',
+        assetFileNames: (info) => {
+          const n = info.name ?? '';
+          if (/\.(woff2?|ttf|otf)$/i.test(n)) return 'assets/fonts/[name]-[hash][extname]';
+          if (/\.(png|jpe?g|svg|webp|avif|gif)$/i.test(n)) return 'assets/img/[name]-[hash][extname]';
+          return 'assets/css/[name]-[hash][extname]';
+        },
       },
     },
   },
