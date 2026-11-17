@@ -1,18 +1,21 @@
 import './main.css';
-import { renderFooter } from './lib/layout';
-import { renderLayout } from './lib/layout';
+import { renderFooter, renderLayout } from './lib/layout';
 import { initInteractions } from './lib/interactions';
+import { injectJsonLd } from './lib/seo';
 import { pages } from './pages';
+import { productPage } from './pages/product';
 
-const slug = document.body.dataset.page ?? 'index';
-const active = document.body.dataset.active ?? slug;
+const body = document.body;
+const slug = body.dataset.page ?? 'index';
+const active = body.dataset.active ?? slug;
 const app = document.getElementById('app');
 
 if (app) {
-  const render = pages[slug] ?? pages.index;
+  const productId = body.dataset.product;
+  const render = productId ? () => productPage(productId) : (pages[slug] ?? pages.index);
   app.innerHTML = `${renderLayout(active)}${render()}</main>${renderFooter()}`;
-  document.body.dataset.ready = '1';
   initInteractions();
+  injectJsonLd(slug, productId);
 } else {
   console.error('[kiniwa] #app not found');
 }

@@ -186,6 +186,7 @@ function initHeroSlider(): void {
 
 export function initInteractions(): void {
   initProgress();
+  initOrderBuilder();
   initReveals();
   initHead();
   initSearch();
@@ -193,4 +194,50 @@ export function initInteractions(): void {
   initFilters();
   initCounters();
   initHeroSlider();
+}
+
+/* --------------------------------------------------------- order builder */
+function showToast(msg: string): void {
+  const t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('on');
+  setTimeout(() => t.classList.remove('on'), 2600);
+}
+
+function initOrderBuilder(): void {
+  const qty = document.getElementById('qty') as HTMLInputElement | null;
+  const qtyOut = document.getElementById('qtyOut');
+  const totalOut = document.getElementById('totalOut');
+  const copy = document.getElementById('copyOrder') as HTMLButtonElement | null;
+  const price = qty ? Number(qty.dataset.price ?? 0) : 0;
+  const unitLabel = qty ? (qty.dataset.lbl ?? '') : '';
+
+  const fa = (n: number): string => n.toLocaleString('fa-IR');
+  const read = (): number => (qty ? Number(qty.value) : 0);
+
+  const paint = (): void => {
+    if (!qty) return;
+    const v = read();
+    if (qtyOut) qtyOut.textContent = fa(v);
+    if (totalOut) totalOut.textContent = `${fa(v * price)} تومان`;
+    qty.style.setProperty('--pct', `${((v - Number(qty.min)) / (Number(qty.max) - Number(qty.min))) * 100}%`);
+  };
+
+  qty?.addEventListener('input', paint);
+  paint();
+
+  copy?.addEventListener('click', async () => {
+    const title = copy.dataset.title ?? 'محصول';
+    const lines = [`سلام 👋`, `درخواست سفارش: ${title}`];
+    if (qty) lines.push(`مقدار: ${fa(read())} ${unitLabel}`, `مبلغ تقریبی: ${fa(read() * price)} تومان`);
+    lines.push('ممنون، منتظر پاسخ هستم.');
+    const text = lines.join('\n');
+    try {
+      await navigator.clipboard.writeText(text);
+      showToast('متن سفارش کپی شد ✓ حالا در تیکت دیسکورد بچسبانید');
+    } catch {
+      showToast('کپی نشد — متن را دستی بنویسید');
+    }
+  });
 }

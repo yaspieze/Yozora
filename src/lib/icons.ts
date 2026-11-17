@@ -15,6 +15,7 @@ export const ICONS = {
   chevron: svg('<path d="m9 6 6 6-6 6"/>'),
   arrow: svg('<path d="M5 12h14M13 6l6 6-6 6"/>'),
   star: svg('<path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.9-5.2 2.9 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/>'),
+  info: svg('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),
   spark: svg('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.2 6.2l3 3M14.8 14.8l3 3M17.8 6.2l-3 3M9.2 14.8l-3 3"/>'),
 };
 

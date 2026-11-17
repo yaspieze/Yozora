@@ -117,6 +117,45 @@ const bestSellers = (): string => {
 </div></section>`;
 };
 
+
+const TESTIMONIALS = [
+  {
+    name: 'آرمان',
+    role: 'بازیکن دونات اس ام پی',
+    text: 'دو بار پول دونات گرفتم، هر دو بار زیر ۲۴ ساعت تحویل شد. پشتیبانی هم توی تیکت سریع جواب داد.',
+    stars: 5,
+    initials: 'آ',
+  },
+  {
+    name: 'سارا',
+    role: 'استریمر تویچ',
+    text: 'پک اورلی رو با هماهنگی برند خودم گرفتم؛ دقیقاً همون چیزی بود که می‌خواستم و دو بار بازنگری رایگان داشت.',
+    stars: 5,
+    initials: 'س',
+  },
+  {
+    name: 'مهدی',
+    role: 'ادمین سرور',
+    text: 'برای سرور لوگو و بنر سفارش دادم. سه پیشنهاد اولیه دادند و تا نتیجهٔ نهایی اصلاح کردند.',
+    stars: 5,
+    initials: 'م',
+  },
+];
+
+const testimonials = (): string => `
+<section class="reviews"><div class="wrap">
+  ${sectionHead('نظر مشتری‌ها', 'کینیوا از زبان خریدارها')}
+  <div class="grid g3">
+    ${TESTIMONIALS.map(
+      (t) => `<figure class="review rv">
+        <div class="stars">${Array.from({ length: t.stars }, () => icon('star')).join('')}</div>
+        <blockquote>${t.text}</blockquote>
+        <figcaption><span class="ava">${t.initials}</span><span><b>${t.name}</b><i>${t.role}</i></span></figcaption>
+      </figure>`,
+    ).join('')}
+  </div>
+</div></section>`;
+
 const trustRow = (): string => `
 <section class="tight"><div class="wrap"><div class="grid g4">
   ${trustCard('bolt', 'تحویل سریع', 'بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.')}
@@ -162,6 +201,7 @@ ${bestSellers()}
 ${trustRow()}
 <div class="wrap">${statStrip()}</div>
 ${steps()}
+${testimonials()}
 ${blogTeaser()}
 <section class="home-faq"><div class="wrap">
   ${sectionHead('سوالات متداول', 'سؤال‌های پرتکرار')}

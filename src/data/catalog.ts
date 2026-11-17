@@ -108,7 +108,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۲٬۲۴۹٬۰۰۰ تومان',
     pills: [{ text: 'فول اکسس', tone: 'green' }, { text: 'جاوا + بدراک' }, { text: 'تغییر اطلاعات', tone: 'gold' }],
-    href: 'cat-minecraft.html',
+    href: 'p-mc-account.html',
     badge: 'پرفروش',
   },
   {
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۲٬۲۴۹٬۰۰۰ تومان',
     pills: [{ text: 'اولویت', tone: 'green' }, { text: 'فول اکسس' }],
-    href: 'cat-minecraft.html',
+    href: 'p-mc-priority.html',
   },
   {
     id: 'donut-million',
@@ -131,7 +131,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'هر میلیون',
     price: '۴٬۰۰۰ تومان',
     pills: [{ text: 'موجودی ۳۰۰M', tone: 'green' }, { text: 'حداقل ۵۰M' }, { text: 'تحویل ۴۸h', tone: 'gold' }],
-    href: 'cat-donut.html',
+    href: 'p-donut-million.html',
     badge: 'تخفیف حجمی',
   },
   {
@@ -143,7 +143,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: 'استعلام در تیکت',
     pills: [{ text: '۱ تا ۲۴ ساعت', tone: 'green' }, { text: 'امن و قانونی' }],
-    href: 'cat-hypixel.html',
+    href: 'p-hypixel.html',
     ask: true,
   },
   {
@@ -155,7 +155,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'هر میلیون',
     price: '۶٬۰۰۰ تومان',
     pills: [{ text: '۷۲ ساعت', tone: 'green' }, { text: 'قیمت میلیونی' }],
-    href: 'cat-hypixel.html',
+    href: 'p-skyblock.html',
   },
   {
     id: 'logo',
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۳۰۰٬۰۰۰ تومان',
     pills: [{ text: 'اختصاصی', tone: 'green' }],
-    href: 'cat-design.html',
+    href: 'p-logo.html',
   },
   {
     id: 'banner-simple',
@@ -177,7 +177,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۳۵۰٬۰۰۰ تومان',
     pills: [{ text: 'ساده' }],
-    href: 'cat-design.html',
+    href: 'p-banner-simple.html',
   },
   {
     id: 'banner-pro',
@@ -188,7 +188,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۵۰۰٬۰۰۰ تومان',
     pills: [{ text: 'حرفه‌ای', tone: 'green' }],
-    href: 'cat-design.html',
+    href: 'p-banner-pro.html',
   },
   {
     id: 'thumbnail-simple',
@@ -199,7 +199,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۲۰۰٬۰۰۰ تومان',
     pills: [{ text: 'ساده' }],
-    href: 'cat-design.html',
+    href: 'p-thumbnail-simple.html',
   },
   {
     id: 'thumbnail-pro',
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۳۰۰٬۰۰۰ تومان',
     pills: [{ text: 'حرفه‌ای', tone: 'green' }],
-    href: 'cat-design.html',
+    href: 'p-thumbnail-pro.html',
   },
   {
     id: 'skin-simple',
@@ -221,7 +221,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۲۴۵٬۰۰۰ تومان',
     pills: [{ text: 'ساده' }],
-    href: 'cat-design.html',
+    href: 'p-skin-simple.html',
   },
   {
     id: 'skin-pro',
@@ -232,7 +232,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۳۰۰٬۰۰۰ تومان',
     pills: [{ text: 'حرفه‌ای', tone: 'green' }],
-    href: 'cat-design.html',
+    href: 'p-skin-pro.html',
   },
   {
     id: 'anime-art',
@@ -243,7 +243,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'از',
     price: '۲۵۰٬۰۰۰ تومان',
     pills: [{ text: '۳ سطح', tone: 'gold' }],
-    href: 'cat-design.html',
+    href: 'p-anime-art.html',
   },
   {
     id: 'overlay-good',
@@ -254,7 +254,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۲۴۵٬۰۰۰ تومان',
     pills: [{ text: 'کیفیت خوب' }],
-    href: 'cat-overlay.html',
+    href: 'p-overlay-good.html',
   },
   {
     id: 'overlay-best',
@@ -265,7 +265,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۳۰۰٬۰۰۰ تومان',
     pills: [{ text: 'کیفیت عالی', tone: 'green' }],
-    href: 'cat-overlay.html',
+    href: 'p-overlay-best.html',
   },
   {
     id: 'font-pack',
@@ -276,7 +276,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۱۰۰٬۰۰۰ تومان',
     pills: [{ text: 'پک فونت' }],
-    href: 'cat-overlay.html',
+    href: 'p-font-pack.html',
   },
   {
     id: 'cosmetics',
@@ -287,7 +287,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: 'استعلام در تیکت',
     pills: [{ text: 'همهٔ کلاینت‌ها', tone: 'green' }, { text: 'دلاری', tone: 'gold' }],
-    href: 'cat-cosmetics.html',
+    href: 'p-cosmetics.html',
     ask: true,
   },
   {
@@ -299,7 +299,7 @@ export const PRODUCTS: Product[] = [
     priceLabel: 'قیمت',
     price: '۳۲۹٬۰۰۰ تومان',
     pills: [{ text: 'اختصاصی', tone: 'green' }, { text: '۱ تا ۷۲ ساعت', tone: 'gold' }],
-    href: 'cat-cape.html',
+    href: 'p-cape.html',
   },
 ];
 

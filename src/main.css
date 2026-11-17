@@ -668,3 +668,96 @@ body.locked{overflow:hidden}
 .steps-sec,.blog-teaser,.home-faq{padding:2.6rem 0}
 .cat-tile::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
   box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
+
+/* =====================================================================
+   v5 — product detail pages, order builder, a11y, toast
+   ===================================================================== */
+/* skip link + focus */
+.skip-link{position:absolute;inset-inline-start:-9999px;top:0;z-index:400;background:var(--gold);color:#1a1403;
+  padding:.7rem 1.1rem;border-radius:0 0 12px 12px;font-weight:700}
+.skip-link:focus{inset-inline-start:1rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .rv{opacity:1 !important;transform:none !important}
+}
+
+/* product page */
+.prod{padding:1.4rem 0 2rem}
+.prod-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:2rem;align-items:start}
+.prod-media{position:sticky;top:calc(var(--head-h) + 64px)}
+.prod-media>img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:24px;border:1px solid var(--shell-border);
+  box-shadow:0 50px 90px -50px rgba(0,0,0,.95)}
+.pm-badges{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.9rem}
+.prod-info h1{font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.3;margin:.55rem 0 .7rem;letter-spacing:-.02em}
+.prod-long{color:#a2aab9;font-size:.9rem;line-height:2.05;margin:.9rem 0 1.1rem}
+.feat{list-style:none;padding:0;margin:0 0 1.4rem;display:grid;gap:.55rem}
+.feat li{display:flex;align-items:center;gap:.5rem;font-size:.86rem;color:#c8d0dc}
+.feat svg{width:15px;height:15px;color:var(--gold);flex:0 0 auto}
+
+.buy-box{border:1px solid var(--shell-border);border-radius:22px;padding:1.3rem;
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012));display:grid;gap:.9rem}
+.bb-head{display:flex;align-items:center;justify-content:space-between;gap:.8rem;flex-wrap:wrap}
+.bb-pill{display:inline-flex;align-items:center;gap:.35rem;font-size:.74rem;font-weight:600;color:#9fe6bf;
+  background:rgba(39,209,124,.1);border:1px solid rgba(39,209,124,.22);padding:.3rem .7rem;border-radius:100px}
+.bb-pill svg{width:13px;height:13px}
+.bb-price{display:flex;flex-direction:column;align-items:flex-end;line-height:1.3}
+.bb-price span{font-size:.72rem;color:#8b93a5}
+.bb-price b{font-size:1.35rem;color:var(--gold);font-weight:700}
+.calc{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:.9rem 1rem}
+.calc-lbl{font-size:.76rem;color:#8b93a5}
+.calc-val{display:flex;align-items:baseline;gap:.35rem;margin:.25rem 0 .6rem}
+.calc-val b{font-size:1.5rem;color:#fff;font-weight:700}
+.calc-val span{font-size:.8rem;color:#9aa2b1}
+.calc input[type=range]{width:100%;margin:.2rem 0 .35rem}
+.calc-range{display:flex;justify-content:space-between;font-size:.7rem;color:#7f8799}
+.calc-total{margin-top:.6rem;font-size:.82rem;color:#a8b0bf}
+.calc-total b{color:var(--gold)}
+.bb-note{display:flex;gap:.45rem;font-size:.8rem;color:#98a0af;background:rgba(248,192,0,.07);
+  border:1px solid rgba(248,192,0,.18);border-radius:14px;padding:.7rem .8rem;line-height:1.8}
+.bb-note svg{width:15px;height:15px;color:var(--gold);flex:0 0 auto;margin-top:.2rem}
+.bb-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+.bb-list li{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:#aab2c1}
+.bb-list svg{width:15px;height:15px;color:var(--gold)}
+.bb-list b{color:#eef2f8}
+.bb-cta{justify-content:center}
+.btn-copy{justify-content:center}
+.bb-fine{font-size:.72rem;color:#767e90;text-align:center;margin:0}
+
+.mini-steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:.7rem}
+.mini-steps li{display:flex;align-items:center;gap:.8rem;border:1px solid var(--shell-border);border-radius:16px;
+  padding:.85rem 1rem;background:rgba(255,255,255,.025);font-size:.86rem;color:#c6cedb}
+.mini-steps span{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;flex:0 0 auto;
+  background:linear-gradient(180deg,#ffd75e,var(--gold));color:#1a1403;font-weight:700;font-size:.8rem}
+
+/* toast */
+.toast{position:fixed;inset-inline:0;bottom:5.5rem;margin-inline:auto;width:max-content;max-width:90vw;
+  background:#101218;border:1px solid rgba(248,192,0,.35);color:#f2f5fa;font-size:.84rem;
+  padding:.75rem 1.15rem;border-radius:100px;box-shadow:0 24px 60px -26px rgba(0,0,0,.9);
+  opacity:0;transform:translateY(12px);pointer-events:none;transition:.3s;z-index:250}
+.toast.on{opacity:1;transform:none}
+
+/* range slider looks */
+input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:100px;background:#242733;outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+  background:#fff;border:4px solid var(--gold);box-shadow:0 6px 18px -6px rgba(248,192,0,.8);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:4px solid var(--gold);cursor:pointer}
+
+@media(max-width:980px){
+  .prod-grid{grid-template-columns:1fr}
+  .prod-media{position:static}
+}
+
+/* testimonials */
+.reviews{padding:2.6rem 0}
+.review{margin:0;border:1px solid var(--shell-border);border-radius:20px;padding:1.4rem;
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));display:grid;gap:.8rem}
+.review .stars{display:flex;gap:.15rem;color:var(--gold)}
+.review .stars svg{width:15px;height:15px;fill:currentColor;stroke:none}
+.review blockquote{margin:0;font-size:.88rem;line-height:2;color:#c4ccda}
+.review figcaption{display:flex;align-items:center;gap:.6rem;margin-top:.2rem}
+.review .ava{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:700;
+  background:linear-gradient(180deg,#ffd75e,var(--gold));color:#1a1403;font-size:.9rem}
+.review figcaption span{display:flex;flex-direction:column;line-height:1.4}
+.review figcaption b{font-size:.84rem}
+.review figcaption i{font-size:.72rem;color:#8b93a5;font-style:normal}

@@ -150,5 +150,6 @@ export const renderFooter = (): string => `
 
 export const renderLayout = (active: string): string => `
 <div id="progress"></div>
+<a class="skip-link" href="#main">پرش به محتوای اصلی</a>
 ${renderHeader(active)}
 <main id="main">`;

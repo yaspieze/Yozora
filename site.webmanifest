@@ -1,0 +1,15 @@
+{
+  "name": "کینیوا شاپ",
+  "short_name": "Kiniwa",
+  "description": "فروشگاه گیمینگ کینیوا شاپ",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "/kiniwa/",
+  "scope": "/kiniwa/",
+  "display": "standalone",
+  "background_color": "#08080c",
+  "theme_color": "#08080c",
+  "icons": [
+    { "src": "assets/img/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
