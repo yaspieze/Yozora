@@ -155,7 +155,7 @@ h3.sub{font-size:clamp(1.15rem,2vw,1.45rem);font-weight:700;margin-bottom:.6rem}
   overflow:hidden;display:flex;flex-direction:column;transition:.3s}
 .pcard:hover{transform:translateY(-6px);border-color:rgba(248,192,0,.34);box-shadow:var(--shadow)}
 .pcard .thumb{position:relative;overflow:hidden;display:block}
-.pcard .thumb img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:.6s}
+.pcard .thumb img{aspect-ratio:1/1;object-fit:cover;width:100%;transition:.6s}
 .pcard:hover .thumb img{transform:scale(1.05)}
 .pcard .thumb .tag{position:absolute;top:.7rem;right:.7rem;font-size:.7rem;font-weight:700;padding:.32rem .7rem;
   border-radius:100px;background:rgba(7,7,10,.82);border:1px solid var(--line-2);backdrop-filter:blur(6px)}
@@ -172,12 +172,13 @@ h3.sub{font-size:clamp(1.15rem,2vw,1.45rem);font-weight:700;margin-bottom:.6rem}
 /* cat tiles */
 .cat{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#0a0b10;
   display:block;transition:.35s}
-.cat img{aspect-ratio:16/10;object-fit:cover;width:100%;transition:.6s}
-.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,10,0) 24%,rgba(7,7,10,.72) 62%,rgba(7,7,10,.97))}
-.cat-in{position:absolute;inset:auto 0 0;padding:1.4rem;z-index:2}
+.cat img{aspect-ratio:1/1;object-fit:cover;width:100%;transition:.6s}
+.cat::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05);border-radius:inherit;pointer-events:none}
+.cat-in{position:absolute;inset:auto 0 0;padding:1rem 1.1rem;z-index:2;opacity:0;transform:translateY(8px);transition:.35s}
+.cat:hover .cat-in{opacity:1;transform:none}
 .cat-in h3{font-size:1.1rem;font-weight:700;margin-bottom:.3rem}
 .cat-in p{font-size:.82rem;color:#a9b0bf;margin-bottom:.7rem}
-.cat-in .go{font-size:.82rem;font-weight:600;color:var(--gold)}
+.cat-in .go{display:inline-block;font-size:.78rem;font-weight:700;color:#20180a;background:linear-gradient(180deg,var(--gold-2),var(--gold));padding:.4rem .9rem;border-radius:100px}
 .cat:hover img{transform:scale(1.06)}
 .cat:hover{border-color:rgba(248,192,0,.4)}
 .cat.big{grid-column:span 2}
