@@ -82,3 +82,38 @@
     r.addEventListener('input', upd); upd();
   });
 })();
+
+/* ---- v3: scroll progress ---- */
+(function(){
+  var bar=document.getElementById('progress'); if(!bar) return;
+  function upd(){var h=document.documentElement;var max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';}
+  addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd();
+})();
+
+/* ---- v3: cursor spotlight on cards ---- */
+(function(){
+  document.addEventListener('pointermove',function(e){
+    var c=e.target.closest('.card,.pcard,.bento .b'); if(!c) return;
+    var r=c.getBoundingClientRect();
+    c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    c.style.setProperty('--my',(e.clientY-r.top)+'px');
+  },{passive:true});
+})();
+
+/* ---- v3: rotating hero tile ---- */
+(function(){
+  var img=document.getElementById('heroImg'); if(!img) return;
+  var list=(img.dataset.tiles||'').split(',').filter(Boolean); if(list.length<2) return;
+  var dots=document.getElementById('rotDots'); var i=0, busy=false;
+  dots&&list.forEach(function(_,k){var d=document.createElement('i'); if(k===0)d.className='on'; dots.appendChild(d);});
+  setInterval(function(){
+    if(busy) return; busy=true; i=(i+1)%list.length;
+    img.classList.add('fade');
+    setTimeout(function(){
+      img.src=list[i]; img.onload=function(){img.classList.remove('fade');busy=false;};
+      setTimeout(function(){img.classList.remove('fade');busy=false;},600);
+      if(dots){[].forEach.call(dots.children,function(d,k){d.className=k===i?'on':'';});}
+    },480);
+  },4200);
+})();

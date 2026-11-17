@@ -376,3 +376,96 @@ footer{border-top:1px solid var(--line);background:#06060a;padding:3.2rem 0 1.6r
 .e404 .art404{display:flex;justify-content:center;margin-bottom:.5rem}
 .e404 .art404 svg{width:min(560px,88vw);height:auto;color:var(--gold);
   filter:drop-shadow(0 24px 60px rgba(248,192,0,.28))}
+
+/* ===================== v3 visual upgrade ===================== */
+#progress{position:fixed;top:0;right:0;height:3px;width:0;z-index:300;
+  background:linear-gradient(90deg,var(--gold),#ff7a18);box-shadow:0 0 18px rgba(248,192,0,.75)}
+body{background-image:
+  radial-gradient(1100px 560px at 82% -8%,rgba(248,192,0,.07),transparent 62%),
+  radial-gradient(900px 520px at -2% 12%,rgba(186,3,0,.06),transparent 60%)}
+.grad{background:linear-gradient(100deg,#ffeab0,var(--gold) 32%,#fff3cc 52%,var(--gold) 72%,#ffe28a);
+  -webkit-background-clip:text;background-clip:text;color:transparent;background-size:230% 100%;
+  animation:shimmer 8s linear infinite}
+@keyframes shimmer{to{background-position:-230% 0}}
+.sec-hd h2{font-size:clamp(1.55rem,3.1vw,2.5rem);letter-spacing:-.02em}
+.hero{position:relative;isolation:isolate}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;z-index:-1;pointer-events:none}
+.hero::before{width:540px;height:540px;background:rgba(248,192,0,.16);top:-170px;inset-inline-start:-140px;animation:flux1 16s ease-in-out infinite}
+.hero::after{width:460px;height:460px;background:rgba(88,101,242,.16);bottom:-190px;inset-inline-end:-120px;animation:flux2 20s ease-in-out infinite}
+@keyframes flux1{50%{transform:translate(64px,46px) scale(1.12)}}
+@keyframes flux2{50%{transform:translate(-56px,-34px) scale(1.14)}}
+
+.card,.pcard,.bcard,.bento .b{position:relative}
+.card::before,.pcard::before,.bento .b::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  opacity:0;transition:opacity .35s;
+  background:radial-gradient(340px circle at var(--mx,50%) var(--my,50%),rgba(248,192,0,.15),transparent 62%)}
+.card:hover::before,.pcard:hover::before,.bento .b:hover::before{opacity:1}
+.pcard{transition:transform .4s cubic-bezier(.2,.7,.2,1),border-color .3s,box-shadow .4s}
+.pcard:hover{transform:translateY(-7px);border-color:rgba(248,192,0,.42);
+  box-shadow:0 40px 80px -46px rgba(248,192,0,.5),0 20px 50px -30px rgba(0,0,0,.9)}
+.btn{position:relative;overflow:hidden;isolation:isolate}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(110deg,transparent 28%,rgba(255,255,255,.42),transparent 72%);
+  transform:translateX(-130%);transition:transform .65s ease}
+.btn:hover::after{transform:translateX(130%)}
+.btn-gold{background:linear-gradient(180deg,#ffd75e,var(--gold) 55%,#e0a800);
+  box-shadow:0 14px 34px -16px rgba(248,192,0,.85),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 44px -16px rgba(248,192,0,.95),inset 0 1px 0 rgba(255,255,255,.6)}
+.eyebrow{background:linear-gradient(180deg,rgba(248,192,0,.16),rgba(248,192,0,.06))}
+
+/* hero rotating tile */
+.hero-rot{position:relative}
+.hero-rot img{aspect-ratio:1/1;object-fit:cover;width:100%;transition:opacity .5s ease}
+.hero-rot img.fade{opacity:0}
+.rot-dots{position:absolute;inset-inline:0;bottom:-1.4rem;display:flex;gap:.4rem;justify-content:center}
+.rot-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.22);transition:.3s}
+.rot-dots i.on{background:var(--gold);width:22px;border-radius:4px}
+
+/* showcase rail */
+.rail-wrap{position:relative}
+.rail{display:flex;gap:.9rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.3rem .2rem 1.3rem;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.rail a{flex:0 0 clamp(180px,24vw,250px);scroll-snap-align:start;border-radius:20px;overflow:hidden;
+  border:1px solid var(--line);display:block;transition:.38s;background:#0b0c11}
+.rail a:hover{transform:translateY(-7px);border-color:rgba(248,192,0,.5);box-shadow:0 36px 70px -38px rgba(248,192,0,.55)}
+.rail img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.bento .b{border:1px solid var(--line);border-radius:22px;padding:1.55rem;overflow:hidden;
+  background:linear-gradient(180deg,var(--card),#0a0b10);transition:.38s}
+.bento .b:hover{border-color:rgba(248,192,0,.4);transform:translateY(-5px)}
+.bento .b.wide{grid-column:span 2;display:flex;gap:1.3rem;align-items:center}
+.bento .b.wide h3{font-size:1.35rem}
+.bento .b .ic{flex:0 0 auto}
+.bento .b p{font-size:.86rem;color:#a4abb9;line-height:1.9;margin-top:.4rem}
+.bento .b .big{font-size:2.6rem;font-weight:700;color:var(--gold);line-height:1}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr)}.bento .b.wide{grid-column:span 2}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}.bento .b.wide{grid-column:span 1;flex-direction:column;align-items:flex-start}}
+
+/* footer wordmark */
+.foot-mark{font-weight:700;line-height:.86;text-align:center;letter-spacing:-.05em;
+  font-size:clamp(2.6rem,11vw,8.5rem);color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);
+  margin-top:2.5rem;user-select:none;direction:ltr}
+.foot-top{border-top:1px solid var(--line)}
+html{overflow-x:hidden}
+body{overflow-x:hidden;max-width:100%}
+.hero{overflow:hidden}
+/* bento fixes */
+.bento .b .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex:0 0 auto;
+  background:rgba(248,192,0,.1);border:1px solid rgba(248,192,0,.2);color:var(--gold)}
+.bento .b .ic svg{width:22px;height:22px;stroke:currentColor}
+.bento .b.wide{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:center}
+.bento .b h3{font-size:1rem;font-weight:700;margin-top:.85rem}
+.bento .b.wide h3{margin-top:.3rem;font-size:1.22rem}
+.bento .b.wide .big{font-size:2.4rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:.15rem}
+@media(max-width:560px){.bento .b.wide{grid-template-columns:1fr}}
+
+/* category grid: 4 columns, last tile wide so rows fill exactly */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.cats .cat:nth-child(7){grid-column:span 2}
+.cats .cat:nth-child(7) img{aspect-ratio:2.06/1}
+@media(max-width:1080px){.cats{grid-template-columns:repeat(3,1fr)}.cats .cat:nth-child(7){grid-column:span 1}.cats .cat:nth-child(7) img{aspect-ratio:1/1}}
+@media(max-width:760px){.cats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cats{grid-template-columns:1fr}}
