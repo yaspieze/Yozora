@@ -21,7 +21,7 @@ const megaMenu = (): string => `
 <div class="mega" role="menu">
   <div class="mega-grid">
     ${CATEGORIES.map(
-      (c) => `<a class="mega-item" href="${c.slug}" role="menuitem">
+      (c, i) => `<a class="mega-item" href="${c.slug}" role="menuitem" style="--i:${i}">
         <img src="${c.image}" alt="" loading="lazy" width="120" height="120">
         <span><b>${c.title}</b><i>${c.short}</i></span>
       </a>`,
@@ -70,7 +70,7 @@ export const renderHeader = (active: string): string => `
         ${NAV.map((n) => {
           const act = n.key === active ? ' class="act"' : '';
           if (n.key === 'products') {
-            return `<li class="has-mega"><a href="${n.href}"${act}>${n.label} ${ICONS.chevron}</a>${megaMenu()}</li>`;
+            return `<li class="has-mega"><a href="${n.href}"${act} aria-haspopup="true" aria-expanded="false">${n.label} ${ICONS.chevron}</a>${megaMenu()}</li>`;
           }
           return `<li><a href="${n.href}"${act}>${n.label}</a></li>`;
         }).join('')}

@@ -3,8 +3,6 @@
  * همه‌چیز با یک rAF مشترک به‌روز می‌شود تا روی گوشی هم روان بماند.
  */
 
-const reduce = (): boolean => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
 let ticking = false;
 const queue = new Set<() => void>();
 
@@ -19,7 +17,6 @@ const onScroll = (): void => {
 
 /* ── پارالاکس: هر المان با data-par سرعت متفاوت دارد ─────────────────── */
 export function initParallax(): void {
-  if (reduce()) return;
   const els = Array.from(document.querySelectorAll<HTMLElement>('[data-par]'));
   if (!els.length) return;
 
@@ -48,7 +45,7 @@ export function initStory(): void {
   const dots = Array.from(story.querySelectorAll<HTMLElement>('.story-dots i'));
   if (!track) return;
 
-  const isPinned = (): boolean => window.innerWidth > 900 && !reduce();
+  const isPinned = (): boolean => window.innerWidth > 900;
 
   const paint = (): void => {
     if (!isPinned()) {
@@ -97,7 +94,7 @@ export function initMarquee(): void {
 
 /* ── تیلت سه‌بعدی ملایم روی کارت‌ها ───────────────────────────────────── */
 export function initTilt(): void {
-  if (reduce() || window.matchMedia('(hover:none)').matches) return;
+  if (window.matchMedia('(hover:none)').matches) return;
   const els = Array.from(document.querySelectorAll<HTMLElement>('[data-tilt]'));
   els.forEach((el) => {
     const move = (e: PointerEvent): void => {

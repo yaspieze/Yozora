@@ -64,27 +64,84 @@ function initHead(): void {
   const burger = $('#burger');
   const drawer = $('#drawer') as HTMLElement | null;
   const close = $('#drawerClose');
+  let closeTimer = 0;
+
   const toggle = (open: boolean): void => {
     if (!drawer) return;
-    drawer.hidden = !open;
     burger?.setAttribute('aria-expanded', String(open));
     document.documentElement.classList.toggle('locked', open);
     document.body.classList.toggle('locked', open);
+    window.clearTimeout(closeTimer);
+    if (open) {
+      drawer.hidden = false;
+      // یک فریم صبر می‌کنیم تا کلاس با انیمیشن اعمال شود
+      requestAnimationFrame(() => drawer.classList.add('open'));
+    } else {
+      drawer.classList.remove('open');
+      closeTimer = window.setTimeout(() => {
+        if (!drawer.classList.contains('open')) drawer.hidden = true;
+      }, 460);
+    }
   };
   // never leave the page locked (back/forward cache, link clicks, touch cancel)
   addEventListener('pageshow', () => {
     document.documentElement.classList.remove('locked');
     document.body.classList.remove('locked');
-    if (drawer) drawer.hidden = true;
+    if (drawer) {
+      drawer.classList.remove('open');
+      drawer.hidden = true;
+    }
   });
   drawer?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => toggle(false)));
-  burger?.addEventListener('click', () => toggle(drawer?.hidden ?? true));
+  burger?.addEventListener('click', () => toggle(!drawer?.classList.contains('open')));
   close?.addEventListener('click', () => toggle(false));
   drawer?.addEventListener('click', (e) => {
     if (e.target === drawer) toggle(false);
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') toggle(false);
+  });
+
+  initMegaMenu();
+}
+
+/* -------------------------------------------------------------- mega menu */
+function initMegaMenu(): void {
+  const items = $$<HTMLElement>('.has-mega');
+  if (!items.length) return;
+
+  items.forEach((li) => {
+    const link = li.querySelector<HTMLAnchorElement>('a');
+    let timer = 0;
+    const open = (v: boolean): void => {
+      window.clearTimeout(timer);
+      if (v) {
+        li.classList.add('open');
+        link?.setAttribute('aria-expanded', 'true');
+      } else {
+        li.classList.remove('open');
+        link?.setAttribute('aria-expanded', 'false');
+      }
+    };
+    li.addEventListener('pointerenter', () => open(true));
+    li.addEventListener('pointerleave', () => {
+      timer = window.setTimeout(() => open(false), 140);
+    });
+    // برای لمسی‌ها: اولین ضربه منو را باز می‌کند
+    link?.addEventListener('click', (e) => {
+      if (window.matchMedia('(hover:none)').matches) {
+        e.preventDefault();
+        open(!li.classList.contains('open'));
+      }
+    });
+    li.addEventListener('keydown', (e) => {
+      if ((e as KeyboardEvent).key === 'Escape') open(false);
+    });
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    const t = e.target as Element | null;
+    if (t && !t.closest('.has-mega')) items.forEach((li) => li.classList.remove('open'));
   });
 }
 

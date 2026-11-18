@@ -27,8 +27,6 @@ const inNativeZone = (t: EventTarget | null): boolean =>
   t instanceof Element ? !!t.closest(NATIVE_ZONE) : false;
 
 export function initSmoothScrollEngine(): void {
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (reduce.matches) return;
 
   const doc = document.documentElement;
   let target = window.scrollY;
@@ -178,13 +176,4 @@ export function initSmoothScrollEngine(): void {
   window.addEventListener('touchend', end, { passive: true });
   window.addEventListener('touchcancel', end, { passive: true });
 
-  /* اگر کاربر تمایل به حرکت کمتر را روشن کرد، موتور خاموش می‌شود */
-  const onPref = (): void => {
-    if (reduce.matches) {
-      doc.classList.remove('has-smooth');
-      window.removeEventListener('wheel', onWheel);
-      engine = null;
-    }
-  };
-  if (typeof reduce.addEventListener === 'function') reduce.addEventListener('change', onPref);
 }
