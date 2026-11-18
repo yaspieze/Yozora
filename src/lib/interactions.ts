@@ -1,4 +1,6 @@
 import { PRODUCTS } from '../data/catalog';
+import { initCountUp, initMotion } from './motion';
+import { initSmoothScrollEngine, smoothScrollTo } from './smooth';
 
 const $ = <T extends Element>(sel: string, root: ParentNode = document): T | null =>
   root.querySelector<T>(sel);
@@ -28,7 +30,7 @@ function initProgress(): void {
 
 /* ----------------------------------------------------------------- reveals */
 function initReveals(): void {
-  const items = $$<HTMLElement>('.rv');
+  const items = $$<HTMLElement>('.rv, .split');
   if (!('IntersectionObserver' in window) || items.length === 0) {
     items.forEach((i) => i.classList.add('in'));
     return;
@@ -175,23 +177,6 @@ function initFilters(): void {
   });
 }
 
-/* ------------------------------------------------------------------ counters */
-function initCounters(): void {
-  const els = $$<HTMLElement>('[data-count]');
-  if (!els.length) return;
-  const fa = (n: number): string => n.toLocaleString('fa-IR');
-  els.forEach((el) => {
-    const target = Number(el.dataset.count ?? 0);
-    let n = 0;
-    const step = Math.max(1, Math.round(target / 28));
-    const iv = setInterval(() => {
-      n = Math.min(target, n + step);
-      el.textContent = fa(n);
-      if (n >= target) clearInterval(iv);
-    }, 28);
-  });
-}
-
 /* -------------------------------------------------------------------- slider */
 function initHeroSlider(): void {
   const track = $<HTMLElement>('#heroSlider');
@@ -222,6 +207,7 @@ function initHeroSlider(): void {
 }
 
 export function initInteractions(): void {
+  initSmoothScrollEngine();
   initProgress();
   initOrderBuilder();
   initReveals();
@@ -229,9 +215,10 @@ export function initInteractions(): void {
   initSearch();
   initSpotlight();
   initFilters();
-  initCounters();
   initHeroSlider();
   initSmoothScroll();
+  initMotion();
+  initCountUp();
 }
 
 /* --------------------------------------------------------- order builder */
@@ -293,7 +280,7 @@ function initSmoothScroll(): void {
     e.preventDefault();
     const offset = (header?.offsetHeight ?? 0) + 14;
     const top = target.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top, behavior: 'smooth' });
+    smoothScrollTo(top);
     target.setAttribute('tabindex', '-1');
     (target as HTMLElement).focus({ preventScroll: true });
   });

@@ -730,7 +730,7 @@ export const bodies: Record<string, string> = {
 <section class="phero"><div class="wrap">
   <span class="eyebrow">کاتالوگ کامل</span>
   <h1>همهٔ محصولات کینیوا شاپ</h1>
-  <p class="lead" style="max-width:70ch">۱۷ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
+  <p class="lead" style="max-width:70ch">۱۸ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
   یا روی هر محصول بزن تا وارد صفحهٔ اختصاصی‌اش شوی.</p>
   <div class="badges"><span class="pill g">پرداخت ریالی</span><span class="pill y">ضمانت بازگشت وجه</span><span class="pill b">سفارش با تیکت</span></div>
 </div></section>

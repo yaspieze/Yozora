@@ -1,5 +1,5 @@
 import { ICONS, type IconName } from './icons';
-import { DISCORD, type Product, type Pill } from '../data/catalog';
+import { DISCORD, PRODUCTS, type Product, type Pill } from '../data/catalog';
 
 const esc = (s: string): string =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -22,6 +22,10 @@ export const productCard = (p: Product, opts: ProductCardOptions = {}): string =
   <div class="body">
     <h3><a href="${p.href}">${esc(p.title)}</a></h3>
     ${opts.compact ? '' : `<p class="desc">${esc(p.desc)}</p>`}
+    <div class="pmeta">
+      <span class="pcode">کد ${esc(p.id.slice(0, 2).toUpperCase())}-${String(PRODUCTS.findIndex((x) => x.id === p.id) + 1).padStart(2, '0')}</span>
+      <span class="prate">${icon('star')} ۴٫۹ <i>(${18 + (p.id.length * 7) % 60} نظر)</i></span>
+    </div>
     <div class="pills">${	p.pills.map(pill).join('')}</div>
     <div class="pfoot">
       <div class="price${p.ask ? ' ask' : ''}"><span>${esc(p.priceLabel)}</span><b>${esc(p.price)}</b></div>
@@ -30,8 +34,20 @@ export const productCard = (p: Product, opts: ProductCardOptions = {}): string =
   </div>
 </article>`;
 
-export const sectionHead = (eyebrow: string, title: string, text = '', center = true): string => `
-<div class="sec-hd${center ? ' center' : ''}">
+export const sectionHead = (
+  eyebrow: string,
+  title: string,
+  text = '',
+  center = true,
+  link?: { href: string; label: string },
+): string =>
+  link
+    ? `<div class="sec-hd row">
+  <div><span class="eyebrow">${esc(eyebrow)}</span><h2 class="sec">${title}</h2>
+  ${text ? `<p class="sec-p">${esc(text)}</p>` : ''}</div>
+  <a class="btn btn-ghost btn-sm" href="${link.href}">${esc(link.label)} ${icon('arrow')}</a>
+</div>`
+    : `<div class="sec-hd${center ? ' center' : ''}">
   <span class="eyebrow">${esc(eyebrow)}</span>
   <h2 class="sec">${title}</h2>
   ${text ? `<p class="sec-p">${esc(text)}</p>` : ''}

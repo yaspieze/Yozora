@@ -1,5 +1,6 @@
 import { BLOG_POSTS, CATEGORIES, DISCORD, FAQ_ITEMS, PRODUCTS } from '../data/catalog';
-import { ctaBand, faqList, icon, productCard, sectionHead, statStrip, trustCard } from '../lib/ui';
+import { ctaBand, faqList, icon, productCard, sectionHead, statStrip } from '../lib/ui';
+import { ART, artCard } from '../lib/art';
 
 interface Slide {
   eyebrow: string;
@@ -12,6 +13,8 @@ interface Slide {
   ghostHref: string;
   image: string;
   tags: string[];
+  chipTop: string;
+  chipBottom: string;
 }
 
 const SLIDES: Slide[] = [
@@ -26,6 +29,8 @@ const SLIDES: Slide[] = [
     ghostHref: 'cat-minecraft/',
     image: 'assets/img/products/p-minecraft-account.jpg',
     tags: ['فول اکسس', 'جاوا + بدراک', 'تغییر اطلاعات'],
+    chipTop: '۷۶۳ عضو انجمن',
+    chipBottom: 'ضمانت بازگشت وجه',
   },
   {
     eyebrow: 'دونات اس ام پی',
@@ -38,6 +43,8 @@ const SLIDES: Slide[] = [
     ghostHref: 'cat-donut/',
     image: 'assets/img/products/p-donut-million.jpg',
     tags: ['موجودی ۳۰۰M', 'حداقل ۵۰M', 'تحویل ۴۸h'],
+    chipTop: 'تحویل زیر ۲۴ ساعت',
+    chipBottom: '۳۰ نفر آنلاین',
   },
   {
     eyebrow: 'خدمات گرافیک کینیوا',
@@ -50,16 +57,18 @@ const SLIDES: Slide[] = [
     ghostHref: 'cat-design/',
     image: 'assets/img/products/p-logo.jpg',
     tags: ['لوگو', 'اورلی', 'انیمه‌آرت'],
+    chipTop: '۲ بازنگری رایگان',
+    chipBottom: 'فایل لایه‌باز',
   },
 ];
 
 const heroSlider = (): string => `
 <section class="hero2">
+  <div class="hero-glow" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="wrap">
     <div class="slider" id="heroSlider">
       ${SLIDES.map(
         (s, i) => `<article class="slide${i === 0 ? ' on' : ''}" data-i="${i}">
-        <div class="slide-art"><img src="${s.image}" alt="${s.title}" width="900" height="900" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}></div>
         <div class="slide-body">
           <span class="eyebrow">${s.eyebrow}</span>
           <h1>${s.title}<br><em class="grad">${s.em}</em></h1>
@@ -70,6 +79,13 @@ const heroSlider = (): string => `
             <a class="btn btn-ghost btn-lg" href="${s.ghostHref}">${s.ghost}</a>
           </div>
         </div>
+        <div class="slide-art" data-par="0.05">
+          <div class="slide-frame">
+            <img src="${s.image}" alt="${s.title}" width="900" height="900" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+          </div>
+          <span class="float-chip chip-a">${icon('bolt')} ${s.chipTop}</span>
+          <span class="float-chip chip-b">${icon('shield')} ${s.chipBottom}</span>
+        </div>
       </article>`,
       ).join('')}
       <button class="slide-nav prev" data-slide="prev" aria-label="قبلی">${icon('chevron')}</button>
@@ -79,18 +95,91 @@ const heroSlider = (): string => `
   </div>
 </section>`;
 
+/* ── نوار متحرک محصولات: هر آیتم عکس اختصاصی خودش را دارد ─────────────── */
+const productMarquee = (): string => {
+  const items = PRODUCTS.slice(0, 10)
+    .map(
+      (p) => `<a class="marq-item" href="${p.href}">
+      <img src="${p.image}" alt="${p.title}" width="76" height="76" loading="lazy">
+      <span><b>${p.title}</b><i>${p.price}</i></span>
+    </a>`,
+    )
+    .join('');
+  return `
+<div class="marq-band" data-marquee aria-label="محصولات کینیوا">
+  <div class="marq-in">${items}</div>
+</div>`;
+};
+
 const quickCats = (): string => `
 <section class="quick-cats"><div class="wrap">
-  ${sectionHead('دسته‌بندی', 'از کجا شروع کنیم؟', 'روی هر دسته بزن تا صفحهٔ کاملش با قیمت و جزئیات باز شود.')}
+  ${sectionHead('دسته‌بندی', 'از کجا شروع کنیم؟', 'روی هر دسته بزن تا صفحهٔ کاملش با قیمت و جزئیات باز شود.', false, { href: 'products/', label: 'همهٔ محصولات' })}
   <div class="cat-rail">
     ${CATEGORIES.map(
-      (c) => `<a class="cat-tile rv" href="${c.slug}">
+      (c) => `<a class="cat-tile rv" href="${c.slug}" data-tilt>
         <img src="${c.image}" alt="${c.title}" loading="lazy" width="300" height="300">
-        <span class="ct-body"><b>${c.title}</b><i>${c.note}</i></span>
+        <span class="ct-body"><b>${c.title}</b><i>${c.en}</i></span>
+        <span class="ct-note">${c.note}</span>
       </a>`,
     ).join('')}
   </div>
 </div></section>`;
+
+/* ── فصل‌های افقی: با اسکرول پایین، قصه از راست به چپ جلو می‌رود ──────── */
+const STORY = [
+  {
+    art: 'design' as const,
+    k: '۰۱',
+    title: 'انتخاب می‌کنی',
+    text: 'کاتالوگ را باز می‌کنی و دقیقاً همان چیزی را که می‌خواهی پیدا می‌کنی؛ بدون قیمت نامشخص و بدون «در دایرکت بپرسید».',
+  },
+  {
+    art: 'support' as const,
+    k: '۰۲',
+    title: 'تیکت می‌زنی',
+    text: 'در دیسکورد کینیوا یک تیکت باز می‌کنی؛ پشتیبانی جواب می‌دهد، موجودی و زمان تحویل همان‌جا تثبیت می‌شود.',
+  },
+  {
+    art: 'pay' as const,
+    k: '۰۳',
+    title: 'ریالی پرداخت می‌کنی',
+    text: 'فاکتور می‌گیری و مبلغ را ریالی واریز می‌کنی. هیچ کارت خارجی و هیچ واسطه‌ای در کار نیست.',
+  },
+  {
+    art: 'delivery' as const,
+    k: '۰۴',
+    title: 'تحویل می‌گیری',
+    text: 'در بازهٔ اعلام‌شدهٔ همان محصول — بین ۱ تا ۴۸ ساعت — سفارش تحویل می‌شود و تیکت تا رضایتت باز می‌ماند.',
+  },
+];
+
+const story = (): string => `
+<section class="story" id="story">
+  <div class="story-pin">
+    <div class="wrap story-head">
+      <span class="eyebrow">قصهٔ یک سفارش</span>
+      <h2 class="sec split">چهار قدم تا تحویل، بدون هیچ ابهامی</h2>
+    </div>
+    <div class="story-track">
+      ${STORY.map(
+        (s, i) => `<article class="story-card${i === 0 ? ' is-on' : ''}" data-i="${i}">
+        <span class="sc-k">${s.k}</span>
+        <div class="sc-art">${ART[s.art]}</div>
+        <h3>${s.title}</h3>
+        <p>${s.text}</p>
+      </article>`,
+      ).join('')}
+      <div class="story-end">
+        <span class="se-t">و تمام.</span>
+        <p>سفارش بعدی‌ات را از همین‌جا شروع کن.</p>
+        <a class="btn btn-gold" href="${DISCORD}" target="_blank" rel="noopener">${icon('discord')} ورود به دیسکورد</a>
+      </div>
+    </div>
+    <div class="wrap story-foot"><div class="story-dots">${STORY.map(
+      (_, i) => `<i class="${i === 0 ? 'on' : ''}"></i>`,
+    ).join('')}</div><span class="sf-hint">اسکرول کن</span></div>
+  </div>
+</section>`;
 
 const bestSellers = (): string => {
   const picks = PRODUCTS.filter((p) =>
@@ -108,60 +197,38 @@ const bestSellers = (): string => {
   ];
   return `
 <section class="best"><div class="wrap">
-  ${sectionHead('پرفروش‌ها', 'محصولات پرطرفدار کینیوا', 'قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.')}
+  ${sectionHead('پرفروش‌ها', 'محصولات پرطرفدار کینیوا', 'قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.', false, { href: 'products/', label: 'کاتالوگ کامل' })}
   <div class="filters" id="filters">
     ${filters.map(([f, l], i) => `<button${i === 0 ? ' class="act"' : ''} data-f="${f}">${l}</button>`).join('')}
   </div>
   <div class="grid g4" id="grid">${picks.map((p) => productCard(p, { compact: true })).join('')}</div>
-  <div class="center-cta"><a class="btn btn-ghost" href="products/">مشاهدهٔ همهٔ ۱۷ محصول ${icon('arrow')}</a></div>
+  <div class="center-cta"><a class="btn btn-ghost" href="products/">مشاهدهٔ همهٔ ۱۸ محصول ${icon('arrow')}</a></div>
 </div></section>`;
 };
 
-
-const TESTIMONIALS = [
-  {
-    name: 'آرمان',
-    role: 'بازیکن دونات اس ام پی',
-    text: 'دو بار پول دونات گرفتم، هر دو بار زیر ۲۴ ساعت تحویل شد. پشتیبانی هم توی تیکت سریع جواب داد.',
-    stars: 5,
-    initials: 'آ',
-  },
-  {
-    name: 'سارا',
-    role: 'استریمر تویچ',
-    text: 'پک اورلی رو با هماهنگی برند خودم گرفتم؛ دقیقاً همون چیزی بود که می‌خواستم و دو بار بازنگری رایگان داشت.',
-    stars: 5,
-    initials: 'س',
-  },
-  {
-    name: 'مهدی',
-    role: 'ادمین سرور',
-    text: 'برای سرور لوگو و بنر سفارش دادم. سه پیشنهاد اولیه دادند و تا نتیجهٔ نهایی اصلاح کردند.',
-    stars: 5,
-    initials: 'م',
-  },
-];
-
-const testimonials = (): string => `
-<section class="reviews"><div class="wrap">
-  ${sectionHead('نظر مشتری‌ها', 'کینیوا از زبان خریدارها')}
-  <div class="grid g3">
-    ${TESTIMONIALS.map(
-      (t) => `<figure class="review rv">
-        <div class="stars">${Array.from({ length: t.stars }, () => icon('star')).join('')}</div>
-        <blockquote>${t.text}</blockquote>
-        <figcaption><span class="ava">${t.initials}</span><span><b>${t.name}</b><i>${t.role}</i></span></figcaption>
-      </figure>`,
-    ).join('')}
+/* ── بخش «بی‌پرده»: بیانیهٔ کوتاه + جدول مشخصات ───────────────────────── */
+const statement = (): string => `
+<section class="statement">
+  <div class="st-orb" data-par="-0.08" aria-hidden="true">${ART.secure}</div>
+  <div class="wrap st-in">
+    <span class="eyebrow">تعهد کینیوا</span>
+    <h2 class="st-h split">هیچ چیز پنهان نیست؛ نه قیمت، نه زمان تحویل.</h2>
+    <p class="st-p">همهٔ چیزهایی که یک فروشگاه باید شفاف بگوید، در همین چهار خط خلاصه شده است.</p>
+    <div class="spec-list">
+      <div class="spec-row rv"><span>بازهٔ تحویل</span><b>۱ تا ۴۸ ساعت</b><i>${icon('bolt')}</i></div>
+      <div class="spec-row rv"><span>روش پرداخت</span><b>ریالی، با فاکتور</b><i>${icon('card')}</i></div>
+      <div class="spec-row rv"><span>ضمانت</span><b>بازگشت کامل وجه</b><i>${icon('shield')}</i></div>
+      <div class="spec-row rv"><span>پشتیبانی</span><b>۲۴/۷ در دیسکورد</b><i>${icon('clock')}</i></div>
+    </div>
   </div>
-</div></section>`;
+</section>`;
 
 const trustRow = (): string => `
 <section class="tight"><div class="wrap"><div class="grid g4">
-  ${trustCard('bolt', 'تحویل سریع', 'بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.')}
-  ${trustCard('card', 'پرداخت ریالی', 'بدون کارت خارجی؛ مبلغ را ریالی پرداخت می‌کنید و فاکتور می‌گیرید.')}
-  ${trustCard('shield', 'ضمانت بازگشت وجه', 'اگر تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود.')}
-  ${trustCard('clock', 'پشتیبانی ۲۴/۷', 'تیم پشتیبانی همیشه در دیسکورد آنلاین است؛ تیکت بزنید و پاسخ بگیرید.')}
+  ${artCard('delivery', 'تحویل سریع', 'بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.')}
+  ${artCard('pay', 'پرداخت ریالی', 'بدون کارت خارجی؛ مبلغ را ریالی پرداخت می‌کنید و فاکتور می‌گیرید.')}
+  ${artCard('shield', 'ضمانت بازگشت وجه', 'اگر تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود.')}
+  ${artCard('support', 'پشتیبانی ۲۴/۷', 'تیم پشتیبانی همیشه در دیسکورد آنلاین است؛ تیکت بزنید و پاسخ بگیرید.')}
 </div></div></section>`;
 
 const steps = (): string => `
@@ -180,6 +247,41 @@ const steps = (): string => `
   <div class="center-cta"><a class="btn btn-ghost" href="process/">راهنمای کامل سفارش ${icon('arrow')}</a></div>
 </div></section>`;
 
+const TESTIMONIALS = [
+  {
+    name: 'آرمان',
+    role: 'بازیکن دونات اس ام پی',
+    text: 'دو بار پول دونات گرفتم، هر دو بار زیر ۲۴ ساعت تحویل شد. پشتیبانی هم توی تیکت سریع جواب داد.',
+    initials: 'آ',
+  },
+  {
+    name: 'سارا',
+    role: 'استریمر تویچ',
+    text: 'پک اورلی رو با هماهنگی برند خودم گرفتم؛ دقیقاً همون چیزی بود که می‌خواستم و دو بار بازنگری رایگان داشت.',
+    initials: 'س',
+  },
+  {
+    name: 'مهدی',
+    role: 'ادمین سرور',
+    text: 'برای سرور لوگو و بنر سفارش دادم. سه پیشنهاد اولیه دادند و تا نتیجهٔ نهایی اصلاح کردند.',
+    initials: 'م',
+  },
+];
+
+const testimonials = (): string => `
+<section class="reviews"><div class="wrap">
+  ${sectionHead('نظر مشتری‌ها', 'کینیوا از زبان خریدارها')}
+  <div class="grid g3">
+    ${TESTIMONIALS.map(
+      (t) => `<figure class="review rv" data-tilt>
+        <div class="stars">${Array.from({ length: 5 }, () => icon('star')).join('')}</div>
+        <blockquote>${t.text}</blockquote>
+        <figcaption><span class="ava">${t.initials}</span><span><b>${t.name}</b><i>${t.role}</i></span></figcaption>
+      </figure>`,
+    ).join('')}
+  </div>
+</div></section>`;
+
 const blogTeaser = (): string => `
 <section class="blog-teaser"><div class="wrap">
   ${sectionHead('وبلاگ کینیوا', 'راهنما و مقالات', 'چیزهایی که قبل از خرید باید بدانی.')}
@@ -196,8 +298,11 @@ const blogTeaser = (): string => `
 
 export const homePage = (): string => `
 ${heroSlider()}
+${productMarquee()}
 ${quickCats()}
+${story()}
 ${bestSellers()}
+${statement()}
 ${trustRow()}
 <div class="wrap">${statStrip()}</div>
 ${steps()}

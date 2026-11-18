@@ -1,11 +1,28 @@
-# Kiniwa Shop
+# Kiniwa Shop — کینیوا شاپ
 
-TypeScript + Vite multi-page storefront (pure front-end).
+فروشگاه گیمینگ انجمن کینیوا — سایت کامل فارسی/RTL، بدون بک‌اند، ساخته‌شده با **TypeScript + Vite** (MPA) و منتشر‌شده روی GitHub Pages.
 
-Clean URLs:
-- `/` home · `/products/` catalog · `/product/<id>/` product pages
-- `/cat-<name>/` categories · `/blog/`, `/faq/`, `/prices/` …
+## ساختار آدرس‌ها (URL تمیز)
+- `/` صفحهٔ اصلی
+- `/products/` کاتالوگ · `/prices/` `/process/` `/guarantee/` `/faq/` `/about/` `/contact/` `/blog/` `/terms/`
+- `/blog-{donut-smp,minecraft-account,stream-overlay}/`
+- `/cat-{minecraft,donut,hypixel,design,overlay,cosmetics,cape}/`
+- `/product/<id>/` برای هر ۱۸ محصول
 
+هر پوشه یک `index.html` دارد و با `<base href="/kiniwa/">` آدرس دارایی‌ها از هر عمقی درست باز می‌شود.
+
+## نکات نسخهٔ v8
+- **تصویرسازی‌های برداری اختصاصی** (`src/lib/art.ts`): ۹ SVG پرجزئیات با گرادیان طلایی، هاشور و جزئیات ریز. صفحهٔ ضمانت، درباره، مراحل، قیمت‌ها، تماس و سوالات متداول به‌جای عکس محصول از این‌ها استفاده می‌کنند.
+- **لوگو در نسبت اصلی** (۲۴۰×۱۶۵) — بدون کشیدگی؛ ست آیکن کامل: `favicon.ico` + ۱۶/۳۲ + `apple-touch-icon` + `icon-192/512` + `maskable`. لوگوی هدر و فوتر شفاف، چسبیده به متن و بدون قاب.
+- **اسکرول نرم سفارشی** (`src/lib/smooth.ts`): چرخ ماوس و کشیدن لمسی با میان‌یابی نمایی و مومنتوم؛ با `prefers-reduced-motion` خودکار خاموش می‌شود.
+- **قصه‌گویی اسکرول‌محور** در صفحهٔ اصلی (`src/lib/motion.ts`): فصل‌های افقی پین‌شده، مارکی محصولات با عکس اختصاصی هر محصول، پارالاکس، تیتر کلمه‌به‌کلمه، تیلت سه‌بعدی.
+- **بدون قاب خط‌دار**: عمق با شیشهٔ نرم، هایلایت داخلی و سایه ساخته می‌شود.
+- هر ۱۸ محصول عکس اختصاصی خودش را دارد (سبک یکسان: پس‌زمینهٔ برند، عنوان فارسی در «»، کالسکهٔ طلایی + Kiniwa Shop).
+
+## توسعه
 ```bash
-npm install && npm run build   # tsc --noEmit && vite build → dist/
+npm install
+npx tsc --noEmit
+npx vite build      # خروجی در dist/
+npx vite preview --port 4173 --host 0.0.0.0
 ```

@@ -28,7 +28,7 @@ const megaMenu = (): string => `
     ).join('')}
   </div>
   <div class="mega-foot">
-    <span>۱۷ محصول در ۷ دسته</span>
+    <span>۱۸ محصول در ۷ دسته</span>
     <a href="products/">دیدن کاتالوگ کامل ${ICONS.chevron}</a>
   </div>
 </div>`;
@@ -48,7 +48,7 @@ export const renderHeader = (active: string): string => `
 <header class="site-head" id="siteHead">
   <div class="wrap head-row">
     <a class="brand" href="." aria-label="کینیوا شاپ">
-      <img src="assets/img/logo.png" alt="کینیوا شاپ" width="56" height="56">
+      <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="کینیوا شاپ" width="240" height="165" decoding="async">
       <span class="brand-txt"><b>کینیوا <em>شاپ</em></b><i>KINIWA SHOP</i></span>
     </a>
 
@@ -105,7 +105,7 @@ export const renderFooter = (): string => `
   <div class="wrap foot-grid">
     <div class="fbrand">
       <a class="brand" href=".">
-        <img src="assets/img/logo.png" alt="کینیوا شاپ" width="52" height="52">
+        <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="کینیوا شاپ" width="240" height="165" loading="lazy" decoding="async">
         <span class="brand-txt"><b>کینیوا <em>شاپ</em></b><i>KINIWA SHOP</i></span>
       </a>
       <p>فروشگاه گیمینگ کینیوا؛ اکانت ماینکرفت، پول سرورها، خدمات طراحی، اورلی استریم، کازمتیک و کیپ اپتیفاین — با پرداخت ریالی و ضمانت بازگشت وجه.</p>
