@@ -119,10 +119,10 @@ export const renderFooter = (): string => `
     </div>
     <div class="fcol">
       <h4>خدمات</h4>
-      <a href="cat-design.html">طراحی لوگو و بنر</a>
-      <a href="cat-design.html">تامنیل و اسکین</a>
-      <a href="cat-design.html">انیمه‌آرت</a>
-      <a href="cat-overlay.html">اورلی استریم</a>
+      <a href="cat-design/">طراحی لوگو و بنر</a>
+      <a href="cat-design/">تامنیل و اسکین</a>
+      <a href="cat-design/">انیمه‌آرت</a>
+      <a href="cat-overlay/">اورلی استریم</a>
       <a href="prices/">جدول قیمت‌ها</a>
     </div>
     <div class="fcol">

@@ -65,7 +65,7 @@ export function injectJsonLd(slug: string, productId?: string): void {
         '@type': 'ListItem',
         position: i + 1,
         name: (p as { title: string }).title,
-        url: `${SITE}/p-${(p as { id: string }).id}.html`,
+        url: `${SITE}/product/${(p as { id: string }).id}/`,
       })),
     });
   }

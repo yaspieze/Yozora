@@ -305,7 +305,7 @@ export const PRODUCTS: Product[] = [
 
 export const BLOG_POSTS = [
   {
-    slug: 'blog-minecraft-account.html',
+    slug: 'blog-minecraft-account/',
     title: 'راهنمای کامل خرید اکانت ماینکرفت',
     desc: 'تفاوت اکانت فول اکسس و اکانت معمولی، ریسک‌ها و چک‌لیست قبل از خرید.',
     image: 'assets/img/blog-account.jpg',
@@ -313,7 +313,7 @@ export const BLOG_POSTS = [
     time: '۶ دقیقه',
   },
   {
-    slug: 'blog-donut-smp.html',
+    slug: 'blog-donut-smp/',
     title: 'اقتصاد پول دونات اس ام پی چطور کار می‌کند؟',
     desc: 'قیمت هر میلیون، حداقل خرید و بهترین زمان برای خرید حجم بالا.',
     image: 'assets/img/blog-donut.jpg',
@@ -321,7 +321,7 @@ export const BLOG_POSTS = [
     time: '۵ دقیقه',
   },
   {
-    slug: 'blog-stream-overlay.html',
+    slug: 'blog-stream-overlay/',
     title: 'چک‌لیست اورلی استریم حرفه‌ای',
     desc: 'چه اجزایی یک پک اورلی کامل باید داشته باشد و چطور با برند شما هماهنگ شود.',
     image: 'assets/img/blog-overlay.jpg',

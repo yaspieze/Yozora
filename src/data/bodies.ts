@@ -5,13 +5,13 @@ export const bodies: Record<string, string> = {
   <h1 style="margin-top:1.4rem">این صفحه پیدا نشد</h1>
   <p class="lead" style="margin-top:.8rem">شاید آدرس عوض شده باشد. از این‌جا ادامه بده:</p>
   <div class="hero-btns" style="justify-content:center">
-    <a class="btn btn-gold" href="index.html">صفحهٔ اصلی</a>
-    <a class="btn btn-ghost" href="products.html">محصولات</a>
+    <a class="btn btn-gold" href="./">صفحهٔ اصلی</a>
+    <a class="btn btn-ghost" href="products/">محصولات</a>
   </div>
 </div></section>`,
-"about": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="about.html">درباره ما</a></div></div>
+"about": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="about/">درباره ما</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">درباره ما</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">درباره ما</span></div></div>
 <section class="phero"><div class="wrap">
   <span class="eyebrow">دربارهٔ کینیوا</span><h1>یک انجمن، یک فروشگاه، یک استاندارد</h1>
   <p class="lead" style="max-width:70ch">کینیوا شاپ فروشگاه رسمی انجمن کینیوا است؛ جایی که بازیکن‌ها اکانت، پول سرور، خدمات طراحی و کازمتیک را
@@ -46,13 +46,13 @@ export const bodies: Record<string, string> = {
     <p>۷۶۳ عضو از قبل آنجا هستند؛ خوش آمدی.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"blog-donut-smp": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a><span>/</span><span style="color:#c3c9d6">پول دونات اس ام پی چطور کار می‌کند؟</span></div></div>
+"blog-donut-smp": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">پول دونات اس ام پی چطور کار می‌کند؟</span></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a><span>/</span><span style="color:#c3c9d6">پول دونات اس ام پی چطور کار می‌کند؟</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">پول دونات اس ام پی چطور کار می‌کند؟</span></div></div>
 <section class="phero"><div class="wrap-narrow" style="text-align:center">
   <span class="eyebrow">دونات اس ام پی</span><h1 style="font-size:clamp(1.6rem,3.4vw,2.5rem)">پول دونات اس ام پی چطور کار می‌کند؟</h1>
   <p class="lead" style="margin-top:.8rem">از موجودی سرور تا قیمت هر میلیون؛ همه‌چیز دربارهٔ اقتصاد دونات اس ام پی.</p>
@@ -93,13 +93,13 @@ export const bodies: Record<string, string> = {
     <p>در دیسکورد تیکت بزن و قیمت و زمان تحویل را بگیر.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"blog-minecraft-account": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a><span>/</span><span style="color:#c3c9d6">راهنمای کامل خرید اکانت ماینکرفت</span></div></div>
+"blog-minecraft-account": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">راهنمای کامل خرید اکانت ماینکرفت</span></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a><span>/</span><span style="color:#c3c9d6">راهنمای کامل خرید اکانت ماینکرفت</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">راهنمای کامل خرید اکانت ماینکرفت</span></div></div>
 <section class="phero"><div class="wrap-narrow" style="text-align:center">
   <span class="eyebrow">راهنمای خرید</span><h1 style="font-size:clamp(1.6rem,3.4vw,2.5rem)">راهنمای کامل خرید اکانت ماینکرفت</h1>
   <p class="lead" style="margin-top:.8rem">قبل از خرید اکانت، این ۶ نکته را بدانید تا انتخاب درستی داشته باشید.</p>
@@ -142,13 +142,13 @@ export const bodies: Record<string, string> = {
     <p>در دیسکورد تیکت بزن و قیمت و زمان تحویل را بگیر.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"blog-stream-overlay": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a><span>/</span><span style="color:#c3c9d6">اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟</span></div></div>
+"blog-stream-overlay": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟</span></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a><span>/</span><span style="color:#c3c9d6">اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟</span></div></div>
 <section class="phero"><div class="wrap-narrow" style="text-align:center">
   <span class="eyebrow">استریم</span><h1 style="font-size:clamp(1.6rem,3.4vw,2.5rem)">اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟</h1>
   <p class="lead" style="margin-top:.8rem">چک‌لیست کامل اجزای یک پک اورلی تمیز و حرفه‌ای برای استریم.</p>
@@ -185,22 +185,22 @@ export const bodies: Record<string, string> = {
     <p>در دیسکورد تیکت بزن و قیمت و زمان تحویل را بگیر.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"blog": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="blog.html">وبلاگ</a></div></div>
+"blog": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">وبلاگ</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">وبلاگ</span></div></div>
 <section class="phero"><div class="wrap"><span class="eyebrow">وبلاگ کینیوا</span><h1>راهنماها و مقاله‌های گیمینگ</h1>
 <p class="lead" style="max-width:70ch">چیزهایی که قبل از خرید باید بدانی؛ کوتاه، بدون حاشیه و از تجربهٔ خودمان.</p></div></section>
-<section style="padding-top:0"><div class="wrap"><div class="grid g3"><a class="bcard rv" href="blog-minecraft-account.html">
+<section style="padding-top:0"><div class="wrap"><div class="grid g3"><a class="bcard rv" href="blog-minecraft-account/">
   <img src="assets/img/01-minecraft.jpg" alt="راهنمای کامل خرید اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="body"><div class="meta"><span>راهنمای خرید</span><span>۶ دقیقه</span></div>
-  <h3>راهنمای کامل خرید اکانت ماینکرفت</h3><p>قبل از خرید اکانت، این ۶ نکته را بدانید تا انتخاب درستی داشته باشید.</p><span class="go">ادامهٔ مطلب ←</span></div></a><a class="bcard rv" href="blog-donut-smp.html">
+  <h3>راهنمای کامل خرید اکانت ماینکرفت</h3><p>قبل از خرید اکانت، این ۶ نکته را بدانید تا انتخاب درستی داشته باشید.</p><span class="go">ادامهٔ مطلب ←</span></div></a><a class="bcard rv" href="blog-donut-smp/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی چطور کار می‌کند؟" loading="lazy" width="1600" height="900">
   <div class="body"><div class="meta"><span>دونات اس ام پی</span><span>۵ دقیقه</span></div>
-  <h3>پول دونات اس ام پی چطور کار می‌کند؟</h3><p>از موجودی سرور تا قیمت هر میلیون؛ همه‌چیز دربارهٔ اقتصاد دونات اس ام پی.</p><span class="go">ادامهٔ مطلب ←</span></div></a><a class="bcard rv" href="blog-stream-overlay.html">
+  <h3>پول دونات اس ام پی چطور کار می‌کند؟</h3><p>از موجودی سرور تا قیمت هر میلیون؛ همه‌چیز دربارهٔ اقتصاد دونات اس ام پی.</p><span class="go">ادامهٔ مطلب ←</span></div></a><a class="bcard rv" href="blog-stream-overlay/">
   <img src="assets/img/05-overlay.jpg" alt="اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟" loading="lazy" width="1600" height="900">
   <div class="body"><div class="meta"><span>استریم</span><span>۴ دقیقه</span></div>
   <h3>اورلی استریم حرفه‌ای به چه چیزهایی نیاز دارد؟</h3><p>چک‌لیست کامل اجزای یک پک اورلی تمیز و حرفه‌ای برای استریم.</p><span class="go">ادامهٔ مطلب ←</span></div></a></div></div></section>
@@ -212,11 +212,11 @@ export const bodies: Record<string, string> = {
     <p>در دیسکورد بپرس؛ تیم کینیوا راهنمایی‌ات می‌کند.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-cape": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">کیپ اپتیفاین</span></div></div>
+"cat-cape": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">کیپ اپتیفاین</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -226,7 +226,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">قابل مشاهده برای همه</span><span class="pill y">۱ تا ۷۲ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۳۲۹٬۰۰۰ تومان</span></div>
     </div>
@@ -237,11 +237,11 @@ export const bodies: Record<string, string> = {
       <div class="note green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg><div>کیپ به‌صورت اختصاصی روی اکانت شما اعمال می‌شود و در بازی برای سایر بازیکن‌ها نمایش داده می‌شود.</div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>کیپ روی چه اکانتی اعمال می‌شود؟</summary><p>روی اکانت خودتان؛ نیازی به تغییر اکانت نیست.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>۱ تا ۷۲ ساعت.</p></details><details class="q"><summary>کیپ را همه می‌بینند؟</summary><p>بله، برای همهٔ بازیکن‌هایی که اپتیفاین دارند قابل مشاهده است.</p></details><details class="q"><summary>اگر مشکلی پیش بیاید؟</summary><p>طبق ضمانت کینیوا پیگیری و در صورت نیاز تعویض می‌شود.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut.html">
+  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel.html">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -252,11 +252,11 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-cosmetics": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">کازمتیک</span></div></div>
+"cat-cosmetics": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">کازمتیک</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -266,7 +266,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill g">همهٔ کلاینت‌ها</span><span class="pill y">قیمت دلاری آیتم</span><span class="pill b">استعلام در تیکت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: استعلام در تیکت</span></div>
     </div>
@@ -277,11 +277,11 @@ export const bodies: Record<string, string> = {
       <div><div class="note "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div>قیمت کازمتیک بر اساس دلاری بودن آیتم محاسبه می‌شود؛ قبل از سفارش، نام دقیق آیتم و کلاینت را در تیکت بنویسید تا قیمت لحظه‌ای اعلام شود.</div></div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>کدام کلاینت‌ها پشتیبانی می‌شوند؟</summary><p>همهٔ کلاینت‌های ماینکرفت که آیتم کازمتیکی دارند.</p></details><details class="q"><summary>قیمت چطور حساب می‌شود؟</summary><p>بر اساس دلاری بودن آیتم؛ در تیکت قیمت لحظه‌ای اعلام می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>بسته به آیتم و کلاینت متفاوت است؛ در تیکت اعلام می‌شود.</p></details><details class="q"><summary>آیا امن است؟</summary><p>بله، انجام سفارش امن و طبق قوانین کلاینت است.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut.html">
+  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel.html">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -292,11 +292,11 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-design": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">خدمات فتوشاپ</span></div></div>
+"cat-design": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">خدمات فتوشاپ</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -306,7 +306,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">ساده و حرفه‌ای</span><span class="pill y">۱ تا ۷۲ ساعت</span><span class="pill b">۵ سرویس</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۰۰٬۰۰۰ تومان</span></div>
     </div>
@@ -321,11 +321,11 @@ export const bodies: Record<string, string> = {
         <div class="step rv"><h3>تحویل فایل</h3><p>فایل نهایی با کیفیت بالا تحویل داده می‌شود.</p></div>
       </div></div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>تفاوت ساده و حرفه‌ای چیست؟</summary><p>در جزئیات، تعداد بازنگری و کیفیت خروجی؛ نسخهٔ حرفه‌ای زمان بیشتری می‌برد.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>بین ۱ تا ۷۲ ساعت بسته به نوع سفارش.</p></details><details class="q"><summary>چند بار می‌توانم اصلاح بخواهم؟</summary><p>در نسخهٔ ساده محدود و در نسخهٔ حرفه‌ای بیشتر است؛ در تیکت مشخص می‌شود.</p></details><details class="q"><summary>فایل خروجی چه فرمتی است؟</summary><p>PNG با کیفیت بالا؛ بسته به سفارش فرمت‌های دیگر هم قابل ارائه است.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut.html">
+  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel.html">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -336,11 +336,11 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-donut": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">دونات اس ام پی</span></div></div>
+"cat-donut": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">دونات اس ام پی</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -350,7 +350,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill g">موجودی ۳۰۰ میلیون</span><span class="pill ">حداقل ۵۰ میلیون</span><span class="pill y">۴٬۰۰۰ / میلیون</span><span class="pill b">۴۸ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">هر میلیون: ۴٬۰۰۰ تومان</span></div>
     </div>
@@ -371,11 +371,11 @@ export const bodies: Record<string, string> = {
       </div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>حداقل خرید چقدر است؟</summary><p>۵۰ میلیون. کمتر از این مقدار سفارش ثبت نمی‌شود.</p></details><details class="q"><summary>موجودی چقدر است؟</summary><p>در حال حاضر ۳۰۰ میلیون؛ بعد از اتمام مجدد شارژ می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>حداقل ۴۸ ساعت. برای مقدار زیاد زمان ممکن است بیشتر شود.</p></details><details class="q"><summary>سقف خرید چقدر است؟</summary><p>سقف خرید همان موجودی سرور است؛ تا ۳۰۰ میلیون با قیمت ۴٬۰۰۰ تومان به‌ازای هر میلیون.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel.html">
+  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design.html">
+  <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -386,11 +386,11 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-hypixel": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">هایپیکسل و اسکای‌بلاک</span></div></div>
+"cat-hypixel": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">هایپیکسل و اسکای‌بلاک</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -400,7 +400,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span><span class="pill y">قیمت دلار روز</span><span class="pill b">اسکای‌بلاک ۶٬۰۰۰</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: استعلام در تیکت</span></div>
     </div>
@@ -418,11 +418,11 @@ export const bodies: Record<string, string> = {
       <div><div class="kv"><div class="row"><span>محصولات هایپیکسل</span><b>قیمت دلار روز</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۲۴ ساعت</b></div><div class="row"><span>کوین اسکای‌بلاک</span><b>۶٬۰۰۰ / میلیون</b></div><div class="row"><span>زمان تحویل اسکای‌بلاک</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>وضعیت</span><b>امن و قانونی</b></div></div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>چرا قیمت ثابت نیست؟</summary><p>قیمت محصولات هایپیکسل و کازمتیک بر اساس دلار روز محاسبه می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>هایپیکسل ۱ تا ۲۴ ساعت و کوین اسکای‌بلاک ۱ تا ۷۲ ساعت.</p></details><details class="q"><summary>آیا امن است؟</summary><p>بله، همهٔ سفارش‌ها به‌صورت قانونی و امن انجام می‌شود.</p></details><details class="q"><summary>چه محصولی از هایپیکسل موجود است؟</summary><p>در حال حاضر همهٔ محصولات موجود قابل تهیه است؛ در تیکت بپرسید.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut.html">
+  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design.html">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -433,11 +433,11 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-minecraft": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">اکانت ماینکرفت</span></div></div>
+"cat-minecraft": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">اکانت ماینکرفت</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -447,7 +447,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill g">فول اکسس</span><span class="pill ">جاوا + بدراک</span><span class="pill y">تغییر اطلاعات</span><span class="pill b">۴۸ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۲٬۲۴۹٬۰۰۰ تومان</span></div>
     </div>
@@ -465,11 +465,11 @@ export const bodies: Record<string, string> = {
         <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div><h3>جاوا + بدراک</h3><p>قابل استفاده هم روی نسخهٔ جاوا و هم بدراک.</p></div>
       </div></div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>اکانت اطلاعاتش قابل تغییر است؟</summary><p>بله، اکانت‌های اقتصادی با فول اکسس تحویل داده می‌شوند و امکان تغییر اطلاعات وجود دارد.</p></details><details class="q"><summary>چقدر طول می‌کشد؟</summary><p>حداکثر ۴۸ ساعت. برای اولویت بیشتر، در تیکت هماهنگ کنید.</p></details><details class="q"><summary>پرداخت به چه صورت است؟</summary><p>ریالی و داخل تیکت دیسکورد؛ فاکتور هم صادر می‌شود.</p></details><details class="q"><summary>اگر مشکلی پیش بیاید؟</summary><p>طبق ضمانت کینیوا تعویض یا بازگشت وجه انجام می‌شود.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-donut.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel.html">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design.html">
+  <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -480,11 +480,11 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"cat-overlay": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a><span>/</span><span style="color:#c3c9d6">اورلی استریم</span></div></div>
+"cat-overlay": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a><span>/</span><span style="color:#c3c9d6">اورلی استریم</span></div></div>
 <!--hero--><section class="phero">
   <div class="wrap phero-grid">
     <div>
@@ -494,7 +494,7 @@ export const bodies: Record<string, string> = {
       <div class="badges"><span class="pill ">کیفیت خوب</span><span class="pill g">کیفیت عالی</span><span class="pill y">پک فونت</span><span class="pill b">۱ تا ۷۲ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
-        <a class="btn btn-ghost" href="prices.html">دیدن جدول قیمت</a>
+        <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۴۵٬۰۰۰ تومان</span></div>
     </div>
@@ -507,11 +507,11 @@ export const bodies: Record<string, string> = {
       <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2.5"/><path d="M2 10h20"/></svg></div><h3>پک فونت</h3><p>در صورت نیاز، پک فونت اختصاصی هم اضافه می‌شود.</p></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>اورلی برای چه نرم‌افزاری است؟</summary><p>برای نرم‌افزارهای رایج استریم؛ فایل‌ها آمادهٔ ایمپورت تحویل داده می‌شوند.</p></details><details class="q"><summary>چند ساعت طول می‌کشد؟</summary><p>۱ تا ۷۲ ساعت بسته به کیفیت انتخابی.</p></details><details class="q"><summary>می‌توانم رنگ‌ها را تغییر دهم؟</summary><p>بله، در نسخهٔ حرفه‌ای هماهنگ‌سازی کامل با برند انجام می‌شود.</p></details><details class="q"><summary>پک فونت چرا لازم است؟</summary><p>برای یکدست شدن تایپوگرافی اورلی با محتوای شما.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
-<a class="btn btn-ghost btn-sm" href="products.html">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft.html">
+<a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut.html">
+  <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel.html">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -522,13 +522,13 @@ export const bodies: Record<string, string> = {
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"contact": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="contact.html">تماس</a></div></div>
+"contact": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="contact/">تماس</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">تماس</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">تماس</span></div></div>
 <section class="phero"><div class="wrap">
   <span class="eyebrow">پشتیبانی</span><h1>با ما در تماس باش</h1>
   <p class="lead" style="max-width:70ch">کل ارتباط کینیوا در دیسکورد انجام می‌شود؛ سریع‌ترین راه، زدن تیکت در سرور است.</p>
@@ -552,13 +552,13 @@ export const bodies: Record<string, string> = {
     <p>ثبت سفارش در دیسکورد کمتر از یک دقیقه وقت می‌برد.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"faq": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="faq.html">سوالات متداول</a></div></div>
+"faq": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="faq/">سوالات متداول</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">سوالات متداول</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">سوالات متداول</span></div></div>
 <section class="phero"><div class="wrap"><span class="eyebrow">سوالات متداول</span><h1>هر چیزی که باید بدانی</h1>
 <p class="lead" style="max-width:70ch">اگر جواب سؤالت را پیدا نکردی، در دیسکورد تیکت بزن؛ سریع پاسخ می‌گیری.</p></div></section>
 <section style="padding-top:0"><div class="wrap-narrow"><div style="margin-bottom:2rem"><h3 class="sub">عمومی و سفارش</h3><div class="faq "><details class="q" open><summary>سفارش چطور ثبت می‌شود؟</summary><p>از طریق تیکت در سرور دیسکورد کینیوا. وارد سرور شوید، در چنل تیکت محصول و مقدار را بنویسید.</p></details><details class="q"><summary>آیا سایت فروشگاه آنلاین دارد؟</summary><p>سایت کاتالوگ و قیمت‌هاست؛ ثبت و پرداخت سفارش داخل دیسکورد انجام می‌شود تا بتوانیم دقیق راهنمایی کنیم.</p></details><details class="q"><summary>حداقل سفارش چقدر است؟</summary><p>برای پول دونات ۵۰ میلیون و برای بقیهٔ محصولات محدودیت خاصی نیست.</p></details><details class="q"><summary>می‌توانم چند سفارش همزمان ثبت کنم؟</summary><p>بله، اما بهتر است هر سفارش تیکت جدا داشته باشد تا پیگیری راحت‌تر باشد.</p></details></div></div><div style="margin-bottom:2rem"><h3 class="sub">پرداخت و تحویل</h3><div class="faq "><details class="q" open><summary>پرداخت ریالی است؟</summary><p>بله، هیچ پرداخت دلاری لازم نیست و فاکتور صادر می‌شود.</p></details><details class="q"><summary>زمان تحویل چقدر است؟</summary><p>هایپیکسل ۱ تا ۲۴ ساعت، طراحی و کیپ ۱ تا ۷۲ ساعت، اکانت ماینکرفت تا ۴۸ ساعت.</p></details><details class="q"><summary>اگر دیرتر تحویل شود؟</summary><p>طبق ضمانت کینیوا پیگیری می‌شود و در صورت عدم انجام، وجه بازگردانده می‌شود.</p></details><details class="q"><summary>تحویل در چه ساعتی انجام می‌شود؟</summary><p>در بازهٔ اعلام‌شده؛ برای هماهنگی دقیق‌تر در تیکت بپرسید.</p></details></div></div><div style="margin-bottom:2rem"><h3 class="sub">محصولات</h3><div class="faq "><details class="q" open><summary>قیمت هایپیکسل چرا ثابت نیست؟</summary><p>چون بر اساس دلار روز محاسبه می‌شود؛ در تیکت قیمت لحظه‌ای اعلام می‌شود.</p></details><details class="q"><summary>اکانت ماینکرفت فول اکسس است؟</summary><p>بله، دسترسی کامل دارد و اطلاعات هم قابل تغییر است.</p></details><details class="q"><summary>کیپ اپتیفاین را همه می‌بینند؟</summary><p>برای همهٔ بازیکن‌هایی که اپتیفاین دارند قابل مشاهده است.</p></details><details class="q"><summary>تفاوت اورلی خوب و عالی چیست؟</summary><p>نسخهٔ عالی جزئیات بیشتر، انیمیشن و هماهنگی کامل با برند دارد.</p></details></div></div></div></section>
@@ -570,13 +570,13 @@ export const bodies: Record<string, string> = {
     <p>در دیسکورد بپرس؛ پشتیبانی کینیوا همه‌روزه آنلاین است.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"guarantee": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="guarantee.html">ضمانت</a></div></div>
+"guarantee": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="guarantee/">ضمانت</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">ضمانت</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">ضمانت</span></div></div>
 <section class="phero"><div class="wrap">
   <span class="eyebrow">ضمانت کینیوا</span><h1>ضمانت، بازگشت وجه و امنیت سفارش</h1>
   <p class="lead" style="max-width:70ch">ما با اعتبار انجمن کار می‌کنیم. برای هر سفارش یک تعهد روشن داریم و پشتیبانی تا رسیدن به نتیجه باز می‌ماند.</p>
@@ -616,13 +616,13 @@ export const bodies: Record<string, string> = {
     <p>اگر سوالی دربارهٔ ضمانت داری، قبل از خرید در تیکت بپرس.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"prices": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="prices.html">قیمت‌ها</a></div></div>
+"prices": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="prices/">قیمت‌ها</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">قیمت‌ها</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">قیمت‌ها</span></div></div>
 <section class="phero"><div class="wrap">
   <span class="eyebrow">تعرفهٔ کامل</span>
   <h1>جدول قیمت‌ها و محاسبه‌گر</h1>
@@ -674,13 +674,13 @@ export const bodies: Record<string, string> = {
     <p>در دیسکورد تیکت بزن، محصول و مقدار را بگو، فاکتور بگیر و پرداخت کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"process": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="process.html">مراحل سفارش</a></div></div>
+"process": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="process/">مراحل سفارش</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">راهنما</span><span>/</span><span style="color:#c3c9d6">مراحل سفارش</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">راهنما</span><span>/</span><span style="color:#c3c9d6">مراحل سفارش</span></div></div>
 <section class="phero"><div class="wrap">
   <span class="eyebrow">راهنما</span><h1>مراحل سفارش در کینیوا</h1>
   <p class="lead" style="max-width:70ch">کل فرآیند داخل دیسکورد انجام می‌شود؛ بدون فرم پیچیده، بدون ثبت‌نام اضافه و بدون نیاز به کارت خارجی.</p>
@@ -721,11 +721,11 @@ export const bodies: Record<string, string> = {
     <p>پشتیبانی کینیوا همه‌روزه در دیسکورد آنلاین است.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"products": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="products.html">محصولات</a></div></div>
+"products": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="products/">محصولات</a></div></div>
 
 <section class="phero"><div class="wrap">
   <span class="eyebrow">کاتالوگ کامل</span>
@@ -746,9 +746,9 @@ export const bodies: Record<string, string> = {
     <button data-f="cape">کیپ</button>
   </div>
   <div class="pgrid grid g3" id="pgrid"><article data-cat="minecraft" class="pcard rv">
-  <a class="thumb" href="cat-minecraft.html"><img src="assets/img/products/p-minecraft-account.jpg" alt="اکانت ماینکرفت اقتصادی" loading="lazy" width="1600" height="900"><span class="tag">ماینکرفت</span></a>
+  <a class="thumb" href="cat-minecraft/"><img src="assets/img/products/p-minecraft-account.jpg" alt="اکانت ماینکرفت اقتصادی" loading="lazy" width="1600" height="900"><span class="tag">ماینکرفت</span></a>
   <div class="body">
-    <h3><a href="cat-minecraft.html">اکانت ماینکرفت اقتصادی</a></h3>
+    <h3><a href="cat-minecraft/">اکانت ماینکرفت اقتصادی</a></h3>
     <p class="desc">اکانت کامل با فول اکسس؛ جاوا و بدراک؛ اطلاعات قابل تغییر.</p>
     <div class="pills"><span class="pill g">فول اکسس</span><span class="pill y">۴۸ ساعت</span></div>
     <div class="pfoot">
@@ -757,9 +757,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="minecraft" class="pcard rv">
-  <a class="thumb" href="cat-minecraft.html"><img src="assets/img/products/p-skin-pro.jpg" alt="اکانت با اولویت تحویل" loading="lazy" width="1600" height="900"><span class="tag">ماینکرفت</span></a>
+  <a class="thumb" href="cat-minecraft/"><img src="assets/img/products/p-skin-pro.jpg" alt="اکانت با اولویت تحویل" loading="lazy" width="1600" height="900"><span class="tag">ماینکرفت</span></a>
   <div class="body">
-    <h3><a href="cat-minecraft.html">اکانت با اولویت تحویل</a></h3>
+    <h3><a href="cat-minecraft/">اکانت با اولویت تحویل</a></h3>
     <p class="desc">ثبت سفارش با اولویت در تیکت برای تحویل در کمترین زمان.</p>
     <div class="pills"><span class="pill g">اولویت</span><span class="pill ">فول اکسس</span></div>
     <div class="pfoot">
@@ -768,9 +768,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="donut" class="pcard rv">
-  <a class="thumb" href="cat-donut.html"><img src="assets/img/products/p-donut-million.jpg" alt="پول دونات — هر میلیون" loading="lazy" width="1600" height="900"><span class="tag">دونات</span></a>
+  <a class="thumb" href="cat-donut/"><img src="assets/img/products/p-donut-million.jpg" alt="پول دونات — هر میلیون" loading="lazy" width="1600" height="900"><span class="tag">دونات</span></a>
   <div class="body">
-    <h3><a href="cat-donut.html">پول دونات — هر میلیون</a></h3>
+    <h3><a href="cat-donut/">پول دونات — هر میلیون</a></h3>
     <p class="desc">حداقل ۵۰ میلیون؛ موجودی سرور ۳۰۰ میلیون.</p>
     <div class="pills"><span class="pill g">۳۰۰M موجودی</span><span class="pill y">۴۸ ساعت</span></div>
     <div class="pfoot">
@@ -779,9 +779,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="hypixel" class="pcard rv">
-  <a class="thumb" href="cat-hypixel.html"><img src="assets/img/products/p-hypixel.jpg" alt="محصولات هایپیکسل" loading="lazy" width="1600" height="900"><span class="tag">هایپیکسل</span></a>
+  <a class="thumb" href="cat-hypixel/"><img src="assets/img/products/p-hypixel.jpg" alt="محصولات هایپیکسل" loading="lazy" width="1600" height="900"><span class="tag">هایپیکسل</span></a>
   <div class="body">
-    <h3><a href="cat-hypixel.html">محصولات هایپیکسل</a></h3>
+    <h3><a href="cat-hypixel/">محصولات هایپیکسل</a></h3>
     <p class="desc">همهٔ آیتم‌های موجود؛ قیمت دلار روز.</p>
     <div class="pills"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span></div>
     <div class="pfoot">
@@ -790,9 +790,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="hypixel" class="pcard rv">
-  <a class="thumb" href="cat-hypixel.html"><img src="assets/img/products/p-skyblock.jpg" alt="کوین اسکای‌بلاک — هر میلیون" loading="lazy" width="1600" height="900"><span class="tag">اسکای‌بلاک</span></a>
+  <a class="thumb" href="cat-hypixel/"><img src="assets/img/products/p-skyblock.jpg" alt="کوین اسکای‌بلاک — هر میلیون" loading="lazy" width="1600" height="900"><span class="tag">اسکای‌بلاک</span></a>
   <div class="body">
-    <h3><a href="cat-hypixel.html">کوین اسکای‌بلاک — هر میلیون</a></h3>
+    <h3><a href="cat-hypixel/">کوین اسکای‌بلاک — هر میلیون</a></h3>
     <p class="desc">کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.</p>
     <div class="pills"><span class="pill g">۷۲ ساعت</span><span class="pill ">قیمت میلیونی</span></div>
     <div class="pfoot">
@@ -801,9 +801,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-logo.jpg" alt="طراحی لوگو" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-logo.jpg" alt="طراحی لوگو" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">طراحی لوگو</a></h3>
+    <h3><a href="cat-design/">طراحی لوگو</a></h3>
     <p class="desc">لوگوی اختصاصی برای سرور یا کانال شما.</p>
     <div class="pills"><span class="pill g">اختصاصی</span></div>
     <div class="pfoot">
@@ -812,9 +812,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-logo.jpg" alt="بنر ساده" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-logo.jpg" alt="بنر ساده" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">بنر ساده</a></h3>
+    <h3><a href="cat-design/">بنر ساده</a></h3>
     <p class="desc">بنر مناسب دیسکورد و شبکه‌های اجتماعی.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
@@ -823,9 +823,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-logo.jpg" alt="بنر حرفه‌ای" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-logo.jpg" alt="بنر حرفه‌ای" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">بنر حرفه‌ای</a></h3>
+    <h3><a href="cat-design/">بنر حرفه‌ای</a></h3>
     <p class="desc">نسخهٔ کامل با جزئیات و بازنگری بیشتر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
@@ -834,9 +834,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-logo.jpg" alt="تامنیل یوتیوب (ساده)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-logo.jpg" alt="تامنیل یوتیوب (ساده)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">تامنیل یوتیوب (ساده)</a></h3>
+    <h3><a href="cat-design/">تامنیل یوتیوب (ساده)</a></h3>
     <p class="desc">تامنیل کلیک‌خور برای ویدیوهای گیمینگ.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
@@ -845,9 +845,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-logo.jpg" alt="تامنیل یوتیوب (حرفه‌ای)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-logo.jpg" alt="تامنیل یوتیوب (حرفه‌ای)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">تامنیل یوتیوب (حرفه‌ای)</a></h3>
+    <h3><a href="cat-design/">تامنیل یوتیوب (حرفه‌ای)</a></h3>
     <p class="desc">نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
@@ -856,9 +856,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-skin-pro.jpg" alt="اسکین ماینکرفت (ساده)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-skin-pro.jpg" alt="اسکین ماینکرفت (ساده)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">اسکین ماینکرفت (ساده)</a></h3>
+    <h3><a href="cat-design/">اسکین ماینکرفت (ساده)</a></h3>
     <p class="desc">اسکین اختصاصی آمادهٔ آپلود.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
@@ -867,9 +867,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-skin-pro.jpg" alt="اسکین ماینکرفت (حرفه‌ای)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-skin-pro.jpg" alt="اسکین ماینکرفت (حرفه‌ای)" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">اسکین ماینکرفت (حرفه‌ای)</a></h3>
+    <h3><a href="cat-design/">اسکین ماینکرفت (حرفه‌ای)</a></h3>
     <p class="desc">اسکین با جزئیات و سایه‌پردازی بیشتر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
@@ -878,9 +878,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design.html"><img src="assets/img/products/p-anime.jpg" alt="انیمه‌آرت" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
+  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-anime.jpg" alt="انیمه‌آرت" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
   <div class="body">
-    <h3><a href="cat-design.html">انیمه‌آرت</a></h3>
+    <h3><a href="cat-design/">انیمه‌آرت</a></h3>
     <p class="desc">آرت انیمه‌استایل در سه سطح.</p>
     <div class="pills"><span class="pill y">۳ سطح</span></div>
     <div class="pfoot">
@@ -889,9 +889,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="overlay" class="pcard rv">
-  <a class="thumb" href="cat-overlay.html"><img src="assets/img/products/p-overlay-good.jpg" alt="اورلی استریم — کیفیت خوب" loading="lazy" width="1600" height="900"><span class="tag">اورلی</span></a>
+  <a class="thumb" href="cat-overlay/"><img src="assets/img/products/p-overlay-good.jpg" alt="اورلی استریم — کیفیت خوب" loading="lazy" width="1600" height="900"><span class="tag">اورلی</span></a>
   <div class="body">
-    <h3><a href="cat-overlay.html">اورلی استریم — کیفیت خوب</a></h3>
+    <h3><a href="cat-overlay/">اورلی استریم — کیفیت خوب</a></h3>
     <p class="desc">پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.</p>
     <div class="pills"><span class="pill ">کیفیت خوب</span></div>
     <div class="pfoot">
@@ -900,9 +900,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="overlay" class="pcard rv">
-  <a class="thumb" href="cat-overlay.html"><img src="assets/img/products/p-overlay-good.jpg" alt="اورلی استریم — کیفیت عالی" loading="lazy" width="1600" height="900"><span class="tag">اورلی</span></a>
+  <a class="thumb" href="cat-overlay/"><img src="assets/img/products/p-overlay-good.jpg" alt="اورلی استریم — کیفیت عالی" loading="lazy" width="1600" height="900"><span class="tag">اورلی</span></a>
   <div class="body">
-    <h3><a href="cat-overlay.html">اورلی استریم — کیفیت عالی</a></h3>
+    <h3><a href="cat-overlay/">اورلی استریم — کیفیت عالی</a></h3>
     <p class="desc">نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.</p>
     <div class="pills"><span class="pill g">کیفیت عالی</span></div>
     <div class="pfoot">
@@ -911,9 +911,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="overlay" class="pcard rv">
-  <a class="thumb" href="cat-overlay.html"><img src="assets/img/products/p-font.jpg" alt="پک فونت اختصاصی" loading="lazy" width="1600" height="900"><span class="tag">اورلی</span></a>
+  <a class="thumb" href="cat-overlay/"><img src="assets/img/products/p-font.jpg" alt="پک فونت اختصاصی" loading="lazy" width="1600" height="900"><span class="tag">اورلی</span></a>
   <div class="body">
-    <h3><a href="cat-overlay.html">پک فونت اختصاصی</a></h3>
+    <h3><a href="cat-overlay/">پک فونت اختصاصی</a></h3>
     <p class="desc">پک فونت فارسی/لاتین مناسب اورلی و تامنیل.</p>
     <div class="pills"><span class="pill ">پک فونت</span></div>
     <div class="pfoot">
@@ -922,9 +922,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="cosmetic" class="pcard rv">
-  <a class="thumb" href="cat-cosmetics.html"><img src="assets/img/products/p-cosmetics.jpg" alt="کازمتیک کلاینت‌های ماینکرفت" loading="lazy" width="1600" height="900"><span class="tag">کازمتیک</span></a>
+  <a class="thumb" href="cat-cosmetics/"><img src="assets/img/products/p-cosmetics.jpg" alt="کازمتیک کلاینت‌های ماینکرفت" loading="lazy" width="1600" height="900"><span class="tag">کازمتیک</span></a>
   <div class="body">
-    <h3><a href="cat-cosmetics.html">کازمتیک کلاینت‌های ماینکرفت</a></h3>
+    <h3><a href="cat-cosmetics/">کازمتیک کلاینت‌های ماینکرفت</a></h3>
     <p class="desc">همهٔ کلاینت‌ها؛ قیمت بر اساس دلاری بودن آیتم.</p>
     <div class="pills"><span class="pill g">همهٔ کلاینت‌ها</span><span class="pill y">دلاری</span></div>
     <div class="pfoot">
@@ -933,9 +933,9 @@ export const bodies: Record<string, string> = {
     </div>
   </div>
 </article><article data-cat="cape" class="pcard rv">
-  <a class="thumb" href="cat-cape.html"><img src="assets/img/products/p-cape.jpg" alt="کیپ اپتیفاین" loading="lazy" width="1600" height="900"><span class="tag">کیپ</span></a>
+  <a class="thumb" href="cat-cape/"><img src="assets/img/products/p-cape.jpg" alt="کیپ اپتیفاین" loading="lazy" width="1600" height="900"><span class="tag">کیپ</span></a>
   <div class="body">
-    <h3><a href="cat-cape.html">کیپ اپتیفاین</a></h3>
+    <h3><a href="cat-cape/">کیپ اپتیفاین</a></h3>
     <p class="desc">کیپ اختصاصی روی اکانت شما.</p>
     <div class="pills"><span class="pill g">اختصاصی</span><span class="pill y">۷۲ ساعت</span></div>
     <div class="pfoot">
@@ -953,13 +953,13 @@ export const bodies: Record<string, string> = {
     <p>اگر محصول یا سرویس خاصی می‌خواهی که در لیست نیست، در دیسکورد تیکت بزن؛ اگر قابل تهیه باشد برایت انجام می‌دهیم.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
       <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد کینیوا</a>
-      <a class="btn btn-ghost" href="products.html">همهٔ محصولات</a>
+      <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
 </div></div></section>`,
-"terms": `<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><a href="terms.html">قوانین</a></div></div>
+"terms": `<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="terms/">قوانین</a></div></div>
 
-<div class="wrap"><div class="crumbs"><a href="index.html">خانه</a><span>/</span><span style="color:#c3c9d6">قوانین</span></div></div>
+<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><span style="color:#c3c9d6">قوانین</span></div></div>
 <section class="phero"><div class="wrap"><span class="eyebrow">قوانین</span><h1>قوانین و شرایط استفاده</h1>
 <p class="lead" style="max-width:70ch">این صفحه شرایط خرید از کینیوا شاپ را مشخص می‌کند. با ثبت سفارش، این شرایط را می‌پذیری.</p></div></section>
 <section style="padding-top:0"><div class="wrap-narrow"><div class="article">
