@@ -26,7 +26,7 @@ const injectArt = (slug: string, html: string): string => {
 
   if (slug === 'guarantee') {
     out = out.replace(
-      /<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت کینیوا"[^>]*>/,
+      /<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,
       `<div class="guar-art">${ART.shield}</div>`,
     );
   }
@@ -40,7 +40,7 @@ const injectArt = (slug: string, html: string): string => {
       .map(([k, t, d]) => artCard(k as keyof typeof ART, t, d))
       .join(''),
     about: [
-      ['community', 'یک انجمن، نه یک مغازه', 'کینیوا از دل یک انجمن ۷۶۳ نفری بیرون آمده؛ مشتری‌ها همان اعضای انجمن‌اند.'],
+      ['community', 'یک انجمن، نه یک مغازه', 'یوزورا از دل یک انجمن ۷۶۳ نفری بیرون آمده؛ مشتری‌ها همان اعضای انجمن‌اند.'],
       ['delivery', 'تحویل ۱ تا ۴۸ ساعت', 'بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ.'],
       ['pay', 'پرداخت ریالی و فاکتور', 'بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود.'],
     ]
@@ -68,7 +68,7 @@ const injectArt = (slug: string, html: string): string => {
       .map(([k, t, d]) => artCard(k as keyof typeof ART, t, d))
       .join(''),
     contact: [
-      ['community', 'دیسکورد', 'سریع‌ترین راه ارتباط، تیکت در سرور کینیوا شاپ است.'],
+      ['community', 'دیسکورد', 'سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است.'],
       ['support', 'پشتیبانی ۲۴/۷', 'تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب.'],
       ['pay', 'هماهنگی پرداخت', 'برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم.'],
     ]

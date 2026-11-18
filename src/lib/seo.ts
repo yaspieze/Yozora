@@ -14,12 +14,12 @@ export function injectJsonLd(slug: string, productId?: string): void {
   script({
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'کینیوا شاپ',
-    alternateName: 'Kiniwa Shop',
+    name: 'یوزورا شاپ',
+    alternateName: 'Yozora Shop',
     url: `${SITE}/`,
     logo: `${SITE}/assets/img/logo.png`,
     sameAs: [DISCORD],
-    description: 'فروشگاه گیمینگ کینیوا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین.',
+    description: 'فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین.',
   });
 
   if (productId) {
@@ -32,14 +32,14 @@ export function injectJsonLd(slug: string, productId?: string): void {
         name: p.title,
         description: detail?.long ?? p.desc,
         image: `${SITE}/${p.image}`,
-        brand: { '@type': 'Brand', name: 'کینیوا شاپ' },
+        brand: { '@type': 'Brand', name: 'یوزورا شاپ' },
         offers: {
           '@type': 'Offer',
           priceCurrency: p.price.includes('تومان') ? 'IRR' : undefined,
           price: p.price.replace(/[^۰-۹0-9]/g, '') || undefined,
           availability: 'https://schema.org/InStock',
           url: `${SITE}/product/${p.id}/`,
-          seller: { '@type': 'Organization', name: 'کینیوا شاپ' },
+          seller: { '@type': 'Organization', name: 'یوزورا شاپ' },
         },
       });
     }

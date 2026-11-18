@@ -47,9 +47,9 @@ export const renderHeader = (active: string): string => `
 
 <header class="site-head" id="siteHead">
   <div class="wrap head-row">
-    <a class="brand" href="." aria-label="کینیوا شاپ">
-      <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="کینیوا شاپ" width="240" height="165" decoding="async">
-      <span class="brand-txt"><b>کینیوا <em>شاپ</em></b><i>KINIWA SHOP</i></span>
+    <a class="brand" href="." aria-label="یوزورا شاپ">
+      <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="یوزورا شاپ" width="165" height="165" decoding="async">
+      <span class="brand-txt"><b>یوزورا <em>شاپ</em></b><i>YOZORA SHOP</i></span>
     </a>
 
     <form class="head-search" id="headSearch" autocomplete="off" role="search">
@@ -111,10 +111,10 @@ export const renderFooter = (): string => `
   <div class="wrap foot-grid">
     <div class="fbrand">
       <a class="brand" href=".">
-        <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="کینیوا شاپ" width="240" height="165" loading="lazy" decoding="async">
-        <span class="brand-txt"><b>کینیوا <em>شاپ</em></b><i>KINIWA SHOP</i></span>
+        <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="یوزورا شاپ" width="165" height="165" loading="lazy" decoding="async">
+        <span class="brand-txt"><b>یوزورا <em>شاپ</em></b><i>YOZORA SHOP</i></span>
       </a>
-      <p>فروشگاه گیمینگ کینیوا؛ اکانت ماینکرفت، پول سرورها، خدمات طراحی، اورلی استریم، کازمتیک و کیپ اپتیفاین — با پرداخت ریالی و ضمانت بازگشت وجه.</p>
+      <p>فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول سرورها، خدمات طراحی، اورلی استریم، کازمتیک و کیپ اپتیفاین — با پرداخت ریالی و ضمانت بازگشت وجه.</p>
       <div class="fsocial">
         <a href="${DISCORD}" target="_blank" rel="noopener" aria-label="دیسکورد">${ICONS.discord}</a>
       </div>
@@ -152,12 +152,12 @@ export const renderFooter = (): string => `
     <span class="fc-note">Gaslight Studio — interface &amp; motion</span>
   </div></div>
   <div class="foot-bottom"><div class="wrap fb-in">
-    <span>© ۱۴۰۵ کینیوا شاپ — تمام حقوق محفوظ است.</span>
-    <span>ساخته‌شده با ❤ برای انجمن کینیوا</span>
+    <span>© ۱۴۰۵ یوزورا شاپ — تمام حقوق محفوظ است.</span>
+    <span>ساخته‌شده با ❤ برای انجمن یوزورا</span>
   </div></div>
-  <div class="foot-mark" aria-hidden="true">KINIWA</div>
+  <div class="foot-mark" aria-hidden="true">YOZORA</div>
 </footer>
-<div class="side-wm" aria-hidden="true">KINIWA · GASLIGHT STUDIO</div>
+<div class="side-wm" aria-hidden="true">YOZORA · GASLIGHT STUDIO</div>
 <div class="mobar"><a class="btn btn-gold" href="${DISCORD}" target="_blank" rel="noopener">${ICONS.discord} ثبت سفارش در دیسکورد</a></div>`;
 
 export const renderLayout = (active: string): string => `

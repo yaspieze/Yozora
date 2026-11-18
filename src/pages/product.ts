@@ -64,6 +64,7 @@ ${breadcrumbs([
 <section class="prod"><div class="wrap prod-grid">
   <div class="prod-media rv">
     <img src="${p.image}" alt="${p.title}" width="900" height="900" fetchpriority="high">
+    <span class="img-stamp" aria-hidden="true">YOZORA</span>
     <div class="pm-badges">
       ${p.pills.map(pill).join('')}
     </div>
@@ -113,7 +114,7 @@ export const productsPage = (): string => {
 ${breadcrumbs([{ label: 'محصولات' }])}
 <section class="phero"><div class="wrap">
   <span class="eyebrow">کاتالوگ کامل</span>
-  <h1>همهٔ محصولات کینیوا شاپ</h1>
+  <h1>همهٔ محصولات یوزورا شاپ</h1>
   <p class="lead" style="max-width:70ch">۱۸ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
   یا روی هر محصول بزن تا صفحهٔ اختصاصی‌اش با قیمت و جزئیات کامل باز شود.</p>
   <div class="badges">

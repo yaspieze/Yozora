@@ -25,7 +25,7 @@ interface Slide {
 
 const SLIDES: Slide[] = [
   {
-    eyebrow: 'فروشگاه رسمی انجمن کینیوا',
+    eyebrow: 'فروشگاه رسمی انجمن یوزورا',
     title: 'اکانت ماینکرفت فول اکسس',
     em: 'با تحویل تا ۴۸ ساعت',
     text: 'اکانت کامل جاوا و بدراک با اطلاعات قابل تغییر، پشتیبانی واقعی و ضمانت بازگشت وجه.',
@@ -53,7 +53,7 @@ const SLIDES: Slide[] = [
     chipBottom: '۳۰ نفر آنلاین',
   },
   {
-    eyebrow: 'خدمات گرافیک کینیوا',
+    eyebrow: 'خدمات گرافیک یوزورا',
     title: 'لوگو، بنر، تامنیل و اورلی',
     em: 'اختصاصی برای استریم تو',
     text: 'از طرح لوگو تا پک کامل اورلی استریم و انیمه‌آرت؛ همه با تحویل ۱ تا ۳ روز کاری.',
@@ -94,6 +94,7 @@ const heroSlider = (): string => `
           <span class="art-orbit" aria-hidden="true"></span>
           <div class="slide-frame">
             <img src="${s.image}" alt="${s.title}" width="900" height="900" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+            <span class="img-stamp" aria-hidden="true">YOZORA</span>
           </div>
           <span class="float-chip chip-a">${icon('bolt')} ${s.chipTop}</span>
           <span class="float-chip chip-b">${icon('shield')} ${s.chipBottom}</span>
@@ -118,7 +119,7 @@ const productMarquee = (): string => {
     )
     .join('');
   return `
-<div class="marq-band" data-marquee aria-label="محصولات کینیوا">
+<div class="marq-band" data-marquee aria-label="محصولات یوزورا">
   <div class="marq-in">${items}</div>
 </div>`;
 };
@@ -150,7 +151,7 @@ const STORY = [
     art: 'support' as const,
     k: '۰۲',
     title: 'تیکت می‌زنی',
-    text: 'در دیسکورد کینیوا یک تیکت باز می‌کنی؛ پشتیبانی جواب می‌دهد، موجودی و زمان تحویل همان‌جا تثبیت می‌شود.',
+    text: 'در دیسکورد یوزورا یک تیکت باز می‌کنی؛ پشتیبانی جواب می‌دهد، موجودی و زمان تحویل همان‌جا تثبیت می‌شود.',
   },
   {
     art: 'pay' as const,
@@ -238,7 +239,7 @@ const bestSellers = (): string => {
   return `
 <section class="best"><div class="wrap">
   ${chap('۰۴', 'پرفروش‌ها')}
-  ${sectionHead('', 'محصولات پرطرفدار کینیوا', 'قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.', false, { href: 'products/', label: 'کاتالوگ کامل' })}
+  ${sectionHead('', 'محصولات پرطرفدار یوزورا', 'قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.', false, { href: 'products/', label: 'کاتالوگ کامل' })}
   <div class="filters" id="filters">
     ${filters.map(([f, l], i) => `<button${i === 0 ? ' class="act"' : ''} data-f="${f}">${l}</button>`).join('')}
   </div>
@@ -255,7 +256,7 @@ const numbers = (): string => `
     ${chap('۰۵', 'عددها')}
     <h2 class="num-h split">یک انجمن واقعی، پشت یک فروشگاه واقعی.</h2>
     <div class="num-grid">
-      <div class="num rv"><b data-count="763">۰</b><span>عضو انجمن کینیوا</span></div>
+      <div class="num rv"><b data-count="763">۰</b><span>عضو انجمن یوزورا</span></div>
       <div class="num rv"><b data-count="18">۰</b><span>محصول فعال</span></div>
       <div class="num rv"><b data-count="48">۰</b><span>حداکثر ساعت تحویل</span></div>
       <div class="num rv"><b data-count="7">۰</b><span>دستهٔ خدمت</span></div>
@@ -268,7 +269,7 @@ const statement = (): string => `
 <section class="statement">
   <div class="st-orb" data-par="-0.08" aria-hidden="true">${ART.secure}</div>
   <div class="wrap st-in">
-    ${chap('۰۶', 'تعهد کینیوا')}
+    ${chap('۰۶', 'تعهد یوزورا')}
     <h2 class="st-h split">هیچ چیز پنهان نیست؛ نه قیمت، نه زمان تحویل.</h2>
     <p class="st-p">همهٔ چیزهایی که یک فروشگاه باید شفاف بگوید، در همین چهار خط خلاصه شده است.</p>
     <div class="spec-list">
@@ -282,7 +283,7 @@ const statement = (): string => `
 
 const trustRow = (): string => `
 <section class="tight art-row-sec"><div class="wrap">
-  ${chap('۰۷', 'چرا کینیوا')}
+  ${chap('۰۷', 'چرا یوزورا')}
   <div class="grid g3">
     ${artCard('delivery', 'تحویل سریع', 'بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.')}
     ${artCard('pay', 'پرداخت ریالی', 'بدون کارت خارجی؛ مبلغ را ریالی پرداخت می‌کنید و فاکتور می‌گیرید.')}
@@ -296,7 +297,7 @@ const steps = (): string => `
   ${sectionHead('', 'چطور سفارش بدهیم؟')}
   <div class="steps">
     ${[
-      ['ورود به دیسکورد', 'وارد سرور کینیوا شاپ شوید؛ لینک دعوت ثابت و عمومی است.'],
+      ['ورود به دیسکورد', 'وارد سرور یوزورا شاپ شوید؛ لینک دعوت ثابت و عمومی است.'],
       ['ثبت تیکت', 'در چنل تیکت، محصول و مقدار مورد نظرتان را بنویسید.'],
       ['پرداخت ریالی', 'فاکتور و مبلغ نهایی اعلام می‌شود و ریالی پرداخت می‌کنید.'],
       ['تحویل و پشتیبانی', 'در بازهٔ اعلام‌شده تحویل می‌گیرید و تا پایان همراهتان هستیم.'],
@@ -343,7 +344,7 @@ const TESTIMONIALS = [
 const reviews = (): string => `
 <section class="reviews"><div class="wrap">
   ${chap('۰۹', 'نظر مشتری‌ها')}
-  ${sectionHead('', 'کینیوا از زبان خریدارها')}
+  ${sectionHead('', 'یوزورا از زبان خریدارها')}
 </div>
 <div class="marq-band q-band" data-marquee aria-label="نظر مشتری‌ها">
   <div class="marq-in q-in">
@@ -393,4 +394,4 @@ ${blogTeaser()}
   ${faqList(FAQ_ITEMS)}
   <div class="center-cta"><a class="btn btn-ghost" href="faq/">همهٔ سوالات ${icon('arrow')}</a></div>
 </div></section>
-${ctaBand('سفارش را در دیسکورد ثبت کن', 'کافی است در سرور کینیوا شاپ تیکت بزنی؛ بقیه‌اش با ما.')}`;
+${ctaBand('سفارش را در دیسکورد ثبت کن', 'کافی است در سرور یوزورا شاپ تیکت بزنی؛ بقیه‌اش با ما.')}`;
