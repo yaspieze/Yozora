@@ -38,7 +38,7 @@ export function injectJsonLd(slug: string, productId?: string): void {
           priceCurrency: p.price.includes('تومان') ? 'IRR' : undefined,
           price: p.price.replace(/[^۰-۹0-9]/g, '') || undefined,
           availability: 'https://schema.org/InStock',
-          url: `${SITE}/p-${p.id}.html`,
+          url: `${SITE}/product/${p.id}/`,
           seller: { '@type': 'Organization', name: 'کینیوا شاپ' },
         },
       });

@@ -8,13 +8,13 @@ export interface NavItem {
 }
 
 export const NAV: NavItem[] = [
-  { href: 'index.html', label: 'خانه', key: 'home' },
-  { href: 'products.html', label: 'محصولات', key: 'products' },
-  { href: 'prices.html', label: 'قیمت‌ها', key: 'prices' },
-  { href: 'guarantee.html', label: 'ضمانت', key: 'guarantee' },
-  { href: 'blog.html', label: 'وبلاگ', key: 'blog' },
-  { href: 'about.html', label: 'درباره ما', key: 'about' },
-  { href: 'contact.html', label: 'تماس', key: 'contact' },
+  { href: './', label: 'خانه', key: 'home' },
+  { href: 'products/', label: 'محصولات', key: 'products' },
+  { href: 'prices/', label: 'قیمت‌ها', key: 'prices' },
+  { href: 'guarantee/', label: 'ضمانت', key: 'guarantee' },
+  { href: 'blog/', label: 'وبلاگ', key: 'blog' },
+  { href: 'about/', label: 'درباره ما', key: 'about' },
+  { href: 'contact/', label: 'تماس', key: 'contact' },
 ];
 
 const megaMenu = (): string => `
@@ -29,7 +29,7 @@ const megaMenu = (): string => `
   </div>
   <div class="mega-foot">
     <span>۱۷ محصول در ۷ دسته</span>
-    <a href="products.html">دیدن کاتالوگ کامل ${ICONS.chevron}</a>
+    <a href="products/">دیدن کاتالوگ کامل ${ICONS.chevron}</a>
   </div>
 </div>`;
 
@@ -47,7 +47,7 @@ export const renderHeader = (active: string): string => `
 
 <header class="site-head" id="siteHead">
   <div class="wrap head-row">
-    <a class="brand" href="index.html" aria-label="کینیوا شاپ">
+    <a class="brand" href="." aria-label="کینیوا شاپ">
       <img src="assets/img/logo.png" alt="کینیوا شاپ" width="56" height="56">
       <span class="brand-txt"><b>کینیوا <em>شاپ</em></b><i>KINIWA SHOP</i></span>
     </a>
@@ -86,16 +86,16 @@ export const renderHeader = (active: string): string => `
       <b>منو</b>
       <button id="drawerClose" aria-label="بستن">${ICONS.close}</button>
     </div>
-    <a href="index.html">خانه</a>
-    <a href="products.html">همهٔ محصولات</a>
+    <a href=".">خانه</a>
+    <a href="products/">همهٔ محصولات</a>
     ${CATEGORIES.map((c) => `<a href="${c.slug}">${c.title}</a>`).join('')}
-    <a href="prices.html">قیمت‌ها</a>
-    <a href="process.html">مراحل سفارش</a>
-    <a href="guarantee.html">ضمانت</a>
-    <a href="faq.html">سوالات متداول</a>
-    <a href="blog.html">وبلاگ</a>
-    <a href="about.html">درباره ما</a>
-    <a href="contact.html">تماس</a>
+    <a href="prices/">قیمت‌ها</a>
+    <a href="process/">مراحل سفارش</a>
+    <a href="guarantee/">ضمانت</a>
+    <a href="faq/">سوالات متداول</a>
+    <a href="blog/">وبلاگ</a>
+    <a href="about/">درباره ما</a>
+    <a href="contact/">تماس</a>
     <a class="btn btn-gold" href="${DISCORD}" target="_blank" rel="noopener">${ICONS.discord} ورود به دیسکورد</a>
   </div>
 </div>`;
@@ -104,7 +104,7 @@ export const renderFooter = (): string => `
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div class="fbrand">
-      <a class="brand" href="index.html">
+      <a class="brand" href=".">
         <img src="assets/img/logo.png" alt="کینیوا شاپ" width="52" height="52">
         <span class="brand-txt"><b>کینیوا <em>شاپ</em></b><i>KINIWA SHOP</i></span>
       </a>
@@ -123,15 +123,15 @@ export const renderFooter = (): string => `
       <a href="cat-design.html">تامنیل و اسکین</a>
       <a href="cat-design.html">انیمه‌آرت</a>
       <a href="cat-overlay.html">اورلی استریم</a>
-      <a href="prices.html">جدول قیمت‌ها</a>
+      <a href="prices/">جدول قیمت‌ها</a>
     </div>
     <div class="fcol">
       <h4>راهنما</h4>
-      <a href="process.html">مراحل سفارش</a>
-      <a href="guarantee.html">ضمانت و بازگشت وجه</a>
-      <a href="faq.html">سوالات متداول</a>
-      <a href="terms.html">قوانین و شرایط</a>
-      <a href="blog.html">وبلاگ</a>
+      <a href="process/">مراحل سفارش</a>
+      <a href="guarantee/">ضمانت و بازگشت وجه</a>
+      <a href="faq/">سوالات متداول</a>
+      <a href="terms/">قوانین و شرایط</a>
+      <a href="blog/">وبلاگ</a>
     </div>
   </div>
   <div class="wrap foot-badges">

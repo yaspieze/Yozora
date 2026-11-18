@@ -1,12 +1,20 @@
 import { defineConfig } from 'vite';
-import { readdirSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readdirSync, statSync } from 'node:fs';
+import { resolve, relative } from 'node:path';
 
-const htmlEntries = Object.fromEntries(
-  readdirSync(__dirname)
-    .filter((f) => f.endsWith('.html'))
-    .map((f) => [f.replace(/\.html$/, ''), resolve(__dirname, f)]),
-);
+/** collect every *.html entry (flat + nested folders) */
+function htmlInputs(dir: string, out: Record<string, string> = {}, base = dir): Record<string, string> {
+  for (const name of readdirSync(dir)) {
+    if (name === 'node_modules' || name === 'dist' || name === 'public' || name === 'src' || name.startsWith('.')) continue;
+    const full = resolve(dir, name);
+    if (statSync(full).isDirectory()) htmlInputs(full, out, base);
+    else if (name.endsWith('.html')) {
+      const key = relative(base, full).replace(/\.html$/, '').replace(/\/index$/, '') || 'root';
+      out[key] = full;
+    }
+  }
+  return out;
+}
 
 export default defineConfig({
   base: '/kiniwa/',
@@ -14,7 +22,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: htmlEntries,
+      input: htmlInputs(__dirname),
       output: {
         entryFileNames: 'assets/js/[name]-[hash].js',
         chunkFileNames: 'assets/js/[name]-[hash].js',

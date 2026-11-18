@@ -59,7 +59,7 @@ export const ctaBand = (title: string, text: string): string => `
 
 export const breadcrumbs = (trail: { label: string; href?: string }[]): string => `
 <div class="wrap"><nav class="crumbs" aria-label="مسیر">
-  <a href="index.html">خانه</a>
+  <a href=".">خانه</a>
   ${trail.map((t) => `<span>/</span>${t.href ? `<a href="${t.href}">${esc(t.label)}</a>` : `<span class="cur">${esc(t.label)}</span>`}`).join('')}
 </nav></div>`;
 

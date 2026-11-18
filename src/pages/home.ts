@@ -23,7 +23,7 @@ const SLIDES: Slide[] = [
     primary: 'ثبت سفارش در دیسکورد',
     primaryHref: DISCORD,
     ghost: 'جزئیات محصول',
-    ghostHref: 'cat-minecraft.html',
+    ghostHref: 'cat-minecraft/',
     image: 'assets/img/products/p-minecraft-account.jpg',
     tags: ['فول اکسس', 'جاوا + بدراک', 'تغییر اطلاعات'],
   },
@@ -35,7 +35,7 @@ const SLIDES: Slide[] = [
     primary: 'ثبت سفارش در دیسکورد',
     primaryHref: DISCORD,
     ghost: 'محاسبهٔ قیمت',
-    ghostHref: 'cat-donut.html',
+    ghostHref: 'cat-donut/',
     image: 'assets/img/products/p-donut-million.jpg',
     tags: ['موجودی ۳۰۰M', 'حداقل ۵۰M', 'تحویل ۴۸h'],
   },
@@ -47,7 +47,7 @@ const SLIDES: Slide[] = [
     primary: 'ثبت سفارش در دیسکورد',
     primaryHref: DISCORD,
     ghost: 'دیدن خدمات',
-    ghostHref: 'cat-design.html',
+    ghostHref: 'cat-design/',
     image: 'assets/img/products/p-logo.jpg',
     tags: ['لوگو', 'اورلی', 'انیمه‌آرت'],
   },
@@ -113,7 +113,7 @@ const bestSellers = (): string => {
     ${filters.map(([f, l], i) => `<button${i === 0 ? ' class="act"' : ''} data-f="${f}">${l}</button>`).join('')}
   </div>
   <div class="grid g4" id="grid">${picks.map((p) => productCard(p, { compact: true })).join('')}</div>
-  <div class="center-cta"><a class="btn btn-ghost" href="products.html">مشاهدهٔ همهٔ ۱۷ محصول ${icon('arrow')}</a></div>
+  <div class="center-cta"><a class="btn btn-ghost" href="products/">مشاهدهٔ همهٔ ۱۷ محصول ${icon('arrow')}</a></div>
 </div></section>`;
 };
 
@@ -177,7 +177,7 @@ const steps = (): string => `
       .map(([t, d], i) => `<div class="step rv"><span class="num">${i + 1}</span><h3>${t}</h3><p>${d}</p></div>`)
       .join('')}
   </div>
-  <div class="center-cta"><a class="btn btn-ghost" href="process.html">راهنمای کامل سفارش ${icon('arrow')}</a></div>
+  <div class="center-cta"><a class="btn btn-ghost" href="process/">راهنمای کامل سفارش ${icon('arrow')}</a></div>
 </div></section>`;
 
 const blogTeaser = (): string => `
@@ -206,6 +206,6 @@ ${blogTeaser()}
 <section class="home-faq"><div class="wrap">
   ${sectionHead('سوالات متداول', 'سؤال‌های پرتکرار')}
   ${faqList(FAQ_ITEMS)}
-  <div class="center-cta"><a class="btn btn-ghost" href="faq.html">همهٔ سوالات ${icon('arrow')}</a></div>
+  <div class="center-cta"><a class="btn btn-ghost" href="faq/">همهٔ سوالات ${icon('arrow')}</a></div>
 </div></section>
 ${ctaBand('سفارش را در دیسکورد ثبت کن', 'کافی است در سرور کینیوا شاپ تیکت بزنی؛ بقیه‌اش با ما.')}`;

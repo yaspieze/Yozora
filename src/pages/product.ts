@@ -4,7 +4,7 @@ import { breadcrumbs, faqList, icon, pill, productCard, sectionHead } from '../l
 
 const fa = (n: number): string => n.toLocaleString('fa-IR');
 
-export const productUrl = (id: string): string => `p-${id}.html`;
+export const productUrl = (id: string): string => `product/${id}/`;
 
 const related = (p: Product): Product[] =>
   PRODUCTS.filter((x) => x.category === p.category && x.id !== p.id).slice(0, 3);
@@ -56,7 +56,7 @@ export const productPage = (id: string): string => {
 
   return `
 ${breadcrumbs([
-    { label: 'محصولات', href: 'products.html' },
+    { label: 'محصولات', href: 'products/' },
     ...(cat ? [{ label: cat.title, href: cat.slug }] : []),
     { label: p.title },
   ])}
