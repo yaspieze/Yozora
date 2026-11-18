@@ -29,7 +29,7 @@ export const productCard = (p: Product, opts: ProductCardOptions = {}): string =
     <div class="pills">${	p.pills.map(pill).join('')}</div>
     <div class="pfoot">
       <div class="price${p.ask ? ' ask' : ''}"><span>${esc(p.priceLabel)}</span><b>${esc(p.price)}</b></div>
-      <a class="btn btn-gold btn-sm" href="${DISCORD}" target="_blank" rel="noopener">سفارش</a>
+      <a class="btn btn-gold btn-sm" href="${DISCORD}" target="_blank" rel="noopener">سفارش ${icon('arrow')}</a>
     </div>
   </div>
 </article>`;

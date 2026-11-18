@@ -78,8 +78,14 @@ const heroSlider = (): string => `
             <a class="btn btn-gold btn-lg" href="${s.primaryHref}"${s.primaryHref.startsWith('http') ? ' target="_blank" rel="noopener"' : ''}>${icon('discord')} ${s.primary}</a>
             <a class="btn btn-ghost btn-lg" href="${s.ghostHref}">${s.ghost}</a>
           </div>
+          <div class="hero-meta">
+            <span><b>۴٫۹</b><i>امتیاز خریدارها</i></span>
+            <span><b>۱–۴۸h</b><i>بازهٔ تحویل</i></span>
+            <span><b>۷۶۳</b><i>عضو انجمن</i></span>
+          </div>
         </div>
         <div class="slide-art" data-par="0.05">
+          <span class="art-orbit" aria-hidden="true"></span>
           <div class="slide-frame">
             <img src="${s.image}" alt="${s.title}" width="900" height="900" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
           </div>

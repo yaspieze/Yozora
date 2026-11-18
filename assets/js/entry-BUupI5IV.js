@@ -1089,7 +1089,7 @@ ${ns(s)}
     <div class="pills">${s.pills.map(ts).join("")}</div>
     <div class="pfoot">
       <div class="price${s.ask?" ask":""}"><span>${h(s.priceLabel)}</span><b>${h(s.price)}</b></div>
-      <a class="btn btn-gold btn-sm" href="${f}" target="_blank" rel="noopener">سفارش</a>
+      <a class="btn btn-gold btn-sm" href="${f}" target="_blank" rel="noopener">سفارش ${o("arrow")}</a>
     </div>
   </div>
 </article>`,$=(s,a,t="",e=!0,l)=>l?`<div class="sec-hd row">
@@ -1369,8 +1369,14 @@ ${ns(s)}
             <a class="btn btn-gold btn-lg" href="${s.primaryHref}"${s.primaryHref.startsWith("http")?' target="_blank" rel="noopener"':""}>${o("discord")} ${s.primary}</a>
             <a class="btn btn-ghost btn-lg" href="${s.ghostHref}">${s.ghost}</a>
           </div>
+          <div class="hero-meta">
+            <span><b>۴٫۹</b><i>امتیاز خریدارها</i></span>
+            <span><b>۱–۴۸h</b><i>بازهٔ تحویل</i></span>
+            <span><b>۷۶۳</b><i>عضو انجمن</i></span>
+          </div>
         </div>
         <div class="slide-art" data-par="0.05">
+          <span class="art-orbit" aria-hidden="true"></span>
           <div class="slide-frame">
             <img src="${s.image}" alt="${s.title}" width="900" height="900" ${a===0?'fetchpriority="high"':'loading="lazy"'}>
           </div>
