@@ -27,8 +27,8 @@ const SLIDES: Slide[] = [
   {
     eyebrow: 'فروشگاه رسمی انجمن یوزورا',
     title: 'اکانت ماینکرفت فول اکسس',
-    em: 'با تحویل تا ۴۸ ساعت',
-    text: 'اکانت کامل جاوا و بدراک با اطلاعات قابل تغییر، پشتیبانی واقعی و ضمانت بازگشت وجه.',
+    em: 'تحویل تا ۴۸ ساعت',
+    text: 'اکانت جاوا و بدراک، با اطلاعات قابل تغییر و ضمانت بازگشت وجه.',
     primary: 'ثبت سفارش در دیسکورد',
     primaryHref: DISCORD,
     ghost: 'جزئیات محصول',
@@ -40,9 +40,9 @@ const SLIDES: Slide[] = [
   },
   {
     eyebrow: 'دونات اس ام پی',
-    title: 'پول دونات از ۴٬۰۰۰ تومان',
-    em: 'هر میلیون، بدون واسطه',
-    text: 'موجودی فعلی سرور ۳۰۰ میلیون است؛ حداقل خرید ۵۰ میلیون و تحویل مستقیم روی اکانت خودت.',
+    title: 'پول دونات از ۳٬۹۰۰ تومان',
+    em: 'به ازای هر میلیون',
+    text: 'موجودی ۳۰۰ میلیون؛ حداقل خرید ۵۰ میلیون و تحویل مستقیم روی اکانت خودت.',
     primary: 'ثبت سفارش در دیسکورد',
     primaryHref: DISCORD,
     ghost: 'محاسبهٔ قیمت',
@@ -55,8 +55,8 @@ const SLIDES: Slide[] = [
   {
     eyebrow: 'خدمات گرافیک یوزورا',
     title: 'لوگو، بنر، تامنیل و اورلی',
-    em: 'اختصاصی برای استریم تو',
-    text: 'از طرح لوگو تا پک کامل اورلی استریم و انیمه‌آرت؛ همه با تحویل ۱ تا ۳ روز کاری.',
+    em: 'برای استریم و کامیونیتی',
+    text: 'لوگو، بنر، تامنیل، اسکین و اورلی استریم؛ تحویل ۱ تا ۳ روز کاری.',
     primary: 'ثبت سفارش در دیسکورد',
     primaryHref: DISCORD,
     ghost: 'دیدن خدمات',
@@ -85,7 +85,7 @@ const heroSlider = (): string => `
             <a class="btn btn-ghost btn-lg" href="${s.ghostHref}">${s.ghost}</a>
           </div>
           <div class="hero-meta">
-            <span><b>۴٫۹</b><i>امتیاز خریدارها</i></span>
+            <span><b>۱۸</b><i>محصول فعال</i></span>
             <span><b>۱–۴۸h</b><i>بازهٔ تحویل</i></span>
             <span><b>۷۶۳</b><i>عضو انجمن</i></span>
           </div>
@@ -127,7 +127,7 @@ const productMarquee = (): string => {
 const quickCats = (): string => `
 <section class="quick-cats"><div class="wrap">
   ${chap('۰۱', 'دسته‌بندی')}
-  ${sectionHead('', 'از کجا شروع کنیم؟', 'روی هر دسته بزن تا صفحهٔ کاملش با قیمت و جزئیات باز شود.', false, { href: 'products/', label: 'همهٔ محصولات' })}
+  ${sectionHead('', 'از کجا شروع کنیم؟', 'قیمت و جزئیات هر دسته، همان‌جا.', false, { href: 'products/', label: 'همهٔ محصولات' })}
   <div class="cat-rail">
     ${CATEGORIES.map(
       (c) => `<a class="cat-tile rv" href="${c.slug}" data-tilt>
@@ -145,25 +145,25 @@ const STORY = [
     art: 'design' as const,
     k: '۰۱',
     title: 'انتخاب می‌کنی',
-    text: 'کاتالوگ را باز می‌کنی و دقیقاً همان چیزی را که می‌خواهی پیدا می‌کنی؛ بدون قیمت نامشخص و بدون «در دایرکت بپرسید».',
+    text: 'محصول را از کاتالوگ انتخاب می‌کنی؛ قیمت روی همین سایت است.',
   },
   {
     art: 'support' as const,
     k: '۰۲',
     title: 'تیکت می‌زنی',
-    text: 'در دیسکورد یوزورا یک تیکت باز می‌کنی؛ پشتیبانی جواب می‌دهد، موجودی و زمان تحویل همان‌جا تثبیت می‌شود.',
+    text: 'در دیسکورد تیکت می‌زنی؛ موجودی و زمان تحویل همان‌جا مشخص می‌شود.',
   },
   {
     art: 'pay' as const,
     k: '۰۳',
     title: 'ریالی پرداخت می‌کنی',
-    text: 'فاکتور می‌گیری و مبلغ را ریالی واریز می‌کنی. هیچ کارت خارجی و هیچ واسطه‌ای در کار نیست.',
+    text: 'فاکتور می‌گیری و ریالی پرداخت می‌کنی؛ کارت خارجی لازم نیست.',
   },
   {
     art: 'delivery' as const,
     k: '۰۴',
     title: 'تحویل می‌گیری',
-    text: 'در بازهٔ اعلام‌شدهٔ همان محصول — بین ۱ تا ۴۸ ساعت — سفارش تحویل می‌شود و تیکت تا رضایتت باز می‌ماند.',
+    text: 'تحویل بین ۱ تا ۴۸ ساعت است و تیکت تا تحویل باز می‌ماند.',
   },
 ];
 
@@ -171,8 +171,8 @@ const story = (): string => `
 <section class="story pin-sec" id="story" data-pin>
   <div class="story-pin pin-pin">
     <div class="wrap story-head">
-      ${chap('۰۲', 'قصهٔ یک سفارش')}
-      <h2 class="sec split">چهار قدم تا تحویل، بدون هیچ ابهامی</h2>
+      ${chap('۰۲', 'مراحل سفارش')}
+      <h2 class="sec split">چهار قدم تا تحویل</h2>
     </div>
     <div class="story-track" data-pin-track>
       ${STORY.map(
@@ -184,14 +184,13 @@ const story = (): string => `
       </article>`,
       ).join('')}
       <div class="story-end">
-        <span class="se-t">و تمام.</span>
-        <p>سفارش بعدی‌ات را از همین‌جا شروع کن.</p>
+        <span class="se-t">شروع کن</span>
+        <p>سفارش را در دیسکورد ثبت کن.</p>
         <a class="btn btn-gold" href="${DISCORD}" target="_blank" rel="noopener">${icon('discord')} ورود به دیسکورد</a>
       </div>
     </div>
     <div class="wrap story-foot">
       <div class="story-dots">${STORY.map((_, i) => `<i class="${i === 0 ? 'on' : ''}"></i>`).join('')}</div>
-      <span class="sf-hint">اسکرول کن</span>
     </div>
   </div>
 </section>`;
@@ -202,7 +201,7 @@ const theater = (): string => `
   <div class="theater-pin pin-pin">
     <div class="wrap theater-head">
       ${chap('۰۳', 'کاتالوگ')}
-      <h2 class="sec split">هجده محصول، همه با قیمت روی سایت</h2>
+      <h2 class="sec split">همهٔ محصولات، با قیمت مشخص</h2>
       <a class="btn btn-ghost btn-sm theater-all" href="products/">کاتالوگ کامل ${icon('arrow')}</a>
     </div>
     <div class="theater-track" data-pin-track>
@@ -239,7 +238,7 @@ const bestSellers = (): string => {
   return `
 <section class="best"><div class="wrap">
   ${chap('۰۴', 'پرفروش‌ها')}
-  ${sectionHead('', 'محصولات پرطرفدار یوزورا', 'قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.', false, { href: 'products/', label: 'کاتالوگ کامل' })}
+  ${sectionHead('', 'محصولات پرطرفدار یوزورا', 'قیمت‌ها به‌روزند؛ سفارش از تیکت دیسکورد.', false, { href: 'products/', label: 'کاتالوگ کامل' })}
   <div class="filters" id="filters">
     ${filters.map(([f, l], i) => `<button${i === 0 ? ' class="act"' : ''} data-f="${f}">${l}</button>`).join('')}
   </div>
@@ -254,7 +253,7 @@ const numbers = (): string => `
   <div class="num-art" data-par="-0.07" aria-hidden="true">${ART.community}</div>
   <div class="wrap">
     ${chap('۰۵', 'عددها')}
-    <h2 class="num-h split">یک انجمن واقعی، پشت یک فروشگاه واقعی.</h2>
+    <h2 class="num-h split">یوزورا در یک نگاه</h2>
     <div class="num-grid">
       <div class="num rv"><b data-count="763">۰</b><span>عضو انجمن یوزورا</span></div>
       <div class="num rv"><b data-count="18">۰</b><span>محصول فعال</span></div>
@@ -270,8 +269,7 @@ const statement = (): string => `
   <div class="st-orb" data-par="-0.08" aria-hidden="true">${ART.secure}</div>
   <div class="wrap st-in">
     ${chap('۰۶', 'تعهد یوزورا')}
-    <h2 class="st-h split">هیچ چیز پنهان نیست؛ نه قیمت، نه زمان تحویل.</h2>
-    <p class="st-p">همهٔ چیزهایی که یک فروشگاه باید شفاف بگوید، در همین چهار خط خلاصه شده است.</p>
+    <h2 class="st-h split">قیمت و زمان تحویل، شفاف.</h2>
     <div class="spec-list">
       <div class="spec-row rv"><span>بازهٔ تحویل</span><b>۱ تا ۴۸ ساعت</b><i>${icon('bolt')}</i></div>
       <div class="spec-row rv"><span>روش پرداخت</span><b>ریالی، با فاکتور</b><i>${icon('card')}</i></div>
@@ -285,9 +283,9 @@ const trustRow = (): string => `
 <section class="tight art-row-sec"><div class="wrap">
   ${chap('۰۷', 'چرا یوزورا')}
   <div class="grid g3">
-    ${artCard('delivery', 'تحویل سریع', 'بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.')}
-    ${artCard('pay', 'پرداخت ریالی', 'بدون کارت خارجی؛ مبلغ را ریالی پرداخت می‌کنید و فاکتور می‌گیرید.')}
-    ${artCard('shield', 'ضمانت بازگشت وجه', 'اگر تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود.')}
+    ${artCard('delivery', 'تحویل سریع', 'بیشتر سفارش‌ها ۱ تا ۲۴ ساعت، حداکثر ۴۸ ساعت.')}
+    ${artCard('pay', 'پرداخت ریالی', 'بدون کارت خارجی؛ فاکتور و پرداخت ریالی.')}
+    ${artCard('shield', 'ضمانت بازگشت وجه', 'اگر تحویل انجام نشود، مبلغ کامل برمی‌گردد.')}
   </div>
 </div></section>`;
 
@@ -297,10 +295,10 @@ const steps = (): string => `
   ${sectionHead('', 'چطور سفارش بدهیم؟')}
   <div class="steps">
     ${[
-      ['ورود به دیسکورد', 'وارد سرور یوزورا شاپ شوید؛ لینک دعوت ثابت و عمومی است.'],
-      ['ثبت تیکت', 'در چنل تیکت، محصول و مقدار مورد نظرتان را بنویسید.'],
-      ['پرداخت ریالی', 'فاکتور و مبلغ نهایی اعلام می‌شود و ریالی پرداخت می‌کنید.'],
-      ['تحویل و پشتیبانی', 'در بازهٔ اعلام‌شده تحویل می‌گیرید و تا پایان همراهتان هستیم.'],
+      ['ورود به دیسکورد', 'وارد سرور دیسکورد یوزورا شوید.'],
+      ['ثبت تیکت', 'محصول و مقدار را در تیکت بنویسید.'],
+      ['پرداخت ریالی', 'فاکتور صادر می‌شود و ریالی پرداخت می‌کنید.'],
+      ['تحویل و پشتیبانی', 'در بازهٔ اعلام‌شده تحویل می‌گیرید.'],
     ]
       .map(([t, d], i) => `<div class="step rv"><span class="num">${i + 1}</span><h3>${t}</h3><p>${d}</p></div>`)
       .join('')}
@@ -312,31 +310,31 @@ const TESTIMONIALS = [
   {
     name: 'آرمان',
     role: 'بازیکن دونات اس ام پی',
-    text: 'دو بار پول دونات گرفتم، هر دو بار زیر ۲۴ ساعت تحویل شد. پشتیبانی هم توی تیکت سریع جواب داد.',
+    text: 'دو بار پول دونات گرفتم، هر دو زیر ۲۴ ساعت تحویل شد.',
     initials: 'آ',
   },
   {
     name: 'سارا',
     role: 'استریمر تویچ',
-    text: 'پک اورلی رو با هماهنگی برند خودم گرفتم؛ دقیقاً همون چیزی بود که می‌خواستم و دو بار بازنگری رایگان داشت.',
+    text: 'پک اورلی رو با هماهنگی برند خودم گرفتم؛ نتیجه دقیقاً همونی بود که می‌خواستم.',
     initials: 'س',
   },
   {
     name: 'مهدی',
     role: 'ادمین سرور',
-    text: 'برای سرور لوگو و بنر سفارش دادم. سه پیشنهاد اولیه دادند و تا نتیجهٔ نهایی اصلاح کردند.',
+    text: 'برای سرور لوگو و بنر گرفتم؛ تا نتیجهٔ نهایی اصلاح کردند.',
     initials: 'م',
   },
   {
     name: 'نیلوفر',
     role: 'طراح گرافیک',
-    text: 'تامنیل حرفه‌ای گرفتم؛ ترکیب‌بندی و تایپوگرافی خیلی تمیز بود و فایل لایه‌باز هم تحویل دادند.',
+    text: 'تامنیل حرفه‌ای گرفتم؛ فایل لایه‌باز هم تحویل دادند.',
     initials: 'ن',
   },
   {
     name: 'کیان',
     role: 'بازیکن هایپیکسل',
-    text: 'کوین هایپیکسل و بوستر گرفتم؛ همه‌چیز دقیق و بدون دردسر، فاکتور هم صادر شد.',
+    text: 'کوین هایپیکسل گرفتم؛ فاکتور صادر شد و همه‌چیز مرتب بود.',
     initials: 'ک',
   },
 ];
@@ -344,7 +342,7 @@ const TESTIMONIALS = [
 const reviews = (): string => `
 <section class="reviews"><div class="wrap">
   ${chap('۰۹', 'نظر مشتری‌ها')}
-  ${sectionHead('', 'یوزورا از زبان خریدارها')}
+  ${sectionHead('', 'تجربهٔ خرید')}
 </div>
 <div class="marq-band q-band" data-marquee aria-label="نظر مشتری‌ها">
   <div class="marq-in q-in">
@@ -394,4 +392,4 @@ ${blogTeaser()}
   ${faqList(FAQ_ITEMS)}
   <div class="center-cta"><a class="btn btn-ghost" href="faq/">همهٔ سوالات ${icon('arrow')}</a></div>
 </div></section>
-${ctaBand('سفارش را در دیسکورد ثبت کن', 'کافی است در سرور یوزورا شاپ تیکت بزنی؛ بقیه‌اش با ما.')}`;
+${ctaBand('سفارش را در دیسکورد ثبت کن', 'در سرور دیسکورد تیکت بزن؛ بقیهٔ کارها با ما.')}`;

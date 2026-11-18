@@ -83,6 +83,6 @@ export const statStrip = (): string => `
 <div class="stat-strip rv">
   <div><b data-count="763">۷۶۳</b><span>عضو انجمن</span></div>
   <div><b data-count="30">۳۰</b><span>آنلاین</span></div>
-  <div><b data-count="17">۱۷</b><span>محصول فعال</span></div>
+  <div><b data-count="18">۱۸</b><span>محصول فعال</span></div>
   <div><b>۴۸h</b><span>حداکثر تحویل</span></div>
 </div>`;

@@ -67,8 +67,8 @@ export const bodies: Record<string, string> = {
 <p>در سرورهای SMP، پول درون‌بازی عنصر اصلی معامله است. بازیکن‌ها با پول، آیتم، زمین یا خدمات می‌خرند.
 دونات اس ام پی هم یک سرور محبوب با اقتصاد فعال است و «پول» آن به‌صورت میلیونی معامله می‌شود.</p>
 <h2>قیمت چطور محاسبه می‌شود؟</h2>
-<p>قیمت پول دونات بر اساس «هر میلیون» حساب می‌شود. در یوزورا شاپ این نرخ ۴٬۰۰۰ تومان به ازای هر میلیون است،
-یعنی مثلاً ۱۰۰ میلیون می‌شود ۴۰۰٬۰۰۰ تومان. حداقل خرید هم ۵۰ میلیون تعیین شده است.</p>
+<p>قیمت پول دونات بر اساس «هر میلیون» حساب می‌شود. در یوزورا شاپ این نرخ ۳٬۹۰۰ تومان به ازای هر میلیون است،
+یعنی مثلاً ۱۰۰ میلیون می‌شود ۳۹۰٬۰۰۰ تومان. حداقل خرید هم ۵۰ میلیون تعیین شده است.</p>
 <h2>موجودی سرور چه معنایی دارد؟</h2>
 <p>هر فروشنده‌ای مقدار محدودی پول در سرور دارد. موجودی فعلی یوزورا ۳۰۰ میلیون است و بعد از اتمام مجدد شارژ می‌شود.
 اگر مقدار زیادی می‌خواهی، قبل از پرداخت موجودی را در تیکت چک کن.</p>
@@ -173,7 +173,7 @@ export const bodies: Record<string, string> = {
 <h2>۶. تست در سناریوی واقعی</h2>
 <p>قبل از نهایی‌کردن، اورلی را روی تصویر بازی تست کن. چیزی که روی پس‌زمینهٔ خالی خوب است، همیشه روی گیم‌پلی خوب نیست.</p>
 <h2>جمع‌بندی</h2>
-<p>اورلی یوزورا در دو کیفیت (خوب ۲۴۵٬۰۰۰ و عالی ۳۰۰٬۰۰۰ تومان) ارائه می‌شود و پک فونت هم به‌صورت جداگانه ۱۰۰٬۰۰۰ تومان است.
+<p>اورلی یوزورا در دو کیفیت (خوب ۲۶۰٬۰۰۰ و عالی ۳۲۰٬۰۰۰ تومان) ارائه می‌شود و پک فونت هم به‌صورت جداگانه ۱۲۰٬۰۰۰ تومان است.
 برای سفارش، در دیسکورد تیکت بزن.</p></div>
   <div style="margin-top:2rem"><div class="note "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div>این مطلب راهنمای عمومی است؛ قیمت‌ها و شرایط دقیق را همیشه در صفحهٔ محصول یا تیکت دیسکورد بررسی کن.</div></div></div>
 </div></section>
@@ -221,19 +221,19 @@ export const bodies: Record<string, string> = {
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">کیپ اپتیفاین</span>
-      <h1>کیپ اپتیفاین — ۳۲۹٬۰۰۰ تومان با تحویل ۱ تا ۷۲ ساعت</h1>
+      <h1>کیپ اپتیفاین — ۳۴۹٬۰۰۰ تومان با تحویل ۱ تا ۷۲ ساعت</h1>
       <p class="lead" style="margin-top:1rem">کیپ اختصاصی اپتیفاین روی اکانت شما؛ در بازی برای همهٔ بازیکن‌های سرور قابل مشاهده است و با استایل خودت هماهنگ می‌شود.</p>
       <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">قابل مشاهده برای همه</span><span class="pill y">۱ تا ۷۲ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۳۲۹٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۳۴۹٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/07-cape-optifine.jpg" alt="کیپ اپتیفاین" width="1600" height="1000"></div>
   </div>
 </section><section class="tight"><div class="wrap grid g2">
-      <div><div class="kv"><div class="row"><span>محصول</span><b>کیپ اپتیفاین</b></div><div class="row"><span>قیمت</span><b>۳۲۹٬۰۰۰ تومان</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>قابل مشاهده برای</span><b>همهٔ بازیکن‌های سرور</b></div></div></div>
+      <div><div class="kv"><div class="row"><span>محصول</span><b>کیپ اپتیفاین</b></div><div class="row"><span>قیمت</span><b>۳۴۹٬۰۰۰ تومان</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>قابل مشاهده برای</span><b>همهٔ بازیکن‌های سرور</b></div></div></div>
       <div class="note green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg><div>کیپ به‌صورت اختصاصی روی اکانت شما اعمال می‌شود و در بازی برای سایر بازیکن‌ها نمایش داده می‌شود.</div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>کیپ روی چه اکانتی اعمال می‌شود؟</summary><p>روی اکانت خودتان؛ نیازی به تغییر اکانت نیست.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>۱ تا ۷۲ ساعت.</p></details><details class="q"><summary>کیپ را همه می‌بینند؟</summary><p>بله، برای همهٔ بازیکن‌هایی که اپتیفاین دارند قابل مشاهده است.</p></details><details class="q"><summary>اگر مشکلی پیش بیاید؟</summary><p>طبق ضمانت یوزورا پیگیری و در صورت نیاز تعویض می‌شود.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
@@ -241,7 +241,7 @@ export const bodies: Record<string, string> = {
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -281,7 +281,7 @@ export const bodies: Record<string, string> = {
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -301,18 +301,18 @@ export const bodies: Record<string, string> = {
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">خدمات فتوشاپ</span>
-      <h1>طراحی لوگو، بنر، تامنیل، اسکین و انیمه‌آرت — از ۲۰۰٬۰۰۰ تومان</h1>
+      <h1>طراحی لوگو، بنر، تامنیل، اسکین و انیمه‌آرت — از ۲۲۰٬۰۰۰ تومان</h1>
       <p class="lead" style="margin-top:1rem">خدمات طراحی گرافیکی یوزورا برای سرور، کانال و استریم شما. لوگو و بنر اختصاصی، تامنیل کلیک‌خور، اسکین ماینکرفت و انیمه‌آرت — همه با تحویل ۱ تا ۷۲ ساعت.</p>
       <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">ساده و حرفه‌ای</span><span class="pill y">۱ تا ۷۲ ساعت</span><span class="pill b">۵ سرویس</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۰۰٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۲۰٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" width="1600" height="1000"></div>
   </div>
-</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>توضیح</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>—</td><td>طراحی اختصاصی و خروجی با کیفیت</td></tr><tr><td>بنر</td><td>۳۵۰٬۰۰۰ تومان</td><td><b>۵۰۰٬۰۰۰ تومان</b></td><td>مناسب دیسکورد و شبکه‌های اجتماعی</td></tr><tr><td>تامنیل</td><td>۲۰۰٬۰۰۰ تومان</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>تامنیل یوتیوب و کاور ویدیو</td></tr><tr><td>اسکین ماینکرفت</td><td>۲۴۵٬۰۰۰ تومان</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>اسکین اختصاصی آمادهٔ آپلود</td></tr><tr><td>انیمه‌آرت</td><td>۲۵۰٬۰۰۰ تومان</td><td><b>۲۸۰٬۰۰۰</b> بک‌گراند / <b>۳۰۰٬۰۰۰</b> بک‌گراند + تکست</td><td>سه سطح طراحی</td></tr></tbody></table></div></div></section>
+</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>توضیح</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>—</td><td>طراحی اختصاصی و خروجی با کیفیت</td></tr><tr><td>بنر</td><td>۳۶۰٬۰۰۰ تومان</td><td><b>۵۲۰٬۰۰۰ تومان</b></td><td>مناسب دیسکورد و شبکه‌های اجتماعی</td></tr><tr><td>تامنیل</td><td>۲۲۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>تامنیل یوتیوب و کاور ویدیو</td></tr><tr><td>اسکین ماینکرفت</td><td>۲۶۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>اسکین اختصاصی آمادهٔ آپلود</td></tr><tr><td>انیمه‌آرت</td><td>۲۷۰٬۰۰۰ تومان</td><td><b>۳۰۰٬۰۰۰</b> بک‌گراند / <b>۳۲۰٬۰۰۰</b> بک‌گراند + تکست</td><td>سه سطح طراحی</td></tr></tbody></table></div></div></section>
     <section><div class="wrap"><div class="sec-hd"><span class="eyebrow">چه چیزی تحویل می‌گیری</span><h2 class="sec">فرآیند طراحی</h2></div>
       <div class="steps">
         <div class="step rv"><h3>بریف</h3><p>در تیکت می‌گویید چه چیزی می‌خواهید و نمونه‌های مورد علاقه‌تان را می‌فرستید.</p></div>
@@ -325,7 +325,7 @@ export const bodies: Record<string, string> = {
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -345,31 +345,31 @@ export const bodies: Record<string, string> = {
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">دونات اس ام پی</span>
-      <h1>پول دونات اس ام پی — از ۴٬۰۰۰ تومان به ازای هر میلیون</h1>
+      <h1>پول دونات اس ام پی — از ۳٬۹۰۰ تومان به ازای هر میلیون</h1>
       <p class="lead" style="margin-top:1rem">پول سرور دونات اس ام پی با قیمت رقابتی و تحویل مستقیم روی اکانت شما. موجودی فعلی ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون.</p>
-      <div class="badges"><span class="pill g">موجودی ۳۰۰ میلیون</span><span class="pill ">حداقل ۵۰ میلیون</span><span class="pill y">۴٬۰۰۰ / میلیون</span><span class="pill b">۴۸ ساعت</span></div>
+      <div class="badges"><span class="pill g">موجودی ۳۰۰ میلیون</span><span class="pill ">حداقل ۵۰ میلیون</span><span class="pill y">۳٬۹۰۰ / میلیون</span><span class="pill b">۴۸ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">هر میلیون: ۴٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">هر میلیون: ۳٬۹۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/02-donutsmp.jpg" alt="دونات اس ام پی" width="1600" height="1000"></div>
   </div>
 </section><section class="tight"><div class="wrap grid g2">
       <div class="ccard">
-        <h3>محاسبه‌گر پول دونات <span class="pill y">هر میلیون ۴٬۰۰۰</span></h3>
+        <h3>محاسبه‌گر پول دونات <span class="pill y">هر میلیون ۳٬۹۰۰</span></h3>
         <p class="hint">حداقل ۵۰ میلیون • موجودی فعلی ۳۰۰ میلیون</p>
         <div class="crow"><span>مقدار</span><b><span id="dv">۱۰۰</span> میلیون</b></div>
         <input type="range" min="50" max="300" step="10" value="100" data-rate="4000" data-out="dp" data-lbl="dv">
         <div class="crow" style="margin-top:1rem;font-size:.78rem;color:#7f8798"><span>۵۰ میلیون</span><span>۳۰۰ میلیون</span></div>
-        <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۴۰۰٬۰۰۰</span> تومان</b></div>
+        <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۳۹۰٬۰۰۰</span> تومان</b></div>
       </div>
       <div>
-        <div class="kv"><div class="row"><span>قیمت هر میلیون</span><b>۴٬۰۰۰ تومان</b></div><div class="row"><span>حداقل خرید</span><b>۵۰ میلیون</b></div><div class="row"><span>موجودی فعلی</span><b>۳۰۰ میلیون</b></div><div class="row"><span>زمان تحویل</span><b>حداقل ۴۸ ساعت</b></div></div>
+        <div class="kv"><div class="row"><span>قیمت هر میلیون</span><b>۳٬۹۰۰ تومان</b></div><div class="row"><span>حداقل خرید</span><b>۵۰ میلیون</b></div><div class="row"><span>موجودی فعلی</span><b>۳۰۰ میلیون</b></div><div class="row"><span>زمان تحویل</span><b>حداقل ۴۸ ساعت</b></div></div>
         <div style="margin-top:1rem"><div class="note "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div>موجودی سرور محدود است؛ بعد از اتمام، مجدد شارژ می‌شود. برای مقدار زیاد قبل از پرداخت موجودی را در تیکت چک کنید.</div></div></div>
       </div>
-    </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>حداقل خرید چقدر است؟</summary><p>۵۰ میلیون. کمتر از این مقدار سفارش ثبت نمی‌شود.</p></details><details class="q"><summary>موجودی چقدر است؟</summary><p>در حال حاضر ۳۰۰ میلیون؛ بعد از اتمام مجدد شارژ می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>حداقل ۴۸ ساعت. برای مقدار زیاد زمان ممکن است بیشتر شود.</p></details><details class="q"><summary>سقف خرید چقدر است؟</summary><p>سقف خرید همان موجودی سرور است؛ تا ۳۰۰ میلیون با قیمت ۴٬۰۰۰ تومان به‌ازای هر میلیون.</p></details></div></div></section>
+    </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>حداقل خرید چقدر است؟</summary><p>۵۰ میلیون. کمتر از این مقدار سفارش ثبت نمی‌شود.</p></details><details class="q"><summary>موجودی چقدر است؟</summary><p>در حال حاضر ۳۰۰ میلیون؛ بعد از اتمام مجدد شارژ می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>حداقل ۴۸ ساعت. برای مقدار زیاد زمان ممکن است بیشتر شود.</p></details><details class="q"><summary>سقف خرید چقدر است؟</summary><p>سقف خرید همان موجودی سرور است؛ تا ۳۰۰ میلیون با قیمت ۳٬۹۰۰ تومان به‌ازای هر میلیون.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
 <a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
@@ -397,7 +397,7 @@ export const bodies: Record<string, string> = {
       <span class="eyebrow">هایپیکسل و اسکای‌بلاک</span>
       <h1>محصولات هایپیکسل و کوین اسکای‌بلاک — سریع و قانونی</h1>
       <p class="lead" style="margin-top:1rem">همهٔ محصولات موجود هایپیکسل با تحویل سریع و کاملاً قانونی. قیمت‌ها بر اساس دلار روز محاسبه می‌شود؛ برای استعلام دقیق در دیسکورد تیکت بزنید.</p>
-      <div class="badges"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span><span class="pill y">قیمت دلار روز</span><span class="pill b">اسکای‌بلاک ۶٬۰۰۰</span></div>
+      <div class="badges"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span><span class="pill y">قیمت دلار روز</span><span class="pill b">اسکای‌بلاک ۵٬۸۰۰</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
@@ -408,21 +408,21 @@ export const bodies: Record<string, string> = {
   </div>
 </section><section class="tight"><div class="wrap grid g2">
       <div class="ccard">
-        <h3>محاسبه‌گر کوین اسکای‌بلاک <span class="pill y">هر میلیون ۶٬۰۰۰</span></h3>
+        <h3>محاسبه‌گر کوین اسکای‌بلاک <span class="pill y">هر میلیون ۵٬۸۰۰</span></h3>
         <p class="hint">تحویل ۱ تا ۷۲ ساعت • مناسب هایپیکسل</p>
         <div class="crow"><span>مقدار</span><b><span id="sv">۱۰۰</span> میلیون</b></div>
         <input type="range" min="10" max="500" step="10" value="100" data-rate="6000" data-out="sp" data-lbl="sv">
         <div class="crow" style="margin-top:1rem;font-size:.78rem;color:#7f8798"><span>۱۰ میلیون</span><span>۵۰۰ میلیون</span></div>
         <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="sp">۶۰۰٬۰۰۰</span> تومان</b></div>
       </div>
-      <div><div class="kv"><div class="row"><span>محصولات هایپیکسل</span><b>قیمت دلار روز</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۲۴ ساعت</b></div><div class="row"><span>کوین اسکای‌بلاک</span><b>۶٬۰۰۰ / میلیون</b></div><div class="row"><span>زمان تحویل اسکای‌بلاک</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>وضعیت</span><b>امن و قانونی</b></div></div></div>
+      <div><div class="kv"><div class="row"><span>محصولات هایپیکسل</span><b>قیمت دلار روز</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۲۴ ساعت</b></div><div class="row"><span>کوین اسکای‌بلاک</span><b>۵٬۸۰۰ / میلیون</b></div><div class="row"><span>زمان تحویل اسکای‌بلاک</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>وضعیت</span><b>امن و قانونی</b></div></div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>چرا قیمت ثابت نیست؟</summary><p>قیمت محصولات هایپیکسل و کازمتیک بر اساس دلار روز محاسبه می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>هایپیکسل ۱ تا ۲۴ ساعت و کوین اسکای‌بلاک ۱ تا ۷۲ ساعت.</p></details><details class="q"><summary>آیا امن است؟</summary><p>بله، همهٔ سفارش‌ها به‌صورت قانونی و امن انجام می‌شود.</p></details><details class="q"><summary>چه محصولی از هایپیکسل موجود است؟</summary><p>در حال حاضر همهٔ محصولات موجود قابل تهیه است؛ در تیکت بپرسید.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
 <a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -449,7 +449,7 @@ export const bodies: Record<string, string> = {
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۲٬۲۴۹٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۲٬۸۹۰٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" width="1600" height="1000"></div>
   </div>
@@ -467,7 +467,7 @@ export const bodies: Record<string, string> = {
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
 <a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
@@ -489,18 +489,18 @@ export const bodies: Record<string, string> = {
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">اورلی استریم</span>
-      <h1>اورلی استریم حرفه‌ای — کیفیت خوب ۲۴۵٬۰۰۰ و عالی ۳۰۰٬۰۰۰</h1>
+      <h1>اورلی استریم حرفه‌ای — کیفیت خوب ۲۶۰٬۰۰۰ و عالی ۳۲۰٬۰۰۰</h1>
       <p class="lead" style="margin-top:1rem">پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و المان‌های دونیت. در دو کیفیت و با امکان افزودن پک فونت اختصاصی.</p>
       <div class="badges"><span class="pill ">کیفیت خوب</span><span class="pill g">کیفیت عالی</span><span class="pill y">پک فونت</span><span class="pill b">۱ تا ۷۲ ساعت</span></div>
       <div class="hero-btns">
         <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۴۵٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۶۰٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/05-overlay.jpg" alt="اورلی استریم" width="1600" height="1000"></div>
   </div>
-</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th><th>شامل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۲۴۵٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>فریم وب‌کم، چت‌باکس، هشدارها</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>نسخهٔ کامل و پرجزئیات</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۰۰٬۰۰۰ تومان</b></td><td>فوری</td><td>فونت فارسی/لاتین هماهنگ با اورلی</td></tr></tbody></table></div></div></section>
+</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th><th>شامل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۲۶۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>فریم وب‌کم، چت‌باکس، هشدارها</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>نسخهٔ کامل و پرجزئیات</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۲۰٬۰۰۰ تومان</b></td><td>فوری</td><td>فونت فارسی/لاتین هماهنگ با اورلی</td></tr></tbody></table></div></div></section>
     <section><div class="wrap grid g3">
       <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg></div><h3>هماهنگ با برند</h3><p>رنگ و فونت اورلی با لوگو و استایل کانال شما هماهنگ می‌شود.</p></div>
       <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div><h3>آمادهٔ استفاده</h3><p>فایل‌های لایه‌باز و آمادهٔ ایمپورت در نرم‌افزار استریم.</p></div>
@@ -511,7 +511,7 @@ export const bodies: Record<string, string> = {
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۰۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -631,32 +631,32 @@ export const bodies: Record<string, string> = {
 
 <section style="padding-top:0"><div class="wrap">
   <h3 class="sub">اکانت و پول سرورها</h3>
-  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>دسته</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اکانت ماینکرفت اقتصادی</td><td>ماینکرفت</td><td><b>۲٬۲۴۹٬۰۰۰ تومان</b></td><td>تا ۴۸ ساعت</td></tr><tr><td>پول دونات — هر میلیون</td><td>دونات اس ام پی</td><td><b>۴٬۰۰۰ تومان</b></td><td>حداقل ۴۸ ساعت</td></tr><tr><td>کوین اسکای‌بلاک — هر میلیون</td><td>هایپیکسل</td><td><b>۶٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>محصولات هایپیکسل</td><td>هایپیکسل</td><td>استعلام (دلار روز)</td><td>۱ تا ۲۴ ساعت</td></tr><tr><td>کازمتیک کلاینت‌ها</td><td>کازمتیک</td><td>استعلام (آیتم دلاری)</td><td>بسته به آیتم</td></tr></tbody></table></div>
+  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>دسته</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اکانت ماینکرفت اقتصادی</td><td>ماینکرفت</td><td><b>۲٬۸۹۰٬۰۰۰ تومان</b></td><td>تا ۴۸ ساعت</td></tr><tr><td>پول دونات — هر میلیون</td><td>دونات اس ام پی</td><td><b>۳٬۹۰۰ تومان</b></td><td>حداقل ۴۸ ساعت</td></tr><tr><td>کوین اسکای‌بلاک — هر میلیون</td><td>هایپیکسل</td><td><b>۵٬۸۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>محصولات هایپیکسل</td><td>هایپیکسل</td><td>استعلام (دلار روز)</td><td>۱ تا ۲۴ ساعت</td></tr><tr><td>کازمتیک کلاینت‌ها</td><td>کازمتیک</td><td>استعلام (آیتم دلاری)</td><td>بسته به آیتم</td></tr></tbody></table></div>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
   <h3 class="sub">خدمات طراحی</h3>
-  <div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>—</td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>بنر</td><td>۳۵۰٬۰۰۰ تومان</td><td><b>۵۰۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>تامنیل</td><td>۲۰۰٬۰۰۰ تومان</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اسکین ماینکرفت</td><td>۲۴۵٬۰۰۰ تومان</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>انیمه‌آرت</td><td>۲۵۰٬۰۰۰ تومان</td><td>۲۸۰٬۰۰۰ (بک‌گراند) / <b>۳۰۰٬۰۰۰</b> (+تکست)</td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
+  <div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>—</td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>بنر</td><td>۳۶۰٬۰۰۰ تومان</td><td><b>۵۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>تامنیل</td><td>۲۲۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اسکین ماینکرفت</td><td>۲۶۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>انیمه‌آرت</td><td>۲۷۰٬۰۰۰ تومان</td><td>۳۰۰٬۰۰۰ (بک‌گراند) / <b>۳۲۰٬۰۰۰</b> (+تکست)</td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
   <h3 class="sub">اورلی و کیپ</h3>
-  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۲۴۵٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۰۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۰۰٬۰۰۰ تومان</b></td><td>فوری</td></tr><tr><td>کیپ اپتیفاین</td><td><b>۳۲۹٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
+  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۲۶۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۲۰٬۰۰۰ تومان</b></td><td>فوری</td></tr><tr><td>کیپ اپتیفاین</td><td><b>۳۴۹٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
 </div></section>
 
 <section><div class="wrap">
   <div class="sec-hd"><span class="eyebrow">محاسبه‌گر</span><h2 class="sec">قیمت پول سرورها را حساب کن</h2></div>
   <div class="grid g2">
     <div class="ccard rv">
-      <h3>پول دونات اس ام پی <span class="pill y">هر میلیون ۴٬۰۰۰</span></h3>
+      <h3>پول دونات اس ام پی <span class="pill y">هر میلیون ۳٬۹۰۰</span></h3>
       <p class="hint">حداقل خرید ۵۰ میلیون • موجودی ۳۰۰ میلیون</p>
       <div class="crow"><span>مقدار</span><b><span id="dv">۱۰۰</span> میلیون</b></div>
       <input type="range" min="50" max="300" step="10" value="100" data-rate="4000" data-out="dp" data-lbl="dv">
       <div class="crow" style="margin-top:1rem;font-size:.78rem;color:#7f8798"><span>۵۰ میلیون</span><span>۳۰۰ میلیون</span></div>
-      <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۴۰۰٬۰۰۰</span> تومان</b></div>
+      <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۳۹۰٬۰۰۰</span> تومان</b></div>
     </div>
     <div class="ccard rv">
-      <h3>کوین اسکای‌بلاک <span class="pill y">هر میلیون ۶٬۰۰۰</span></h3>
+      <h3>کوین اسکای‌بلاک <span class="pill y">هر میلیون ۵٬۸۰۰</span></h3>
       <p class="hint">تحویل ۱ تا ۷۲ ساعت</p>
       <div class="crow"><span>مقدار</span><b><span id="sv">۱۰۰</span> میلیون</b></div>
       <input type="range" min="10" max="500" step="10" value="100" data-rate="6000" data-out="sp" data-lbl="sv">
@@ -752,7 +752,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">اکانت کامل با فول اکسس؛ جاوا و بدراک؛ اطلاعات قابل تغییر.</p>
     <div class="pills"><span class="pill g">فول اکسس</span><span class="pill y">۴۸ ساعت</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲٬۲۴۹٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۲٬۸۹۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -763,7 +763,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">ثبت سفارش با اولویت در تیکت برای تحویل در کمترین زمان.</p>
     <div class="pills"><span class="pill g">اولویت</span><span class="pill ">فول اکسس</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲٬۲۴۹٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۲٬۸۹۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -774,7 +774,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">حداقل ۵۰ میلیون؛ موجودی سرور ۳۰۰ میلیون.</p>
     <div class="pills"><span class="pill g">۳۰۰M موجودی</span><span class="pill y">۴۸ ساعت</span></div>
     <div class="pfoot">
-      <div class="price"><span>هر میلیون</span><b>۴٬۰۰۰ تومان</b></div>
+      <div class="price"><span>هر میلیون</span><b>۳٬۹۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -796,7 +796,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.</p>
     <div class="pills"><span class="pill g">۷۲ ساعت</span><span class="pill ">قیمت میلیونی</span></div>
     <div class="pfoot">
-      <div class="price"><span>هر میلیون</span><b>۶٬۰۰۰ تومان</b></div>
+      <div class="price"><span>هر میلیون</span><b>۵٬۸۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -807,7 +807,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">لوگوی اختصاصی برای سرور یا کانال شما.</p>
     <div class="pills"><span class="pill g">اختصاصی</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -818,7 +818,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">بنر مناسب دیسکورد و شبکه‌های اجتماعی.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۵۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۳۶۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -829,7 +829,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">نسخهٔ کامل با جزئیات و بازنگری بیشتر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۵۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۵۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -840,7 +840,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">تامنیل کلیک‌خور برای ویدیوهای گیمینگ.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۲۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -851,7 +851,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -862,7 +862,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">اسکین اختصاصی آمادهٔ آپلود.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲۴۵٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۲۶۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -873,7 +873,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">اسکین با جزئیات و سایه‌پردازی بیشتر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -884,7 +884,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">آرت انیمه‌استایل در سه سطح.</p>
     <div class="pills"><span class="pill y">۳ سطح</span></div>
     <div class="pfoot">
-      <div class="price"><span>از</span><b>۲۵۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>از</span><b>۲۷۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -895,7 +895,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.</p>
     <div class="pills"><span class="pill ">کیفیت خوب</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲۴۵٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۲۶۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -906,7 +906,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.</p>
     <div class="pills"><span class="pill g">کیفیت عالی</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -917,7 +917,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">پک فونت فارسی/لاتین مناسب اورلی و تامنیل.</p>
     <div class="pills"><span class="pill ">پک فونت</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۱۰۰٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۱۲۰٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
@@ -939,7 +939,7 @@ export const bodies: Record<string, string> = {
     <p class="desc">کیپ اختصاصی روی اکانت شما.</p>
     <div class="pills"><span class="pill g">اختصاصی</span><span class="pill y">۷۲ ساعت</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۲۹٬۰۰۰ تومان</b></div>
+      <div class="price"><span>قیمت</span><b>۳۴۹٬۰۰۰ تومان</b></div>
       <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>

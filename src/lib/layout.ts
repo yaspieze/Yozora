@@ -54,7 +54,7 @@ export const renderHeader = (active: string): string => `
 
     <form class="head-search" id="headSearch" autocomplete="off" role="search">
       ${ICONS.search}
-      <input id="searchInput" type="search" placeholder="جستجوی محصول… مثلاً پول دونات، اورلی، اسکین" aria-label="جستجو">
+      <input id="searchInput" type="search" placeholder="جستجوی محصول…" aria-label="جستجو">
       <div class="search-pop" id="searchPop" hidden></div>
     </form>
 
@@ -92,16 +92,18 @@ export const renderHeader = (active: string): string => `
       <b>منو</b>
       <button id="drawerClose" aria-label="بستن">${ICONS.close}</button>
     </div>
-    <a href=".">خانه</a>
-    <a href="products/">همهٔ محصولات</a>
+    <a href=".">${NAVICONS.home}<span>خانه</span></a>
+    <a href="products/">${NAVICONS.products}<span>همهٔ محصولات</span></a>
+    <a href="prices/">${NAVICONS.prices}<span>قیمت‌ها</span></a>
+    <a href="guarantee/">${NAVICONS.guarantee}<span>ضمانت</span></a>
+    <a href="blog/">${NAVICONS.blog}<span>وبلاگ</span></a>
+    <a href="about/">${NAVICONS.about}<span>درباره ما</span></a>
+    <a href="contact/">${NAVICONS.contact}<span>تماس</span></a>
+    <span class="dr-label">دسته‌بندی‌ها</span>
     ${CATEGORIES.map((c) => `<a href="${c.slug}">${c.title}</a>`).join('')}
-    <a href="prices/">قیمت‌ها</a>
+    <span class="dr-label">بیشتر</span>
     <a href="process/">مراحل سفارش</a>
-    <a href="guarantee/">ضمانت</a>
     <a href="faq/">سوالات متداول</a>
-    <a href="blog/">وبلاگ</a>
-    <a href="about/">درباره ما</a>
-    <a href="contact/">تماس</a>
     <a class="btn btn-gold" href="${DISCORD}" target="_blank" rel="noopener">${ICONS.discord} ورود به دیسکورد</a>
   </div>
 </div>`;
@@ -153,7 +155,7 @@ export const renderFooter = (): string => `
   </div></div>
   <div class="foot-bottom"><div class="wrap fb-in">
     <span>© ۱۴۰۵ یوزورا شاپ — تمام حقوق محفوظ است.</span>
-    <span>ساخته‌شده با ❤ برای انجمن یوزورا</span>
+    <span>پشتیبانی ۲۴/۷ در دیسکورد یوزورا</span>
   </div></div>
   <div class="foot-mark" aria-hidden="true">YOZORA</div>
 </footer>

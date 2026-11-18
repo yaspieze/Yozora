@@ -1908,3 +1908,61 @@ h3.sub{font-size:clamp(1.3rem,2.2vw,1.75rem)}
   color:rgba(191,239,255,.7);text-shadow:0 2px 14px rgba(0,0,0,.65);white-space:nowrap}
 .slide-art{position:relative}
 @media(max-width:700px){.img-stamp{font-size:10px;bottom:10px}}
+
+/* ── v13 — نوبار تمیز + متن‌های کوتاه‌تر ─────────────────────────────── */
+/* ۱) آیکن‌های SVG نوبار نباید بچرخند (فقط فلش مگامنو می‌چرخد) */
+.nav-in a svg.nav-ic{transform:none!important;width:19px;height:19px;opacity:.72;
+  transition:transform .4s var(--ease-out),opacity .3s,color .3s}
+.nav-in a:hover svg.nav-ic{opacity:1;transform:translateY(-1px)}
+.nav-in a > svg:not(.nav-ic){width:12px;height:12px;opacity:.5;transform:rotate(90deg)}
+.nav-in a.act > svg:not(.nav-ic){opacity:.85}
+
+/* ۲) ریتم و فاصلهٔ یکدست */
+.nav-in{min-height:58px;gap:.8rem;justify-content:space-between}
+.nav-in ul{flex:1 1 auto;min-width:0;gap:.12rem;justify-content:flex-start;
+  overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.nav-in ul::-webkit-scrollbar{display:none}
+.nav-in a{padding:.5rem .72rem;gap:.42rem;font-size:.9rem;border-radius:12px;
+  transition:background .3s,color .3s,transform .3s}
+.nav-in a.act{background:linear-gradient(180deg,rgba(122,210,250,.14),rgba(122,210,250,.04));
+  box-shadow:inset 0 0 0 1px rgba(122,210,250,.16)}
+.nav-in a.act::after{transform:scaleX(1);opacity:1}
+.nav-note{padding:.34rem .72rem;border-radius:999px;background:rgba(255,255,255,.035);
+  font-size:.76rem;white-space:nowrap;flex:0 0 auto}
+.nav-note svg,.nav-note .nav-signal{color:var(--gold);opacity:.9}
+
+/* ۳) سرچ و منو در تبلت هم بمانند */
+@media(max-width:980px){
+  .main-nav{display:block!important}
+  .head-search{display:flex!important;flex:1 1 auto;max-width:none}
+  .burger{display:none!important}
+  .nav-in{min-height:52px}
+  .nav-in a{font-size:.86rem;padding:.45rem .6rem}
+  .nav-in a svg.nav-ic{width:17px;height:17px}
+  .nav-note{display:none}
+}
+@media(max-width:860px){
+  .main-nav{display:none!important}
+  .burger{display:grid!important}
+}
+@media(max-width:700px){
+  .head-search{display:none!important}
+}
+
+/* ۴) ریزه‌کاری متن‌ها */
+.st-p{display:none}
+.sf-hint{display:none}
+.nav-in a span{line-height:1.6}
+@media(max-width:760px){.head-search{display:none!important}}
+
+/* ── v13.1 — کشوی موبایل مرتب‌تر ─────────────────────────────────────── */
+.drawer-panel>a{display:flex;align-items:center;gap:.6rem}
+.drawer-panel>a svg{width:18px;height:18px;flex:0 0 auto;opacity:.72;color:#9fb4c6}
+.drawer-panel>a:hover svg,.drawer-panel>a.act svg{color:var(--gold);opacity:1}
+.dr-label{display:block;margin:.9rem 0 .3rem;padding-inline-start:.7rem;font-size:.68rem;
+  letter-spacing:.18em;color:#6f7a89;text-transform:uppercase}
+.drawer-panel>a span{line-height:1.7}
+
+/* ── v13.2 — نوار نباید مگامنو را ببُرد ──────────────────────────────── */
+.nav-in ul{overflow:visible!important}
+.has-mega .mega{z-index:60}
