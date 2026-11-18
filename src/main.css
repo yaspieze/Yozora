@@ -1105,7 +1105,7 @@ html.has-smooth{scroll-behavior:auto}
 .story{position:relative}
 .story-head{padding:clamp(2rem,6vw,4rem) 0 1rem}
 .story-head .sec{font-size:clamp(1.5rem,3.4vw,2.5rem);max-width:24ch}
-@media(min-width:901px){
+@media(min-width:781px){
   .story{height:340vh}
   .story-pin{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;
     overflow:hidden;padding-block:clamp(2rem,7vh,5rem)}
@@ -1133,7 +1133,7 @@ html.has-smooth{scroll-behavior:auto}
 .story-dots i{width:26px;height:3px;border-radius:99px;background:rgba(255,255,255,.14);transition:.4s}
 .story-dots i.on{background:var(--gold);width:44px;box-shadow:0 0 16px rgba(248,192,0,.5)}
 .sf-hint{font-size:.72rem;color:#79808f;letter-spacing:.18em}
-@media(max-width:900px){
+@media(max-width:780px){
   .story-pin{padding:2rem 0 1rem}
   .story-track{overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;
     scrollbar-width:none;-ms-overflow-style:none}
@@ -1394,7 +1394,7 @@ body:not(.ready) #app{opacity:0}
 .drawer-panel > a{padding:.62rem .8rem;border-radius:12px}
 .drawer-panel > a:hover{background:rgba(255,255,255,.06);color:#fff}
 
-@media(min-width:901px){
+@media(min-width:781px){
   .story{height:300vh}
   .story-track{gap:1.4rem}
   .story-card{flex:0 0 min(74vw,360px)}

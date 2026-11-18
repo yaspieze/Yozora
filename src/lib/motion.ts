@@ -45,7 +45,7 @@ export function initStory(): void {
   const dots = Array.from(story.querySelectorAll<HTMLElement>('.story-dots i'));
   if (!track) return;
 
-  const isPinned = (): boolean => window.innerWidth > 900;
+  const isPinned = (): boolean => window.innerWidth > 780;
 
   const paint = (): void => {
     if (!isPinned()) {
