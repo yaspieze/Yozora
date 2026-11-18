@@ -37,41 +37,39 @@ export function initParallax(): void {
   paint();
 }
 
-/* ── فصل‌های افقی: با اسکرول عمودی، کارت‌ها افقی سُر می‌خورند ──────────── */
-export function initStory(): void {
-  const story = document.querySelector<HTMLElement>('#story');
-  if (!story) return;
-  const track = story.querySelector<HTMLElement>('.story-track');
-  const dots = Array.from(story.querySelectorAll<HTMLElement>('.story-dots i'));
+/* ── صحنه‌های پین‌شده: هر بخش با [data-pin] افقی سُر می‌خورد ─────────── */
+function paintPin(sec: HTMLElement): void {
+  const track = sec.querySelector<HTMLElement>('[data-pin-track]');
   if (!track) return;
+  const dots = Array.from(sec.querySelectorAll<HTMLElement>('.story-dots i, .pin-dots i'));
+  if (window.innerWidth <= 780) {
+    sec.style.removeProperty('height');
+    track.style.transform = '';
+    return;
+  }
+  const vh = window.innerHeight;
+  const total = sec.offsetHeight - vh;
+  const passed = Math.min(total, Math.max(0, -sec.getBoundingClientRect().top));
+  const p = total > 0 ? passed / total : 0;
+  const over = Math.max(0, track.scrollWidth - track.clientWidth);
+  track.style.transform = `translate3d(${(p * over).toFixed(2)}px,0,0)`;
+  const active = Math.min(dots.length - 1, Math.round(p * (dots.length - 1 || 1)));
+  dots.forEach((d, i) => d.classList.toggle('on', i === active));
+  track.querySelectorAll<HTMLElement>('.story-card, .theater-card').forEach((c, i) => {
+    c.classList.toggle('is-on', i === active);
+  });
+  const bar = sec.querySelector<HTMLElement>('.pin-bar i');
+  if (bar) bar.style.transform = `scaleX(${Math.max(0.02, p).toFixed(3)})`;
+}
 
-  const isPinned = (): boolean => window.innerWidth > 780;
-
-  const paint = (): void => {
-    if (!isPinned()) {
-      story.style.removeProperty('height');
-      track.style.transform = '';
-      return;
-    }
-    const vh = window.innerHeight;
-    const total = story.offsetHeight - vh;
-    const passed = Math.min(total, Math.max(0, -story.getBoundingClientRect().top));
-    const p = total > 0 ? passed / total : 0;
-    const over = Math.max(0, track.scrollWidth - track.clientWidth);
-    // در RTL محتوا به سمت چپ سرریز می‌کند، پس ترک را به راست می‌بریم
-    track.style.transform = `translate3d(${(p * over).toFixed(2)}px,0,0)`;
-
-    const active = Math.min(dots.length - 1, Math.round(p * (dots.length - 1 || 1)));
-    dots.forEach((d, i) => d.classList.toggle('on', i === active));
-    track.querySelectorAll<HTMLElement>('.story-card').forEach((c, i) => {
-      c.classList.toggle('is-on', i === active);
-    });
-  };
-
-  queue.add(paint);
+export function initPinned(): void {
+  const scenes = Array.from(document.querySelectorAll<HTMLElement>('[data-pin]'));
+  if (!scenes.length) return;
+  const paintAll = (): void => scenes.forEach(paintPin);
+  queue.add(paintAll);
   addEventListener('scroll', onScroll, { passive: true });
-  addEventListener('resize', paint);
-  paint();
+  addEventListener('resize', paintAll);
+  paintAll();
 }
 
 /* ── مارکی: محتوا را دو برابر می‌کنیم تا حلقهٔ بی‌درز شود ─────────────── */
@@ -160,7 +158,7 @@ export function initCountUp(): void {
 export function initMotion(): void {
   initSplit();
   initParallax();
-  initStory();
+  initPinned();
   initMarquee();
   initTilt();
 }

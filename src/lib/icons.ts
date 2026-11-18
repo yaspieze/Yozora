@@ -20,3 +20,41 @@ export const ICONS = {
 };
 
 export type IconName = keyof typeof ICONS;
+
+/* ── آیکن‌های نوبار (سبک gamegrip: خطی، پرجزئیات، ۲۴px) ───────────────── */
+const nav = (inner: string): string =>
+  `<svg class="nav-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+
+export const NAVICONS = {
+  home: nav(
+    '<path d="M4 10.6 12 4l8 6.6V19a1.4 1.4 0 0 1-1.4 1.4h-3.2v-5.6H9.6V20.4H5.4A1.4 1.4 0 0 1 4 19Z"/><path d="M8.6 9.8 12 7l3.4 2.8" stroke-opacity=".55"/>',
+  ),
+  products: nav(
+    '<rect x="3.2" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="13.4" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="3.2" y="13.4" width="7.4" height="7.4" rx="1.8"/><path d="M14.6 14.6h4.8v4.8h-4.8z" stroke-opacity=".45"/>',
+  ),
+  prices: nav(
+    '<path d="M12.6 3.4h6.4a.6.6 0 0 1 .6.6v6.4a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-5-5a2 2 0 0 1 0-2.8l7.4-7.4a2 2 0 0 1 1.4-.6Z"/><circle cx="16.2" cy="7.4" r="1.5"/>',
+  ),
+  guarantee: nav(
+    '<path d="M12 3.2 19 6v6c0 4.3-3 7.3-7 8.8-4-1.5-7-4.5-7-8.8V6Z"/><path d="m9 12 2 2 4-4.2" />',
+  ),
+  blog: nav(
+    '<path d="M5 19.4 8.4 18.6 19 8a2.2 2.2 0 0 0-3.1-3.1L5.3 15.5 4.6 19Z"/><path d="m14.8 6.2 3 3M5.4 15.6l3 3" stroke-opacity=".55"/>',
+  ),
+  about: nav(
+    '<circle cx="12" cy="12" r="8.6"/><path d="M12 10.8v5.4"/><circle cx="12" cy="8" r=".9" fill="currentColor" stroke="none"/>',
+  ),
+  contact: nav(
+    '<path d="M4.4 6.6A2.2 2.2 0 0 1 6.6 4.4h10.8a2.2 2.2 0 0 1 2.2 2.2v7.2a2.2 2.2 0 0 1-2.2 2.2H9.8L5.6 19.2V16a2.2 2.2 0 0 1-1.2-2Z"/><path d="M8.4 9h7.2M8.4 11.8h4.6" stroke-opacity=".55"/>',
+  ),
+} as const;
+
+export type NavIconName = keyof typeof NAVICONS;
+
+/* ── نشان استودیو (گسلایت) ─────────────────────────────────────────────── */
+export const GASLIGHT_MARK = `<svg class="gs-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <path d="M16 2.5 27.7 9v14L16 29.5 4.3 23V9Z" stroke="currentColor" stroke-width="1.2" stroke-opacity=".55"/>
+  <path d="M16 8.2 22.6 12v7.6L16 23.4 9.4 19.6V12Z" stroke="currentColor" stroke-width="1.1"/>
+  <path d="M16 12.4l3.2 1.9v3.8L16 20l-3.2-1.9v-3.8Z" fill="currentColor" fill-opacity=".85"/>
+  <path d="M16 2.5v5.7M27.7 9l-5.1 3M4.3 9l5.1 3" stroke="currentColor" stroke-width=".9" stroke-opacity=".4"/>
+</svg>`;

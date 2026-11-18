@@ -43,12 +43,12 @@ export const sectionHead = (
 ): string =>
   link
     ? `<div class="sec-hd row">
-  <div><span class="eyebrow">${esc(eyebrow)}</span><h2 class="sec">${title}</h2>
+  <div>${eyebrow ? `<span class="eyebrow">${esc(eyebrow)}</span>` : ''}<h2 class="sec">${title}</h2>
   ${text ? `<p class="sec-p">${esc(text)}</p>` : ''}</div>
   <a class="btn btn-ghost btn-sm" href="${link.href}">${esc(link.label)} ${icon('arrow')}</a>
 </div>`
     : `<div class="sec-hd${center ? ' center' : ''}">
-  <span class="eyebrow">${esc(eyebrow)}</span>
+  ${eyebrow ? `<span class="eyebrow">${esc(eyebrow)}</span>` : ''}
   <h2 class="sec">${title}</h2>
   ${text ? `<p class="sec-p">${esc(text)}</p>` : ''}
 </div>`;

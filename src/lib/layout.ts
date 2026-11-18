@@ -1,4 +1,4 @@
-import { ICONS } from './icons';
+import { GASLIGHT_MARK, ICONS, NAVICONS } from './icons';
 import { CATEGORIES, DISCORD } from '../data/catalog';
 
 export interface NavItem {
@@ -69,13 +69,19 @@ export const renderHeader = (active: string): string => `
       <ul>
         ${NAV.map((n) => {
           const act = n.key === active ? ' class="act"' : '';
+          const ic = n.key && n.key in NAVICONS ? NAVICONS[n.key as keyof typeof NAVICONS] : '';
           if (n.key === 'products') {
-            return `<li class="has-mega"><a href="${n.href}"${act} aria-haspopup="true" aria-expanded="false">${n.label} ${ICONS.chevron}</a>${megaMenu()}</li>`;
+            return `<li class="has-mega"><a href="${n.href}"${act} aria-haspopup="true" aria-expanded="false">${ic}<span>${n.label}</span> ${ICONS.chevron}</a>${megaMenu()}</li>`;
           }
-          return `<li><a href="${n.href}"${act}>${n.label}</a></li>`;
+          return `<li><a href="${n.href}"${act}>${ic}<span>${n.label}</span></a></li>`;
         }).join('')}
       </ul>
-      <span class="nav-note">${ICONS.bolt} تحویل ۱ تا ۴۸ ساعت</span>
+      <span class="nav-note">
+        <svg class="nav-signal" viewBox="0 0 34 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M1 7h4M9 3v8M14 1v12M19 4v6M24 2v10M29 5v4M33 7h-1"/>
+        </svg>
+        تحویل ۱ تا ۴۸ ساعت
+      </span>
     </div>
   </nav>
 </header>
@@ -140,12 +146,18 @@ export const renderFooter = (): string => `
     <span>${ICONS.bolt} تحویل سریع</span>
     <span>${ICONS.clock} پشتیبانی ۲۴/۷</span>
   </div>
+  <div class="foot-credit"><div class="wrap fc-in">
+    <span class="fc-by">طراحی شده توسط ${GASLIGHT_MARK} <b>گسلایت استودیو</b></span>
+    <span class="fc-line" aria-hidden="true"></span>
+    <span class="fc-note">Gaslight Studio — interface &amp; motion</span>
+  </div></div>
   <div class="foot-bottom"><div class="wrap fb-in">
     <span>© ۱۴۰۵ کینیوا شاپ — تمام حقوق محفوظ است.</span>
     <span>ساخته‌شده با ❤ برای انجمن کینیوا</span>
   </div></div>
   <div class="foot-mark" aria-hidden="true">KINIWA</div>
 </footer>
+<div class="side-wm" aria-hidden="true">KINIWA · GASLIGHT STUDIO</div>
 <div class="mobar"><a class="btn btn-gold" href="${DISCORD}" target="_blank" rel="noopener">${ICONS.discord} ثبت سفارش در دیسکورد</a></div>`;
 
 export const renderLayout = (active: string): string => `

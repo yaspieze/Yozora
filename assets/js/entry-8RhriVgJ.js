@@ -1,4 +1,9 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const l of document.querySelectorAll('link[rel="modulepreload"]'))e(l);new MutationObserver(l=>{for(const i of l)if(i.type==="childList")for(const c of i.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&e(c)}).observe(document,{childList:!0,subtree:!0});function t(l){const i={};return l.integrity&&(i.integrity=l.integrity),l.referrerPolicy&&(i.referrerPolicy=l.referrerPolicy),l.crossOrigin==="use-credentials"?i.credentials="include":l.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(l){if(l.ep)return;l.ep=!0;const i=t(l);fetch(l.href,i)}})();const b=(s,a=24)=>`<svg width="${a}" height="${a}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,g={discord:'<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.9a13.7 13.7 0 0 0-.62 1.28 18.3 18.3 0 0 0-5.55 0A13.7 13.7 0 0 0 8.6 2.9a19.7 19.7 0 0 0-4.92 1.47C.6 9.05-.27 13.6.16 18.1a19.9 19.9 0 0 0 6.03 3.05c.48-.66.9-1.36 1.27-2.1-.7-.26-1.37-.58-2-.96.17-.12.33-.25.49-.38a14.2 14.2 0 0 0 12.1 0c.16.13.32.26.49.38-.63.38-1.3.7-2 .96.37.74.79 1.44 1.27 2.1a19.8 19.8 0 0 0 6.03-3.05c.5-5.2-.86-9.72-3.52-13.73ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Z"/></svg>',bolt:b('<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>'),card:b('<rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 10h19"/>'),shield:b('<path d="M12 3l7.5 3v6c0 4.5-3.2 7.7-7.5 9-4.3-1.3-7.5-4.5-7.5-9V6L12 3Z"/><path d="M9 12.2l2.1 2.1L15.4 10"/>'),clock:b('<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>'),search:b('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>'),menu:b('<path d="M3.5 7h17M3.5 12h17M3.5 17h17"/>'),close:b('<path d="m6 6 12 12M18 6 6 18"/>'),cart:b('<path d="M3 4h2.4l2.2 11.2h9.9L19.5 7H6"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/>'),chevron:b('<path d="m9 6 6 6-6 6"/>'),arrow:b('<path d="M5 12h14M13 6l6 6-6 6"/>'),star:b('<path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.9-5.2 2.9 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/>'),info:b('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),spark:b('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.2 6.2l3 3M14.8 14.8l3 3M17.8 6.2l-3 3M9.2 14.8l-3 3"/>')},f="https://discord.gg/KHsEBj6kG3",E=[{key:"minecraft",slug:"cat-minecraft/",title:"اکانت ماینکرفت",en:"Minecraft Accounts",short:"فول اکسس، جاوا و بدراک",image:"assets/img/products/p-minecraft-account.jpg",note:"تحویل تا ۴۸ ساعت"},{key:"donut",slug:"cat-donut/",title:"پول دونات اس ام پی",en:"Donut SMP",short:"هر میلیون ۴٬۰۰۰ تومان",image:"assets/img/products/p-donut-million.jpg",note:"موجودی ۳۰۰ میلیون"},{key:"hypixel",slug:"cat-hypixel/",title:"هایپیکسل و اسکای‌بلاک",en:"Hypixel & SkyBlock",short:"رنک، کوین و بوستر",image:"assets/img/products/p-hypixel.jpg",note:"تحویل ۱ تا ۲۴ ساعت"},{key:"design",slug:"cat-design/",title:"خدمات فتوشاپ",en:"Design Services",short:"لوگو، بنر، تامنیل، اسکین",image:"assets/img/products/p-logo.jpg",note:"از ۲۰۰٬۰۰۰ تومان"},{key:"overlay",slug:"cat-overlay/",title:"اورلی استریم",en:"Stream Overlay",short:"پک کامل + فونت اختصاصی",image:"assets/img/products/p-overlay-good.jpg",note:"از ۲۴۵٬۰۰۰ تومان"},{key:"cosmetics",slug:"cat-cosmetics/",title:"کازمتیک",en:"Cosmetics",short:"هاله، بال، کلاه",image:"assets/img/products/p-cosmetics.jpg",note:"قیمت دلاری آیتم"},{key:"cape",slug:"cat-cape/",title:"کیپ اپتیفاین",en:"OptiFine Capes",short:"اختصاصی روی اکانت شما",image:"assets/img/products/p-cape.jpg",note:"۳۲۹٬۰۰۰ تومان"}],M=[{id:"mc-account",title:"اکانت ماینکرفت اقتصادی",category:"minecraft",image:"assets/img/products/p-minecraft-account.jpg",desc:"اکانت کامل با فول اکسس برای جاوا و بدراک؛ اطلاعات هم قابل تغییر است.",priceLabel:"قیمت",price:"۲٬۲۴۹٬۰۰۰ تومان",pills:[{text:"فول اکسس",tone:"green"},{text:"جاوا + بدراک"},{text:"تغییر اطلاعات",tone:"gold"}],href:"product/mc-account/",badge:"پرفروش"},{id:"mc-priority",title:"اکانت با اولویت تحویل",category:"minecraft",image:"assets/img/products/p-mc-priority.jpg",desc:"ثبت سفارش با اولویت در تیکت برای تحویل در کمترین زمان.",priceLabel:"قیمت",price:"۲٬۲۴۹٬۰۰۰ تومان",pills:[{text:"اولویت",tone:"green"},{text:"فول اکسس"}],href:"product/mc-priority/"},{id:"donut-million",title:"پول دونات — هر میلیون",category:"donut",image:"assets/img/products/p-donut-million.jpg",desc:"حداقل خرید ۵۰ میلیون؛ موجودی فعلی سرور ۳۰۰ میلیون.",priceLabel:"هر میلیون",price:"۴٬۰۰۰ تومان",pills:[{text:"موجودی ۳۰۰M",tone:"green"},{text:"حداقل ۵۰M"},{text:"تحویل ۴۸h",tone:"gold"}],href:"product/donut-million/",badge:"تخفیف حجمی"},{id:"hypixel",title:"محصولات هایپیکسل",category:"hypixel",image:"assets/img/products/p-hypixel.jpg",desc:"همهٔ آیتم‌های موجود؛ قیمت وابسته به دلار روز.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"۱ تا ۲۴ ساعت",tone:"green"},{text:"امن و قانونی"}],href:"product/hypixel/",ask:!0},{id:"skyblock",title:"کوین اسکای‌بلاک — هر میلیون",category:"hypixel",image:"assets/img/products/p-skyblock.jpg",desc:"کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.",priceLabel:"هر میلیون",price:"۶٬۰۰۰ تومان",pills:[{text:"۷۲ ساعت",tone:"green"},{text:"قیمت میلیونی"}],href:"product/skyblock/"},{id:"logo",title:"طراحی لوگو",category:"design",image:"assets/img/products/p-logo.jpg",desc:"لوگوی اختصاصی برای سرور یا کانال شما؛ سه پیشنهاد اولیه.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"}],href:"product/logo/"},{id:"banner-simple",title:"بنر ساده",category:"design",image:"assets/img/products/p-banner-simple.jpg",desc:"بنر مناسب دیسکورد و شبکه‌های اجتماعی.",priceLabel:"قیمت",price:"۳۵۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/banner-simple/"},{id:"banner-pro",title:"بنر حرفه‌ای",category:"design",image:"assets/img/products/p-banner-pro.jpg",desc:"نسخهٔ کامل با جزئیات و بازنگری بیشتر.",priceLabel:"قیمت",price:"۵۰۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/banner-pro/"},{id:"thumbnail-simple",title:"تامنیل یوتیوب (ساده)",category:"design",image:"assets/img/products/p-thumb-simple.jpg",desc:"تامنیل کلیک‌خور برای ویدیوهای گیمینگ.",priceLabel:"قیمت",price:"۲۰۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/thumbnail-simple/"},{id:"thumbnail-pro",title:"تامنیل یوتیوب (حرفه‌ای)",category:"design",image:"assets/img/products/p-thumb-pro.jpg",desc:"نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/thumbnail-pro/"},{id:"skin-simple",title:"اسکین ماینکرفت (ساده)",category:"design",image:"assets/img/products/p-skin-simple.jpg",desc:"اسکین اختصاصی آمادهٔ آپلود.",priceLabel:"قیمت",price:"۲۴۵٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/skin-simple/"},{id:"skin-pro",title:"اسکین ماینکرفت (حرفه‌ای)",category:"design",image:"assets/img/products/p-skin-pro.jpg",desc:"اسکین با جزئیات و سایه‌پردازی بیشتر.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/skin-pro/"},{id:"anime-art",title:"انیمه‌آرت",category:"design",image:"assets/img/products/p-anime.jpg",desc:"آرت انیمه‌استایل در سه سطح کیفیت.",priceLabel:"از",price:"۲۵۰٬۰۰۰ تومان",pills:[{text:"۳ سطح",tone:"gold"}],href:"product/anime-art/"},{id:"overlay-good",title:"اورلی استریم — کیفیت خوب",category:"overlay",image:"assets/img/products/p-overlay-good.jpg",desc:"پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.",priceLabel:"قیمت",price:"۲۴۵٬۰۰۰ تومان",pills:[{text:"کیفیت خوب"}],href:"product/overlay-good/"},{id:"overlay-best",title:"اورلی استریم — کیفیت عالی",category:"overlay",image:"assets/img/products/p-overlay-best.jpg",desc:"نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"کیفیت عالی",tone:"green"}],href:"product/overlay-best/"},{id:"font-pack",title:"پک فونت اختصاصی",category:"overlay",image:"assets/img/products/p-font.jpg",desc:"پک فونت فارسی/لاتین مناسب اورلی و تامنیل.",priceLabel:"قیمت",price:"۱۰۰٬۰۰۰ تومان",pills:[{text:"پک فونت"}],href:"product/font-pack/"},{id:"cosmetics",title:"کازمتیک کلاینت‌های ماینکرفت",category:"cosmetics",image:"assets/img/products/p-cosmetics.jpg",desc:"همهٔ کلاینت‌ها؛ قیمت بر اساس دلاری بودن آیتم.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"همهٔ کلاینت‌ها",tone:"green"},{text:"دلاری",tone:"gold"}],href:"product/cosmetics/",ask:!0},{id:"cape",title:"کیپ اپتیفاین",category:"cape",image:"assets/img/products/p-cape.jpg",desc:"کیپ اختصاصی روی اکانت شما؛ برای همهٔ بازیکن‌های سرور قابل مشاهده است.",priceLabel:"قیمت",price:"۳۲۹٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"},{text:"۱ تا ۷۲ ساعت",tone:"gold"}],href:"product/cape/"}],rs=[{slug:"blog-minecraft-account/",title:"راهنمای کامل خرید اکانت ماینکرفت",desc:"تفاوت اکانت فول اکسس و اکانت معمولی، ریسک‌ها و چک‌لیست قبل از خرید.",image:"assets/img/blog-account.jpg",tag:"راهنمای خرید",time:"۶ دقیقه"},{slug:"blog-donut-smp/",title:"اقتصاد پول دونات اس ام پی چطور کار می‌کند؟",desc:"قیمت هر میلیون، حداقل خرید و بهترین زمان برای خرید حجم بالا.",image:"assets/img/blog-donut.jpg",tag:"دونات اس ام پی",time:"۵ دقیقه"},{slug:"blog-stream-overlay/",title:"چک‌لیست اورلی استریم حرفه‌ای",desc:"چه اجزایی یک پک اورلی کامل باید داشته باشد و چطور با برند شما هماهنگ شود.",image:"assets/img/blog-overlay.jpg",tag:"استریم",time:"۴ دقیقه"}],ss=[{q:"چطور سفارش ثبت کنم؟",a:"وارد سرور دیسکورد کینیوا شاپ شوید، در کانال تیکت یک تیکت باز کنید و محصول مورد نظر را بنویسید. سفارش شما در صف قرار می‌گیرد و زمان تحویل اعلام می‌شود."},{q:"پرداخت چگونه انجام می‌شود؟",a:"همهٔ پرداخت‌ها ریالی و داخل ایران انجام می‌شود؛ نیازی به کارت خارجی یا رمزارز ندارید. فاکتور و رسید هم ارائه می‌شود."},{q:"زمان تحویل چقدر است؟",a:"اکانت ماینکرفت تا ۴۸ ساعت، محصولات هایپیکسل ۱ تا ۲۴ ساعت، اسکای‌بلاک تا ۷۲ ساعت و خدمات طراحی بین ۱ تا ۳ روز کاری."},{q:"اگر سفارش انجام نشود چه می‌شود؟",a:"اگر به هر دلیلی تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود. شرایط در صفحهٔ ضمانت کامل توضیح داده شده است."}],cs=[{href:"./",label:"خانه",key:"home"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],ds=()=>`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const c of i.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&e(c)}).observe(document,{childList:!0,subtree:!0});function t(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(r){if(r.ep)return;r.ep=!0;const i=t(r);fetch(r.href,i)}})();const b=(s,a=24)=>`<svg width="${a}" height="${a}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,g={discord:'<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.9a13.7 13.7 0 0 0-.62 1.28 18.3 18.3 0 0 0-5.55 0A13.7 13.7 0 0 0 8.6 2.9a19.7 19.7 0 0 0-4.92 1.47C.6 9.05-.27 13.6.16 18.1a19.9 19.9 0 0 0 6.03 3.05c.48-.66.9-1.36 1.27-2.1-.7-.26-1.37-.58-2-.96.17-.12.33-.25.49-.38a14.2 14.2 0 0 0 12.1 0c.16.13.32.26.49.38-.63.38-1.3.7-2 .96.37.74.79 1.44 1.27 2.1a19.8 19.8 0 0 0 6.03-3.05c.5-5.2-.86-9.72-3.52-13.73ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Z"/></svg>',bolt:b('<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>'),card:b('<rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 10h19"/>'),shield:b('<path d="M12 3l7.5 3v6c0 4.5-3.2 7.7-7.5 9-4.3-1.3-7.5-4.5-7.5-9V6L12 3Z"/><path d="M9 12.2l2.1 2.1L15.4 10"/>'),clock:b('<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>'),search:b('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>'),menu:b('<path d="M3.5 7h17M3.5 12h17M3.5 17h17"/>'),close:b('<path d="m6 6 12 12M18 6 6 18"/>'),cart:b('<path d="M3 4h2.4l2.2 11.2h9.9L19.5 7H6"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/>'),chevron:b('<path d="m9 6 6 6-6 6"/>'),arrow:b('<path d="M5 12h14M13 6l6 6-6 6"/>'),star:b('<path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.9-5.2 2.9 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/>'),info:b('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),spark:b('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.2 6.2l3 3M14.8 14.8l3 3M17.8 6.2l-3 3M9.2 14.8l-3 3"/>')},q=s=>`<svg class="nav-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,X={home:q('<path d="M4 10.6 12 4l8 6.6V19a1.4 1.4 0 0 1-1.4 1.4h-3.2v-5.6H9.6V20.4H5.4A1.4 1.4 0 0 1 4 19Z"/><path d="M8.6 9.8 12 7l3.4 2.8" stroke-opacity=".55"/>'),products:q('<rect x="3.2" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="13.4" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="3.2" y="13.4" width="7.4" height="7.4" rx="1.8"/><path d="M14.6 14.6h4.8v4.8h-4.8z" stroke-opacity=".45"/>'),prices:q('<path d="M12.6 3.4h6.4a.6.6 0 0 1 .6.6v6.4a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-5-5a2 2 0 0 1 0-2.8l7.4-7.4a2 2 0 0 1 1.4-.6Z"/><circle cx="16.2" cy="7.4" r="1.5"/>'),guarantee:q('<path d="M12 3.2 19 6v6c0 4.3-3 7.3-7 8.8-4-1.5-7-4.5-7-8.8V6Z"/><path d="m9 12 2 2 4-4.2" />'),blog:q('<path d="M5 19.4 8.4 18.6 19 8a2.2 2.2 0 0 0-3.1-3.1L5.3 15.5 4.6 19Z"/><path d="m14.8 6.2 3 3M5.4 15.6l3 3" stroke-opacity=".55"/>'),about:q('<circle cx="12" cy="12" r="8.6"/><path d="M12 10.8v5.4"/><circle cx="12" cy="8" r=".9" fill="currentColor" stroke="none"/>'),contact:q('<path d="M4.4 6.6A2.2 2.2 0 0 1 6.6 4.4h10.8a2.2 2.2 0 0 1 2.2 2.2v7.2a2.2 2.2 0 0 1-2.2 2.2H9.8L5.6 19.2V16a2.2 2.2 0 0 1-1.2-2Z"/><path d="M8.4 9h7.2M8.4 11.8h4.6" stroke-opacity=".55"/>')},ns=`<svg class="gs-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <path d="M16 2.5 27.7 9v14L16 29.5 4.3 23V9Z" stroke="currentColor" stroke-width="1.2" stroke-opacity=".55"/>
+  <path d="M16 8.2 22.6 12v7.6L16 23.4 9.4 19.6V12Z" stroke="currentColor" stroke-width="1.1"/>
+  <path d="M16 12.4l3.2 1.9v3.8L16 20l-3.2-1.9v-3.8Z" fill="currentColor" fill-opacity=".85"/>
+  <path d="M16 2.5v5.7M27.7 9l-5.1 3M4.3 9l5.1 3" stroke="currentColor" stroke-width=".9" stroke-opacity=".4"/>
+</svg>`,f="https://discord.gg/KHsEBj6kG3",E=[{key:"minecraft",slug:"cat-minecraft/",title:"اکانت ماینکرفت",en:"Minecraft Accounts",short:"فول اکسس، جاوا و بدراک",image:"assets/img/products/p-minecraft-account.jpg",note:"تحویل تا ۴۸ ساعت"},{key:"donut",slug:"cat-donut/",title:"پول دونات اس ام پی",en:"Donut SMP",short:"هر میلیون ۴٬۰۰۰ تومان",image:"assets/img/products/p-donut-million.jpg",note:"موجودی ۳۰۰ میلیون"},{key:"hypixel",slug:"cat-hypixel/",title:"هایپیکسل و اسکای‌بلاک",en:"Hypixel & SkyBlock",short:"رنک، کوین و بوستر",image:"assets/img/products/p-hypixel.jpg",note:"تحویل ۱ تا ۲۴ ساعت"},{key:"design",slug:"cat-design/",title:"خدمات فتوشاپ",en:"Design Services",short:"لوگو، بنر، تامنیل، اسکین",image:"assets/img/products/p-logo.jpg",note:"از ۲۰۰٬۰۰۰ تومان"},{key:"overlay",slug:"cat-overlay/",title:"اورلی استریم",en:"Stream Overlay",short:"پک کامل + فونت اختصاصی",image:"assets/img/products/p-overlay-good.jpg",note:"از ۲۴۵٬۰۰۰ تومان"},{key:"cosmetics",slug:"cat-cosmetics/",title:"کازمتیک",en:"Cosmetics",short:"هاله، بال، کلاه",image:"assets/img/products/p-cosmetics.jpg",note:"قیمت دلاری آیتم"},{key:"cape",slug:"cat-cape/",title:"کیپ اپتیفاین",en:"OptiFine Capes",short:"اختصاصی روی اکانت شما",image:"assets/img/products/p-cape.jpg",note:"۳۲۹٬۰۰۰ تومان"}],x=[{id:"mc-account",title:"اکانت ماینکرفت اقتصادی",category:"minecraft",image:"assets/img/products/p-minecraft-account.jpg",desc:"اکانت کامل با فول اکسس برای جاوا و بدراک؛ اطلاعات هم قابل تغییر است.",priceLabel:"قیمت",price:"۲٬۲۴۹٬۰۰۰ تومان",pills:[{text:"فول اکسس",tone:"green"},{text:"جاوا + بدراک"},{text:"تغییر اطلاعات",tone:"gold"}],href:"product/mc-account/",badge:"پرفروش"},{id:"mc-priority",title:"اکانت با اولویت تحویل",category:"minecraft",image:"assets/img/products/p-mc-priority.jpg",desc:"ثبت سفارش با اولویت در تیکت برای تحویل در کمترین زمان.",priceLabel:"قیمت",price:"۲٬۲۴۹٬۰۰۰ تومان",pills:[{text:"اولویت",tone:"green"},{text:"فول اکسس"}],href:"product/mc-priority/"},{id:"donut-million",title:"پول دونات — هر میلیون",category:"donut",image:"assets/img/products/p-donut-million.jpg",desc:"حداقل خرید ۵۰ میلیون؛ موجودی فعلی سرور ۳۰۰ میلیون.",priceLabel:"هر میلیون",price:"۴٬۰۰۰ تومان",pills:[{text:"موجودی ۳۰۰M",tone:"green"},{text:"حداقل ۵۰M"},{text:"تحویل ۴۸h",tone:"gold"}],href:"product/donut-million/",badge:"تخفیف حجمی"},{id:"hypixel",title:"محصولات هایپیکسل",category:"hypixel",image:"assets/img/products/p-hypixel.jpg",desc:"همهٔ آیتم‌های موجود؛ قیمت وابسته به دلار روز.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"۱ تا ۲۴ ساعت",tone:"green"},{text:"امن و قانونی"}],href:"product/hypixel/",ask:!0},{id:"skyblock",title:"کوین اسکای‌بلاک — هر میلیون",category:"hypixel",image:"assets/img/products/p-skyblock.jpg",desc:"کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.",priceLabel:"هر میلیون",price:"۶٬۰۰۰ تومان",pills:[{text:"۷۲ ساعت",tone:"green"},{text:"قیمت میلیونی"}],href:"product/skyblock/"},{id:"logo",title:"طراحی لوگو",category:"design",image:"assets/img/products/p-logo.jpg",desc:"لوگوی اختصاصی برای سرور یا کانال شما؛ سه پیشنهاد اولیه.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"}],href:"product/logo/"},{id:"banner-simple",title:"بنر ساده",category:"design",image:"assets/img/products/p-banner-simple.jpg",desc:"بنر مناسب دیسکورد و شبکه‌های اجتماعی.",priceLabel:"قیمت",price:"۳۵۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/banner-simple/"},{id:"banner-pro",title:"بنر حرفه‌ای",category:"design",image:"assets/img/products/p-banner-pro.jpg",desc:"نسخهٔ کامل با جزئیات و بازنگری بیشتر.",priceLabel:"قیمت",price:"۵۰۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/banner-pro/"},{id:"thumbnail-simple",title:"تامنیل یوتیوب (ساده)",category:"design",image:"assets/img/products/p-thumb-simple.jpg",desc:"تامنیل کلیک‌خور برای ویدیوهای گیمینگ.",priceLabel:"قیمت",price:"۲۰۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/thumbnail-simple/"},{id:"thumbnail-pro",title:"تامنیل یوتیوب (حرفه‌ای)",category:"design",image:"assets/img/products/p-thumb-pro.jpg",desc:"نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/thumbnail-pro/"},{id:"skin-simple",title:"اسکین ماینکرفت (ساده)",category:"design",image:"assets/img/products/p-skin-simple.jpg",desc:"اسکین اختصاصی آمادهٔ آپلود.",priceLabel:"قیمت",price:"۲۴۵٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/skin-simple/"},{id:"skin-pro",title:"اسکین ماینکرفت (حرفه‌ای)",category:"design",image:"assets/img/products/p-skin-pro.jpg",desc:"اسکین با جزئیات و سایه‌پردازی بیشتر.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/skin-pro/"},{id:"anime-art",title:"انیمه‌آرت",category:"design",image:"assets/img/products/p-anime.jpg",desc:"آرت انیمه‌استایل در سه سطح کیفیت.",priceLabel:"از",price:"۲۵۰٬۰۰۰ تومان",pills:[{text:"۳ سطح",tone:"gold"}],href:"product/anime-art/"},{id:"overlay-good",title:"اورلی استریم — کیفیت خوب",category:"overlay",image:"assets/img/products/p-overlay-good.jpg",desc:"پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.",priceLabel:"قیمت",price:"۲۴۵٬۰۰۰ تومان",pills:[{text:"کیفیت خوب"}],href:"product/overlay-good/"},{id:"overlay-best",title:"اورلی استریم — کیفیت عالی",category:"overlay",image:"assets/img/products/p-overlay-best.jpg",desc:"نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.",priceLabel:"قیمت",price:"۳۰۰٬۰۰۰ تومان",pills:[{text:"کیفیت عالی",tone:"green"}],href:"product/overlay-best/"},{id:"font-pack",title:"پک فونت اختصاصی",category:"overlay",image:"assets/img/products/p-font.jpg",desc:"پک فونت فارسی/لاتین مناسب اورلی و تامنیل.",priceLabel:"قیمت",price:"۱۰۰٬۰۰۰ تومان",pills:[{text:"پک فونت"}],href:"product/font-pack/"},{id:"cosmetics",title:"کازمتیک کلاینت‌های ماینکرفت",category:"cosmetics",image:"assets/img/products/p-cosmetics.jpg",desc:"همهٔ کلاینت‌ها؛ قیمت بر اساس دلاری بودن آیتم.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"همهٔ کلاینت‌ها",tone:"green"},{text:"دلاری",tone:"gold"}],href:"product/cosmetics/",ask:!0},{id:"cape",title:"کیپ اپتیفاین",category:"cape",image:"assets/img/products/p-cape.jpg",desc:"کیپ اختصاصی روی اکانت شما؛ برای همهٔ بازیکن‌های سرور قابل مشاهده است.",priceLabel:"قیمت",price:"۳۲۹٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"},{text:"۱ تا ۷۲ ساعت",tone:"gold"}],href:"product/cape/"}],os=[{slug:"blog-minecraft-account/",title:"راهنمای کامل خرید اکانت ماینکرفت",desc:"تفاوت اکانت فول اکسس و اکانت معمولی، ریسک‌ها و چک‌لیست قبل از خرید.",image:"assets/img/blog-account.jpg",tag:"راهنمای خرید",time:"۶ دقیقه"},{slug:"blog-donut-smp/",title:"اقتصاد پول دونات اس ام پی چطور کار می‌کند؟",desc:"قیمت هر میلیون، حداقل خرید و بهترین زمان برای خرید حجم بالا.",image:"assets/img/blog-donut.jpg",tag:"دونات اس ام پی",time:"۵ دقیقه"},{slug:"blog-stream-overlay/",title:"چک‌لیست اورلی استریم حرفه‌ای",desc:"چه اجزایی یک پک اورلی کامل باید داشته باشد و چطور با برند شما هماهنگ شود.",image:"assets/img/blog-overlay.jpg",tag:"استریم",time:"۴ دقیقه"}],es=[{q:"چطور سفارش ثبت کنم؟",a:"وارد سرور دیسکورد کینیوا شاپ شوید، در کانال تیکت یک تیکت باز کنید و محصول مورد نظر را بنویسید. سفارش شما در صف قرار می‌گیرد و زمان تحویل اعلام می‌شود."},{q:"پرداخت چگونه انجام می‌شود؟",a:"همهٔ پرداخت‌ها ریالی و داخل ایران انجام می‌شود؛ نیازی به کارت خارجی یا رمزارز ندارید. فاکتور و رسید هم ارائه می‌شود."},{q:"زمان تحویل چقدر است؟",a:"اکانت ماینکرفت تا ۴۸ ساعت، محصولات هایپیکسل ۱ تا ۲۴ ساعت، اسکای‌بلاک تا ۷۲ ساعت و خدمات طراحی بین ۱ تا ۳ روز کاری."},{q:"اگر سفارش انجام نشود چه می‌شود؟",a:"اگر به هر دلیلی تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود. شرایط در صفحهٔ ضمانت کامل توضیح داده شده است."}],ps=[{href:"./",label:"خانه",key:"home"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],vs=()=>`
 <div class="mega" role="menu">
   <div class="mega-grid">
     ${E.map((s,a)=>`<a class="mega-item" href="${s.slug}" role="menuitem" style="--i:${a}">
@@ -10,7 +15,7 @@
     <span>۱۸ محصول در ۷ دسته</span>
     <a href="products/">دیدن کاتالوگ کامل ${g.chevron}</a>
   </div>
-</div>`,ns=s=>`
+</div>`,hs=s=>`
 <div class="topstrip">
   <div class="wrap ts-in">
     <div class="ts-msg"><i class="dotlive"></i> پشتیبانی آنلاین در دیسکورد · پاسخ‌گویی لحظه‌ای</div>
@@ -44,9 +49,14 @@
   <nav class="main-nav" aria-label="منوی اصلی">
     <div class="wrap nav-in">
       <ul>
-        ${cs.map(a=>{const t=a.key===s?' class="act"':"";return a.key==="products"?`<li class="has-mega"><a href="${a.href}"${t} aria-haspopup="true" aria-expanded="false">${a.label} ${g.chevron}</a>${ds()}</li>`:`<li><a href="${a.href}"${t}>${a.label}</a></li>`}).join("")}
+        ${ps.map(a=>{const t=a.key===s?' class="act"':"",e=a.key&&a.key in X?X[a.key]:"";return a.key==="products"?`<li class="has-mega"><a href="${a.href}"${t} aria-haspopup="true" aria-expanded="false">${e}<span>${a.label}</span> ${g.chevron}</a>${vs()}</li>`:`<li><a href="${a.href}"${t}>${e}<span>${a.label}</span></a></li>`}).join("")}
       </ul>
-      <span class="nav-note">${g.bolt} تحویل ۱ تا ۴۸ ساعت</span>
+      <span class="nav-note">
+        <svg class="nav-signal" viewBox="0 0 34 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M1 7h4M9 3v8M14 1v12M19 4v6M24 2v10M29 5v4M33 7h-1"/>
+        </svg>
+        تحویل ۱ تا ۴۸ ساعت
+      </span>
     </div>
   </nav>
 </header>
@@ -69,7 +79,7 @@
     <a href="contact/">تماس</a>
     <a class="btn btn-gold" href="${f}" target="_blank" rel="noopener">${g.discord} ورود به دیسکورد</a>
   </div>
-</div>`,os=()=>`
+</div>`,gs=()=>`
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div class="fbrand">
@@ -109,20 +119,26 @@
     <span>${g.bolt} تحویل سریع</span>
     <span>${g.clock} پشتیبانی ۲۴/۷</span>
   </div>
+  <div class="foot-credit"><div class="wrap fc-in">
+    <span class="fc-by">طراحی شده توسط ${ns} <b>گسلایت استودیو</b></span>
+    <span class="fc-line" aria-hidden="true"></span>
+    <span class="fc-note">Gaslight Studio — interface &amp; motion</span>
+  </div></div>
   <div class="foot-bottom"><div class="wrap fb-in">
     <span>© ۱۴۰۵ کینیوا شاپ — تمام حقوق محفوظ است.</span>
     <span>ساخته‌شده با ❤ برای انجمن کینیوا</span>
   </div></div>
   <div class="foot-mark" aria-hidden="true">KINIWA</div>
 </footer>
-<div class="mobar"><a class="btn btn-gold" href="${f}" target="_blank" rel="noopener">${g.discord} ثبت سفارش در دیسکورد</a></div>`,ps=s=>`
+<div class="side-wm" aria-hidden="true">KINIWA · GASLIGHT STUDIO</div>
+<div class="mobar"><a class="btn btn-gold" href="${f}" target="_blank" rel="noopener">${g.discord} ثبت سفارش در دیسکورد</a></div>`,ms=s=>`
 <div id="progress"></div>
 <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
-${ns(s)}
-<main id="main">`;let S=!1;const K=new Set,as=()=>{S||(S=!0,requestAnimationFrame(()=>{S=!1,K.forEach(s=>s())}))};function vs(){const s=Array.from(document.querySelectorAll("[data-par]"));if(!s.length)return;const a=()=>{const t=window.innerHeight;s.forEach(e=>{const l=e.getBoundingClientRect();if(l.bottom<-200||l.top>t+200)return;const i=Number(e.dataset.par??.1),c=l.top+l.height/2-t/2;e.style.transform=`translate3d(0,${(-c*i).toFixed(2)}px,0)`})};K.add(a),addEventListener("scroll",as,{passive:!0}),addEventListener("resize",a),a()}function hs(){const s=document.querySelector("#story");if(!s)return;const a=s.querySelector(".story-track"),t=Array.from(s.querySelectorAll(".story-dots i"));if(!a)return;const e=()=>window.innerWidth>780,l=()=>{if(!e()){s.style.removeProperty("height"),a.style.transform="";return}const i=window.innerHeight,c=s.offsetHeight-i,r=Math.min(c,Math.max(0,-s.getBoundingClientRect().top)),u=c>0?r/c:0,n=Math.max(0,a.scrollWidth-a.clientWidth);a.style.transform=`translate3d(${(u*n).toFixed(2)}px,0,0)`;const v=Math.min(t.length-1,Math.round(u*(t.length-1||1)));t.forEach((m,w)=>m.classList.toggle("on",w===v)),a.querySelectorAll(".story-card").forEach((m,w)=>{m.classList.toggle("is-on",w===v)})};K.add(l),addEventListener("scroll",as,{passive:!0}),addEventListener("resize",l),l()}function gs(){document.querySelectorAll("[data-marquee]").forEach(s=>{const a=s.querySelector(".marq-in");if(!a||a.dataset.cloned)return;const t=document.createElement("div");t.className="marq-track",s.insertBefore(t,a);const e=a.cloneNode(!0);e.dataset.cloned="1",a.dataset.cloned="1",t.append(a),e.setAttribute("aria-hidden","true"),t.append(e),s.classList.add("mq-ready")})}function ms(){if(window.matchMedia("(hover:none)").matches)return;Array.from(document.querySelectorAll("[data-tilt]")).forEach(a=>{const t=l=>{const i=a.getBoundingClientRect(),c=(l.clientX-i.left)/i.width-.5,r=(l.clientY-i.top)/i.height-.5;a.style.setProperty("--tx",`${(-r*7).toFixed(2)}deg`),a.style.setProperty("--ty",`${(c*9).toFixed(2)}deg`)},e=()=>{a.style.setProperty("--tx","0deg"),a.style.setProperty("--ty","0deg")};a.addEventListener("pointermove",t,{passive:!0}),a.addEventListener("pointerleave",e,{passive:!0})})}function us(){Array.from(document.querySelectorAll(".split")).forEach(a=>{if(a.dataset.split)return;a.dataset.split="1";const t=(a.textContent??"").trim().split(/\s+/);a.innerHTML=t.map((e,l)=>`<span class="w" style="--i:${l}">${e}</span>`).join(" ")})}function bs(){const s=Array.from(document.querySelectorAll("[data-count]"));if(!s.length)return;const a=e=>e.toLocaleString("fa-IR"),t=new IntersectionObserver(e=>{e.forEach(l=>{if(!l.isIntersecting)return;const i=l.target;t.unobserve(i);const c=Number(i.dataset.count??0),r=performance.now(),u=1100,n=v=>{const m=Math.min(1,(v-r)/u),w=1-Math.pow(1-m,3);i.textContent=a(Math.round(c*w)),m<1&&requestAnimationFrame(n)};requestAnimationFrame(n)})},{threshold:.4});s.forEach(e=>{e.textContent=a(0),t.observe(e)})}function ys(){us(),vs(),hs(),gs(),ms()}let _=null;const fs=(s,a=!1)=>{_?_.to(s,a):window.scrollTo({top:s,behavior:a?"auto":"smooth"})},ws='input,textarea,select,option,[contenteditable="true"],[data-native-scroll],.drawer,.mega,.search-pop,.modal,.table-wrap,.cat-rail,.h-rail,.no-smooth',W=s=>s instanceof Element?!!s.closest(ws):!1;function ks(){const s=document.documentElement;let a=window.scrollY,t=window.scrollY,e=0;const l=()=>Math.max(0,s.scrollHeight-window.innerHeight),i=d=>Math.min(l(),Math.max(0,d)),c=()=>{const d=a-t;if(Math.abs(d)<.4){t=a,window.scrollTo(0,t),e=0;return}t+=d*.16,window.scrollTo(0,t),e=requestAnimationFrame(c)},r=()=>{e||(e=requestAnimationFrame(c))};_={to:(d,k=!1)=>{if(a=i(d),k){t=a,window.scrollTo(0,t);return}r()},by:d=>{a=i(a+d),r()},current:()=>t},s.classList.add("has-smooth"),window.addEventListener("scroll",()=>{if(document.documentElement.classList.contains("locked"))return;const d=window.scrollY;Math.abs(d-t)>2&&(t=d,a=d)},{passive:!0});const u=d=>{if(d.ctrlKey||d.metaKey||document.documentElement.classList.contains("locked")||W(d.target)||Math.abs(d.deltaY)<Math.abs(d.deltaX)*1.2)return;let k=d.deltaY;d.deltaMode===1?k*=18:d.deltaMode===2&&(k*=window.innerHeight),d.preventDefault(),a=i(a+k),r()};window.addEventListener("wheel",u,{passive:!1});let n=!1,v=0,m=0,w=0,C=null,P=0,N=0;window.addEventListener("touchstart",d=>{if(d.touches.length!==1){n=!1;return}if(document.documentElement.classList.contains("locked")||W(d.target)){n=!1;return}n=!0,C=null,P=d.touches[0].clientX,N=v=d.touches[0].clientY,m=performance.now(),w=0,t=a=window.scrollY},{passive:!0}),window.addEventListener("touchmove",d=>{if(!n||d.touches.length!==1)return;const k=d.touches[0],D=performance.now();if(!C){const Y=Math.abs(k.clientX-P),R=Math.abs(k.clientY-N);if((Y>8||R>8)&&(C=R>=Y?"y":"x"),C!=="y"){n=!1;return}}d.preventDefault();const F=v-k.clientY,ls=Math.max(6,D-m);v=k.clientY,m=D,w=F/ls*16,a=i(a+F),r()},{passive:!1});const V=()=>{if(!n)return;n=!1;const d=Math.max(-900,Math.min(900,w*11));a=i(a+d),r(),w=0};window.addEventListener("touchend",V,{passive:!0}),window.addEventListener("touchcancel",V,{passive:!0})}const y=(s,a=document)=>a.querySelector(s),q=(s,a=document)=>Array.from(a.querySelectorAll(s));function xs(){const s=y("#progress");if(!s)return;let a=!1;const t=()=>{a=!1;const l=document.documentElement,i=l.scrollHeight-l.clientHeight;s.style.transform=`scaleX(${i>0?l.scrollTop/i:0})`},e=()=>{a||(a=!0,requestAnimationFrame(t))};addEventListener("scroll",e,{passive:!0}),addEventListener("resize",e),t()}function $s(){const s=q(".rv, .split");if(!("IntersectionObserver"in window)||s.length===0){s.forEach(t=>t.classList.add("in"));return}const a=new IntersectionObserver(t=>{t.forEach(e=>{e.isIntersecting&&(e.target.classList.add("in"),a.unobserve(e.target))})},{rootMargin:"0px 0px -8% 0px",threshold:.08});s.forEach((t,e)=>{t.style.transitionDelay=`${Math.min(e%6,5)*45}ms`,a.observe(t)})}function Ms(){const s=y("#siteHead"),a=()=>{s==null||s.classList.toggle("stuck",window.scrollY>24)};addEventListener("scroll",a,{passive:!0}),a();const t=y("#burger"),e=y("#drawer"),l=y("#drawerClose");let i=0;const c=r=>{e&&(t==null||t.setAttribute("aria-expanded",String(r)),document.documentElement.classList.toggle("locked",r),document.body.classList.toggle("locked",r),window.clearTimeout(i),r?(e.hidden=!1,requestAnimationFrame(()=>e.classList.add("open"))):(e.classList.remove("open"),i=window.setTimeout(()=>{e.classList.contains("open")||(e.hidden=!0)},460)))};addEventListener("pageshow",()=>{document.documentElement.classList.remove("locked"),document.body.classList.remove("locked"),e&&(e.classList.remove("open"),e.hidden=!0)}),e==null||e.querySelectorAll("a").forEach(r=>r.addEventListener("click",()=>c(!1))),t==null||t.addEventListener("click",()=>c(!(e!=null&&e.classList.contains("open")))),l==null||l.addEventListener("click",()=>c(!1)),e==null||e.addEventListener("click",r=>{r.target===e&&c(!1)}),document.addEventListener("keydown",r=>{r.key==="Escape"&&c(!1)}),js()}function js(){const s=q(".has-mega");s.length&&(s.forEach(a=>{const t=a.querySelector("a");let e=0;const l=i=>{window.clearTimeout(e),i?(a.classList.add("open"),t==null||t.setAttribute("aria-expanded","true")):(a.classList.remove("open"),t==null||t.setAttribute("aria-expanded","false"))};a.addEventListener("pointerenter",()=>l(!0)),a.addEventListener("pointerleave",()=>{e=window.setTimeout(()=>l(!1),140)}),t==null||t.addEventListener("click",i=>{window.matchMedia("(hover:none)").matches&&(i.preventDefault(),l(!a.classList.contains("open")))}),a.addEventListener("keydown",i=>{i.key==="Escape"&&l(!1)})}),document.addEventListener("pointerdown",a=>{const t=a.target;t&&!t.closest(".has-mega")&&s.forEach(e=>e.classList.remove("open"))}))}function Ls(){const s=y("#searchInput"),a=y("#searchPop"),t=y("#headSearch");if(!s||!a)return;const e=l=>{const i=l.trim();if(i.length<2){a.hidden=!0,a.innerHTML="";return}const c=M.filter(r=>r.title.includes(i)||r.desc.includes(i)||r.price.includes(i)).slice(0,6);a.hidden=!1,a.innerHTML=c.length?c.map(r=>`<a href="${r.href}" class="sp-item">
-              <img src="${r.image}" alt="" width="44" height="44" loading="lazy">
-              <span><b>${r.title}</b><i>${r.price}</i></span></a>`).join(""):'<div class="sp-empty">چیزی پیدا نشد — در تیکت دیسکورد بپرس.</div>'};s.addEventListener("input",()=>e(s.value)),s.addEventListener("focus",()=>e(s.value)),t==null||t.addEventListener("submit",l=>{l.preventDefault();const i=a.querySelector("a");i instanceof HTMLAnchorElement&&(location.href=i.href)}),document.addEventListener("click",l=>{l.target instanceof Node&&(t!=null&&t.contains(l.target)||(a.hidden=!0))})}function Es(){if(matchMedia("(hover: none)").matches)return;let s=0,a=null;const t=()=>{s=0;const e=a;if(a=null,!e)return;const l=e.target;if(!(l instanceof Element))return;const i=l.closest(".pcard,.card,.mega-item,.cat-tile");if(!i)return;const c=i.getBoundingClientRect();i.style.setProperty("--mx",`${e.clientX-c.left}px`),i.style.setProperty("--my",`${e.clientY-c.top}px`)};document.addEventListener("pointermove",e=>{a=e,!s&&(s=requestAnimationFrame(t))},{passive:!0})}function qs(){const s=y("#filters"),a=y("#grid");!s||!a||s.addEventListener("click",t=>{const e=t.target.closest("button[data-f]");if(!e)return;q("button",s).forEach(i=>i.classList.remove("act")),e.classList.add("act");const l=e.dataset.f??"all";q(".pcard",a).forEach(i=>{const c=l==="all"||i.dataset.cat===l;i.style.display=c?"":"none"})})}function Bs(){var r,u;const s=y("#heroSlider");if(!s)return;const a=q(".slide",s),t=q("#heroDots i");if(a.length<2)return;let e=0;const l=n=>{e=(n+a.length)%a.length,a.forEach((v,m)=>v.classList.toggle("on",m===e)),t.forEach((v,m)=>v.classList.toggle("on",m===e))};t.forEach((n,v)=>n.addEventListener("click",()=>l(v))),(r=y('[data-slide="prev"]'))==null||r.addEventListener("click",()=>l(e-1)),(u=y('[data-slide="next"]'))==null||u.addEventListener("click",()=>l(e+1));let i=!0;new IntersectionObserver(n=>n.forEach(v=>i=v.isIntersecting),{threshold:.15}).observe(s),setInterval(()=>{i&&!document.hidden&&l(e+1)},5200)}function Cs(){ks(),xs(),Zs(),$s(),Ms(),Ls(),Es(),qs(),Bs(),As(),ys(),bs()}function U(s){const a=document.getElementById("toast");a&&(a.textContent=s,a.classList.add("on"),setTimeout(()=>a.classList.remove("on"),2600))}function Zs(){const s=document.getElementById("qty"),a=document.getElementById("qtyOut"),t=document.getElementById("totalOut"),e=document.getElementById("copyOrder"),l=s?Number(s.dataset.price??0):0,i=s?s.dataset.lbl??"":"",c=n=>n.toLocaleString("fa-IR"),r=()=>s?Number(s.value):0,u=()=>{if(!s)return;const n=r();a&&(a.textContent=c(n)),t&&(t.textContent=`${c(n*l)} تومان`),s.style.setProperty("--pct",`${(n-Number(s.min))/(Number(s.max)-Number(s.min))*100}%`)};s==null||s.addEventListener("input",u),u(),e==null||e.addEventListener("click",async()=>{const v=["سلام 👋",`درخواست سفارش: ${e.dataset.title??"محصول"}`];s&&v.push(`مقدار: ${c(r())} ${i}`,`مبلغ تقریبی: ${c(r()*l)} تومان`),v.push("ممنون، منتظر پاسخ هستم.");const m=v.join(`
-`);try{await navigator.clipboard.writeText(m),U("متن سفارش کپی شد ✓ حالا در تیکت دیسکورد بچسبانید")}catch{U("کپی نشد — متن را دستی بنویسید")}})}function As(){const s=document.getElementById("siteHead");document.addEventListener("click",a=>{var r,u,n;const t=(u=(r=a.target)==null?void 0:r.closest)==null?void 0:u.call(r,'a[href^="#"]');if(!(t instanceof HTMLAnchorElement))return;const e=(n=t.getAttribute("href"))==null?void 0:n.slice(1);if(!e)return;const l=document.getElementById(e);if(!l)return;a.preventDefault();const i=((s==null?void 0:s.offsetHeight)??0)+14,c=l.getBoundingClientRect().top+window.scrollY-i;fs(c),l.setAttribute("tabindex","-1"),l.focus({preventScroll:!0})})}const I={"mc-account":{long:"اکانت ماینکرفت با فول اکسس به‌صورت کامل تحویل داده می‌شود؛ ایمیل و رمز قابل تغییر است و روی هر دو نسخهٔ جاوا و بدراک کار می‌کند. اکانت‌ها بررسی‌شده هستند و پس از تحویل، راهنمای تغییر اطلاعات هم ارسال می‌شود.",features:["فول اکسس با ایمیل و رمز","فعال روی جاوا + بدراک","امکان تغییر ایمیل و رمز","تحویل حداکثر ۴۸ ساعت","ضمانت بازگشت وجه"],delivery:"۲۴ تا ۴۸ ساعت",steps:["تیکت با عنوان «اکانت ماینکرفت» بزنید","مبلغ را ریالی پرداخت کنید","اطلاعات اکانت در تیکت تحویل داده می‌شود"],faq:[{q:"اکانت هکری است؟",a:"نه. همهٔ اکانت‌ها فول اکسس هستند و اطلاعات کامل به شما منتقل می‌شود؛ نیازی به دور زدن هیچ محدودیتی نیست."},{q:"بعد از تحویل می‌توانم ایمیلش را عوض کنم؟",a:"بله، اطلاعات کامل در اختیار شماست و می‌توانید ایمیل و رمز را تغییر دهید."}]},"mc-priority":{long:"اگر عجله دارید، سفارش با اولویت در صف تیکت‌ها جلوتر قرار می‌گیرد و تحویل در کوتاه‌ترین زمان انجام می‌شود. مشخصات اکانت همان نسخهٔ فول اکسس است.",features:["اولویت در صف تحویل","فول اکسس کامل","جاوا + بدراک","پشتیبانی مستقیم تا تحویل"],delivery:"۱۲ تا ۲۴ ساعت",faq:[{q:"تفاوتش با اکانت معمولی چیست؟",a:"فقط زمان تحویل؛ محصول و اطلاعات اکانت دقیقاً یکسان است."}]},"donut-million":{long:"پول سرور دونات اس ام پی به‌صورت میلیونی فروخته می‌شود. موجودی سرور ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون. تحویل مستقیم روی اکانت شما انجام می‌شود.",features:["هر میلیون ۴٬۰۰۰ تومان","حداقل خرید ۵۰ میلیون","حداکثر موجودی ۳۰۰ میلیون","تحویل مستقیم روی اکانت","تحویل تا ۴۸ ساعت"],delivery:"حداقل ۴۸ ساعت",unit:{price:4e3,label:"میلیون",step:5,min:50,max:300,maxLabel:"۳۰۰ میلیون"},faq:[{q:"پول چطور تحویل داده می‌شود؟",a:"بعد از پرداخت، مبلغ در بازی یا از طریق روش توافق‌شده روی اکانت شما واریز می‌شود."},{q:"خرید بیشتر تخفیف دارد؟",a:"برای خریدهای حجم بالا در تیکت مذاکره کنید؛ قیمت پله‌ای داریم."}]},hypixel:{long:"تمام آیتم‌های فروشگاه هایپیکسل — از رنک و کوین تا بوستر و آیتم‌های ویژه — قابل تهیه است. قیمت بر اساس دلار روز محاسبه می‌شود و در تیکت استعلام می‌گیرید.",features:["رنک، کوین، بوستر و آیتم‌های ویژه","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت","امن برای اکانت شما"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"چرا قیمت ثابت نیست؟",a:"چون مبنای قیمت‌گذاری دلار است و روزانه تغییر می‌کند؛ قبل از پرداخت استعلام دقیق می‌گیرید."}]},skyblock:{long:"کوین اسکای‌بلاک هایپیکسل با قیمت هر میلیون ۶٬۰۰۰ تومان و تحویل بین ۱ تا ۷۲ ساعت. مناسب برای خریدهای ملایم و مطمئن بدون ریسک برای اکانت.",features:["هر میلیون ۶٬۰۰۰ تومان","تحویل ۱ تا ۷۲ ساعت","روش امن و بدون ریسک","پشتیبانی تا پایان سفارش"],delivery:"۱ تا ۷۲ ساعت",unit:{price:6e3,label:"میلیون",step:5,min:10,max:500,maxLabel:"۵۰۰ میلیون"},faq:[{q:"حداقل خرید چقدر است؟",a:"از ۱۰ میلیون به بالا سفارش ثبت می‌شود."}]},logo:{long:"طراحی لوگوی اختصاصی برای سرور، کانال یا برند شما. سه پیشنهاد اولیه دریافت می‌کنید و تا رسیدن به نتیجهٔ نهایی اصلاح انجام می‌شود.",features:["سه پیشنهاد اولیه","فایل خروجی PNG با پس‌زمینهٔ شفاف","اصلاح تا رضایت","تحویل ۱ تا ۳ روز کاری"],delivery:"۱ تا ۳ روز کاری",faq:[{q:"فایل لایه‌باز هم می‌دهید؟",a:"در صورت نیاز، فایل لایه‌باز با هزینهٔ جداگانه ارائه می‌شود."}]},"banner-simple":{long:"بنر ساده و تمیز برای دیسکورد و شبکه‌های اجتماعی، با ترکیب‌بندی سریع و مناسب استفادهٔ روزمره.",features:["ابعاد استاندارد دیسکورد","تحویل ۲۴ ساعته","یک بار اصلاح رایگان"],delivery:"۲۴ ساعت"},"banner-pro":{long:"بنر حرفه‌ای با ترکیب‌بندی قوی‌تر، جزئیات بیشتر و دو مرحله بازنگری؛ مناسب برندهای جدی و سرورهای بزرگ.",features:["طراحی اختصاصی","دو مرحله بازنگری","خروجی با کیفیت بالا","تحویل ۱ تا ۳ روز"],delivery:"۱ تا ۳ روز کاری"},"thumbnail-simple":{long:"تامنیل یوتیوب ساده و خوانا؛ مناسب ویدیوهای گیمینگ روزمره با نرخ کلیک بهتر.",features:["۱۲۸۰×۷۲۰","تحویل ۲۴ ساعته","یک بار اصلاح"],delivery:"۲۴ ساعت"},"thumbnail-pro":{long:"تامنیل حرفه‌ای با ترکیب‌بندی، رنگ‌بندی و تایپوگرافی قوی‌تر برای ویدیوهایی که باید دیده شوند.",features:["۱۲۸۰×۷۲۰","دو مرحله بازنگری","ترکیب‌بندی اختصاصی"],delivery:"۱ تا ۲ روز کاری"},"skin-simple":{long:"اسکین ماینکرفت ساده و آمادهٔ آپلود؛ فایل PNG استاندارد که مستقیم روی اکانت یا لانچر ست می‌شود.",features:["فایل PNG استاندارد","آمادهٔ آپلود","تحویل ۲۴ تا ۴۸ ساعت"],delivery:"۲۴ تا ۴۸ ساعت"},"skin-pro":{long:"اسکین حرفه‌ای با جزئیات، سایه‌پردازی و رندر سه‌بعدی برای معرفی؛ مناسب استریم و شبکه‌های اجتماعی.",features:["فایل PNG + رندر سه‌بعدی","سایه‌پردازی حرفه‌ای","تحویل ۲ تا ۳ روز"],delivery:"۲ تا ۳ روز کاری"},"anime-art":{long:"آرت انیمه‌استایل در سه سطح کیفیت — از پرترهٔ ساده تا آرت کامل با پس‌زمینه؛ مناسب پروفایل، تامنیل و بنر.",features:["سه سطح کیفیت","سبک انیمه","خروجی با کیفیت بالا","تحویل ۲ تا ۴ روز"],delivery:"۲ تا ۴ روز کاری",faq:[{q:"سطح‌ها چه تفاوتی دارند؟",a:"سطح پایه تک‌شخصیت ساده، سطح میانی با پس‌زمینه، و سطح کامل با جزئیات و نورپردازی است."}]},"overlay-good":{long:"پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و اسکرین‌های حالت آماده‌به‌کار — با کیفیت خوب و قیمت مناسب.",features:["فریم وب‌کم","چت‌باکس","هشدارها و اسکرین","سازگار با OBS"],delivery:"۱ تا ۲ روز کاری"},"overlay-best":{long:"نسخهٔ کامل و پرجزئیات اورلی با هماهنگی کامل با برند شما؛ شامل تمام اجزای پک خوب به‌علاوهٔ اسکرین‌های اضافه و پک فونت هدیه.",features:["تمام اجزای پک کامل","هماهنگ با برند شما","پک فونت هدیه","دو مرحله بازنگری"],delivery:"۱ تا ۳ روز کاری"},"font-pack":{long:"پک فونت اختصاصی فارسی و لاتین، انتخاب‌شده برای خوانایی روی اورلی و تامنیل؛ همراه با راهنمای استفاده.",features:["فونت فارسی + لاتین","مناسب اورلی و تامنیل","راهنمای نصب","تحویل فوری"],delivery:"فوری تا ۲۴ ساعت"},cosmetics:{long:"کازمتیک کلاینت‌های ماینکرفت — هاله، بال، کلاه و آیتم‌های ظاهری — برای همهٔ کلاینت‌ها قابل تهیه است. قیمت بر اساس دلاری بودن آیتم محاسبه می‌شود.",features:["همهٔ کلاینت‌ها","هاله، بال، کلاه و بیشتر","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"کدام کلاینت‌ها پشتیبانی می‌شوند؟",a:"کازمتیک‌های کلاینت‌های محبوب ماینکرفت؛ در تیکت نام کلاینت و آیتم را بگویید تا استعلام بگیریم."}]},cape:{long:"کیپ اختصاصی اپتیفاین روی اکانت خودتان؛ طرح دلخواه شما روی کیپ اعمال می‌شود و برای همهٔ بازیکن‌های سرور قابل مشاهده است.",features:["اختصاصی روی اکانت شما","قابل مشاهده برای همه","طرح دلخواه","تحویل ۱ تا ۷۲ ساعت"],delivery:"۱ تا ۷۲ ساعت"}},B="https://yaspieze.github.io/kiniwa",Z=s=>{const a=document.createElement("script");a.type="application/ld+json",a.textContent=JSON.stringify(s),document.head.appendChild(a)};function Hs(s,a){if(Z({"@context":"https://schema.org","@type":"Organization",name:"کینیوا شاپ",alternateName:"Kiniwa Shop",url:`${B}/`,logo:`${B}/assets/img/logo.png`,sameAs:[f],description:"فروشگاه گیمینگ کینیوا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین."}),a){const t=M.find(e=>e.id===a);if(t){const e=I[t.id];Z({"@context":"https://schema.org","@type":"Product",name:t.title,description:(e==null?void 0:e.long)??t.desc,image:`${B}/${t.image}`,brand:{"@type":"Brand",name:"کینیوا شاپ"},offers:{"@type":"Offer",priceCurrency:t.price.includes("تومان")?"IRR":void 0,price:t.price.replace(/[^۰-۹0-9]/g,"")||void 0,availability:"https://schema.org/InStock",url:`${B}/product/${t.id}/`,seller:{"@type":"Organization",name:"کینیوا شاپ"}}})}}(s==="faq"||s==="index")&&Z({"@context":"https://schema.org","@type":"FAQPage",mainEntity:ss.map(t=>({"@type":"Question",name:t.q,acceptedAnswer:{"@type":"Answer",text:t.a}}))}),s==="products"&&Z({"@context":"https://schema.org","@type":"ItemList",itemListElement:[...M,...E.map(()=>null)].filter(Boolean).map((t,e)=>({"@type":"ListItem",position:e+1,name:t.title,url:`${B}/product/${t.id}/`}))})}const zs={404:`<section class="e404"><div class="wrap-narrow">
+${hs(s)}
+<main id="main">`;let _=!1;const O=new Set,is=()=>{_||(_=!0,requestAnimationFrame(()=>{_=!1,O.forEach(s=>s())}))};function us(){const s=Array.from(document.querySelectorAll("[data-par]"));if(!s.length)return;const a=()=>{const t=window.innerHeight;s.forEach(e=>{const r=e.getBoundingClientRect();if(r.bottom<-200||r.top>t+200)return;const i=Number(e.dataset.par??.1),c=r.top+r.height/2-t/2;e.style.transform=`translate3d(0,${(-c*i).toFixed(2)}px,0)`})};O.add(a),addEventListener("scroll",is,{passive:!0}),addEventListener("resize",a),a()}function bs(s){const a=s.querySelector("[data-pin-track]");if(!a)return;const t=Array.from(s.querySelectorAll(".story-dots i, .pin-dots i"));if(window.innerWidth<=780){s.style.removeProperty("height"),a.style.transform="";return}const e=window.innerHeight,r=s.offsetHeight-e,i=Math.min(r,Math.max(0,-s.getBoundingClientRect().top)),c=r>0?i/r:0,l=Math.max(0,a.scrollWidth-a.clientWidth);a.style.transform=`translate3d(${(c*l).toFixed(2)}px,0,0)`;const u=Math.min(t.length-1,Math.round(c*(t.length-1||1)));t.forEach((p,m)=>p.classList.toggle("on",m===u)),a.querySelectorAll(".story-card, .theater-card").forEach((p,m)=>{p.classList.toggle("is-on",m===u)});const n=s.querySelector(".pin-bar i");n&&(n.style.transform=`scaleX(${Math.max(.02,c).toFixed(3)})`)}function ys(){const s=Array.from(document.querySelectorAll("[data-pin]"));if(!s.length)return;const a=()=>s.forEach(bs);O.add(a),addEventListener("scroll",is,{passive:!0}),addEventListener("resize",a),a()}function fs(){document.querySelectorAll("[data-marquee]").forEach(s=>{const a=s.querySelector(".marq-in");if(!a||a.dataset.cloned)return;const t=document.createElement("div");t.className="marq-track",s.insertBefore(t,a);const e=a.cloneNode(!0);e.dataset.cloned="1",a.dataset.cloned="1",t.append(a),e.setAttribute("aria-hidden","true"),t.append(e),s.classList.add("mq-ready")})}function ws(){if(window.matchMedia("(hover:none)").matches)return;Array.from(document.querySelectorAll("[data-tilt]")).forEach(a=>{const t=r=>{const i=a.getBoundingClientRect(),c=(r.clientX-i.left)/i.width-.5,l=(r.clientY-i.top)/i.height-.5;a.style.setProperty("--tx",`${(-l*7).toFixed(2)}deg`),a.style.setProperty("--ty",`${(c*9).toFixed(2)}deg`)},e=()=>{a.style.setProperty("--tx","0deg"),a.style.setProperty("--ty","0deg")};a.addEventListener("pointermove",t,{passive:!0}),a.addEventListener("pointerleave",e,{passive:!0})})}function ks(){Array.from(document.querySelectorAll(".split")).forEach(a=>{if(a.dataset.split)return;a.dataset.split="1";const t=(a.textContent??"").trim().split(/\s+/);a.innerHTML=t.map((e,r)=>`<span class="w" style="--i:${r}">${e}</span>`).join(" ")})}function xs(){const s=Array.from(document.querySelectorAll("[data-count]"));if(!s.length)return;const a=e=>e.toLocaleString("fa-IR"),t=new IntersectionObserver(e=>{e.forEach(r=>{if(!r.isIntersecting)return;const i=r.target;t.unobserve(i);const c=Number(i.dataset.count??0),l=performance.now(),u=1100,n=p=>{const m=Math.min(1,(p-l)/u),C=1-Math.pow(1-m,3);i.textContent=a(Math.round(c*C)),m<1&&requestAnimationFrame(n)};requestAnimationFrame(n)})},{threshold:.4});s.forEach(e=>{e.textContent=a(0),t.observe(e)})}function $s(){ks(),us(),ys(),fs(),ws()}let K=null;const Ms=(s,a=!1)=>{K?K.to(s,a):window.scrollTo({top:s,behavior:a?"auto":"smooth"})},js='input,textarea,select,option,[contenteditable="true"],[data-native-scroll],.drawer,.mega,.search-pop,.modal,.table-wrap,.cat-rail,.h-rail,.no-smooth',Q=s=>s instanceof Element?!!s.closest(js):!1;function Ls(){const s=document.documentElement;let a=window.scrollY,t=window.scrollY,e=0;const r=()=>Math.max(0,s.scrollHeight-window.innerHeight),i=d=>Math.min(r(),Math.max(0,d)),c=()=>{const d=a-t;if(Math.abs(d)<.4){t=a,window.scrollTo(0,t),e=0;return}t+=d*.16,window.scrollTo(0,t),e=requestAnimationFrame(c)},l=()=>{e||(e=requestAnimationFrame(c))};K={to:(d,k=!1)=>{if(a=i(d),k){t=a,window.scrollTo(0,t);return}l()},by:d=>{a=i(a+d),l()},current:()=>t},s.classList.add("has-smooth"),window.addEventListener("scroll",()=>{if(document.documentElement.classList.contains("locked"))return;const d=window.scrollY;Math.abs(d-t)>2&&(t=d,a=d)},{passive:!0});const u=d=>{if(d.ctrlKey||d.metaKey||document.documentElement.classList.contains("locked")||Q(d.target)||Math.abs(d.deltaY)<Math.abs(d.deltaX)*1.2)return;let k=d.deltaY;d.deltaMode===1?k*=18:d.deltaMode===2&&(k*=window.innerHeight),d.preventDefault(),a=i(a+k),l()};window.addEventListener("wheel",u,{passive:!1});let n=!1,p=0,m=0,C=0,H=null,N=0,D=0;window.addEventListener("touchstart",d=>{if(d.touches.length!==1){n=!1;return}if(document.documentElement.classList.contains("locked")||Q(d.target)){n=!1;return}n=!0,H=null,N=d.touches[0].clientX,D=p=d.touches[0].clientY,m=performance.now(),C=0,t=a=window.scrollY},{passive:!0}),window.addEventListener("touchmove",d=>{if(!n||d.touches.length!==1)return;const k=d.touches[0],R=performance.now();if(!H){const W=Math.abs(k.clientX-N),U=Math.abs(k.clientY-D);if((W>8||U>8)&&(H=U>=W?"y":"x"),H!=="y"){n=!1;return}}d.preventDefault();const Y=p-k.clientY,ds=Math.max(6,R-m);p=k.clientY,m=R,C=Y/ds*16,a=i(a+Y),l()},{passive:!1});const F=()=>{if(!n)return;n=!1;const d=Math.max(-900,Math.min(900,C*11));a=i(a+d),l(),C=0};window.addEventListener("touchend",F,{passive:!0}),window.addEventListener("touchcancel",F,{passive:!0})}const y=(s,a=document)=>a.querySelector(s),B=(s,a=document)=>Array.from(a.querySelectorAll(s));function qs(){const s=y("#progress");if(!s)return;let a=!1;const t=()=>{a=!1;const r=document.documentElement,i=r.scrollHeight-r.clientHeight;s.style.transform=`scaleX(${i>0?r.scrollTop/i:0})`},e=()=>{a||(a=!0,requestAnimationFrame(t))};addEventListener("scroll",e,{passive:!0}),addEventListener("resize",e),t()}function Es(){const s=B(".rv, .split");if(!("IntersectionObserver"in window)||s.length===0){s.forEach(t=>t.classList.add("in"));return}const a=new IntersectionObserver(t=>{t.forEach(e=>{e.isIntersecting&&(e.target.classList.add("in"),a.unobserve(e.target))})},{rootMargin:"0px 0px -8% 0px",threshold:.08});s.forEach((t,e)=>{t.style.transitionDelay=`${Math.min(e%6,5)*45}ms`,a.observe(t)})}function Cs(){const s=y("#siteHead"),a=()=>{s==null||s.classList.toggle("stuck",window.scrollY>24)};addEventListener("scroll",a,{passive:!0}),a();const t=y("#burger"),e=y("#drawer"),r=y("#drawerClose");let i=0;const c=l=>{e&&(t==null||t.setAttribute("aria-expanded",String(l)),document.documentElement.classList.toggle("locked",l),document.body.classList.toggle("locked",l),window.clearTimeout(i),l?(e.hidden=!1,requestAnimationFrame(()=>e.classList.add("open"))):(e.classList.remove("open"),i=window.setTimeout(()=>{e.classList.contains("open")||(e.hidden=!0)},460)))};addEventListener("pageshow",()=>{document.documentElement.classList.remove("locked"),document.body.classList.remove("locked"),e&&(e.classList.remove("open"),e.hidden=!0)}),e==null||e.querySelectorAll("a").forEach(l=>l.addEventListener("click",()=>c(!1))),t==null||t.addEventListener("click",()=>c(!(e!=null&&e.classList.contains("open")))),r==null||r.addEventListener("click",()=>c(!1)),e==null||e.addEventListener("click",l=>{l.target===e&&c(!1)}),document.addEventListener("keydown",l=>{l.key==="Escape"&&c(!1)}),Bs()}function Bs(){const s=B(".has-mega");s.length&&(s.forEach(a=>{const t=a.querySelector("a");let e=0;const r=i=>{window.clearTimeout(e),i?(a.classList.add("open"),t==null||t.setAttribute("aria-expanded","true")):(a.classList.remove("open"),t==null||t.setAttribute("aria-expanded","false"))};a.addEventListener("pointerenter",()=>r(!0)),a.addEventListener("pointerleave",()=>{e=window.setTimeout(()=>r(!1),140)}),t==null||t.addEventListener("click",i=>{window.matchMedia("(hover:none)").matches&&(i.preventDefault(),r(!a.classList.contains("open")))}),a.addEventListener("keydown",i=>{i.key==="Escape"&&r(!1)})}),document.addEventListener("pointerdown",a=>{const t=a.target;t&&!t.closest(".has-mega")&&s.forEach(e=>e.classList.remove("open"))}))}function As(){const s=y("#searchInput"),a=y("#searchPop"),t=y("#headSearch");if(!s||!a)return;const e=r=>{const i=r.trim();if(i.length<2){a.hidden=!0,a.innerHTML="";return}const c=x.filter(l=>l.title.includes(i)||l.desc.includes(i)||l.price.includes(i)).slice(0,6);a.hidden=!1,a.innerHTML=c.length?c.map(l=>`<a href="${l.href}" class="sp-item">
+              <img src="${l.image}" alt="" width="44" height="44" loading="lazy">
+              <span><b>${l.title}</b><i>${l.price}</i></span></a>`).join(""):'<div class="sp-empty">چیزی پیدا نشد — در تیکت دیسکورد بپرس.</div>'};s.addEventListener("input",()=>e(s.value)),s.addEventListener("focus",()=>e(s.value)),t==null||t.addEventListener("submit",r=>{r.preventDefault();const i=a.querySelector("a");i instanceof HTMLAnchorElement&&(location.href=i.href)}),document.addEventListener("click",r=>{r.target instanceof Node&&(t!=null&&t.contains(r.target)||(a.hidden=!0))})}function Zs(){if(matchMedia("(hover: none)").matches)return;let s=0,a=null;const t=()=>{s=0;const e=a;if(a=null,!e)return;const r=e.target;if(!(r instanceof Element))return;const i=r.closest(".pcard,.card,.mega-item,.cat-tile");if(!i)return;const c=i.getBoundingClientRect();i.style.setProperty("--mx",`${e.clientX-c.left}px`),i.style.setProperty("--my",`${e.clientY-c.top}px`)};document.addEventListener("pointermove",e=>{a=e,!s&&(s=requestAnimationFrame(t))},{passive:!0})}function Hs(){const s=y("#filters"),a=y("#grid");!s||!a||s.addEventListener("click",t=>{const e=t.target.closest("button[data-f]");if(!e)return;B("button",s).forEach(i=>i.classList.remove("act")),e.classList.add("act");const r=e.dataset.f??"all";B(".pcard",a).forEach(i=>{const c=r==="all"||i.dataset.cat===r;i.style.display=c?"":"none"})})}function zs(){var l,u;const s=y("#heroSlider");if(!s)return;const a=B(".slide",s),t=B("#heroDots i");if(a.length<2)return;let e=0;const r=n=>{e=(n+a.length)%a.length,a.forEach((p,m)=>p.classList.toggle("on",m===e)),t.forEach((p,m)=>p.classList.toggle("on",m===e))};t.forEach((n,p)=>n.addEventListener("click",()=>r(p))),(l=y('[data-slide="prev"]'))==null||l.addEventListener("click",()=>r(e-1)),(u=y('[data-slide="next"]'))==null||u.addEventListener("click",()=>r(e+1));let i=!0;new IntersectionObserver(n=>n.forEach(p=>i=p.isIntersecting),{threshold:.15}).observe(s),setInterval(()=>{i&&!document.hidden&&r(e+1)},5200)}function Ss(){Ls(),qs(),Gs(),Es(),Cs(),As(),Zs(),Hs(),zs(),_s(),$s(),xs()}function J(s){const a=document.getElementById("toast");a&&(a.textContent=s,a.classList.add("on"),setTimeout(()=>a.classList.remove("on"),2600))}function Gs(){const s=document.getElementById("qty"),a=document.getElementById("qtyOut"),t=document.getElementById("totalOut"),e=document.getElementById("copyOrder"),r=s?Number(s.dataset.price??0):0,i=s?s.dataset.lbl??"":"",c=n=>n.toLocaleString("fa-IR"),l=()=>s?Number(s.value):0,u=()=>{if(!s)return;const n=l();a&&(a.textContent=c(n)),t&&(t.textContent=`${c(n*r)} تومان`),s.style.setProperty("--pct",`${(n-Number(s.min))/(Number(s.max)-Number(s.min))*100}%`)};s==null||s.addEventListener("input",u),u(),e==null||e.addEventListener("click",async()=>{const p=["سلام 👋",`درخواست سفارش: ${e.dataset.title??"محصول"}`];s&&p.push(`مقدار: ${c(l())} ${i}`,`مبلغ تقریبی: ${c(l()*r)} تومان`),p.push("ممنون، منتظر پاسخ هستم.");const m=p.join(`
+`);try{await navigator.clipboard.writeText(m),J("متن سفارش کپی شد ✓ حالا در تیکت دیسکورد بچسبانید")}catch{J("کپی نشد — متن را دستی بنویسید")}})}function _s(){const s=document.getElementById("siteHead");document.addEventListener("click",a=>{var l,u,n;const t=(u=(l=a.target)==null?void 0:l.closest)==null?void 0:u.call(l,'a[href^="#"]');if(!(t instanceof HTMLAnchorElement))return;const e=(n=t.getAttribute("href"))==null?void 0:n.slice(1);if(!e)return;const r=document.getElementById(e);if(!r)return;a.preventDefault();const i=((s==null?void 0:s.offsetHeight)??0)+14,c=r.getBoundingClientRect().top+window.scrollY-i;Ms(c),r.setAttribute("tabindex","-1"),r.focus({preventScroll:!0})})}const T={"mc-account":{long:"اکانت ماینکرفت با فول اکسس به‌صورت کامل تحویل داده می‌شود؛ ایمیل و رمز قابل تغییر است و روی هر دو نسخهٔ جاوا و بدراک کار می‌کند. اکانت‌ها بررسی‌شده هستند و پس از تحویل، راهنمای تغییر اطلاعات هم ارسال می‌شود.",features:["فول اکسس با ایمیل و رمز","فعال روی جاوا + بدراک","امکان تغییر ایمیل و رمز","تحویل حداکثر ۴۸ ساعت","ضمانت بازگشت وجه"],delivery:"۲۴ تا ۴۸ ساعت",steps:["تیکت با عنوان «اکانت ماینکرفت» بزنید","مبلغ را ریالی پرداخت کنید","اطلاعات اکانت در تیکت تحویل داده می‌شود"],faq:[{q:"اکانت هکری است؟",a:"نه. همهٔ اکانت‌ها فول اکسس هستند و اطلاعات کامل به شما منتقل می‌شود؛ نیازی به دور زدن هیچ محدودیتی نیست."},{q:"بعد از تحویل می‌توانم ایمیلش را عوض کنم؟",a:"بله، اطلاعات کامل در اختیار شماست و می‌توانید ایمیل و رمز را تغییر دهید."}]},"mc-priority":{long:"اگر عجله دارید، سفارش با اولویت در صف تیکت‌ها جلوتر قرار می‌گیرد و تحویل در کوتاه‌ترین زمان انجام می‌شود. مشخصات اکانت همان نسخهٔ فول اکسس است.",features:["اولویت در صف تحویل","فول اکسس کامل","جاوا + بدراک","پشتیبانی مستقیم تا تحویل"],delivery:"۱۲ تا ۲۴ ساعت",faq:[{q:"تفاوتش با اکانت معمولی چیست؟",a:"فقط زمان تحویل؛ محصول و اطلاعات اکانت دقیقاً یکسان است."}]},"donut-million":{long:"پول سرور دونات اس ام پی به‌صورت میلیونی فروخته می‌شود. موجودی سرور ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون. تحویل مستقیم روی اکانت شما انجام می‌شود.",features:["هر میلیون ۴٬۰۰۰ تومان","حداقل خرید ۵۰ میلیون","حداکثر موجودی ۳۰۰ میلیون","تحویل مستقیم روی اکانت","تحویل تا ۴۸ ساعت"],delivery:"حداقل ۴۸ ساعت",unit:{price:4e3,label:"میلیون",step:5,min:50,max:300,maxLabel:"۳۰۰ میلیون"},faq:[{q:"پول چطور تحویل داده می‌شود؟",a:"بعد از پرداخت، مبلغ در بازی یا از طریق روش توافق‌شده روی اکانت شما واریز می‌شود."},{q:"خرید بیشتر تخفیف دارد؟",a:"برای خریدهای حجم بالا در تیکت مذاکره کنید؛ قیمت پله‌ای داریم."}]},hypixel:{long:"تمام آیتم‌های فروشگاه هایپیکسل — از رنک و کوین تا بوستر و آیتم‌های ویژه — قابل تهیه است. قیمت بر اساس دلار روز محاسبه می‌شود و در تیکت استعلام می‌گیرید.",features:["رنک، کوین، بوستر و آیتم‌های ویژه","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت","امن برای اکانت شما"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"چرا قیمت ثابت نیست؟",a:"چون مبنای قیمت‌گذاری دلار است و روزانه تغییر می‌کند؛ قبل از پرداخت استعلام دقیق می‌گیرید."}]},skyblock:{long:"کوین اسکای‌بلاک هایپیکسل با قیمت هر میلیون ۶٬۰۰۰ تومان و تحویل بین ۱ تا ۷۲ ساعت. مناسب برای خریدهای ملایم و مطمئن بدون ریسک برای اکانت.",features:["هر میلیون ۶٬۰۰۰ تومان","تحویل ۱ تا ۷۲ ساعت","روش امن و بدون ریسک","پشتیبانی تا پایان سفارش"],delivery:"۱ تا ۷۲ ساعت",unit:{price:6e3,label:"میلیون",step:5,min:10,max:500,maxLabel:"۵۰۰ میلیون"},faq:[{q:"حداقل خرید چقدر است؟",a:"از ۱۰ میلیون به بالا سفارش ثبت می‌شود."}]},logo:{long:"طراحی لوگوی اختصاصی برای سرور، کانال یا برند شما. سه پیشنهاد اولیه دریافت می‌کنید و تا رسیدن به نتیجهٔ نهایی اصلاح انجام می‌شود.",features:["سه پیشنهاد اولیه","فایل خروجی PNG با پس‌زمینهٔ شفاف","اصلاح تا رضایت","تحویل ۱ تا ۳ روز کاری"],delivery:"۱ تا ۳ روز کاری",faq:[{q:"فایل لایه‌باز هم می‌دهید؟",a:"در صورت نیاز، فایل لایه‌باز با هزینهٔ جداگانه ارائه می‌شود."}]},"banner-simple":{long:"بنر ساده و تمیز برای دیسکورد و شبکه‌های اجتماعی، با ترکیب‌بندی سریع و مناسب استفادهٔ روزمره.",features:["ابعاد استاندارد دیسکورد","تحویل ۲۴ ساعته","یک بار اصلاح رایگان"],delivery:"۲۴ ساعت"},"banner-pro":{long:"بنر حرفه‌ای با ترکیب‌بندی قوی‌تر، جزئیات بیشتر و دو مرحله بازنگری؛ مناسب برندهای جدی و سرورهای بزرگ.",features:["طراحی اختصاصی","دو مرحله بازنگری","خروجی با کیفیت بالا","تحویل ۱ تا ۳ روز"],delivery:"۱ تا ۳ روز کاری"},"thumbnail-simple":{long:"تامنیل یوتیوب ساده و خوانا؛ مناسب ویدیوهای گیمینگ روزمره با نرخ کلیک بهتر.",features:["۱۲۸۰×۷۲۰","تحویل ۲۴ ساعته","یک بار اصلاح"],delivery:"۲۴ ساعت"},"thumbnail-pro":{long:"تامنیل حرفه‌ای با ترکیب‌بندی، رنگ‌بندی و تایپوگرافی قوی‌تر برای ویدیوهایی که باید دیده شوند.",features:["۱۲۸۰×۷۲۰","دو مرحله بازنگری","ترکیب‌بندی اختصاصی"],delivery:"۱ تا ۲ روز کاری"},"skin-simple":{long:"اسکین ماینکرفت ساده و آمادهٔ آپلود؛ فایل PNG استاندارد که مستقیم روی اکانت یا لانچر ست می‌شود.",features:["فایل PNG استاندارد","آمادهٔ آپلود","تحویل ۲۴ تا ۴۸ ساعت"],delivery:"۲۴ تا ۴۸ ساعت"},"skin-pro":{long:"اسکین حرفه‌ای با جزئیات، سایه‌پردازی و رندر سه‌بعدی برای معرفی؛ مناسب استریم و شبکه‌های اجتماعی.",features:["فایل PNG + رندر سه‌بعدی","سایه‌پردازی حرفه‌ای","تحویل ۲ تا ۳ روز"],delivery:"۲ تا ۳ روز کاری"},"anime-art":{long:"آرت انیمه‌استایل در سه سطح کیفیت — از پرترهٔ ساده تا آرت کامل با پس‌زمینه؛ مناسب پروفایل، تامنیل و بنر.",features:["سه سطح کیفیت","سبک انیمه","خروجی با کیفیت بالا","تحویل ۲ تا ۴ روز"],delivery:"۲ تا ۴ روز کاری",faq:[{q:"سطح‌ها چه تفاوتی دارند؟",a:"سطح پایه تک‌شخصیت ساده، سطح میانی با پس‌زمینه، و سطح کامل با جزئیات و نورپردازی است."}]},"overlay-good":{long:"پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و اسکرین‌های حالت آماده‌به‌کار — با کیفیت خوب و قیمت مناسب.",features:["فریم وب‌کم","چت‌باکس","هشدارها و اسکرین","سازگار با OBS"],delivery:"۱ تا ۲ روز کاری"},"overlay-best":{long:"نسخهٔ کامل و پرجزئیات اورلی با هماهنگی کامل با برند شما؛ شامل تمام اجزای پک خوب به‌علاوهٔ اسکرین‌های اضافه و پک فونت هدیه.",features:["تمام اجزای پک کامل","هماهنگ با برند شما","پک فونت هدیه","دو مرحله بازنگری"],delivery:"۱ تا ۳ روز کاری"},"font-pack":{long:"پک فونت اختصاصی فارسی و لاتین، انتخاب‌شده برای خوانایی روی اورلی و تامنیل؛ همراه با راهنمای استفاده.",features:["فونت فارسی + لاتین","مناسب اورلی و تامنیل","راهنمای نصب","تحویل فوری"],delivery:"فوری تا ۲۴ ساعت"},cosmetics:{long:"کازمتیک کلاینت‌های ماینکرفت — هاله، بال، کلاه و آیتم‌های ظاهری — برای همهٔ کلاینت‌ها قابل تهیه است. قیمت بر اساس دلاری بودن آیتم محاسبه می‌شود.",features:["همهٔ کلاینت‌ها","هاله، بال، کلاه و بیشتر","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"کدام کلاینت‌ها پشتیبانی می‌شوند؟",a:"کازمتیک‌های کلاینت‌های محبوب ماینکرفت؛ در تیکت نام کلاینت و آیتم را بگویید تا استعلام بگیریم."}]},cape:{long:"کیپ اختصاصی اپتیفاین روی اکانت خودتان؛ طرح دلخواه شما روی کیپ اعمال می‌شود و برای همهٔ بازیکن‌های سرور قابل مشاهده است.",features:["اختصاصی روی اکانت شما","قابل مشاهده برای همه","طرح دلخواه","تحویل ۱ تا ۷۲ ساعت"],delivery:"۱ تا ۷۲ ساعت"}},A="https://yaspieze.github.io/kiniwa",z=s=>{const a=document.createElement("script");a.type="application/ld+json",a.textContent=JSON.stringify(s),document.head.appendChild(a)};function Ks(s,a){if(z({"@context":"https://schema.org","@type":"Organization",name:"کینیوا شاپ",alternateName:"Kiniwa Shop",url:`${A}/`,logo:`${A}/assets/img/logo.png`,sameAs:[f],description:"فروشگاه گیمینگ کینیوا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین."}),a){const t=x.find(e=>e.id===a);if(t){const e=T[t.id];z({"@context":"https://schema.org","@type":"Product",name:t.title,description:(e==null?void 0:e.long)??t.desc,image:`${A}/${t.image}`,brand:{"@type":"Brand",name:"کینیوا شاپ"},offers:{"@type":"Offer",priceCurrency:t.price.includes("تومان")?"IRR":void 0,price:t.price.replace(/[^۰-۹0-9]/g,"")||void 0,availability:"https://schema.org/InStock",url:`${A}/product/${t.id}/`,seller:{"@type":"Organization",name:"کینیوا شاپ"}}})}}(s==="faq"||s==="index")&&z({"@context":"https://schema.org","@type":"FAQPage",mainEntity:es.map(t=>({"@type":"Question",name:t.q,acceptedAnswer:{"@type":"Answer",text:t.a}}))}),s==="products"&&z({"@context":"https://schema.org","@type":"ItemList",itemListElement:[...x,...E.map(()=>null)].filter(Boolean).map((t,e)=>({"@type":"ListItem",position:e+1,name:t.title,url:`${A}/product/${t.id}/`}))})}const Is={404:`<section class="e404"><div class="wrap-narrow">
   <div class="art404"><svg class="e404art" width="676" height="260" viewBox="0 0 676 260" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip404)"><path d="M214.999 154.986V205.896H189.017V239.315H122.949V205.896H9V154.986L86.5745 20.6849H160.066L81.7493 154.986H122.949V115.633H189.017V154.986H214.999Z" fill="currentColor"/><path d="M667 154.986V205.896H641.018V239.315H574.95V205.896H461.001V154.986L538.575 20.6849H612.067L533.75 154.986H574.95V115.633H641.018V154.986H667Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M279.5 28.6747C315.7 7.77505 360.299 7.77504 396.499 28.6747C432.699 49.5746 454.999 88.1999 454.999 130C454.999 171.8 432.699 210.425 396.499 231.325C360.299 252.225 315.7 252.225 279.5 231.325C243.3 210.425 221 171.8 221 130C221 88.1999 243.3 49.5746 279.5 28.6747ZM340 51.3231C338.763 50.6086 337.238 50.6087 336 51.3231L270.863 88.9295C269.626 89.644 268.863 90.9644 268.863 92.3934V167.606C268.863 169.035 269.626 170.356 270.863 171.07L336 208.677C337.238 209.391 338.762 209.391 340 208.677L405.136 171.07C406.373 170.356 407.136 169.035 407.136 167.606V92.3934C407.136 90.9644 406.373 89.644 405.136 88.9295L340 51.3231Z" fill="currentColor"/></g><defs><clipPath id="clip404"><rect width="676" height="260" fill="white"/></clipPath></defs></svg></div>
   <h1 style="margin-top:1.4rem">این صفحه پیدا نشد</h1>
   <p class="lead" style="margin-top:.8rem">شاید آدرس عوض شده باشد. از این‌جا ادامه بده:</p>
@@ -1073,7 +1089,7 @@ ${ns(s)}
   <h2>۵. بازگشت وجه</h2><p>اگر سفارش در بازهٔ اعلام‌شده انجام نشود و راه‌حل جایگزینی نباشد، مبلغ بازگردانده می‌شود. جزئیات در صفحهٔ ضمانت آمده است.</p>
   <h2>۶. مسئولیت‌ها</h2><p>مشتری مسئول درست بودن اطلاعاتی است که ارسال می‌کند. کینیوا مسئول عواقب ناشی از نقض قوانین خود بازی یا سرور مقصد نیست.</p>
   <h2>۷. حریم خصوصی</h2><p>اطلاعات شما فقط برای انجام سفارش استفاده می‌شود و در اختیار شخص ثالث قرار نمی‌گیرد.</p>
-</div></div></section>`},h=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"),o=s=>g[s],ts=s=>`<span class="pill ${s.tone==="green"?"g":s.tone==="gold"?"y":s.tone==="blue"?"b":""}">${h(s.text)}</span>`,O=(s,a={})=>`
+</div></div></section>`},h=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"),o=s=>g[s],rs=s=>`<span class="pill ${s.tone==="green"?"g":s.tone==="gold"?"y":s.tone==="blue"?"b":""}">${h(s.text)}</span>`,P=(s,a={})=>`
 <article class="pcard rv" data-cat="${s.category}">
   <a class="thumb" href="${s.href}" aria-label="${h(s.title)}">
     <img src="${s.image}" alt="${h(s.title)}" loading="lazy" width="900" height="900">
@@ -1083,65 +1099,65 @@ ${ns(s)}
     <h3><a href="${s.href}">${h(s.title)}</a></h3>
     ${a.compact?"":`<p class="desc">${h(s.desc)}</p>`}
     <div class="pmeta">
-      <span class="pcode">کد ${h(s.id.slice(0,2).toUpperCase())}-${String(M.findIndex(t=>t.id===s.id)+1).padStart(2,"0")}</span>
+      <span class="pcode">کد ${h(s.id.slice(0,2).toUpperCase())}-${String(x.findIndex(t=>t.id===s.id)+1).padStart(2,"0")}</span>
       <span class="prate">${o("star")} ۴٫۹ <i>(${18+s.id.length*7%60} نظر)</i></span>
     </div>
-    <div class="pills">${s.pills.map(ts).join("")}</div>
+    <div class="pills">${s.pills.map(rs).join("")}</div>
     <div class="pfoot">
       <div class="price${s.ask?" ask":""}"><span>${h(s.priceLabel)}</span><b>${h(s.price)}</b></div>
       <a class="btn btn-gold btn-sm" href="${f}" target="_blank" rel="noopener">سفارش ${o("arrow")}</a>
     </div>
   </div>
-</article>`,$=(s,a,t="",e=!0,l)=>l?`<div class="sec-hd row">
-  <div><span class="eyebrow">${h(s)}</span><h2 class="sec">${a}</h2>
+</article>`,M=(s,a,t="",e=!0,r)=>r?`<div class="sec-hd row">
+  <div>${s?`<span class="eyebrow">${h(s)}</span>`:""}<h2 class="sec">${a}</h2>
   ${t?`<p class="sec-p">${h(t)}</p>`:""}</div>
-  <a class="btn btn-ghost btn-sm" href="${l.href}">${h(l.label)} ${o("arrow")}</a>
+  <a class="btn btn-ghost btn-sm" href="${r.href}">${h(r.label)} ${o("arrow")}</a>
 </div>`:`<div class="sec-hd${e?" center":""}">
-  <span class="eyebrow">${h(s)}</span>
+  ${s?`<span class="eyebrow">${h(s)}</span>`:""}
   <h2 class="sec">${a}</h2>
   ${t?`<p class="sec-p">${h(t)}</p>`:""}
-</div>`,es=s=>`
-<div class="faq">${s.map((a,t)=>`<details class="rv"${t===0?" open":""}><summary>${h(a.q)}</summary><div class="ans">${h(a.a)}</div></details>`).join("")}</div>`,Ss=(s,a)=>`
+</div>`,ls=s=>`
+<div class="faq">${s.map((a,t)=>`<details class="rv"${t===0?" open":""}><summary>${h(a.q)}</summary><div class="ans">${h(a.a)}</div></details>`).join("")}</div>`,Os=(s,a)=>`
 <section class="cta-band"><div class="wrap cta-in">
   <div>
     <h2>${h(s)}</h2>
     <p>${h(a)}</p>
   </div>
   <a class="btn btn-gold btn-lg" href="${f}" target="_blank" rel="noopener">${o("discord")} ثبت سفارش در دیسکورد</a>
-</div></section>`,is=s=>`
+</div></section>`,cs=s=>`
 <div class="wrap"><nav class="crumbs" aria-label="مسیر">
   <a href=".">خانه</a>
   ${s.map(a=>`<span>/</span>${a.href?`<a href="${a.href}">${h(a.label)}</a>`:`<span class="cur">${h(a.label)}</span>`}`).join("")}
-</nav></div>`,_s=()=>`
+</nav></div>`,Ts=()=>`
 <div class="stat-strip rv">
   <div><b data-count="763">۷۶۳</b><span>عضو انجمن</span></div>
   <div><b data-count="30">۳۰</b><span>آنلاین</span></div>
   <div><b data-count="17">۱۷</b><span>محصول فعال</span></div>
   <div><b>۴۸h</b><span>حداکثر تحویل</span></div>
-</div>`,p="#f8c000",Gs="#ffe27a",Ks="#b27a00",j=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,L=s=>`
+</div>`,v="#f8c000",Ps="#ffe27a",Vs="#b27a00",j=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,L=s=>`
   <defs>
     <radialGradient id="${s}-gl" cx="50%" cy="46%" r="52%">
-      <stop offset="0" stop-color="${p}" stop-opacity=".22"/>
-      <stop offset=".62" stop-color="${p}" stop-opacity=".07"/>
-      <stop offset="1" stop-color="${p}" stop-opacity="0"/>
+      <stop offset="0" stop-color="${v}" stop-opacity=".22"/>
+      <stop offset=".62" stop-color="${v}" stop-opacity=".07"/>
+      <stop offset="1" stop-color="${v}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="${s}-g" x1="0" y1="0" x2=".35" y2="1">
-      <stop offset="0" stop-color="${Gs}"/>
-      <stop offset=".48" stop-color="${p}"/>
-      <stop offset="1" stop-color="${Ks}"/>
+      <stop offset="0" stop-color="${Ps}"/>
+      <stop offset=".48" stop-color="${v}"/>
+      <stop offset="1" stop-color="${Vs}"/>
     </linearGradient>
     <linearGradient id="${s}-f" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fff" stop-opacity=".10"/>
       <stop offset="1" stop-color="#fff" stop-opacity=".015"/>
     </linearGradient>
     <pattern id="${s}-h" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="7" stroke="${p}" stroke-opacity=".24" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="${v}" stroke-opacity=".24" stroke-width="1"/>
     </pattern>
     <pattern id="${s}-d" width="9" height="9" patternUnits="userSpaceOnUse">
-      <circle cx="1.6" cy="1.6" r="1.05" fill="${p}" fill-opacity=".30"/>
+      <circle cx="1.6" cy="1.6" r="1.05" fill="${v}" fill-opacity=".30"/>
     </pattern>
   </defs>
-  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,Is=()=>j("ar-shield",`${L("ar-shield")}
+  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,Ns=()=>j("ar-shield",`${L("ar-shield")}
   <g stroke="url(#ar-shield-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هالهٔ بیرونی -->
     <path d="M120 22 206 56v62c0 50-34 82-86 100-52-18-86-50-86-100V56Z"
@@ -1155,11 +1171,11 @@ ${ns(s)}
     <!-- قفل -->
     <rect x="98" y="110" width="44" height="36" rx="8" fill="#0d0e13" stroke-width="2.2"/>
     <path d="M107 110v-11a13 13 0 0 1 26 0v11" stroke-width="2.2"/>
-    <circle cx="120" cy="124" r="4.4" fill="${p}"/>
+    <circle cx="120" cy="124" r="4.4" fill="${v}"/>
     <path d="M120 128v9" stroke-width="2.2"/>
     <!-- پرچ‌ها -->
-    <circle cx="76" cy="88" r="1.9" fill="${p}" stroke="none"/>
-    <circle cx="164" cy="88" r="1.9" fill="${p}" stroke="none"/>
+    <circle cx="76" cy="88" r="1.9" fill="${v}" stroke="none"/>
+    <circle cx="164" cy="88" r="1.9" fill="${v}" stroke="none"/>
     <!-- برگ‌های لور -->
     <g stroke-width="1.3" stroke-opacity=".8">
       <path d="M52 172c-9-7-14-17-15-28"/>
@@ -1176,7 +1192,7 @@ ${ns(s)}
       <path d="M120 12v9M120 219v-9M30 120h9M201 120h9"/>
       <path d="m62 62 5 5M173 173l5 5M178 62l-5 5M67 173l-5 5" stroke-opacity=".45"/>
     </g>
-  </g>`),Os=()=>j("ar-refund",`${L("ar-refund")}
+  </g>`),Ds=()=>j("ar-refund",`${L("ar-refund")}
   <g stroke="url(#ar-refund-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="72" stroke-width="1.1" stroke-opacity=".28" stroke-dasharray="3 8"/>
     <circle cx="120" cy="118" r="58" stroke-width="2.4" fill="url(#ar-refund-f)"/>
@@ -1197,21 +1213,21 @@ ${ns(s)}
       <path d="M169 164v7c0 2.6 5.8 4.7 13 4.7s13-2.1 13-4.7v-7"/>
     </g>
     <circle cx="120" cy="118" r="72" fill="url(#ar-refund-h)" stroke="none" opacity=".35"/>
-  </g>`),Ts=()=>j("ar-support",`${L("ar-support")}
+  </g>`),Fs=()=>j("ar-support",`${L("ar-support")}
   <g stroke="url(#ar-support-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هدست -->
     <path d="M62 136v-16a58 58 0 0 1 116 0v16" stroke-width="2.6"/>
     <rect x="48" y="130" width="26" height="44" rx="12" fill="url(#ar-support-f)" stroke-width="2.2"/>
     <rect x="166" y="130" width="26" height="44" rx="12" fill="url(#ar-support-f)" stroke-width="2.2"/>
     <path d="M74 152c0 18 12 28 28 30" stroke-width="2.2"/>
-    <rect x="98" y="176" width="20" height="11" rx="5.5" fill="${p}" stroke="none"/>
+    <rect x="98" y="176" width="20" height="11" rx="5.5" fill="${v}" stroke="none"/>
     <!-- حباب گفتگو -->
     <path d="M120 66c22 0 38 13 38 30s-16 30-38 30c-4 0-8-.4-11-1l-14 8 3-13c-10-5-16-14-16-24 0-17 16-30 38-30Z"
           fill="#0d0e13" stroke-width="2.2"/>
     <g stroke-width="1.8">
-      <circle cx="104" cy="96" r="2.4" fill="${p}" stroke="none"/>
-      <circle cx="120" cy="96" r="2.4" fill="${p}" stroke="none"/>
-      <circle cx="136" cy="96" r="2.4" fill="${p}" stroke="none"/>
+      <circle cx="104" cy="96" r="2.4" fill="${v}" stroke="none"/>
+      <circle cx="120" cy="96" r="2.4" fill="${v}" stroke="none"/>
+      <circle cx="136" cy="96" r="2.4" fill="${v}" stroke="none"/>
     </g>
     <!-- موج صدا -->
     <g stroke-width="1.8" stroke-opacity=".75">
@@ -1221,7 +1237,7 @@ ${ns(s)}
       <path d="M34 142a34 34 0 0 0 0 36" stroke-opacity=".45"/>
     </g>
     <circle cx="120" cy="118" r="98" fill="url(#ar-support-h)" stroke="none" opacity=".22"/>
-  </g>`),Ps=()=>j("ar-pay",`${L("ar-pay")}
+  </g>`),Rs=()=>j("ar-pay",`${L("ar-pay")}
   <g stroke="url(#ar-pay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- کارت -->
     <rect x="40" y="86" width="160" height="96" rx="14" fill="url(#ar-pay-f)" stroke-width="2.4"/>
@@ -1249,7 +1265,7 @@ ${ns(s)}
     <path d="M104 34h44v18l-7-5-7 5-7-5-7 5-8-5-8 5Z" fill="#0d0e13" stroke-width="1.8"/>
     <g stroke-width="1.2" stroke-opacity=".55"><path d="M112 44h30M112 50h22"/></g>
     <circle cx="120" cy="118" r="100" fill="url(#ar-pay-h)" stroke="none" opacity=".18"/>
-  </g>`),Ns=()=>j("ar-delivery",`${L("ar-delivery")}
+  </g>`),Ys=()=>j("ar-delivery",`${L("ar-delivery")}
   <g stroke="url(#ar-delivery-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- جعبه -->
     <path d="M74 108 120 88l46 20v58l-46 20-46-20Z" fill="url(#ar-delivery-f)" stroke-width="2.4"/>
@@ -1266,7 +1282,7 @@ ${ns(s)}
     <!-- عقربه/فلش بالا -->
     <path d="M120 66V30M108 42l12-12 12 12" stroke-width="2.6"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-delivery-h)" stroke="none" opacity=".2"/>
-  </g>`),Vs=()=>j("ar-secure",`${L("ar-secure")}
+  </g>`),Ws=()=>j("ar-secure",`${L("ar-secure")}
   <g stroke="url(#ar-secure-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- شش‌ضلعی -->
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-f)" stroke-width="2.4"/>
@@ -1274,18 +1290,18 @@ ${ns(s)}
     <!-- قفل بزرگ -->
     <rect x="94" y="112" width="52" height="44" rx="10" fill="#0d0e13" stroke-width="2.4"/>
     <path d="M104 112v-13a16 16 0 0 1 32 0v13" stroke-width="2.4"/>
-    <circle cx="120" cy="130" r="5.4" fill="${p}"/>
+    <circle cx="120" cy="130" r="5.4" fill="${v}"/>
     <path d="M120 135v10" stroke-width="2.4"/>
     <!-- مدارها -->
     <g stroke-width="1.3" stroke-opacity=".6">
       <path d="M76 92h14v-14M164 92h-14V78M76 152h14v14M164 152h-14v14"/>
-      <circle cx="90" cy="78" r="2.2" fill="${p}" stroke="none"/>
-      <circle cx="150" cy="78" r="2.2" fill="${p}" stroke="none"/>
-      <circle cx="90" cy="166" r="2.2" fill="${p}" stroke="none"/>
-      <circle cx="150" cy="166" r="2.2" fill="${p}" stroke="none"/>
+      <circle cx="90" cy="78" r="2.2" fill="${v}" stroke="none"/>
+      <circle cx="150" cy="78" r="2.2" fill="${v}" stroke="none"/>
+      <circle cx="90" cy="166" r="2.2" fill="${v}" stroke="none"/>
+      <circle cx="150" cy="166" r="2.2" fill="${v}" stroke="none"/>
     </g>
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-d)" stroke="none" opacity=".3"/>
-  </g>`),Ds=()=>j("ar-design",`${L("ar-design")}
+  </g>`),Us=()=>j("ar-design",`${L("ar-design")}
   <g stroke="url(#ar-design-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- بوم -->
     <rect x="42" y="56" width="120" height="120" rx="10" fill="url(#ar-design-f)" stroke-width="2.2"/>
@@ -1302,13 +1318,13 @@ ${ns(s)}
     <path d="M182 136l14 14" stroke-width="1.6"/>
     <!-- سواچ‌ها -->
     <g stroke-width="1.6">
-      <circle cx="192" cy="70" r="9" fill="${p}" fill-opacity=".85" stroke="none"/>
+      <circle cx="192" cy="70" r="9" fill="${v}" fill-opacity=".85" stroke="none"/>
       <circle cx="192" cy="94" r="9" stroke-opacity=".8"/>
       <circle cx="192" cy="118" r="9" stroke-opacity=".8"/>
     </g>
     <path d="M30 186h108" stroke-width="1.2" stroke-opacity=".3"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-design-d)" stroke="none" opacity=".22"/>
-  </g>`),Fs=()=>j("ar-overlay",`${L("ar-overlay")}
+  </g>`),Xs=()=>j("ar-overlay",`${L("ar-overlay")}
   <g stroke="url(#ar-overlay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- مانیتور -->
     <rect x="34" y="58" width="172" height="112" rx="12" fill="url(#ar-overlay-f)" stroke-width="2.4"/>
@@ -1316,7 +1332,7 @@ ${ns(s)}
     <!-- فریم وب‌کم -->
     <rect x="128" y="118" width="62" height="40" rx="8" fill="#0d0e13" stroke-width="2"/>
     <circle cx="159" cy="138" r="9" stroke-width="1.8"/>
-    <circle cx="159" cy="138" r="3.4" fill="${p}" stroke="none"/>
+    <circle cx="159" cy="138" r="3.4" fill="${v}" stroke="none"/>
     <!-- چت‌باکس -->
     <g stroke-width="1.4" stroke-opacity=".8">
       <rect x="48" y="118" width="66" height="8" rx="4"/>
@@ -1324,14 +1340,14 @@ ${ns(s)}
       <rect x="48" y="146" width="56" height="8" rx="4" stroke-opacity=".4"/>
     </g>
     <!-- هدر استریم -->
-    <rect x="48" y="74" width="40" height="10" rx="5" fill="${p}" stroke="none" opacity=".9"/>
+    <rect x="48" y="74" width="40" height="10" rx="5" fill="${v}" stroke="none" opacity=".9"/>
     <rect x="96" y="74" width="22" height="10" rx="5" stroke-width="1.4" stroke-opacity=".7"/>
     <circle cx="190" cy="79" r="5" fill="#ff4d4d" stroke="none"/>
     <!-- نوار پیشرفت -->
     <path d="M48 104h120" stroke-width="3" stroke-opacity=".25"/>
     <path d="M48 104h74" stroke-width="3"/>
     <circle cx="120" cy="118" r="102" fill="url(#ar-overlay-h)" stroke="none" opacity=".2"/>
-  </g>`),Ys=()=>j("ar-community",`${L("ar-community")}
+  </g>`),Qs=()=>j("ar-community",`${L("ar-community")}
   <g stroke="url(#ar-community-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="76" stroke-width="1.1" stroke-opacity=".3" stroke-dasharray="2 8"/>
     <!-- حلقهٔ اعضا -->
@@ -1349,17 +1365,17 @@ ${ns(s)}
     <circle cx="120" cy="118" r="34" fill="url(#ar-community-f)" stroke-width="2.4"/>
     <path d="M120 132c-12-8-18-14-18-21a9 9 0 0 1 18-4 9 9 0 0 1 18 4c0 7-6 13-18 21Z" stroke-width="2"/>
     <circle cx="120" cy="118" r="98" fill="url(#ar-community-d)" stroke="none" opacity=".22"/>
-  </g>`),z={shield:Is(),refund:Os(),support:Ts(),pay:Ps(),delivery:Ns(),secure:Vs(),design:Ds(),overlay:Fs(),community:Ys()},x=(s,a,t)=>`
+  </g>`),Z={shield:Ns(),refund:Ds(),support:Fs(),pay:Rs(),delivery:Ys(),secure:Ws(),design:Us(),overlay:Xs(),community:Qs()},$=(s,a,t)=>`
 <article class="art-card rv">
-  <div class="ac-art">${z[s]}</div>
+  <div class="ac-art">${Z[s]}</div>
   <h3>${a}</h3>
   <p>${t}</p>
-</article>`,X=[{eyebrow:"فروشگاه رسمی انجمن کینیوا",title:"اکانت ماینکرفت فول اکسس",em:"با تحویل تا ۴۸ ساعت",text:"اکانت کامل جاوا و بدراک با اطلاعات قابل تغییر، پشتیبانی واقعی و ضمانت بازگشت وجه.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"جزئیات محصول",ghostHref:"cat-minecraft/",image:"assets/img/products/p-minecraft-account.jpg",tags:["فول اکسس","جاوا + بدراک","تغییر اطلاعات"],chipTop:"۷۶۳ عضو انجمن",chipBottom:"ضمانت بازگشت وجه"},{eyebrow:"دونات اس ام پی",title:"پول دونات از ۴٬۰۰۰ تومان",em:"هر میلیون، بدون واسطه",text:"موجودی فعلی سرور ۳۰۰ میلیون است؛ حداقل خرید ۵۰ میلیون و تحویل مستقیم روی اکانت خودت.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"محاسبهٔ قیمت",ghostHref:"cat-donut/",image:"assets/img/products/p-donut-million.jpg",tags:["موجودی ۳۰۰M","حداقل ۵۰M","تحویل ۴۸h"],chipTop:"تحویل زیر ۲۴ ساعت",chipBottom:"۳۰ نفر آنلاین"},{eyebrow:"خدمات گرافیک کینیوا",title:"لوگو، بنر، تامنیل و اورلی",em:"اختصاصی برای استریم تو",text:"از طرح لوگو تا پک کامل اورلی استریم و انیمه‌آرت؛ همه با تحویل ۱ تا ۳ روز کاری.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"دیدن خدمات",ghostHref:"cat-design/",image:"assets/img/products/p-logo.jpg",tags:["لوگو","اورلی","انیمه‌آرت"],chipTop:"۲ بازنگری رایگان",chipBottom:"فایل لایه‌باز"}],Rs=()=>`
+</article>`,Js=s=>s.toLocaleString("fa-IR"),w=(s,a)=>`<span class="chap"><i>${s}</i><b>${a}</b><span class="chap-line" aria-hidden="true"></span></span>`,ss=[{eyebrow:"فروشگاه رسمی انجمن کینیوا",title:"اکانت ماینکرفت فول اکسس",em:"با تحویل تا ۴۸ ساعت",text:"اکانت کامل جاوا و بدراک با اطلاعات قابل تغییر، پشتیبانی واقعی و ضمانت بازگشت وجه.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"جزئیات محصول",ghostHref:"cat-minecraft/",image:"assets/img/products/p-minecraft-account.jpg",tags:["فول اکسس","جاوا + بدراک","تغییر اطلاعات"],chipTop:"۷۶۳ عضو انجمن",chipBottom:"ضمانت بازگشت وجه"},{eyebrow:"دونات اس ام پی",title:"پول دونات از ۴٬۰۰۰ تومان",em:"هر میلیون، بدون واسطه",text:"موجودی فعلی سرور ۳۰۰ میلیون است؛ حداقل خرید ۵۰ میلیون و تحویل مستقیم روی اکانت خودت.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"محاسبهٔ قیمت",ghostHref:"cat-donut/",image:"assets/img/products/p-donut-million.jpg",tags:["موجودی ۳۰۰M","حداقل ۵۰M","تحویل ۴۸h"],chipTop:"تحویل زیر ۲۴ ساعت",chipBottom:"۳۰ نفر آنلاین"},{eyebrow:"خدمات گرافیک کینیوا",title:"لوگو، بنر، تامنیل و اورلی",em:"اختصاصی برای استریم تو",text:"از طرح لوگو تا پک کامل اورلی استریم و انیمه‌آرت؛ همه با تحویل ۱ تا ۳ روز کاری.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"دیدن خدمات",ghostHref:"cat-design/",image:"assets/img/products/p-logo.jpg",tags:["لوگو","اورلی","انیمه‌آرت"],chipTop:"۲ بازنگری رایگان",chipBottom:"فایل لایه‌باز"}],sa=()=>`
 <section class="hero2">
   <div class="hero-glow" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="wrap">
     <div class="slider" id="heroSlider">
-      ${X.map((s,a)=>`<article class="slide${a===0?" on":""}" data-i="${a}">
+      ${ss.map((s,a)=>`<article class="slide${a===0?" on":""}" data-i="${a}">
         <div class="slide-body">
           <span class="eyebrow">${s.eyebrow}</span>
           <h1>${s.title}<br><em class="grad">${s.em}</em></h1>
@@ -1386,18 +1402,19 @@ ${ns(s)}
       </article>`).join("")}
       <button class="slide-nav prev" data-slide="prev" aria-label="قبلی">${o("chevron")}</button>
       <button class="slide-nav next" data-slide="next" aria-label="بعدی">${o("chevron")}</button>
-      <div class="slider-dots" id="heroDots">${X.map((s,a)=>`<i class="${a===0?"on":""}"></i>`).join("")}</div>
+      <div class="slider-dots" id="heroDots">${ss.map((s,a)=>`<i class="${a===0?"on":""}"></i>`).join("")}</div>
     </div>
   </div>
-</section>`,Ws=()=>`
+</section>`,aa=()=>`
 <div class="marq-band" data-marquee aria-label="محصولات کینیوا">
-  <div class="marq-in">${M.slice(0,10).map(a=>`<a class="marq-item" href="${a.href}">
+  <div class="marq-in">${x.slice(0,10).map(a=>`<a class="marq-item" href="${a.href}">
       <img src="${a.image}" alt="${a.title}" width="76" height="76" loading="lazy">
       <span><b>${a.title}</b><i>${a.price}</i></span>
     </a>`).join("")}</div>
-</div>`,Us=()=>`
+</div>`,ta=()=>`
 <section class="quick-cats"><div class="wrap">
-  ${$("دسته‌بندی","از کجا شروع کنیم؟","روی هر دسته بزن تا صفحهٔ کاملش با قیمت و جزئیات باز شود.",!1,{href:"products/",label:"همهٔ محصولات"})}
+  ${w("۰۱","دسته‌بندی")}
+  ${M("","از کجا شروع کنیم؟","روی هر دسته بزن تا صفحهٔ کاملش با قیمت و جزئیات باز شود.",!1,{href:"products/",label:"همهٔ محصولات"})}
   <div class="cat-rail">
     ${E.map(s=>`<a class="cat-tile rv" href="${s.slug}" data-tilt>
         <img src="${s.image}" alt="${s.title}" loading="lazy" width="300" height="300">
@@ -1405,17 +1422,17 @@ ${ns(s)}
         <span class="ct-note">${s.note}</span>
       </a>`).join("")}
   </div>
-</div></section>`,Q=[{art:"design",k:"۰۱",title:"انتخاب می‌کنی",text:"کاتالوگ را باز می‌کنی و دقیقاً همان چیزی را که می‌خواهی پیدا می‌کنی؛ بدون قیمت نامشخص و بدون «در دایرکت بپرسید»."},{art:"support",k:"۰۲",title:"تیکت می‌زنی",text:"در دیسکورد کینیوا یک تیکت باز می‌کنی؛ پشتیبانی جواب می‌دهد، موجودی و زمان تحویل همان‌جا تثبیت می‌شود."},{art:"pay",k:"۰۳",title:"ریالی پرداخت می‌کنی",text:"فاکتور می‌گیری و مبلغ را ریالی واریز می‌کنی. هیچ کارت خارجی و هیچ واسطه‌ای در کار نیست."},{art:"delivery",k:"۰۴",title:"تحویل می‌گیری",text:"در بازهٔ اعلام‌شدهٔ همان محصول — بین ۱ تا ۴۸ ساعت — سفارش تحویل می‌شود و تیکت تا رضایتت باز می‌ماند."}],Xs=()=>`
-<section class="story" id="story">
-  <div class="story-pin">
+</div></section>`,as=[{art:"design",k:"۰۱",title:"انتخاب می‌کنی",text:"کاتالوگ را باز می‌کنی و دقیقاً همان چیزی را که می‌خواهی پیدا می‌کنی؛ بدون قیمت نامشخص و بدون «در دایرکت بپرسید»."},{art:"support",k:"۰۲",title:"تیکت می‌زنی",text:"در دیسکورد کینیوا یک تیکت باز می‌کنی؛ پشتیبانی جواب می‌دهد، موجودی و زمان تحویل همان‌جا تثبیت می‌شود."},{art:"pay",k:"۰۳",title:"ریالی پرداخت می‌کنی",text:"فاکتور می‌گیری و مبلغ را ریالی واریز می‌کنی. هیچ کارت خارجی و هیچ واسطه‌ای در کار نیست."},{art:"delivery",k:"۰۴",title:"تحویل می‌گیری",text:"در بازهٔ اعلام‌شدهٔ همان محصول — بین ۱ تا ۴۸ ساعت — سفارش تحویل می‌شود و تیکت تا رضایتت باز می‌ماند."}],ea=()=>`
+<section class="story pin-sec" id="story" data-pin>
+  <div class="story-pin pin-pin">
     <div class="wrap story-head">
-      <span class="eyebrow">قصهٔ یک سفارش</span>
+      ${w("۰۲","قصهٔ یک سفارش")}
       <h2 class="sec split">چهار قدم تا تحویل، بدون هیچ ابهامی</h2>
     </div>
-    <div class="story-track">
-      ${Q.map((s,a)=>`<article class="story-card${a===0?" is-on":""}" data-i="${a}">
+    <div class="story-track" data-pin-track>
+      ${as.map((s,a)=>`<article class="story-card${a===0?" is-on":""}" data-i="${a}">
         <span class="sc-k">${s.k}</span>
-        <div class="sc-art">${z[s.art]}</div>
+        <div class="sc-art">${Z[s.art]}</div>
         <h3>${s.title}</h3>
         <p>${s.text}</p>
       </article>`).join("")}
@@ -1425,21 +1442,59 @@ ${ns(s)}
         <a class="btn btn-gold" href="${f}" target="_blank" rel="noopener">${o("discord")} ورود به دیسکورد</a>
       </div>
     </div>
-    <div class="wrap story-foot"><div class="story-dots">${Q.map((s,a)=>`<i class="${a===0?"on":""}"></i>`).join("")}</div><span class="sf-hint">اسکرول کن</span></div>
+    <div class="wrap story-foot">
+      <div class="story-dots">${as.map((s,a)=>`<i class="${a===0?"on":""}"></i>`).join("")}</div>
+      <span class="sf-hint">اسکرول کن</span>
+    </div>
   </div>
-</section>`,Qs=()=>{const s=M.filter(t=>["mc-account","donut-million","hypixel","skyblock","logo","overlay-best","cape","anime-art"].includes(t.id)),a=[["all","همه"],["minecraft","ماینکرفت"],["donut","دونات"],["hypixel","هایپیکسل"],["design","فتوشاپ"],["overlay","اورلی"],["cosmetics","کازمتیک"],["cape","کیپ"]];return`
+</section>`,ia=()=>`
+<section class="theater pin-sec" id="theater" data-pin>
+  <div class="theater-pin pin-pin">
+    <div class="wrap theater-head">
+      ${w("۰۳","کاتالوگ")}
+      <h2 class="sec split">هجده محصول، همه با قیمت روی سایت</h2>
+      <a class="btn btn-ghost btn-sm theater-all" href="products/">کاتالوگ کامل ${o("arrow")}</a>
+    </div>
+    <div class="theater-track" data-pin-track>
+      ${x.map((s,a)=>`<a class="theater-card${a===0?" is-on":""}" href="${s.href}">
+        <div class="tc-img"><img src="${s.image}" alt="${s.title}" loading="lazy" width="900" height="900"></div>
+        <div class="tc-body">
+          <span class="tc-i">${Js(a+1).padStart(2,"۰")}</span>
+          <h3>${s.title}</h3>
+          <p>${s.desc}</p>
+          <span class="tc-price">${s.price}</span>
+        </div>
+      </a>`).join("")}
+    </div>
+    <div class="wrap theater-foot"><div class="pin-bar"><i></i></div></div>
+  </div>
+</section>`,ra=()=>{const s=x.filter(t=>["mc-account","donut-million","hypixel","skyblock","logo","overlay-best"].includes(t.id)),a=[["all","همه"],["minecraft","ماینکرفت"],["donut","دونات"],["hypixel","هایپیکسل"],["design","فتوشاپ"],["overlay","اورلی"],["cosmetics","کازمتیک"],["cape","کیپ"]];return`
 <section class="best"><div class="wrap">
-  ${$("پرفروش‌ها","محصولات پرطرفدار کینیوا","قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.",!1,{href:"products/",label:"کاتالوگ کامل"})}
+  ${w("۰۴","پرفروش‌ها")}
+  ${M("","محصولات پرطرفدار کینیوا","قیمت‌ها به تومان و به‌روز است؛ سفارش فقط از طریق تیکت دیسکورد ثبت می‌شود.",!1,{href:"products/",label:"کاتالوگ کامل"})}
   <div class="filters" id="filters">
-    ${a.map(([t,e],l)=>`<button${l===0?' class="act"':""} data-f="${t}">${e}</button>`).join("")}
+    ${a.map(([t,e],r)=>`<button${r===0?' class="act"':""} data-f="${t}">${e}</button>`).join("")}
   </div>
-  <div class="grid g4" id="grid">${s.map(t=>O(t,{compact:!0})).join("")}</div>
+  <div class="grid g3" id="grid">${s.map(t=>P(t,{})).join("")}</div>
   <div class="center-cta"><a class="btn btn-ghost" href="products/">مشاهدهٔ همهٔ ۱۸ محصول ${o("arrow")}</a></div>
-</div></section>`},Js=()=>`
+</div></section>`},la=()=>`
+<section class="numbers">
+  <div class="num-art" data-par="-0.07" aria-hidden="true">${Z.community}</div>
+  <div class="wrap">
+    ${w("۰۵","عددها")}
+    <h2 class="num-h split">یک انجمن واقعی، پشت یک فروشگاه واقعی.</h2>
+    <div class="num-grid">
+      <div class="num rv"><b data-count="763">۰</b><span>عضو انجمن کینیوا</span></div>
+      <div class="num rv"><b data-count="18">۰</b><span>محصول فعال</span></div>
+      <div class="num rv"><b data-count="48">۰</b><span>حداکثر ساعت تحویل</span></div>
+      <div class="num rv"><b data-count="7">۰</b><span>دستهٔ خدمت</span></div>
+    </div>
+  </div>
+</section>`,ca=()=>`
 <section class="statement">
-  <div class="st-orb" data-par="-0.08" aria-hidden="true">${z.secure}</div>
+  <div class="st-orb" data-par="-0.08" aria-hidden="true">${Z.secure}</div>
   <div class="wrap st-in">
-    <span class="eyebrow">تعهد کینیوا</span>
+    ${w("۰۶","تعهد کینیوا")}
     <h2 class="st-h split">هیچ چیز پنهان نیست؛ نه قیمت، نه زمان تحویل.</h2>
     <p class="st-p">همهٔ چیزهایی که یک فروشگاه باید شفاف بگوید، در همین چهار خط خلاصه شده است.</p>
     <div class="spec-list">
@@ -1449,57 +1504,68 @@ ${ns(s)}
       <div class="spec-row rv"><span>پشتیبانی</span><b>۲۴/۷ در دیسکورد</b><i>${o("clock")}</i></div>
     </div>
   </div>
-</section>`,sa=()=>`
-<section class="tight"><div class="wrap"><div class="grid g4">
-  ${x("delivery","تحویل سریع","بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.")}
-  ${x("pay","پرداخت ریالی","بدون کارت خارجی؛ مبلغ را ریالی پرداخت می‌کنید و فاکتور می‌گیرید.")}
-  ${x("shield","ضمانت بازگشت وجه","اگر تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود.")}
-  ${x("support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه در دیسکورد آنلاین است؛ تیکت بزنید و پاسخ بگیرید.")}
-</div></div></section>`,aa=()=>`
+</section>`,da=()=>`
+<section class="tight art-row-sec"><div class="wrap">
+  ${w("۰۷","چرا کینیوا")}
+  <div class="grid g3">
+    ${$("delivery","تحویل سریع","بیشتر سفارش‌ها ۱ تا ۲۴ ساعت و حداکثر تا ۴۸ ساعت تحویل داده می‌شوند.")}
+    ${$("pay","پرداخت ریالی","بدون کارت خارجی؛ مبلغ را ریالی پرداخت می‌کنید و فاکتور می‌گیرید.")}
+    ${$("shield","ضمانت بازگشت وجه","اگر تحویل انجام نشود، مبلغ به‌صورت کامل بازگردانده می‌شود.")}
+  </div>
+</div></section>`,na=()=>`
 <section class="steps-sec"><div class="wrap">
-  ${$("فقط ۴ قدم","چطور سفارش بدهیم؟")}
+  ${w("۰۸","مراحل")}
+  ${M("","چطور سفارش بدهیم؟")}
   <div class="steps">
     ${[["ورود به دیسکورد","وارد سرور کینیوا شاپ شوید؛ لینک دعوت ثابت و عمومی است."],["ثبت تیکت","در چنل تیکت، محصول و مقدار مورد نظرتان را بنویسید."],["پرداخت ریالی","فاکتور و مبلغ نهایی اعلام می‌شود و ریالی پرداخت می‌کنید."],["تحویل و پشتیبانی","در بازهٔ اعلام‌شده تحویل می‌گیرید و تا پایان همراهتان هستیم."]].map(([s,a],t)=>`<div class="step rv"><span class="num">${t+1}</span><h3>${s}</h3><p>${a}</p></div>`).join("")}
   </div>
   <div class="center-cta"><a class="btn btn-ghost" href="process/">راهنمای کامل سفارش ${o("arrow")}</a></div>
-</div></section>`,ta=[{name:"آرمان",role:"بازیکن دونات اس ام پی",text:"دو بار پول دونات گرفتم، هر دو بار زیر ۲۴ ساعت تحویل شد. پشتیبانی هم توی تیکت سریع جواب داد.",initials:"آ"},{name:"سارا",role:"استریمر تویچ",text:"پک اورلی رو با هماهنگی برند خودم گرفتم؛ دقیقاً همون چیزی بود که می‌خواستم و دو بار بازنگری رایگان داشت.",initials:"س"},{name:"مهدی",role:"ادمین سرور",text:"برای سرور لوگو و بنر سفارش دادم. سه پیشنهاد اولیه دادند و تا نتیجهٔ نهایی اصلاح کردند.",initials:"م"}],ea=()=>`
+</div></section>`,oa=[{name:"آرمان",role:"بازیکن دونات اس ام پی",text:"دو بار پول دونات گرفتم، هر دو بار زیر ۲۴ ساعت تحویل شد. پشتیبانی هم توی تیکت سریع جواب داد.",initials:"آ"},{name:"سارا",role:"استریمر تویچ",text:"پک اورلی رو با هماهنگی برند خودم گرفتم؛ دقیقاً همون چیزی بود که می‌خواستم و دو بار بازنگری رایگان داشت.",initials:"س"},{name:"مهدی",role:"ادمین سرور",text:"برای سرور لوگو و بنر سفارش دادم. سه پیشنهاد اولیه دادند و تا نتیجهٔ نهایی اصلاح کردند.",initials:"م"},{name:"نیلوفر",role:"طراح گرافیک",text:"تامنیل حرفه‌ای گرفتم؛ ترکیب‌بندی و تایپوگرافی خیلی تمیز بود و فایل لایه‌باز هم تحویل دادند.",initials:"ن"},{name:"کیان",role:"بازیکن هایپیکسل",text:"کوین هایپیکسل و بوستر گرفتم؛ همه‌چیز دقیق و بدون دردسر، فاکتور هم صادر شد.",initials:"ک"}],pa=()=>`
 <section class="reviews"><div class="wrap">
-  ${$("نظر مشتری‌ها","کینیوا از زبان خریدارها")}
-  <div class="grid g3">
-    ${ta.map(s=>`<figure class="review rv" data-tilt>
+  ${w("۰۹","نظر مشتری‌ها")}
+  ${M("","کینیوا از زبان خریدارها")}
+</div>
+<div class="marq-band q-band" data-marquee aria-label="نظر مشتری‌ها">
+  <div class="marq-in q-in">
+    ${oa.map(s=>`<figure class="q-card">
         <div class="stars">${Array.from({length:5},()=>o("star")).join("")}</div>
         <blockquote>${s.text}</blockquote>
         <figcaption><span class="ava">${s.initials}</span><span><b>${s.name}</b><i>${s.role}</i></span></figcaption>
       </figure>`).join("")}
   </div>
-</div></section>`,ia=()=>`
+</div>
+</section>`,va=()=>`
 <section class="blog-teaser"><div class="wrap">
-  ${$("وبلاگ کینیوا","راهنما و مقالات","چیزهایی که قبل از خرید باید بدانی.")}
+  ${w("۱۰","وبلاگ")}
+  ${M("","راهنما و مقالات","چیزهایی که قبل از خرید باید بدانی.")}
   <div class="grid g3">
-    ${rs.map(s=>`<a class="bcard rv" href="${s.slug}">
+    ${os.map(s=>`<a class="bcard rv" href="${s.slug}">
         <img src="${s.image}" alt="${s.title}" loading="lazy" width="1280" height="720">
         <div class="body"><span class="bmeta"><b>${s.tag}</b> · ${s.time}</span>
           <h3>${s.title}</h3><p>${s.desc}</p><span class="more">ادامهٔ مطلب ${o("arrow")}</span></div>
       </a>`).join("")}
   </div>
-</div></section>`,la=()=>`
-${Rs()}
-${Ws()}
-${Us()}
-${Xs()}
-${Qs()}
-${Js()}
+</div></section>`,ha=()=>`
 ${sa()}
-<div class="wrap">${_s()}</div>
 ${aa()}
+${ta()}
 ${ea()}
 ${ia()}
+${ra()}
+${la()}
+${ca()}
+${da()}
+<div class="wrap">${Ts()}</div>
+${na()}
+${pa()}
+${va()}
 <section class="home-faq"><div class="wrap">
-  ${$("سوالات متداول","سؤال‌های پرتکرار")}
-  ${es(ss)}
+  ${w("۱۱","سؤال‌ها")}
+  ${M("","سؤال‌های پرتکرار")}
+  ${ls(es)}
   <div class="center-cta"><a class="btn btn-ghost" href="faq/">همهٔ سوالات ${o("arrow")}</a></div>
 </div></section>
-${Ss("سفارش را در دیسکورد ثبت کن","کافی است در سرور کینیوا شاپ تیکت بزنی؛ بقیه‌اش با ما.")}`,A=s=>s.toLocaleString("fa-IR"),ra=s=>M.filter(a=>a.category===s.category&&a.id!==s.id).slice(0,3),ca=s=>{const a=I[s.id],t=a==null?void 0:a.unit,e=t?t.price*(t.min+0):0;return`
+${Os("سفارش را در دیسکورد ثبت کن","کافی است در سرور کینیوا شاپ تیکت بزنی؛ بقیه‌اش با ما.")}`,S=s=>s.toLocaleString("fa-IR"),ga=s=>x.filter(a=>a.category===s.category&&a.id!==s.id).slice(0,3),ma=s=>{const a=T[s.id],t=a==null?void 0:a.unit,e=t?t.price*(t.min+0):0;return`
 <aside class="buy-box rv">
   <div class="bb-head">
     <span class="bb-pill">${o("shield")} ضمانت بازگشت وجه</span>
@@ -1508,11 +1574,11 @@ ${Ss("سفارش را در دیسکورد ثبت کن","کافی است در س�
 
   ${t?`<div class="calc">
     <label class="calc-lbl" for="qty">مقدار مورد نظر</label>
-    <div class="calc-val"><b id="qtyOut">${A(t.min)}</b> <span>${t.label}</span></div>
+    <div class="calc-val"><b id="qtyOut">${S(t.min)}</b> <span>${t.label}</span></div>
     <input id="qty" type="range" min="${t.min}" max="${t.max}" step="${t.step}" value="${t.min}"
            data-price="${t.price}" data-lbl="${t.label}">
-    <div class="calc-range"><span>${A(t.min)} ${t.label}</span><span>${t.maxLabel}</span></div>
-    <div class="calc-total">مبلغ کل: <b id="totalOut">${A(e)} تومان</b></div>
+    <div class="calc-range"><span>${S(t.min)} ${t.label}</span><span>${t.maxLabel}</span></div>
+    <div class="calc-total">مبلغ کل: <b id="totalOut">${S(e)} تومان</b></div>
   </div>`:`<div class="bb-note">${o("info")} قیمت نهایی و زمان دقیق تحویل در تیکت دیسکورد اعلام می‌شود.</div>`}
 
   <ul class="bb-list">
@@ -1526,14 +1592,14 @@ ${Ss("سفارش را در دیسکورد ثبت کن","کافی است در س�
     ${o("cart")} کپی متن سفارش
   </button>
   <p class="bb-fine">با کپی متن سفارش، فقط کافی است آن را در تیکت دیسکورد بچسبانید.</p>
-</aside>`},da=s=>{const a=M.find(i=>i.id===s);if(!a)return'<section class="tight"><div class="wrap"><h1>محصول پیدا نشد</h1></div></section>';const t=I[a.id],e=E.find(i=>i.key===a.category),l=ra(a);return`
-${is([{label:"محصولات",href:"products/"},...e?[{label:e.title,href:e.slug}]:[],{label:a.title}])}
+</aside>`},ua=s=>{const a=x.find(i=>i.id===s);if(!a)return'<section class="tight"><div class="wrap"><h1>محصول پیدا نشد</h1></div></section>';const t=T[a.id],e=E.find(i=>i.key===a.category),r=ga(a);return`
+${cs([{label:"محصولات",href:"products/"},...e?[{label:e.title,href:e.slug}]:[],{label:a.title}])}
 
 <section class="prod"><div class="wrap prod-grid">
   <div class="prod-media rv">
     <img src="${a.image}" alt="${a.title}" width="900" height="900" fetchpriority="high">
     <div class="pm-badges">
-      ${a.pills.map(ts).join("")}
+      ${a.pills.map(rs).join("")}
     </div>
   </div>
   <div class="prod-info">
@@ -1544,21 +1610,21 @@ ${is([{label:"محصولات",href:"products/"},...e?[{label:e.title,href:e.slug
     <ul class="feat">
       ${((t==null?void 0:t.features)??[]).map(i=>`<li>${o("spark")} ${i}</li>`).join("")}
     </ul>
-    ${ca(a)}
+    ${ma(a)}
   </div>
 </div></section>
 
-${t!=null&&t.steps?`<section class="tight"><div class="wrap">${$("مراحل","این محصول چطور تحویل داده می‌شود؟")}
-  <ol class="mini-steps">${t.steps.map((i,c)=>`<li><span>${A(c+1)}</span>${i}</li>`).join("")}</ol>
+${t!=null&&t.steps?`<section class="tight"><div class="wrap">${M("مراحل","این محصول چطور تحویل داده می‌شود؟")}
+  <ol class="mini-steps">${t.steps.map((i,c)=>`<li><span>${S(c+1)}</span>${i}</li>`).join("")}</ol>
 </div></section>`:""}
 
-${t!=null&&t.faq?`<section class="tight"><div class="wrap">${$("سوالات","سؤال‌های این محصول")}${es(t.faq)}</div></section>`:""}
+${t!=null&&t.faq?`<section class="tight"><div class="wrap">${M("سوالات","سؤال‌های این محصول")}${ls(t.faq)}</div></section>`:""}
 
-${l.length?`<section class="tight"><div class="wrap">${$("محصولات مرتبط","این‌ها را هم ببین")}
-  <div class="grid g3">${l.map(i=>O(i,{compact:!0})).join("")}</div></div></section>`:""}
+${r.length?`<section class="tight"><div class="wrap">${M("محصولات مرتبط","این‌ها را هم ببین")}
+  <div class="grid g3">${r.map(i=>P(i,{compact:!0})).join("")}</div></div></section>`:""}
 
-<div id="toast" class="toast" role="status" aria-live="polite"></div>`},na=()=>{const s=[["all","همه"],...E.map(a=>[a.key,a.title.split(" ")[0]])];return`
-${is([{label:"محصولات"}])}
+<div id="toast" class="toast" role="status" aria-live="polite"></div>`},ba=()=>{const s=[["all","همه"],...E.map(a=>[a.key,a.title.split(" ")[0]])];return`
+${cs([{label:"محصولات"}])}
 <section class="phero"><div class="wrap">
   <span class="eyebrow">کاتالوگ کامل</span>
   <h1>همهٔ محصولات کینیوا شاپ</h1>
@@ -1574,6 +1640,6 @@ ${is([{label:"محصولات"}])}
   <div class="filters" id="filters">
     ${s.map(([a,t],e)=>`<button${e===0?' class="act"':""} data-f="${a}">${t}</button>`).join("")}
   </div>
-  <div class="grid g4" id="grid">${M.map(a=>O(a,{compact:!0})).join("")}</div>
-</div></section>`},H={index:la,products:na},oa=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),pa=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),va=(s,a)=>{let t=a;s==="guarantee"&&(t=t.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت کینیوا"[^>]*>/,`<div class="guar-art">${z.shield}</div>`));const l={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([i,c,r])=>x(i,c,r)).join(""),about:[["community","یک انجمن، نه یک مغازه","کینیوا از دل یک انجمن ۷۶۳ نفری بیرون آمده؛ مشتری‌ها همان اعضای انجمن‌اند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([i,c,r])=>x(i,c,r)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([i,c,r])=>x(i,c,r)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در একটা مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([i,c,r])=>x(i,c,r)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([i,c,r])=>x(i,c,r)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور کینیوا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([i,c,r])=>x(i,c,r)).join("")}[s];if(l){const i=t.indexOf("</section>");i>-1&&(t=`${t.slice(0,i+10)}
-<section class="art-row"><div class="wrap"><div class="grid g3">${l}</div></div></section>${t.slice(i+10)}`)}return s==="blog"&&(t=t.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),t=t.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),t};for(const[s,a]of Object.entries(zs))s in H||(H[s]=()=>va(s,pa(oa(a))));const T=document.body,G=T.dataset.page??"index",ha=T.dataset.active??G,J=document.getElementById("app");if(J){const s=T.dataset.product,a=s?()=>da(s):H[G]??H.index;J.innerHTML=`${ps(ha)}${a()}</main>${os()}`,document.querySelectorAll(".sec-hd, .center-cta, .filters, .phero .lead, .phero .badges, .guar > div, .kv, .note, .mini-steps li, .story-head, .st-in > *, .bcard, .spec-row, .art-panel").forEach(t=>t.classList.add("rv")),document.body.classList.add("ready"),Cs(),Hs(G,s)}else console.error("[kiniwa] #app not found");
+  <div class="grid g4" id="grid">${x.map(a=>P(a,{compact:!0})).join("")}</div>
+</div></section>`},G={index:ha,products:ba},ya=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),fa=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),wa=(s,a)=>{let t=a;s==="guarantee"&&(t=t.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت کینیوا"[^>]*>/,`<div class="guar-art">${Z.shield}</div>`));const r={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([i,c,l])=>$(i,c,l)).join(""),about:[["community","یک انجمن، نه یک مغازه","کینیوا از دل یک انجمن ۷۶۳ نفری بیرون آمده؛ مشتری‌ها همان اعضای انجمن‌اند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([i,c,l])=>$(i,c,l)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([i,c,l])=>$(i,c,l)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در একটা مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([i,c,l])=>$(i,c,l)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([i,c,l])=>$(i,c,l)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور کینیوا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([i,c,l])=>$(i,c,l)).join("")}[s];if(r){const i=t.indexOf("</section>");i>-1&&(t=`${t.slice(0,i+10)}
+<section class="art-row"><div class="wrap"><div class="grid g3">${r}</div></div></section>${t.slice(i+10)}`)}return s==="blog"&&(t=t.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),t=t.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),t};for(const[s,a]of Object.entries(Is))s in G||(G[s]=()=>wa(s,fa(ya(a))));const V=document.body,I=V.dataset.page??"index",ka=V.dataset.active??I,ts=document.getElementById("app");if(ts){const s=V.dataset.product,a=s?()=>ua(s):G[I]??G.index;ts.innerHTML=`${ms(ka)}${a()}</main>${gs()}`,document.querySelectorAll(".sec-hd, .center-cta, .filters, .phero .lead, .phero .badges, .guar > div, .kv, .note, .mini-steps li, .story-head, .st-in > *, .bcard, .spec-row, .art-panel").forEach(t=>t.classList.add("rv")),document.body.classList.add("ready"),Ss(),Ks(I,s)}else console.error("[kiniwa] #app not found");
