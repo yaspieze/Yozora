@@ -9,13 +9,20 @@ const $$ = <T extends Element>(sel: string, root: ParentNode = document): T[] =>
 function initProgress(): void {
   const bar = $('#progress') as HTMLElement | null;
   if (!bar) return;
+  let queued = false;
   const update = (): void => {
+    queued = false;
     const el = document.documentElement;
     const max = el.scrollHeight - el.clientHeight;
-    bar.style.width = `${max > 0 ? (el.scrollTop / max) * 100 : 0}%`;
+    bar.style.transform = `scaleX(${max > 0 ? el.scrollTop / max : 0})`;
   };
-  addEventListener('scroll', update, { passive: true });
-  addEventListener('resize', update);
+  const ask = (): void => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(update);
+  };
+  addEventListener('scroll', ask, { passive: true });
+  addEventListener('resize', ask);
   update();
 }
 
@@ -59,8 +66,16 @@ function initHead(): void {
     if (!drawer) return;
     drawer.hidden = !open;
     burger?.setAttribute('aria-expanded', String(open));
+    document.documentElement.classList.toggle('locked', open);
     document.body.classList.toggle('locked', open);
   };
+  // never leave the page locked (back/forward cache, link clicks, touch cancel)
+  addEventListener('pageshow', () => {
+    document.documentElement.classList.remove('locked');
+    document.body.classList.remove('locked');
+    if (drawer) drawer.hidden = true;
+  });
+  drawer?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => toggle(false)));
   burger?.addEventListener('click', () => toggle(drawer?.hidden ?? true));
   close?.addEventListener('click', () => toggle(false));
   drawer?.addEventListener('click', (e) => {
@@ -115,16 +130,28 @@ function initSearch(): void {
 
 /* ------------------------------------------------------------ card spotlight */
 function initSpotlight(): void {
+  if (matchMedia('(hover: none)').matches) return; // no hover on touch: skip entirely
+  let frame = 0;
+  let pending: PointerEvent | null = null;
+  const paint = (): void => {
+    frame = 0;
+    const e = pending;
+    pending = null;
+    if (!e) return;
+    const t = e.target;
+    if (!(t instanceof Element)) return;
+    const card = t.closest<HTMLElement>('.pcard,.card,.mega-item,.cat-tile');
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    card.style.setProperty('--my', `${e.clientY - r.top}px`);
+  };
   document.addEventListener(
     'pointermove',
     (e) => {
-      const target = e.target;
-      if (!(target instanceof Element)) return;
-      const card = target.closest<HTMLElement>('.pcard,.card,.mega-item,.cat-tile');
-      if (!card) return;
-      const r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
-      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+      pending = e as PointerEvent;
+      if (frame) return;
+      frame = requestAnimationFrame(paint);
     },
     { passive: true },
   );
@@ -181,7 +208,17 @@ function initHeroSlider(): void {
   dots.forEach((d, k) => d.addEventListener('click', () => go(k)));
   $('[data-slide="prev"]')?.addEventListener('click', () => go(i - 1));
   $('[data-slide="next"]')?.addEventListener('click', () => go(i + 1));
-  setInterval(() => go(i + 1), 5200);
+
+  let visible = true;
+  const io = new IntersectionObserver(
+    (entries) => entries.forEach((en) => (visible = en.isIntersecting)),
+    { threshold: 0.15 },
+  );
+  io.observe(track);
+
+  setInterval(() => {
+    if (visible && !document.hidden) go(i + 1);
+  }, 5200);
 }
 
 export function initInteractions(): void {
@@ -194,6 +231,7 @@ export function initInteractions(): void {
   initFilters();
   initCounters();
   initHeroSlider();
+  initSmoothScroll();
 }
 
 /* --------------------------------------------------------- order builder */
@@ -239,5 +277,24 @@ function initOrderBuilder(): void {
     } catch {
       showToast('کپی نشد — متن را دستی بنویسید');
     }
+  });
+}
+
+/* ------------------------------------------------------- smooth anchors */
+function initSmoothScroll(): void {
+  const header = document.getElementById('siteHead');
+  document.addEventListener('click', (e) => {
+    const a = (e.target as Element | null)?.closest?.('a[href^="#"]');
+    if (!(a instanceof HTMLAnchorElement)) return;
+    const id = a.getAttribute('href')?.slice(1);
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    const offset = (header?.offsetHeight ?? 0) + 14;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+    target.setAttribute('tabindex', '-1');
+    (target as HTMLElement).focus({ preventScroll: true });
   });
 }
