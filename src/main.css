@@ -1652,3 +1652,17 @@ img{background:rgba(255,255,255,.03)}
 .slide-nav.prev{inset-inline-start:auto;inset-inline-end:calc(50% + 6px)}
 .slide-nav.next{inset-inline-end:calc(50% - 44px)}
 @media(max-width:760px){.slide-nav{bottom:.7rem;width:34px;height:34px}}
+
+/* ── v10.5: چیدمان بخش «قصه» جمع‌وجورتر ─────────────────────────────── */
+@media(min-width:781px){
+  .story{height:260vh}
+  .story-pin{justify-content:center;gap:clamp(1rem,3vh,2.4rem);padding-block:clamp(1rem,4vh,2.4rem)}
+  .story-head{padding:0 0 .2rem}
+  .story-head .sec{font-size:clamp(1.4rem,2.9vw,2.2rem)}
+  .story-track{padding-inline:max(1.2rem,6vw)}
+  .story-card{flex:0 0 min(74vw,340px);padding:1.35rem 1.3rem 1.4rem}
+  .story-card .sc-art{height:124px}
+  .story-card .sc-art .art-svg{width:118px;height:118px}
+  .story-card p{font-size:.82rem;line-height:1.9}
+  .story-foot{margin-top:0}
+}
