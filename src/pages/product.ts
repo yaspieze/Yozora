@@ -18,6 +18,7 @@ const orderBox = (p: Product): string => {
   <div class="bb-head">
     <span class="bb-pill">${icon('shield')} ضمانت بازگشت وجه</span>
     <div class="bb-price"><span>${p.priceLabel}</span><b>${p.price}</b></div>
+    <span class="bb-updated">${icon('clock')} آخرین بازبینی قیمت: آبان ۱۴۰۵</span>
   </div>
 
   ${
@@ -43,7 +44,7 @@ const orderBox = (p: Product): string => {
   <button class="btn btn-ghost btn-copy" id="copyOrder" data-title="${p.title}" data-unit="${unit ? unit.label : ''}">
     ${icon('cart')} کپی متن سفارش
   </button>
-  <p class="bb-fine">با کپی متن سفارش، فقط کافی است آن را در تیکت دیسکورد بچسبانید.</p>
+  <p class="bb-fine">قیمت‌ها به تومان است؛ عدد نهایی همان روز سفارش در تیکت تثبیت می‌شود.</p>
 </aside>`;
 };
 

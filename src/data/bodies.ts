@@ -626,7 +626,7 @@ export const bodies: Record<string, string> = {
 <section class="phero"><div class="wrap">
   <span class="eyebrow">تعرفهٔ کامل</span>
   <h1>جدول قیمت‌ها و محاسبه‌گر</h1>
-  <p class="lead" style="max-width:70ch">همهٔ قیمت‌های یوزورا شاپ در یک صفحه. قیمت‌هایی که به دلار وابسته‌اند با «استعلام» مشخص شده‌اند.</p>
+  <p class="lead" style="max-width:70ch">همهٔ قیمت‌های یوزورا شاپ در یک صفحه. قیمت‌هایی که به دلار وابسته‌اند با «استعلام» مشخص شده‌اند.</p><p class="sec-note">آخرین بازبینی قیمت‌ها: آبان ۱۴۰۵ — همهٔ اعداد به تومان است.</p>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
