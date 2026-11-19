@@ -1,9 +1,9 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const c of i.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&e(c)}).observe(document,{childList:!0,subtree:!0});function t(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(r){if(r.ep)return;r.ep=!0;const i=t(r);fetch(r.href,i)}})();const b=(s,a=24)=>`<svg width="${a}" height="${a}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,g={discord:'<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.9a13.7 13.7 0 0 0-.62 1.28 18.3 18.3 0 0 0-5.55 0A13.7 13.7 0 0 0 8.6 2.9a19.7 19.7 0 0 0-4.92 1.47C.6 9.05-.27 13.6.16 18.1a19.9 19.9 0 0 0 6.03 3.05c.48-.66.9-1.36 1.27-2.1-.7-.26-1.37-.58-2-.96.17-.12.33-.25.49-.38a14.2 14.2 0 0 0 12.1 0c.16.13.32.26.49.38-.63.38-1.3.7-2 .96.37.74.79 1.44 1.27 2.1a19.8 19.8 0 0 0 6.03-3.05c.5-5.2-.86-9.72-3.52-13.73ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Z"/></svg>',bolt:b('<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>'),card:b('<rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 10h19"/>'),shield:b('<path d="M12 3l7.5 3v6c0 4.5-3.2 7.7-7.5 9-4.3-1.3-7.5-4.5-7.5-9V6L12 3Z"/><path d="M9 12.2l2.1 2.1L15.4 10"/>'),clock:b('<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>'),search:b('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>'),menu:b('<path d="M3.5 7h17M3.5 12h17M3.5 17h17"/>'),close:b('<path d="m6 6 12 12M18 6 6 18"/>'),cart:b('<path d="M3 4h2.4l2.2 11.2h9.9L19.5 7H6"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/>'),chevron:b('<path d="m9 6 6 6-6 6"/>'),arrow:b('<path d="M5 12h14M13 6l6 6-6 6"/>'),star:b('<path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.9-5.2 2.9 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/>'),info:b('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),spark:b('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.2 6.2l3 3M14.8 14.8l3 3M17.8 6.2l-3 3M9.2 14.8l-3 3"/>')},E=s=>`<svg class="nav-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,x={home:E('<path d="M4 10.6 12 4l8 6.6V19a1.4 1.4 0 0 1-1.4 1.4h-3.2v-5.6H9.6V20.4H5.4A1.4 1.4 0 0 1 4 19Z"/><path d="M8.6 9.8 12 7l3.4 2.8" stroke-opacity=".55"/>'),products:E('<rect x="3.2" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="13.4" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="3.2" y="13.4" width="7.4" height="7.4" rx="1.8"/><path d="M14.6 14.6h4.8v4.8h-4.8z" stroke-opacity=".45"/>'),prices:E('<path d="M12.6 3.4h6.4a.6.6 0 0 1 .6.6v6.4a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-5-5a2 2 0 0 1 0-2.8l7.4-7.4a2 2 0 0 1 1.4-.6Z"/><circle cx="16.2" cy="7.4" r="1.5"/>'),guarantee:E('<path d="M12 3.2 19 6v6c0 4.3-3 7.3-7 8.8-4-1.5-7-4.5-7-8.8V6Z"/><path d="m9 12 2 2 4-4.2" />'),blog:E('<path d="M5 19.4 8.4 18.6 19 8a2.2 2.2 0 0 0-3.1-3.1L5.3 15.5 4.6 19Z"/><path d="m14.8 6.2 3 3M5.4 15.6l3 3" stroke-opacity=".55"/>'),about:E('<circle cx="12" cy="12" r="8.6"/><path d="M12 10.8v5.4"/><circle cx="12" cy="8" r=".9" fill="currentColor" stroke="none"/>'),contact:E('<path d="M4.4 6.6A2.2 2.2 0 0 1 6.6 4.4h10.8a2.2 2.2 0 0 1 2.2 2.2v7.2a2.2 2.2 0 0 1-2.2 2.2H9.8L5.6 19.2V16a2.2 2.2 0 0 1-1.2-2Z"/><path d="M8.4 9h7.2M8.4 11.8h4.6" stroke-opacity=".55"/>')},ns=`<svg class="gs-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const c of i.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&e(c)}).observe(document,{childList:!0,subtree:!0});function t(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(r){if(r.ep)return;r.ep=!0;const i=t(r);fetch(r.href,i)}})();const b=(s,a=24)=>`<svg width="${a}" height="${a}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,g={discord:'<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.9a13.7 13.7 0 0 0-.62 1.28 18.3 18.3 0 0 0-5.55 0A13.7 13.7 0 0 0 8.6 2.9a19.7 19.7 0 0 0-4.92 1.47C.6 9.05-.27 13.6.16 18.1a19.9 19.9 0 0 0 6.03 3.05c.48-.66.9-1.36 1.27-2.1-.7-.26-1.37-.58-2-.96.17-.12.33-.25.49-.38a14.2 14.2 0 0 0 12.1 0c.16.13.32.26.49.38-.63.38-1.3.7-2 .96.37.74.79 1.44 1.27 2.1a19.8 19.8 0 0 0 6.03-3.05c.5-5.2-.86-9.72-3.52-13.73ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Z"/></svg>',bolt:b('<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>'),card:b('<rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 10h19"/>'),shield:b('<path d="M12 3l7.5 3v6c0 4.5-3.2 7.7-7.5 9-4.3-1.3-7.5-4.5-7.5-9V6L12 3Z"/><path d="M9 12.2l2.1 2.1L15.4 10"/>'),clock:b('<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>'),search:b('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>'),menu:b('<path d="M3.5 7h17M3.5 12h17M3.5 17h17"/>'),close:b('<path d="m6 6 12 12M18 6 6 18"/>'),cart:b('<path d="M3 4h2.4l2.2 11.2h9.9L19.5 7H6"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/>'),chevron:b('<path d="m9 6 6 6-6 6"/>'),arrow:b('<path d="M5 12h14M13 6l6 6-6 6"/>'),star:b('<path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.9-5.2 2.9 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/>'),info:b('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),spark:b('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.2 6.2l3 3M14.8 14.8l3 3M17.8 6.2l-3 3M9.2 14.8l-3 3"/>')},q=s=>`<svg class="nav-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,x={home:q('<path d="M4 10.6 12 4l8 6.6V19a1.4 1.4 0 0 1-1.4 1.4h-3.2v-5.6H9.6V20.4H5.4A1.4 1.4 0 0 1 4 19Z"/><path d="M8.6 9.8 12 7l3.4 2.8" stroke-opacity=".55"/>'),products:q('<rect x="3.2" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="13.4" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="3.2" y="13.4" width="7.4" height="7.4" rx="1.8"/><path d="M14.6 14.6h4.8v4.8h-4.8z" stroke-opacity=".45"/>'),prices:q('<path d="M12.6 3.4h6.4a.6.6 0 0 1 .6.6v6.4a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-5-5a2 2 0 0 1 0-2.8l7.4-7.4a2 2 0 0 1 1.4-.6Z"/><circle cx="16.2" cy="7.4" r="1.5"/>'),guarantee:q('<path d="M12 3.2 19 6v6c0 4.3-3 7.3-7 8.8-4-1.5-7-4.5-7-8.8V6Z"/><path d="m9 12 2 2 4-4.2" />'),blog:q('<path d="M5 19.4 8.4 18.6 19 8a2.2 2.2 0 0 0-3.1-3.1L5.3 15.5 4.6 19Z"/><path d="m14.8 6.2 3 3M5.4 15.6l3 3" stroke-opacity=".55"/>'),about:q('<circle cx="12" cy="12" r="8.6"/><path d="M12 10.8v5.4"/><circle cx="12" cy="8" r=".9" fill="currentColor" stroke="none"/>'),contact:q('<path d="M4.4 6.6A2.2 2.2 0 0 1 6.6 4.4h10.8a2.2 2.2 0 0 1 2.2 2.2v7.2a2.2 2.2 0 0 1-2.2 2.2H9.8L5.6 19.2V16a2.2 2.2 0 0 1-1.2-2Z"/><path d="M8.4 9h7.2M8.4 11.8h4.6" stroke-opacity=".55"/>')},ns=`<svg class="gs-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
   <path d="M16 2.5 27.7 9v14L16 29.5 4.3 23V9Z" stroke="currentColor" stroke-width="1.2" stroke-opacity=".55"/>
   <path d="M16 8.2 22.6 12v7.6L16 23.4 9.4 19.6V12Z" stroke="currentColor" stroke-width="1.1"/>
   <path d="M16 12.4l3.2 1.9v3.8L16 20l-3.2-1.9v-3.8Z" fill="currentColor" fill-opacity=".85"/>
   <path d="M16 2.5v5.7M27.7 9l-5.1 3M4.3 9l5.1 3" stroke="currentColor" stroke-width=".9" stroke-opacity=".4"/>
-</svg>`,f="https://discord.gg/KHsEBj6kG3",C=[{key:"minecraft",slug:"cat-minecraft/",title:"اکانت ماینکرفت",en:"Minecraft Accounts",short:"فول اکسس، جاوا و بدراک",image:"assets/img/products/p-minecraft-account.jpg",note:"تحویل تا ۴۸ ساعت"},{key:"donut",slug:"cat-donut/",title:"پول دونات اس ام پی",en:"Donut SMP",short:"هر میلیون ۳٬۹۰۰ تومان",image:"assets/img/products/p-donut-million.jpg",note:"موجودی ۳۰۰ میلیون"},{key:"hypixel",slug:"cat-hypixel/",title:"هایپیکسل و اسکای‌بلاک",en:"Hypixel & SkyBlock",short:"رنک، کوین و بوستر",image:"assets/img/products/p-hypixel.jpg",note:"تحویل ۱ تا ۲۴ ساعت"},{key:"design",slug:"cat-design/",title:"خدمات فتوشاپ",en:"Design Services",short:"لوگو، بنر، تامنیل، اسکین",image:"assets/img/products/p-logo.jpg",note:"از ۲۰۰٬۰۰۰ تومان"},{key:"overlay",slug:"cat-overlay/",title:"اورلی استریم",en:"Stream Overlay",short:"پک کامل + فونت اختصاصی",image:"assets/img/products/p-overlay-good.jpg",note:"از ۲۴۵٬۰۰۰ تومان"},{key:"cosmetics",slug:"cat-cosmetics/",title:"کازمتیک",en:"Cosmetics",short:"هاله، بال، کلاه",image:"assets/img/products/p-cosmetics.jpg",note:"قیمت دلاری آیتم"},{key:"cape",slug:"cat-cape/",title:"کیپ اپتیفاین",en:"OptiFine Capes",short:"اختصاصی روی اکانت شما",image:"assets/img/products/p-cape.jpg",note:"۳۲۹٬۰۰۰ تومان"}],$=[{id:"mc-account",title:"اکانت ماینکرفت اقتصادی",category:"minecraft",image:"assets/img/products/p-minecraft-account.jpg",desc:"اکانت کامل با فول اکسس برای جاوا و بدراک؛ اطلاعات هم قابل تغییر است.",priceLabel:"قیمت",price:"۲٬۸۹۰٬۰۰۰ تومان",pills:[{text:"فول اکسس",tone:"green"},{text:"جاوا + بدراک"},{text:"تغییر اطلاعات",tone:"gold"}],href:"product/mc-account/",badge:"پرفروش"},{id:"mc-priority",title:"اکانت با اولویت تحویل",category:"minecraft",image:"assets/img/products/p-mc-priority.jpg",desc:"همان اکانت با اولویت تحویل در تیکت.",priceLabel:"قیمت",price:"۳٬۲۴۰٬۰۰۰ تومان",pills:[{text:"اولویت",tone:"green"},{text:"فول اکسس"}],href:"product/mc-priority/"},{id:"donut-million",title:"پول دونات — هر میلیون",category:"donut",image:"assets/img/products/p-donut-million.jpg",desc:"حداقل خرید ۵۰ میلیون؛ موجودی فعلی سرور ۳۰۰ میلیون.",priceLabel:"هر میلیون",price:"۳٬۹۰۰ تومان",pills:[{text:"موجودی ۳۰۰M",tone:"green"},{text:"حداقل ۵۰M"},{text:"تحویل ۴۸h",tone:"gold"}],href:"product/donut-million/",badge:"تخفیف حجمی"},{id:"hypixel",title:"محصولات هایپیکسل",category:"hypixel",image:"assets/img/products/p-hypixel.jpg",desc:"رنک‌ها، بوستر و آیتم‌های هایپیکسل؛ قیمت وابسته به دلار روز.",priceLabel:"از",price:"۲٬۹۵۰٬۰۰۰ تومان",pills:[{text:"۱ تا ۲۴ ساعت",tone:"green"},{text:"امن و قانونی"}],href:"product/hypixel/"},{id:"skyblock",title:"کوین اسکای‌بلاک — هر میلیون",category:"hypixel",image:"assets/img/products/p-skyblock.jpg",desc:"کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.",priceLabel:"هر میلیون",price:"۵٬۸۰۰ تومان",pills:[{text:"۷۲ ساعت",tone:"green"},{text:"قیمت میلیونی"}],href:"product/skyblock/"},{id:"logo",title:"طراحی لوگو",category:"design",image:"assets/img/products/p-logo.jpg",desc:"لوگوی اختصاصی برای سرور یا کانال شما؛ سه پیشنهاد اولیه.",priceLabel:"قیمت",price:"۳۲۰٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"}],href:"product/logo/"},{id:"banner-simple",title:"بنر ساده",category:"design",image:"assets/img/products/p-banner-simple.jpg",desc:"بنر مناسب دیسکورد و شبکه‌های اجتماعی.",priceLabel:"قیمت",price:"۳۶۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/banner-simple/"},{id:"banner-pro",title:"بنر حرفه‌ای",category:"design",image:"assets/img/products/p-banner-pro.jpg",desc:"نسخهٔ کامل با جزئیات و بازنگری بیشتر.",priceLabel:"قیمت",price:"۵۲۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/banner-pro/"},{id:"thumbnail-simple",title:"تامنیل یوتیوب (ساده)",category:"design",image:"assets/img/products/p-thumb-simple.jpg",desc:"تامنیل کلیک‌خور برای ویدیوهای گیمینگ.",priceLabel:"قیمت",price:"۲۲۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/thumbnail-simple/"},{id:"thumbnail-pro",title:"تامنیل یوتیوب (حرفه‌ای)",category:"design",image:"assets/img/products/p-thumb-pro.jpg",desc:"نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.",priceLabel:"قیمت",price:"۳۲۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/thumbnail-pro/"},{id:"skin-simple",title:"اسکین ماینکرفت (ساده)",category:"design",image:"assets/img/products/p-skin-simple.jpg",desc:"اسکین اختصاصی آمادهٔ آپلود.",priceLabel:"قیمت",price:"۲۶۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/skin-simple/"},{id:"skin-pro",title:"اسکین ماینکرفت (حرفه‌ای)",category:"design",image:"assets/img/products/p-skin-pro.jpg",desc:"اسکین با جزئیات و سایه‌پردازی بیشتر.",priceLabel:"قیمت",price:"۳۲۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/skin-pro/"},{id:"anime-art",title:"انیمه‌آرت",category:"design",image:"assets/img/products/p-anime.jpg",desc:"آرت انیمه‌استایل در سه سطح کیفیت.",priceLabel:"از",price:"۲۷۰٬۰۰۰ تومان",pills:[{text:"۳ سطح",tone:"gold"}],href:"product/anime-art/"},{id:"overlay-good",title:"اورلی استریم — کیفیت خوب",category:"overlay",image:"assets/img/products/p-overlay-good.jpg",desc:"پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.",priceLabel:"قیمت",price:"۲۶۰٬۰۰۰ تومان",pills:[{text:"کیفیت خوب"}],href:"product/overlay-good/"},{id:"overlay-best",title:"اورلی استریم — کیفیت عالی",category:"overlay",image:"assets/img/products/p-overlay-best.jpg",desc:"نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.",priceLabel:"قیمت",price:"۳۲۰٬۰۰۰ تومان",pills:[{text:"کیفیت عالی",tone:"green"}],href:"product/overlay-best/"},{id:"font-pack",title:"پک فونت اختصاصی",category:"overlay",image:"assets/img/products/p-font.jpg",desc:"پک فونت فارسی/لاتین مناسب اورلی و تامنیل.",priceLabel:"قیمت",price:"۱۲۰٬۰۰۰ تومان",pills:[{text:"پک فونت"}],href:"product/font-pack/"},{id:"cosmetics",title:"کازمتیک کلاینت‌های ماینکرفت",category:"cosmetics",image:"assets/img/products/p-cosmetics.jpg",desc:"همهٔ کلاینت‌ها؛ قیمت بر اساس دلاری بودن آیتم.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"همهٔ کلاینت‌ها",tone:"green"},{text:"دلاری",tone:"gold"}],href:"product/cosmetics/",ask:!0},{id:"cape",title:"کیپ اپتیفاین",category:"cape",image:"assets/img/products/p-cape.jpg",desc:"کیپ اختصاصی روی اکانت شما؛ برای همهٔ بازیکن‌های سرور قابل مشاهده است.",priceLabel:"قیمت",price:"۳۴۹٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"},{text:"۱ تا ۷۲ ساعت",tone:"gold"}],href:"product/cape/"}],os=[{slug:"blog-minecraft-account/",title:"راهنمای کامل خرید اکانت ماینکرفت",desc:"تفاوت اکانت فول اکسس و اکانت معمولی، ریسک‌ها و چک‌لیست قبل از خرید.",image:"assets/img/blog-account.jpg",tag:"راهنمای خرید",time:"۶ دقیقه"},{slug:"blog-donut-smp/",title:"اقتصاد پول دونات اس ام پی چطور کار می‌کند؟",desc:"قیمت هر میلیون، حداقل خرید و بهترین زمان برای خرید حجم بالا.",image:"assets/img/blog-donut.jpg",tag:"دونات اس ام پی",time:"۵ دقیقه"},{slug:"blog-stream-overlay/",title:"چک‌لیست اورلی استریم حرفه‌ای",desc:"چه اجزایی یک پک اورلی کامل باید داشته باشد و چطور با برند شما هماهنگ شود.",image:"assets/img/blog-overlay.jpg",tag:"استریم",time:"۴ دقیقه"}],es=[{q:"چطور سفارش ثبت کنم؟",a:"در سرور دیسکورد یوزورا تیکت بزنید و محصول را بنویسید؛ زمان تحویل اعلام می‌شود."},{q:"پرداخت چگونه انجام می‌شود؟",a:"پرداخت ریالی و داخل ایران است؛ کارت خارجی لازم نیست و فاکتور صادر می‌شود."},{q:"زمان تحویل چقدر است؟",a:"اکانت ماینکرفت تا ۴۸ ساعت، محصولات هایپیکسل ۱ تا ۲۴ ساعت، اسکای‌بلاک تا ۷۲ ساعت و خدمات طراحی بین ۱ تا ۳ روز کاری."},{q:"اگر سفارش انجام نشود چه می‌شود؟",a:"اگر تحویل انجام نشود، مبلغ کامل برمی‌گردد. جزئیات در صفحهٔ ضمانت است."}],ps=[{href:"./",label:"خانه",key:"home"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],vs=()=>`
+</svg>`,f="https://discord.gg/sVAa2rw4wM",C=[{key:"minecraft",slug:"cat-minecraft/",title:"اکانت ماینکرفت",en:"Minecraft Accounts",short:"فول اکسس، جاوا و بدراک",image:"assets/img/products/p-minecraft-account.jpg",note:"تحویل تا ۴۸ ساعت"},{key:"donut",slug:"cat-donut/",title:"پول دونات اس ام پی",en:"Donut SMP",short:"هر میلیون ۴٬۷۰۰ تومان",image:"assets/img/products/p-donut-million.jpg",note:"موجودی ۳۰۰ میلیون"},{key:"hypixel",slug:"cat-hypixel/",title:"هایپیکسل و اسکای‌بلاک",en:"Hypixel & SkyBlock",short:"رنک، کوین و بوستر",image:"assets/img/products/p-hypixel.jpg",note:"تحویل ۱ تا ۲۴ ساعت"},{key:"design",slug:"cat-design/",title:"خدمات فتوشاپ",en:"Design Services",short:"لوگو، بنر، تامنیل، اسکین",image:"assets/img/products/p-logo.jpg",note:"از ۲۰۰٬۰۰۰ تومان"},{key:"overlay",slug:"cat-overlay/",title:"اورلی استریم",en:"Stream Overlay",short:"پک کامل + فونت اختصاصی",image:"assets/img/products/p-overlay-good.jpg",note:"از ۲۴۵٬۰۰۰ تومان"},{key:"cosmetics",slug:"cat-cosmetics/",title:"کازمتیک",en:"Cosmetics",short:"هاله، بال، کلاه",image:"assets/img/products/p-cosmetics.jpg",note:"قیمت دلاری آیتم"},{key:"cape",slug:"cat-cape/",title:"کیپ اپتیفاین",en:"OptiFine Capes",short:"اختصاصی روی اکانت شما",image:"assets/img/products/p-cape.jpg",note:"۳۲۹٬۰۰۰ تومان"}],$=[{id:"mc-account",title:"اکانت ماینکرفت اقتصادی",category:"minecraft",image:"assets/img/products/p-minecraft-account.jpg",desc:"اکانت کامل با فول اکسس برای جاوا و بدراک؛ اطلاعات هم قابل تغییر است.",priceLabel:"قیمت",price:"۳٬۴۷۰٬۰۰۰ تومان",pills:[{text:"فول اکسس",tone:"green"},{text:"جاوا + بدراک"},{text:"تغییر اطلاعات",tone:"gold"}],href:"product/mc-account/",badge:"پرفروش"},{id:"mc-priority",title:"اکانت با اولویت تحویل",category:"minecraft",image:"assets/img/products/p-mc-priority.jpg",desc:"همان اکانت با اولویت تحویل در تیکت.",priceLabel:"قیمت",price:"۳٬۸۹۰٬۰۰۰ تومان",pills:[{text:"اولویت",tone:"green"},{text:"فول اکسس"}],href:"product/mc-priority/"},{id:"donut-million",title:"پول دونات — هر میلیون",category:"donut",image:"assets/img/products/p-donut-million.jpg",desc:"حداقل خرید ۵۰ میلیون؛ موجودی فعلی سرور ۳۰۰ میلیون.",priceLabel:"هر میلیون",price:"۴٬۷۰۰ تومان",pills:[{text:"موجودی ۳۰۰M",tone:"green"},{text:"حداقل ۵۰M"},{text:"تحویل ۴۸h",tone:"gold"}],href:"product/donut-million/",badge:"تخفیف حجمی"},{id:"hypixel",title:"محصولات هایپیکسل",category:"hypixel",image:"assets/img/products/p-hypixel.jpg",desc:"رنک‌ها، بوستر و آیتم‌های هایپیکسل؛ قیمت وابسته به دلار روز.",priceLabel:"از",price:"۳٬۵۴۰٬۰۰۰ تومان",pills:[{text:"۱ تا ۲۴ ساعت",tone:"green"},{text:"امن و قانونی"}],href:"product/hypixel/"},{id:"skyblock",title:"کوین اسکای‌بلاک — هر میلیون",category:"hypixel",image:"assets/img/products/p-skyblock.jpg",desc:"کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.",priceLabel:"هر میلیون",price:"۶٬۹۰۰ تومان",pills:[{text:"۷۲ ساعت",tone:"green"},{text:"قیمت میلیونی"}],href:"product/skyblock/"},{id:"logo",title:"طراحی لوگو",category:"design",image:"assets/img/products/p-logo.jpg",desc:"لوگوی اختصاصی برای سرور یا کانال شما؛ سه پیشنهاد اولیه.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"}],href:"product/logo/"},{id:"banner-simple",title:"بنر ساده",category:"design",image:"assets/img/products/p-banner-simple.jpg",desc:"بنر مناسب دیسکورد و شبکه‌های اجتماعی.",priceLabel:"قیمت",price:"۴۳۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/banner-simple/"},{id:"banner-pro",title:"بنر حرفه‌ای",category:"design",image:"assets/img/products/p-banner-pro.jpg",desc:"نسخهٔ کامل با جزئیات و بازنگری بیشتر.",priceLabel:"قیمت",price:"۶۲۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/banner-pro/"},{id:"thumbnail-simple",title:"تامنیل یوتیوب (ساده)",category:"design",image:"assets/img/products/p-thumb-simple.jpg",desc:"تامنیل کلیک‌خور برای ویدیوهای گیمینگ.",priceLabel:"قیمت",price:"۲۶۵٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/thumbnail-simple/"},{id:"thumbnail-pro",title:"تامنیل یوتیوب (حرفه‌ای)",category:"design",image:"assets/img/products/p-thumb-pro.jpg",desc:"نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/thumbnail-pro/"},{id:"skin-simple",title:"اسکین ماینکرفت (ساده)",category:"design",image:"assets/img/products/p-skin-simple.jpg",desc:"اسکین اختصاصی آمادهٔ آپلود.",priceLabel:"قیمت",price:"۳۱۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/skin-simple/"},{id:"skin-pro",title:"اسکین ماینکرفت (حرفه‌ای)",category:"design",image:"assets/img/products/p-skin-pro.jpg",desc:"اسکین با جزئیات و سایه‌پردازی بیشتر.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/skin-pro/"},{id:"overlay-good",title:"اورلی استریم — کیفیت خوب",category:"overlay",image:"assets/img/products/p-overlay-good.jpg",desc:"پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.",priceLabel:"قیمت",price:"۳۱۰٬۰۰۰ تومان",pills:[{text:"کیفیت خوب"}],href:"product/overlay-good/"},{id:"overlay-best",title:"اورلی استریم — کیفیت عالی",category:"overlay",image:"assets/img/products/p-overlay-best.jpg",desc:"نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"کیفیت عالی",tone:"green"}],href:"product/overlay-best/"},{id:"font-pack",title:"پک فونت اختصاصی",category:"overlay",image:"assets/img/products/p-font.jpg",desc:"پک فونت فارسی/لاتین مناسب اورلی و تامنیل.",priceLabel:"قیمت",price:"۱۴۵٬۰۰۰ تومان",pills:[{text:"پک فونت"}],href:"product/font-pack/"},{id:"cosmetics",title:"کازمتیک کلاینت‌های ماینکرفت",category:"cosmetics",image:"assets/img/products/p-cosmetics.jpg",desc:"همهٔ کلاینت‌ها؛ قیمت بر اساس دلاری بودن آیتم.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"همهٔ کلاینت‌ها",tone:"green"},{text:"دلاری",tone:"gold"}],href:"product/cosmetics/",ask:!0},{id:"cape",title:"کیپ اپتیفاین",category:"cape",image:"assets/img/products/p-cape.jpg",desc:"کیپ اختصاصی روی اکانت شما؛ برای همهٔ بازیکن‌های سرور قابل مشاهده است.",priceLabel:"قیمت",price:"۴۲۰٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"},{text:"۱ تا ۷۲ ساعت",tone:"gold"}],href:"product/cape/"}],os=[{slug:"blog-minecraft-account/",title:"راهنمای کامل خرید اکانت ماینکرفت",desc:"تفاوت اکانت فول اکسس و اکانت معمولی، ریسک‌ها و چک‌لیست قبل از خرید.",image:"assets/img/blog-account.jpg",tag:"راهنمای خرید",time:"۶ دقیقه"},{slug:"blog-donut-smp/",title:"اقتصاد پول دونات اس ام پی چطور کار می‌کند؟",desc:"قیمت هر میلیون، حداقل خرید و بهترین زمان برای خرید حجم بالا.",image:"assets/img/blog-donut.jpg",tag:"دونات اس ام پی",time:"۵ دقیقه"},{slug:"blog-stream-overlay/",title:"چک‌لیست اورلی استریم حرفه‌ای",desc:"چه اجزایی یک پک اورلی کامل باید داشته باشد و چطور با برند شما هماهنگ شود.",image:"assets/img/blog-overlay.jpg",tag:"استریم",time:"۴ دقیقه"}],es=[{q:"چطور سفارش ثبت کنم؟",a:"در سرور دیسکورد یوزورا تیکت بزنید و محصول را بنویسید؛ زمان تحویل اعلام می‌شود."},{q:"پرداخت چگونه انجام می‌شود؟",a:"پرداخت ریالی و داخل ایران است؛ کارت خارجی لازم نیست و فاکتور صادر می‌شود."},{q:"زمان تحویل چقدر است؟",a:"اکانت ماینکرفت تا ۴۸ ساعت، محصولات هایپیکسل ۱ تا ۲۴ ساعت، اسکای‌بلاک تا ۷۲ ساعت و خدمات طراحی بین ۱ تا ۳ روز کاری."},{q:"اگر سفارش انجام نشود چه می‌شود؟",a:"اگر تحویل انجام نشود، مبلغ کامل برمی‌گردد. جزئیات در صفحهٔ ضمانت است."}],ps=[{href:"./",label:"خانه",key:"home"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],vs=()=>`
 <div class="mega" role="menu">
   <div class="mega-grid">
     ${C.map((s,a)=>`<a class="mega-item" href="${s.slug}" role="menuitem" style="--i:${a}">
@@ -12,7 +12,7 @@
       </a>`).join("")}
   </div>
   <div class="mega-foot">
-    <span>۱۸ محصول در ۷ دسته</span>
+    <span>۱۷ محصول در ۷ دسته</span>
     <a href="products/">دیدن کاتالوگ کامل ${g.chevron}</a>
   </div>
 </div>`,hs=s=>`
@@ -102,7 +102,6 @@
       <h4>خدمات</h4>
       <a href="cat-design/">طراحی لوگو و بنر</a>
       <a href="cat-design/">تامنیل و اسکین</a>
-      <a href="cat-design/">انیمه‌آرت</a>
       <a href="cat-overlay/">اورلی استریم</a>
       <a href="prices/">جدول قیمت‌ها</a>
     </div>
@@ -137,10 +136,10 @@
 <div id="progress"></div>
 <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
 ${hs(s)}
-<main id="main">`;let O=!1;const T=new Set,is=()=>{O||(O=!0,requestAnimationFrame(()=>{O=!1,T.forEach(s=>s())}))};function us(){const s=Array.from(document.querySelectorAll("[data-par]"));if(!s.length)return;const a=()=>{const t=window.innerHeight;s.forEach(e=>{const r=e.getBoundingClientRect();if(r.bottom<-200||r.top>t+200)return;const i=Number(e.dataset.par??.1),c=r.top+r.height/2-t/2;e.style.transform=`translate3d(0,${(-c*i).toFixed(2)}px,0)`})};T.add(a),addEventListener("scroll",is,{passive:!0}),addEventListener("resize",a),a()}function bs(s){const a=s.querySelector("[data-pin-track]");if(!a)return;const t=Array.from(s.querySelectorAll(".story-dots i, .pin-dots i"));if(window.innerWidth<=780){s.style.removeProperty("height"),a.style.transform="";return}const e=window.innerHeight,r=s.offsetHeight-e,i=Math.min(r,Math.max(0,-s.getBoundingClientRect().top)),c=r>0?i/r:0,l=Math.max(0,a.scrollWidth-a.clientWidth);a.style.transform=`translate3d(${(c*l).toFixed(2)}px,0,0)`;const u=Math.min(t.length-1,Math.round(c*(t.length-1||1)));t.forEach((p,m)=>p.classList.toggle("on",m===u)),a.querySelectorAll(".story-card, .theater-card").forEach((p,m)=>{p.classList.toggle("is-on",m===u)});const n=s.querySelector(".pin-bar i");n&&(n.style.transform=`scaleX(${Math.max(.02,c).toFixed(3)})`)}function ys(){const s=Array.from(document.querySelectorAll("[data-pin]"));if(!s.length)return;const a=()=>s.forEach(bs);T.add(a),addEventListener("scroll",is,{passive:!0}),addEventListener("resize",a),a()}function fs(){document.querySelectorAll("[data-marquee]").forEach(s=>{const a=s.querySelector(".marq-in");if(!a||a.dataset.cloned)return;const t=document.createElement("div");t.className="marq-track",s.insertBefore(t,a);const e=a.cloneNode(!0);e.dataset.cloned="1",a.dataset.cloned="1",t.append(a),e.setAttribute("aria-hidden","true"),t.append(e),s.classList.add("mq-ready")})}function ws(){if(window.matchMedia("(hover:none)").matches)return;Array.from(document.querySelectorAll("[data-tilt]")).forEach(a=>{const t=r=>{const i=a.getBoundingClientRect(),c=(r.clientX-i.left)/i.width-.5,l=(r.clientY-i.top)/i.height-.5;a.style.setProperty("--tx",`${(-l*7).toFixed(2)}deg`),a.style.setProperty("--ty",`${(c*9).toFixed(2)}deg`)},e=()=>{a.style.setProperty("--tx","0deg"),a.style.setProperty("--ty","0deg")};a.addEventListener("pointermove",t,{passive:!0}),a.addEventListener("pointerleave",e,{passive:!0})})}function ks(){Array.from(document.querySelectorAll(".split")).forEach(a=>{if(a.dataset.split)return;a.dataset.split="1";const t=(a.textContent??"").trim().split(/\s+/);a.innerHTML=t.map((e,r)=>`<span class="w" style="--i:${r}">${e}</span>`).join(" ")})}function $s(){const s=Array.from(document.querySelectorAll("[data-count]"));if(!s.length)return;const a=e=>e.toLocaleString("fa-IR"),t=new IntersectionObserver(e=>{e.forEach(r=>{if(!r.isIntersecting)return;const i=r.target;t.unobserve(i);const c=Number(i.dataset.count??0),l=performance.now(),u=1100,n=p=>{const m=Math.min(1,(p-l)/u),B=1-Math.pow(1-m,3);i.textContent=a(Math.round(c*B)),m<1&&requestAnimationFrame(n)};requestAnimationFrame(n)})},{threshold:.4});s.forEach(e=>{e.textContent=a(0),t.observe(e)})}function xs(){ks(),us(),ys(),fs(),ws()}let K=null;const Ms=(s,a=!1)=>{K?K.to(s,a):window.scrollTo({top:s,behavior:a?"auto":"smooth"})},js='input,textarea,select,option,[contenteditable="true"],[data-native-scroll],.drawer,.mega,.search-pop,.modal,.table-wrap,.cat-rail,.h-rail,.no-smooth',Q=s=>s instanceof Element?!!s.closest(js):!1;function Ls(){const s=document.documentElement;let a=window.scrollY,t=window.scrollY,e=0;const r=()=>Math.max(0,s.scrollHeight-window.innerHeight),i=d=>Math.min(r(),Math.max(0,d)),c=()=>{const d=a-t;if(Math.abs(d)<.4){t=a,window.scrollTo(0,t),e=0;return}t+=d*.16,window.scrollTo(0,t),e=requestAnimationFrame(c)},l=()=>{e||(e=requestAnimationFrame(c))};K={to:(d,k=!1)=>{if(a=i(d),k){t=a,window.scrollTo(0,t);return}l()},by:d=>{a=i(a+d),l()},current:()=>t},s.classList.add("has-smooth"),window.addEventListener("scroll",()=>{if(document.documentElement.classList.contains("locked"))return;const d=window.scrollY;Math.abs(d-t)>2&&(t=d,a=d)},{passive:!0});const u=d=>{if(d.ctrlKey||d.metaKey||document.documentElement.classList.contains("locked")||Q(d.target)||Math.abs(d.deltaY)<Math.abs(d.deltaX)*1.2)return;let k=d.deltaY;d.deltaMode===1?k*=18:d.deltaMode===2&&(k*=window.innerHeight),d.preventDefault(),a=i(a+k),l()};window.addEventListener("wheel",u,{passive:!1});let n=!1,p=0,m=0,B=0,z=null,R=0,Y=0;window.addEventListener("touchstart",d=>{if(d.touches.length!==1){n=!1;return}if(document.documentElement.classList.contains("locked")||Q(d.target)){n=!1;return}n=!0,z=null,R=d.touches[0].clientX,Y=p=d.touches[0].clientY,m=performance.now(),B=0,t=a=window.scrollY},{passive:!0}),window.addEventListener("touchmove",d=>{if(!n||d.touches.length!==1)return;const k=d.touches[0],F=performance.now();if(!z){const X=Math.abs(k.clientX-R),W=Math.abs(k.clientY-Y);if((X>8||W>8)&&(z=W>=X?"y":"x"),z!=="y"){n=!1;return}}d.preventDefault();const U=p-k.clientY,ds=Math.max(6,F-m);p=k.clientY,m=F,B=U/ds*16,a=i(a+U),l()},{passive:!1});const D=()=>{if(!n)return;n=!1;const d=Math.max(-900,Math.min(900,B*11));a=i(a+d),l(),B=0};window.addEventListener("touchend",D,{passive:!0}),window.addEventListener("touchcancel",D,{passive:!0})}const y=(s,a=document)=>a.querySelector(s),Z=(s,a=document)=>Array.from(a.querySelectorAll(s));function qs(){const s=y("#progress");if(!s)return;let a=!1;const t=()=>{a=!1;const r=document.documentElement,i=r.scrollHeight-r.clientHeight;s.style.transform=`scaleX(${i>0?r.scrollTop/i:0})`},e=()=>{a||(a=!0,requestAnimationFrame(t))};addEventListener("scroll",e,{passive:!0}),addEventListener("resize",e),t()}function Es(){const s=Z(".rv, .split");if(!("IntersectionObserver"in window)||s.length===0){s.forEach(t=>t.classList.add("in"));return}const a=new IntersectionObserver(t=>{t.forEach(e=>{e.isIntersecting&&(e.target.classList.add("in"),a.unobserve(e.target))})},{rootMargin:"0px 0px -8% 0px",threshold:.08});s.forEach((t,e)=>{t.style.transitionDelay=`${Math.min(e%6,5)*45}ms`,a.observe(t)})}function Cs(){const s=y("#siteHead"),a=()=>{s==null||s.classList.toggle("stuck",window.scrollY>24)};addEventListener("scroll",a,{passive:!0}),a();const t=y("#burger"),e=y("#drawer"),r=y("#drawerClose");let i=0;const c=l=>{e&&(t==null||t.setAttribute("aria-expanded",String(l)),document.documentElement.classList.toggle("locked",l),document.body.classList.toggle("locked",l),window.clearTimeout(i),l?(e.hidden=!1,requestAnimationFrame(()=>e.classList.add("open"))):(e.classList.remove("open"),i=window.setTimeout(()=>{e.classList.contains("open")||(e.hidden=!0)},460)))};addEventListener("pageshow",()=>{document.documentElement.classList.remove("locked"),document.body.classList.remove("locked"),e&&(e.classList.remove("open"),e.hidden=!0)}),e==null||e.querySelectorAll("a").forEach(l=>l.addEventListener("click",()=>c(!1))),t==null||t.addEventListener("click",()=>c(!(e!=null&&e.classList.contains("open")))),r==null||r.addEventListener("click",()=>c(!1)),e==null||e.addEventListener("click",l=>{l.target===e&&c(!1)}),document.addEventListener("keydown",l=>{l.key==="Escape"&&c(!1)}),Bs()}function Bs(){const s=Z(".has-mega");s.length&&(s.forEach(a=>{const t=a.querySelector("a");let e=0;const r=i=>{window.clearTimeout(e),i?(a.classList.add("open"),t==null||t.setAttribute("aria-expanded","true")):(a.classList.remove("open"),t==null||t.setAttribute("aria-expanded","false"))};a.addEventListener("pointerenter",()=>r(!0)),a.addEventListener("pointerleave",()=>{e=window.setTimeout(()=>r(!1),140)}),t==null||t.addEventListener("click",i=>{window.matchMedia("(hover:none)").matches&&(i.preventDefault(),r(!a.classList.contains("open")))}),a.addEventListener("keydown",i=>{i.key==="Escape"&&r(!1)})}),document.addEventListener("pointerdown",a=>{const t=a.target;t&&!t.closest(".has-mega")&&s.forEach(e=>e.classList.remove("open"))}))}function Zs(){const s=y("#searchInput"),a=y("#searchPop"),t=y("#headSearch");if(!s||!a)return;const e=r=>{const i=r.trim();if(i.length<2){a.hidden=!0,a.innerHTML="";return}const c=$.filter(l=>l.title.includes(i)||l.desc.includes(i)||l.price.includes(i)).slice(0,6);a.hidden=!1,a.innerHTML=c.length?c.map(l=>`<a href="${l.href}" class="sp-item">
+<main id="main">`;let H=!1;const P=new Set,is=()=>{H||(H=!0,requestAnimationFrame(()=>{H=!1,P.forEach(s=>s())}))};function us(){const s=Array.from(document.querySelectorAll("[data-par]"));if(!s.length)return;const a=()=>{const t=window.innerHeight;s.forEach(e=>{const r=e.getBoundingClientRect();if(r.bottom<-200||r.top>t+200)return;const i=Number(e.dataset.par??.1),c=r.top+r.height/2-t/2;e.style.transform=`translate3d(0,${(-c*i).toFixed(2)}px,0)`})};P.add(a),addEventListener("scroll",is,{passive:!0}),addEventListener("resize",a),a()}function bs(s){const a=s.querySelector("[data-pin-track]");if(!a)return;const t=Array.from(s.querySelectorAll(".story-dots i, .pin-dots i"));if(window.innerWidth<=780){s.style.removeProperty("height"),a.style.transform="";return}const e=window.innerHeight,r=s.offsetHeight-e,i=Math.min(r,Math.max(0,-s.getBoundingClientRect().top)),c=r>0?i/r:0,l=Math.max(0,a.scrollWidth-a.clientWidth);a.style.transform=`translate3d(${(c*l).toFixed(2)}px,0,0)`;const u=Math.min(t.length-1,Math.round(c*(t.length-1||1)));t.forEach((p,m)=>p.classList.toggle("on",m===u)),a.querySelectorAll(".story-card, .theater-card").forEach((p,m)=>{p.classList.toggle("is-on",m===u)});const n=s.querySelector(".pin-bar i");n&&(n.style.transform=`scaleX(${Math.max(.02,c).toFixed(3)})`)}function ys(){const s=Array.from(document.querySelectorAll("[data-pin]"));if(!s.length)return;const a=()=>s.forEach(bs);P.add(a),addEventListener("scroll",is,{passive:!0}),addEventListener("resize",a),a()}function fs(){document.querySelectorAll("[data-marquee]").forEach(s=>{const a=s.querySelector(".marq-in");if(!a||a.dataset.cloned)return;const t=document.createElement("div");t.className="marq-track",s.insertBefore(t,a);const e=a.cloneNode(!0);e.dataset.cloned="1",a.dataset.cloned="1",t.append(a),e.setAttribute("aria-hidden","true"),t.append(e),s.classList.add("mq-ready")})}function ws(){if(window.matchMedia("(hover:none)").matches)return;Array.from(document.querySelectorAll("[data-tilt]")).forEach(a=>{const t=r=>{const i=a.getBoundingClientRect(),c=(r.clientX-i.left)/i.width-.5,l=(r.clientY-i.top)/i.height-.5;a.style.setProperty("--tx",`${(-l*7).toFixed(2)}deg`),a.style.setProperty("--ty",`${(c*9).toFixed(2)}deg`)},e=()=>{a.style.setProperty("--tx","0deg"),a.style.setProperty("--ty","0deg")};a.addEventListener("pointermove",t,{passive:!0}),a.addEventListener("pointerleave",e,{passive:!0})})}function ks(){Array.from(document.querySelectorAll(".split")).forEach(a=>{if(a.dataset.split)return;a.dataset.split="1";const t=(a.textContent??"").trim().split(/\s+/);a.innerHTML=t.map((e,r)=>`<span class="w" style="--i:${r}">${e}</span>`).join(" ")})}function $s(){const s=Array.from(document.querySelectorAll("[data-count]"));if(!s.length)return;const a=e=>e.toLocaleString("fa-IR"),t=new IntersectionObserver(e=>{e.forEach(r=>{if(!r.isIntersecting)return;const i=r.target;t.unobserve(i);const c=Number(i.dataset.count??0),l=performance.now(),u=1100,n=p=>{const m=Math.min(1,(p-l)/u),Z=1-Math.pow(1-m,3);i.textContent=a(Math.round(c*Z)),m<1&&requestAnimationFrame(n)};requestAnimationFrame(n)})},{threshold:.4});s.forEach(e=>{e.textContent=a(0),t.observe(e)})}function xs(){ks(),us(),ys(),fs(),ws()}let I=null;const Ms=(s,a=!1)=>{I?I.to(s,a):window.scrollTo({top:s,behavior:a?"auto":"smooth"})},js='input,textarea,select,option,[contenteditable="true"],[data-native-scroll],.drawer,.mega,.search-pop,.modal,.table-wrap,.cat-rail,.h-rail,.no-smooth',Q=s=>s instanceof Element?!!s.closest(js):!1;function As(){const s=document.documentElement;let a=window.scrollY,t=window.scrollY,e=0;const r=()=>Math.max(0,s.scrollHeight-window.innerHeight),i=d=>Math.min(r(),Math.max(0,d)),c=()=>{const d=a-t;if(Math.abs(d)<.4){t=a,window.scrollTo(0,t),e=0;return}t+=d*.16,window.scrollTo(0,t),e=requestAnimationFrame(c)},l=()=>{e||(e=requestAnimationFrame(c))};I={to:(d,k=!1)=>{if(a=i(d),k){t=a,window.scrollTo(0,t);return}l()},by:d=>{a=i(a+d),l()},current:()=>t},s.classList.add("has-smooth"),window.addEventListener("scroll",()=>{if(document.documentElement.classList.contains("locked"))return;const d=window.scrollY;Math.abs(d-t)>2&&(t=d,a=d)},{passive:!0});const u=d=>{if(d.ctrlKey||d.metaKey||document.documentElement.classList.contains("locked")||Q(d.target)||Math.abs(d.deltaY)<Math.abs(d.deltaX)*1.2)return;let k=d.deltaY;d.deltaMode===1?k*=18:d.deltaMode===2&&(k*=window.innerHeight),d.preventDefault(),a=i(a+k),l()};window.addEventListener("wheel",u,{passive:!1});let n=!1,p=0,m=0,Z=0,S=null,G=0,D=0;window.addEventListener("touchstart",d=>{if(d.touches.length!==1){n=!1;return}if(document.documentElement.classList.contains("locked")||Q(d.target)){n=!1;return}n=!0,S=null,G=d.touches[0].clientX,D=p=d.touches[0].clientY,m=performance.now(),Z=0,t=a=window.scrollY},{passive:!0}),window.addEventListener("touchmove",d=>{if(!n||d.touches.length!==1)return;const k=d.touches[0],U=performance.now();if(!S){const W=Math.abs(k.clientX-G),K=Math.abs(k.clientY-D);if((W>8||K>8)&&(S=K>=W?"y":"x"),S!=="y"){n=!1;return}}d.preventDefault();const X=p-k.clientY,ds=Math.max(6,U-m);p=k.clientY,m=U,Z=X/ds*16,a=i(a+X),l()},{passive:!1});const F=()=>{if(!n)return;n=!1;const d=Math.max(-900,Math.min(900,Z*11));a=i(a+d),l(),Z=0};window.addEventListener("touchend",F,{passive:!0}),window.addEventListener("touchcancel",F,{passive:!0})}const y=(s,a=document)=>a.querySelector(s),E=(s,a=document)=>Array.from(a.querySelectorAll(s));function Ls(){const s=y("#progress");if(!s)return;let a=!1;const t=()=>{a=!1;const r=document.documentElement,i=r.scrollHeight-r.clientHeight;s.style.transform=`scaleX(${i>0?r.scrollTop/i:0})`},e=()=>{a||(a=!0,requestAnimationFrame(t))};addEventListener("scroll",e,{passive:!0}),addEventListener("resize",e),t()}function qs(){const s=E(".rv, .split");if(!("IntersectionObserver"in window)||s.length===0){s.forEach(t=>t.classList.add("in"));return}const a=new IntersectionObserver(t=>{t.forEach(e=>{e.isIntersecting&&(e.target.classList.add("in"),a.unobserve(e.target))})},{rootMargin:"0px 0px -8% 0px",threshold:.08});s.forEach((t,e)=>{t.style.transitionDelay=`${Math.min(e%6,5)*45}ms`,a.observe(t)})}function Cs(){const s=y("#siteHead"),a=()=>{s==null||s.classList.toggle("stuck",window.scrollY>24)};addEventListener("scroll",a,{passive:!0}),a();const t=y("#burger"),e=y("#drawer"),r=y("#drawerClose");let i=0;const c=l=>{e&&(t==null||t.setAttribute("aria-expanded",String(l)),document.documentElement.classList.toggle("locked",l),document.body.classList.toggle("locked",l),window.clearTimeout(i),l?(e.hidden=!1,requestAnimationFrame(()=>e.classList.add("open"))):(e.classList.remove("open"),i=window.setTimeout(()=>{e.classList.contains("open")||(e.hidden=!0)},460)))};addEventListener("pageshow",()=>{document.documentElement.classList.remove("locked"),document.body.classList.remove("locked"),e&&(e.classList.remove("open"),e.hidden=!0)}),e==null||e.querySelectorAll("a").forEach(l=>l.addEventListener("click",()=>c(!1))),t==null||t.addEventListener("click",()=>c(!(e!=null&&e.classList.contains("open")))),r==null||r.addEventListener("click",()=>c(!1)),e==null||e.addEventListener("click",l=>{l.target===e&&c(!1)}),document.addEventListener("keydown",l=>{l.key==="Escape"&&c(!1)}),Zs()}function Zs(){const s=E(".has-mega");s.length&&(s.forEach(a=>{const t=a.querySelector("a");let e=0;const r=i=>{window.clearTimeout(e),i?(a.classList.add("open"),t==null||t.setAttribute("aria-expanded","true")):(a.classList.remove("open"),t==null||t.setAttribute("aria-expanded","false"))};a.addEventListener("pointerenter",()=>r(!0)),a.addEventListener("pointerleave",()=>{e=window.setTimeout(()=>r(!1),140)}),t==null||t.addEventListener("click",i=>{window.matchMedia("(hover:none)").matches&&(i.preventDefault(),r(!a.classList.contains("open")))}),a.addEventListener("keydown",i=>{i.key==="Escape"&&r(!1)})}),document.addEventListener("pointerdown",a=>{const t=a.target;t&&!t.closest(".has-mega")&&s.forEach(e=>e.classList.remove("open"))}))}function Es(){const s=y("#searchInput"),a=y("#searchPop"),t=y("#headSearch");if(!s||!a)return;const e=r=>{const i=r.trim();if(i.length<2){a.hidden=!0,a.innerHTML="";return}const c=$.filter(l=>l.title.includes(i)||l.desc.includes(i)||l.price.includes(i)).slice(0,6);a.hidden=!1,a.innerHTML=c.length?c.map(l=>`<a href="${l.href}" class="sp-item">
               <img src="${l.image}" alt="" width="44" height="44" loading="lazy">
-              <span><b>${l.title}</b><i>${l.price}</i></span></a>`).join(""):'<div class="sp-empty">چیزی پیدا نشد — در تیکت دیسکورد بپرس.</div>'};s.addEventListener("input",()=>e(s.value)),s.addEventListener("focus",()=>e(s.value)),t==null||t.addEventListener("submit",r=>{r.preventDefault();const i=a.querySelector("a");i instanceof HTMLAnchorElement&&(location.href=i.href)}),document.addEventListener("click",r=>{r.target instanceof Node&&(t!=null&&t.contains(r.target)||(a.hidden=!0))})}function As(){if(matchMedia("(hover: none)").matches)return;let s=0,a=null;const t=()=>{s=0;const e=a;if(a=null,!e)return;const r=e.target;if(!(r instanceof Element))return;const i=r.closest(".pcard,.card,.mega-item,.cat-tile");if(!i)return;const c=i.getBoundingClientRect();i.style.setProperty("--mx",`${e.clientX-c.left}px`),i.style.setProperty("--my",`${e.clientY-c.top}px`)};document.addEventListener("pointermove",e=>{a=e,!s&&(s=requestAnimationFrame(t))},{passive:!0})}function Hs(){const s=y("#filters"),a=y("#grid");!s||!a||s.addEventListener("click",t=>{const e=t.target.closest("button[data-f]");if(!e)return;Z("button",s).forEach(i=>i.classList.remove("act")),e.classList.add("act");const r=e.dataset.f??"all";Z(".pcard",a).forEach(i=>{const c=r==="all"||i.dataset.cat===r;i.style.display=c?"":"none"})})}function zs(){var l,u;const s=y("#heroSlider");if(!s)return;const a=Z(".slide",s),t=Z("#heroDots i");if(a.length<2)return;let e=0;const r=n=>{e=(n+a.length)%a.length,a.forEach((p,m)=>p.classList.toggle("on",m===e)),t.forEach((p,m)=>p.classList.toggle("on",m===e))};t.forEach((n,p)=>n.addEventListener("click",()=>r(p))),(l=y('[data-slide="prev"]'))==null||l.addEventListener("click",()=>r(e-1)),(u=y('[data-slide="next"]'))==null||u.addEventListener("click",()=>r(e+1));let i=!0;new IntersectionObserver(n=>n.forEach(p=>i=p.isIntersecting),{threshold:.15}).observe(s),setInterval(()=>{i&&!document.hidden&&r(e+1)},5200)}function Ss(){Ls(),qs(),Gs(),Es(),Cs(),Zs(),As(),Hs(),zs(),_s(),xs(),$s()}function J(s){const a=document.getElementById("toast");a&&(a.textContent=s,a.classList.add("on"),setTimeout(()=>a.classList.remove("on"),2600))}function Gs(){const s=document.getElementById("qty"),a=document.getElementById("qtyOut"),t=document.getElementById("totalOut"),e=document.getElementById("copyOrder"),r=s?Number(s.dataset.price??0):0,i=s?s.dataset.lbl??"":"",c=n=>n.toLocaleString("fa-IR"),l=()=>s?Number(s.value):0,u=()=>{if(!s)return;const n=l();a&&(a.textContent=c(n)),t&&(t.textContent=`${c(n*r)} تومان`),s.style.setProperty("--pct",`${(n-Number(s.min))/(Number(s.max)-Number(s.min))*100}%`)};s==null||s.addEventListener("input",u),u(),e==null||e.addEventListener("click",async()=>{const p=["سلام 👋",`درخواست سفارش: ${e.dataset.title??"محصول"}`];s&&p.push(`مقدار: ${c(l())} ${i}`,`مبلغ تقریبی: ${c(l()*r)} تومان`),p.push("ممنون، منتظر پاسخ هستم.");const m=p.join(`
-`);try{await navigator.clipboard.writeText(m),J("متن سفارش کپی شد ✓ حالا در تیکت دیسکورد بچسبانید")}catch{J("کپی نشد — متن را دستی بنویسید")}})}function _s(){const s=document.getElementById("siteHead");document.addEventListener("click",a=>{var l,u,n;const t=(u=(l=a.target)==null?void 0:l.closest)==null?void 0:u.call(l,'a[href^="#"]');if(!(t instanceof HTMLAnchorElement))return;const e=(n=t.getAttribute("href"))==null?void 0:n.slice(1);if(!e)return;const r=document.getElementById(e);if(!r)return;a.preventDefault();const i=((s==null?void 0:s.offsetHeight)??0)+14,c=r.getBoundingClientRect().top+window.scrollY-i;Ms(c),r.setAttribute("tabindex","-1"),r.focus({preventScroll:!0})})}const P={"mc-account":{long:"اکانت ماینکرفت با فول اکسس به‌صورت کامل تحویل داده می‌شود؛ ایمیل و رمز قابل تغییر است و روی هر دو نسخهٔ جاوا و بدراک کار می‌کند. اکانت‌ها بررسی‌شده هستند و پس از تحویل، راهنمای تغییر اطلاعات هم ارسال می‌شود.",features:["فول اکسس با ایمیل و رمز","فعال روی جاوا + بدراک","امکان تغییر ایمیل و رمز","تحویل حداکثر ۴۸ ساعت","ضمانت بازگشت وجه"],delivery:"۲۴ تا ۴۸ ساعت",steps:["تیکت با عنوان «اکانت ماینکرفت» بزنید","مبلغ را ریالی پرداخت کنید","اطلاعات اکانت در تیکت تحویل داده می‌شود"],faq:[{q:"اکانت هکری است؟",a:"نه. همهٔ اکانت‌ها فول اکسس هستند و اطلاعات کامل به شما منتقل می‌شود؛ نیازی به دور زدن هیچ محدودیتی نیست."},{q:"بعد از تحویل می‌توانم ایمیلش را عوض کنم؟",a:"بله، اطلاعات کامل در اختیار شماست و می‌توانید ایمیل و رمز را تغییر دهید."}]},"mc-priority":{long:"اگر عجله دارید، سفارش با اولویت در صف تیکت‌ها جلوتر قرار می‌گیرد و تحویل در کوتاه‌ترین زمان انجام می‌شود. مشخصات اکانت همان نسخهٔ فول اکسس است.",features:["اولویت در صف تحویل","فول اکسس کامل","جاوا + بدراک","پشتیبانی مستقیم تا تحویل"],delivery:"۱۲ تا ۲۴ ساعت",faq:[{q:"تفاوتش با اکانت معمولی چیست؟",a:"فقط زمان تحویل؛ محصول و اطلاعات اکانت دقیقاً یکسان است."}]},"donut-million":{long:"پول سرور دونات اس ام پی به‌صورت میلیونی فروخته می‌شود. موجودی سرور ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون. تحویل مستقیم روی اکانت شما انجام می‌شود.",features:["هر میلیون ۳٬۹۰۰ تومان","حداقل خرید ۵۰ میلیون","حداکثر موجودی ۳۰۰ میلیون","تحویل مستقیم روی اکانت","تحویل تا ۴۸ ساعت"],delivery:"حداقل ۴۸ ساعت",unit:{price:4e3,label:"میلیون",step:5,min:50,max:300,maxLabel:"۳۰۰ میلیون"},faq:[{q:"پول چطور تحویل داده می‌شود؟",a:"بعد از پرداخت، مبلغ در بازی یا از طریق روش توافق‌شده روی اکانت شما واریز می‌شود."},{q:"خرید بیشتر تخفیف دارد؟",a:"برای خریدهای حجم بالا در تیکت مذاکره کنید؛ قیمت پله‌ای داریم."}]},hypixel:{long:"تمام آیتم‌های فروشگاه هایپیکسل — از رنک و کوین تا بوستر و آیتم‌های ویژه — قابل تهیه است. قیمت بر اساس دلار روز محاسبه می‌شود و در تیکت استعلام می‌گیرید.",features:["رنک، کوین، بوستر و آیتم‌های ویژه","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت","امن برای اکانت شما"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"چرا قیمت ثابت نیست؟",a:"چون مبنای قیمت‌گذاری دلار است و روزانه تغییر می‌کند؛ قبل از پرداخت استعلام دقیق می‌گیرید."}]},skyblock:{long:"کوین اسکای‌بلاک هایپیکسل با قیمت هر میلیون ۵٬۸۰۰ تومان و تحویل بین ۱ تا ۷۲ ساعت. مناسب برای خریدهای ملایم و مطمئن بدون ریسک برای اکانت.",features:["هر میلیون ۵٬۸۰۰ تومان","تحویل ۱ تا ۷۲ ساعت","روش امن و بدون ریسک","پشتیبانی تا پایان سفارش"],delivery:"۱ تا ۷۲ ساعت",unit:{price:6e3,label:"میلیون",step:5,min:10,max:500,maxLabel:"۵۰۰ میلیون"},faq:[{q:"حداقل خرید چقدر است؟",a:"از ۱۰ میلیون به بالا سفارش ثبت می‌شود."}]},logo:{long:"طراحی لوگوی اختصاصی برای سرور، کانال یا برند شما. سه پیشنهاد اولیه دریافت می‌کنید و تا رسیدن به نتیجهٔ نهایی اصلاح انجام می‌شود.",features:["سه پیشنهاد اولیه","فایل خروجی PNG با پس‌زمینهٔ شفاف","اصلاح تا رضایت","تحویل ۱ تا ۳ روز کاری"],delivery:"۱ تا ۳ روز کاری",faq:[{q:"فایل لایه‌باز هم می‌دهید؟",a:"در صورت نیاز، فایل لایه‌باز با هزینهٔ جداگانه ارائه می‌شود."}]},"banner-simple":{long:"بنر ساده و تمیز برای دیسکورد و شبکه‌های اجتماعی، با ترکیب‌بندی سریع و مناسب استفادهٔ روزمره.",features:["ابعاد استاندارد دیسکورد","تحویل ۲۴ ساعته","یک بار اصلاح رایگان"],delivery:"۲۴ ساعت"},"banner-pro":{long:"بنر حرفه‌ای با ترکیب‌بندی قوی‌تر، جزئیات بیشتر و دو مرحله بازنگری؛ مناسب برندهای جدی و سرورهای بزرگ.",features:["طراحی اختصاصی","دو مرحله بازنگری","خروجی با کیفیت بالا","تحویل ۱ تا ۳ روز"],delivery:"۱ تا ۳ روز کاری"},"thumbnail-simple":{long:"تامنیل یوتیوب ساده و خوانا؛ مناسب ویدیوهای گیمینگ روزمره با نرخ کلیک بهتر.",features:["۱۲۸۰×۷۲۰","تحویل ۲۴ ساعته","یک بار اصلاح"],delivery:"۲۴ ساعت"},"thumbnail-pro":{long:"تامنیل حرفه‌ای با ترکیب‌بندی، رنگ‌بندی و تایپوگرافی قوی‌تر برای ویدیوهایی که باید دیده شوند.",features:["۱۲۸۰×۷۲۰","دو مرحله بازنگری","ترکیب‌بندی اختصاصی"],delivery:"۱ تا ۲ روز کاری"},"skin-simple":{long:"اسکین ماینکرفت ساده و آمادهٔ آپلود؛ فایل PNG استاندارد که مستقیم روی اکانت یا لانچر ست می‌شود.",features:["فایل PNG استاندارد","آمادهٔ آپلود","تحویل ۲۴ تا ۴۸ ساعت"],delivery:"۲۴ تا ۴۸ ساعت"},"skin-pro":{long:"اسکین حرفه‌ای با جزئیات، سایه‌پردازی و رندر سه‌بعدی برای معرفی؛ مناسب استریم و شبکه‌های اجتماعی.",features:["فایل PNG + رندر سه‌بعدی","سایه‌پردازی حرفه‌ای","تحویل ۲ تا ۳ روز"],delivery:"۲ تا ۳ روز کاری"},"anime-art":{long:"آرت انیمه‌استایل در سه سطح کیفیت — از پرترهٔ ساده تا آرت کامل با پس‌زمینه؛ مناسب پروفایل، تامنیل و بنر.",features:["سه سطح کیفیت","سبک انیمه","خروجی با کیفیت بالا","تحویل ۲ تا ۴ روز"],delivery:"۲ تا ۴ روز کاری",faq:[{q:"سطح‌ها چه تفاوتی دارند؟",a:"سطح پایه تک‌شخصیت ساده، سطح میانی با پس‌زمینه، و سطح کامل با جزئیات و نورپردازی است."}]},"overlay-good":{long:"پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و اسکرین‌های حالت آماده‌به‌کار — با کیفیت خوب و قیمت مناسب.",features:["فریم وب‌کم","چت‌باکس","هشدارها و اسکرین","سازگار با OBS"],delivery:"۱ تا ۲ روز کاری"},"overlay-best":{long:"نسخهٔ کامل و پرجزئیات اورلی با هماهنگی کامل با برند شما؛ شامل تمام اجزای پک خوب به‌علاوهٔ اسکرین‌های اضافه و پک فونت هدیه.",features:["تمام اجزای پک کامل","هماهنگ با برند شما","پک فونت هدیه","دو مرحله بازنگری"],delivery:"۱ تا ۳ روز کاری"},"font-pack":{long:"پک فونت اختصاصی فارسی و لاتین، انتخاب‌شده برای خوانایی روی اورلی و تامنیل؛ همراه با راهنمای استفاده.",features:["فونت فارسی + لاتین","مناسب اورلی و تامنیل","راهنمای نصب","تحویل فوری"],delivery:"فوری تا ۲۴ ساعت"},cosmetics:{long:"کازمتیک کلاینت‌های ماینکرفت — هاله، بال، کلاه و آیتم‌های ظاهری — برای همهٔ کلاینت‌ها قابل تهیه است. قیمت بر اساس دلاری بودن آیتم محاسبه می‌شود.",features:["همهٔ کلاینت‌ها","هاله، بال، کلاه و بیشتر","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"کدام کلاینت‌ها پشتیبانی می‌شوند؟",a:"کازمتیک‌های کلاینت‌های محبوب ماینکرفت؛ در تیکت نام کلاینت و آیتم را بگویید تا استعلام بگیریم."}]},cape:{long:"کیپ اختصاصی اپتیفاین روی اکانت خودتان؛ طرح دلخواه شما روی کیپ اعمال می‌شود و برای همهٔ بازیکن‌های سرور قابل مشاهده است.",features:["اختصاصی روی اکانت شما","قابل مشاهده برای همه","طرح دلخواه","تحویل ۱ تا ۷۲ ساعت"],delivery:"۱ تا ۷۲ ساعت"}},A="https://yaspieze.github.io/kiniwa",S=s=>{const a=document.createElement("script");a.type="application/ld+json",a.textContent=JSON.stringify(s),document.head.appendChild(a)};function Os(s,a){if(S({"@context":"https://schema.org","@type":"Organization",name:"یوزورا شاپ",alternateName:"Yozora Shop",url:`${A}/`,logo:`${A}/assets/img/logo.png`,sameAs:[f],description:"فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین."}),a){const t=$.find(e=>e.id===a);if(t){const e=P[t.id];S({"@context":"https://schema.org","@type":"Product",name:t.title,description:(e==null?void 0:e.long)??t.desc,image:`${A}/${t.image}`,brand:{"@type":"Brand",name:"یوزورا شاپ"},offers:{"@type":"Offer",priceCurrency:t.price.includes("تومان")?"IRR":void 0,price:t.price.replace(/[^۰-۹0-9]/g,"")||void 0,availability:"https://schema.org/InStock",url:`${A}/product/${t.id}/`,seller:{"@type":"Organization",name:"یوزورا شاپ"}}})}}(s==="faq"||s==="index")&&S({"@context":"https://schema.org","@type":"FAQPage",mainEntity:es.map(t=>({"@type":"Question",name:t.q,acceptedAnswer:{"@type":"Answer",text:t.a}}))}),s==="products"&&S({"@context":"https://schema.org","@type":"ItemList",itemListElement:[...$,...C.map(()=>null)].filter(Boolean).map((t,e)=>({"@type":"ListItem",position:e+1,name:t.title,url:`${A}/product/${t.id}/`}))})}const Ks={404:`<section class="e404"><div class="wrap-narrow">
+              <span><b>${l.title}</b><i>${l.price}</i></span></a>`).join(""):'<div class="sp-empty">چیزی پیدا نشد — در تیکت دیسکورد بپرس.</div>'};s.addEventListener("input",()=>e(s.value)),s.addEventListener("focus",()=>e(s.value)),t==null||t.addEventListener("submit",r=>{r.preventDefault();const i=a.querySelector("a");i instanceof HTMLAnchorElement&&(location.href=i.href)}),document.addEventListener("click",r=>{r.target instanceof Node&&(t!=null&&t.contains(r.target)||(a.hidden=!0))})}function zs(){if(matchMedia("(hover: none)").matches)return;let s=0,a=null;const t=()=>{s=0;const e=a;if(a=null,!e)return;const r=e.target;if(!(r instanceof Element))return;const i=r.closest(".pcard,.card,.mega-item,.cat-tile");if(!i)return;const c=i.getBoundingClientRect();i.style.setProperty("--mx",`${e.clientX-c.left}px`),i.style.setProperty("--my",`${e.clientY-c.top}px`)};document.addEventListener("pointermove",e=>{a=e,!s&&(s=requestAnimationFrame(t))},{passive:!0})}function Bs(){const s=y("#filters"),a=y("#grid");!s||!a||s.addEventListener("click",t=>{const e=t.target.closest("button[data-f]");if(!e)return;E("button",s).forEach(i=>i.classList.remove("act")),e.classList.add("act");const r=e.dataset.f??"all";E(".pcard",a).forEach(i=>{const c=r==="all"||i.dataset.cat===r;i.style.display=c?"":"none"})})}function Ss(){var l,u;const s=y("#heroSlider");if(!s)return;const a=E(".slide",s),t=E("#heroDots i");if(a.length<2)return;let e=0;const r=n=>{e=(n+a.length)%a.length,a.forEach((p,m)=>p.classList.toggle("on",m===e)),t.forEach((p,m)=>p.classList.toggle("on",m===e))};t.forEach((n,p)=>n.addEventListener("click",()=>r(p))),(l=y('[data-slide="prev"]'))==null||l.addEventListener("click",()=>r(e-1)),(u=y('[data-slide="next"]'))==null||u.addEventListener("click",()=>r(e+1));let i=!0;new IntersectionObserver(n=>n.forEach(p=>i=p.isIntersecting),{threshold:.15}).observe(s),setInterval(()=>{i&&!document.hidden&&r(e+1)},5200)}function Vs(){As(),Ls(),_s(),qs(),Cs(),Es(),zs(),Bs(),Ss(),Os(),xs(),$s()}function J(s){const a=document.getElementById("toast");a&&(a.textContent=s,a.classList.add("on"),setTimeout(()=>a.classList.remove("on"),2600))}function _s(){const s=document.getElementById("qty"),a=document.getElementById("qtyOut"),t=document.getElementById("totalOut"),e=document.getElementById("copyOrder"),r=s?Number(s.dataset.price??0):0,i=s?s.dataset.lbl??"":"",c=n=>n.toLocaleString("fa-IR"),l=()=>s?Number(s.value):0,u=()=>{if(!s)return;const n=l();a&&(a.textContent=c(n)),t&&(t.textContent=`${c(n*r)} تومان`),s.style.setProperty("--pct",`${(n-Number(s.min))/(Number(s.max)-Number(s.min))*100}%`)};s==null||s.addEventListener("input",u),u(),e==null||e.addEventListener("click",async()=>{const p=["سلام 👋",`درخواست سفارش: ${e.dataset.title??"محصول"}`];s&&p.push(`مقدار: ${c(l())} ${i}`,`مبلغ تقریبی: ${c(l()*r)} تومان`),p.push("ممنون، منتظر پاسخ هستم.");const m=p.join(`
+`);try{await navigator.clipboard.writeText(m),J("متن سفارش کپی شد ✓ حالا در تیکت دیسکورد بچسبانید")}catch{J("کپی نشد — متن را دستی بنویسید")}})}function Os(){const s=document.getElementById("siteHead");document.addEventListener("click",a=>{var l,u,n;const t=(u=(l=a.target)==null?void 0:l.closest)==null?void 0:u.call(l,'a[href^="#"]');if(!(t instanceof HTMLAnchorElement))return;const e=(n=t.getAttribute("href"))==null?void 0:n.slice(1);if(!e)return;const r=document.getElementById(e);if(!r)return;a.preventDefault();const i=((s==null?void 0:s.offsetHeight)??0)+14,c=r.getBoundingClientRect().top+window.scrollY-i;Ms(c),r.setAttribute("tabindex","-1"),r.focus({preventScroll:!0})})}const N={"mc-account":{long:"اکانت ماینکرفت با فول اکسس به‌صورت کامل تحویل داده می‌شود؛ ایمیل و رمز قابل تغییر است و روی هر دو نسخهٔ جاوا و بدراک کار می‌کند. اکانت‌ها بررسی‌شده هستند و پس از تحویل، راهنمای تغییر اطلاعات هم ارسال می‌شود.",features:["فول اکسس با ایمیل و رمز","فعال روی جاوا + بدراک","امکان تغییر ایمیل و رمز","تحویل حداکثر ۴۸ ساعت","ضمانت بازگشت وجه"],delivery:"۲۴ تا ۴۸ ساعت",steps:["تیکت با عنوان «اکانت ماینکرفت» بزنید","مبلغ را ریالی پرداخت کنید","اطلاعات اکانت در تیکت تحویل داده می‌شود"],faq:[{q:"اکانت هکری است؟",a:"نه. همهٔ اکانت‌ها فول اکسس هستند و اطلاعات کامل به شما منتقل می‌شود؛ نیازی به دور زدن هیچ محدودیتی نیست."},{q:"بعد از تحویل می‌توانم ایمیلش را عوض کنم؟",a:"بله، اطلاعات کامل در اختیار شماست و می‌توانید ایمیل و رمز را تغییر دهید."}]},"mc-priority":{long:"اگر عجله دارید، سفارش با اولویت در صف تیکت‌ها جلوتر قرار می‌گیرد و تحویل در کوتاه‌ترین زمان انجام می‌شود. مشخصات اکانت همان نسخهٔ فول اکسس است.",features:["اولویت در صف تحویل","فول اکسس کامل","جاوا + بدراک","پشتیبانی مستقیم تا تحویل"],delivery:"۱۲ تا ۲۴ ساعت",faq:[{q:"تفاوتش با اکانت معمولی چیست؟",a:"فقط زمان تحویل؛ محصول و اطلاعات اکانت دقیقاً یکسان است."}]},"donut-million":{long:"پول سرور دونات اس ام پی به‌صورت میلیونی فروخته می‌شود. موجودی سرور ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون. تحویل مستقیم روی اکانت شما انجام می‌شود.",features:["هر میلیون ۴٬۷۰۰ تومان","حداقل خرید ۵۰ میلیون","حداکثر موجودی ۳۰۰ میلیون","تحویل مستقیم روی اکانت","تحویل تا ۴۸ ساعت"],delivery:"حداقل ۴۸ ساعت",unit:{price:4e3,label:"میلیون",step:5,min:50,max:300,maxLabel:"۳۰۰ میلیون"},faq:[{q:"پول چطور تحویل داده می‌شود؟",a:"بعد از پرداخت، مبلغ در بازی یا از طریق روش توافق‌شده روی اکانت شما واریز می‌شود."},{q:"خرید بیشتر تخفیف دارد؟",a:"برای خریدهای حجم بالا در تیکت مذاکره کنید؛ قیمت پله‌ای داریم."}]},hypixel:{long:"تمام آیتم‌های فروشگاه هایپیکسل — از رنک و کوین تا بوستر و آیتم‌های ویژه — قابل تهیه است. قیمت بر اساس دلار روز محاسبه می‌شود و در تیکت استعلام می‌گیرید.",features:["رنک، کوین، بوستر و آیتم‌های ویژه","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت","امن برای اکانت شما"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"چرا قیمت ثابت نیست؟",a:"چون مبنای قیمت‌گذاری دلار است و روزانه تغییر می‌کند؛ قبل از پرداخت استعلام دقیق می‌گیرید."}]},skyblock:{long:"کوین اسکای‌بلاک هایپیکسل با قیمت هر میلیون ۶٬۹۰۰ تومان و تحویل بین ۱ تا ۷۲ ساعت. مناسب برای خریدهای ملایم و مطمئن بدون ریسک برای اکانت.",features:["هر میلیون ۶٬۹۰۰ تومان","تحویل ۱ تا ۷۲ ساعت","روش امن و بدون ریسک","پشتیبانی تا پایان سفارش"],delivery:"۱ تا ۷۲ ساعت",unit:{price:6e3,label:"میلیون",step:5,min:10,max:500,maxLabel:"۵۰۰ میلیون"},faq:[{q:"حداقل خرید چقدر است؟",a:"از ۱۰ میلیون به بالا سفارش ثبت می‌شود."}]},logo:{long:"طراحی لوگوی اختصاصی برای سرور، کانال یا برند شما. سه پیشنهاد اولیه دریافت می‌کنید و تا رسیدن به نتیجهٔ نهایی اصلاح انجام می‌شود.",features:["سه پیشنهاد اولیه","فایل خروجی PNG با پس‌زمینهٔ شفاف","اصلاح تا رضایت","تحویل ۱ تا ۳ روز کاری"],delivery:"۱ تا ۳ روز کاری",faq:[{q:"فایل لایه‌باز هم می‌دهید؟",a:"در صورت نیاز، فایل لایه‌باز با هزینهٔ جداگانه ارائه می‌شود."}]},"banner-simple":{long:"بنر ساده و تمیز برای دیسکورد و شبکه‌های اجتماعی، با ترکیب‌بندی سریع و مناسب استفادهٔ روزمره.",features:["ابعاد استاندارد دیسکورد","تحویل ۲۴ ساعته","یک بار اصلاح رایگان"],delivery:"۲۴ ساعت"},"banner-pro":{long:"بنر حرفه‌ای با ترکیب‌بندی قوی‌تر، جزئیات بیشتر و دو مرحله بازنگری؛ مناسب برندهای جدی و سرورهای بزرگ.",features:["طراحی اختصاصی","دو مرحله بازنگری","خروجی با کیفیت بالا","تحویل ۱ تا ۳ روز"],delivery:"۱ تا ۳ روز کاری"},"thumbnail-simple":{long:"تامنیل یوتیوب ساده و خوانا؛ مناسب ویدیوهای گیمینگ روزمره با نرخ کلیک بهتر.",features:["۱۲۸۰×۷۲۰","تحویل ۲۴ ساعته","یک بار اصلاح"],delivery:"۲۴ ساعت"},"thumbnail-pro":{long:"تامنیل حرفه‌ای با ترکیب‌بندی، رنگ‌بندی و تایپوگرافی قوی‌تر برای ویدیوهایی که باید دیده شوند.",features:["۱۲۸۰×۷۲۰","دو مرحله بازنگری","ترکیب‌بندی اختصاصی"],delivery:"۱ تا ۲ روز کاری"},"skin-simple":{long:"اسکین ماینکرفت ساده و آمادهٔ آپلود؛ فایل PNG استاندارد که مستقیم روی اکانت یا لانچر ست می‌شود.",features:["فایل PNG استاندارد","آمادهٔ آپلود","تحویل ۲۴ تا ۴۸ ساعت"],delivery:"۲۴ تا ۴۸ ساعت"},"skin-pro":{long:"اسکین حرفه‌ای با جزئیات، سایه‌پردازی و رندر سه‌بعدی برای معرفی؛ مناسب استریم و شبکه‌های اجتماعی.",features:["فایل PNG + رندر سه‌بعدی","سایه‌پردازی حرفه‌ای","تحویل ۲ تا ۳ روز"],delivery:"۲ تا ۳ روز کاری"},"overlay-good":{long:"پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و اسکرین‌های حالت آماده‌به‌کار — با کیفیت خوب و قیمت مناسب.",features:["فریم وب‌کم","چت‌باکس","هشدارها و اسکرین","سازگار با OBS"],delivery:"۱ تا ۲ روز کاری"},"overlay-best":{long:"نسخهٔ کامل و پرجزئیات اورلی با هماهنگی کامل با برند شما؛ شامل تمام اجزای پک خوب به‌علاوهٔ اسکرین‌های اضافه و پک فونت هدیه.",features:["تمام اجزای پک کامل","هماهنگ با برند شما","پک فونت هدیه","دو مرحله بازنگری"],delivery:"۱ تا ۳ روز کاری"},"font-pack":{long:"پک فونت اختصاصی فارسی و لاتین، انتخاب‌شده برای خوانایی روی اورلی و تامنیل؛ همراه با راهنمای استفاده.",features:["فونت فارسی + لاتین","مناسب اورلی و تامنیل","راهنمای نصب","تحویل فوری"],delivery:"فوری تا ۲۴ ساعت"},cosmetics:{long:"کازمتیک کلاینت‌های ماینکرفت — هاله، بال، کلاه و آیتم‌های ظاهری — برای همهٔ کلاینت‌ها قابل تهیه است. قیمت بر اساس دلاری بودن آیتم محاسبه می‌شود.",features:["همهٔ کلاینت‌ها","هاله، بال، کلاه و بیشتر","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"کدام کلاینت‌ها پشتیبانی می‌شوند؟",a:"کازمتیک‌های کلاینت‌های محبوب ماینکرفت؛ در تیکت نام کلاینت و آیتم را بگویید تا استعلام بگیریم."}]},cape:{long:"کیپ اختصاصی اپتیفاین روی اکانت خودتان؛ طرح دلخواه شما روی کیپ اعمال می‌شود و برای همهٔ بازیکن‌های سرور قابل مشاهده است.",features:["اختصاصی روی اکانت شما","قابل مشاهده برای همه","طرح دلخواه","تحویل ۱ تا ۷۲ ساعت"],delivery:"۱ تا ۷۲ ساعت"}},z="https://yaspieze.github.io/kiniwa",V=s=>{const a=document.createElement("script");a.type="application/ld+json",a.textContent=JSON.stringify(s),document.head.appendChild(a)};function Hs(s,a){if(V({"@context":"https://schema.org","@type":"Organization",name:"یوزورا شاپ",alternateName:"Yozora Shop",url:`${z}/`,logo:`${z}/assets/img/logo.png`,sameAs:[f],description:"فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین."}),a){const t=$.find(e=>e.id===a);if(t){const e=N[t.id];V({"@context":"https://schema.org","@type":"Product",name:t.title,description:(e==null?void 0:e.long)??t.desc,image:`${z}/${t.image}`,brand:{"@type":"Brand",name:"یوزورا شاپ"},offers:{"@type":"Offer",priceCurrency:t.price.includes("تومان")?"IRR":void 0,price:t.price.replace(/[^۰-۹0-9]/g,"")||void 0,availability:"https://schema.org/InStock",url:`${z}/product/${t.id}/`,seller:{"@type":"Organization",name:"یوزورا شاپ"}}})}}(s==="faq"||s==="index")&&V({"@context":"https://schema.org","@type":"FAQPage",mainEntity:es.map(t=>({"@type":"Question",name:t.q,acceptedAnswer:{"@type":"Answer",text:t.a}}))}),s==="products"&&V({"@context":"https://schema.org","@type":"ItemList",itemListElement:[...$,...C.map(()=>null)].filter(Boolean).map((t,e)=>({"@type":"ListItem",position:e+1,name:t.title,url:`${z}/product/${t.id}/`}))})}const Is={404:`<section class="e404"><div class="wrap-narrow">
   <div class="art404"><svg class="e404art" width="676" height="260" viewBox="0 0 676 260" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip404)"><path d="M214.999 154.986V205.896H189.017V239.315H122.949V205.896H9V154.986L86.5745 20.6849H160.066L81.7493 154.986H122.949V115.633H189.017V154.986H214.999Z" fill="currentColor"/><path d="M667 154.986V205.896H641.018V239.315H574.95V205.896H461.001V154.986L538.575 20.6849H612.067L533.75 154.986H574.95V115.633H641.018V154.986H667Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M279.5 28.6747C315.7 7.77505 360.299 7.77504 396.499 28.6747C432.699 49.5746 454.999 88.1999 454.999 130C454.999 171.8 432.699 210.425 396.499 231.325C360.299 252.225 315.7 252.225 279.5 231.325C243.3 210.425 221 171.8 221 130C221 88.1999 243.3 49.5746 279.5 28.6747ZM340 51.3231C338.763 50.6086 337.238 50.6087 336 51.3231L270.863 88.9295C269.626 89.644 268.863 90.9644 268.863 92.3934V167.606C268.863 169.035 269.626 170.356 270.863 171.07L336 208.677C337.238 209.391 338.762 209.391 340 208.677L405.136 171.07C406.373 170.356 407.136 169.035 407.136 167.606V92.3934C407.136 90.9644 406.373 89.644 405.136 88.9295L340 51.3231Z" fill="currentColor"/></g><defs><clipPath id="clip404"><rect width="676" height="260" fill="white"/></clipPath></defs></svg></div>
   <h1 style="margin-top:1.4rem">این صفحه پیدا نشد</h1>
   <p class="lead" style="margin-top:.8rem">شاید آدرس عوض شده باشد. از این‌جا ادامه بده:</p>
@@ -184,7 +183,7 @@ ${hs(s)}
     <h2>به انجمن یوزورا بپیوند</h2>
     <p>۷۶۳ عضو از قبل آنجا هستند؛ خوش آمدی.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -205,7 +204,7 @@ ${hs(s)}
 <p>در سرورهای SMP، پول درون‌بازی عنصر اصلی معامله است. بازیکن‌ها با پول، آیتم، زمین یا خدمات می‌خرند.
 دونات اس ام پی هم یک سرور محبوب با اقتصاد فعال است و «پول» آن به‌صورت میلیونی معامله می‌شود.</p>
 <h2>قیمت چطور محاسبه می‌شود؟</h2>
-<p>قیمت پول دونات بر اساس «هر میلیون» حساب می‌شود. در یوزورا شاپ این نرخ ۳٬۹۰۰ تومان به ازای هر میلیون است،
+<p>قیمت پول دونات بر اساس «هر میلیون» حساب می‌شود. در یوزورا شاپ این نرخ ۴٬۷۰۰ تومان به ازای هر میلیون است،
 یعنی مثلاً ۱۰۰ میلیون می‌شود ۳۹۰٬۰۰۰ تومان. حداقل خرید هم ۵۰ میلیون تعیین شده است.</p>
 <h2>موجودی سرور چه معنایی دارد؟</h2>
 <p>هر فروشنده‌ای مقدار محدودی پول در سرور دارد. موجودی فعلی یوزورا ۳۰۰ میلیون است و بعد از اتمام مجدد شارژ می‌شود.
@@ -230,7 +229,7 @@ ${hs(s)}
     <h2>سفارش خودت را ثبت کن</h2>
     <p>در دیسکورد تیکت بزن و قیمت و زمان تحویل را بگیر.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -278,7 +277,7 @@ ${hs(s)}
     <h2>سفارش خودت را ثبت کن</h2>
     <p>در دیسکورد تیکت بزن و قیمت و زمان تحویل را بگیر.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -309,7 +308,7 @@ ${hs(s)}
 <h2>۶. تست در سناریوی واقعی</h2>
 <p>قبل از نهایی‌کردن، اورلی را روی تصویر بازی تست کن. چیزی که روی پس‌زمینهٔ خالی خوب است، همیشه روی گیم‌پلی خوب نیست.</p>
 <h2>جمع‌بندی</h2>
-<p>اورلی یوزورا در دو کیفیت (خوب ۲۶۰٬۰۰۰ و عالی ۳۲۰٬۰۰۰ تومان) ارائه می‌شود و پک فونت هم به‌صورت جداگانه ۱۲۰٬۰۰۰ تومان است.
+<p>اورلی یوزورا در دو کیفیت (خوب ۳۱۰٬۰۰۰ و عالی ۳۸۵٬۰۰۰ تومان) ارائه می‌شود و پک فونت هم به‌صورت جداگانه ۱۴۵٬۰۰۰ تومان است.
 برای سفارش، در دیسکورد تیکت بزن.</p></div>
   <div style="margin-top:2rem"><div class="note "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div>این مطلب راهنمای عمومی است؛ قیمت‌ها و شرایط دقیق را همیشه در صفحهٔ محصول یا تیکت دیسکورد بررسی کن.</div></div></div>
 </div></section>
@@ -320,7 +319,7 @@ ${hs(s)}
     <h2>سفارش خودت را ثبت کن</h2>
     <p>در دیسکورد تیکت بزن و قیمت و زمان تحویل را بگیر.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -346,7 +345,7 @@ ${hs(s)}
     <h2>سوالی دربارهٔ خرید داری؟</h2>
     <p>در دیسکورد بپرس؛ تیم یوزورا راهنمایی‌ات می‌کند.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -355,19 +354,19 @@ ${hs(s)}
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">کیپ اپتیفاین</span>
-      <h1>کیپ اپتیفاین — ۳۴۹٬۰۰۰ تومان با تحویل ۱ تا ۷۲ ساعت</h1>
+      <h1>کیپ اپتیفاین — ۴۲۰٬۰۰۰ تومان با تحویل ۱ تا ۷۲ ساعت</h1>
       <p class="lead" style="margin-top:1rem">کیپ اختصاصی اپتیفاین روی اکانت شما؛ در بازی برای همهٔ بازیکن‌های سرور قابل مشاهده است و با استایل خودت هماهنگ می‌شود.</p>
       <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">قابل مشاهده برای همه</span><span class="pill y">۱ تا ۷۲ ساعت</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۳۴۹٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۴۲۰٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/07-cape-optifine.jpg" alt="کیپ اپتیفاین" width="1600" height="1000"></div>
   </div>
 </section><section class="tight"><div class="wrap grid g2">
-      <div><div class="kv"><div class="row"><span>محصول</span><b>کیپ اپتیفاین</b></div><div class="row"><span>قیمت</span><b>۳۴۹٬۰۰۰ تومان</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>قابل مشاهده برای</span><b>همهٔ بازیکن‌های سرور</b></div></div></div>
+      <div><div class="kv"><div class="row"><span>محصول</span><b>کیپ اپتیفاین</b></div><div class="row"><span>قیمت</span><b>۴۲۰٬۰۰۰ تومان</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>قابل مشاهده برای</span><b>همهٔ بازیکن‌های سرور</b></div></div></div>
       <div class="note green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg><div>کیپ به‌صورت اختصاصی روی اکانت شما اعمال می‌شود و در بازی برای سایر بازیکن‌ها نمایش داده می‌شود.</div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>کیپ روی چه اکانتی اعمال می‌شود؟</summary><p>روی اکانت خودتان؛ نیازی به تغییر اکانت نیست.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>۱ تا ۷۲ ساعت.</p></details><details class="q"><summary>کیپ را همه می‌بینند؟</summary><p>بله، برای همهٔ بازیکن‌هایی که اپتیفاین دارند قابل مشاهده است.</p></details><details class="q"><summary>اگر مشکلی پیش بیاید؟</summary><p>طبق ضمانت یوزورا پیگیری و در صورت نیاز تعویض می‌شود.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
@@ -375,7 +374,7 @@ ${hs(s)}
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۷۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -385,7 +384,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -398,7 +397,7 @@ ${hs(s)}
       <p class="lead" style="margin-top:1rem">آیتم‌های کازمتیکی کلاینت‌های مختلف ماینکرفت؛ از کیپ و بال تا افکت‌های ویژه. قیمت بر اساس دلاری بودن آیتم و کلاینت انتخابی محاسبه می‌شود.</p>
       <div class="badges"><span class="pill g">همهٔ کلاینت‌ها</span><span class="pill y">قیمت دلاری آیتم</span><span class="pill b">استعلام در تیکت</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: استعلام در تیکت</span></div>
@@ -414,7 +413,7 @@ ${hs(s)}
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۷۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -424,7 +423,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -433,18 +432,18 @@ ${hs(s)}
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">خدمات فتوشاپ</span>
-      <h1>طراحی لوگو، بنر، تامنیل، اسکین و انیمه‌آرت — از ۲۲۰٬۰۰۰ تومان</h1>
-      <p class="lead" style="margin-top:1rem">خدمات طراحی گرافیکی یوزورا برای سرور، کانال و استریم شما. لوگو و بنر اختصاصی، تامنیل کلیک‌خور، اسکین ماینکرفت و انیمه‌آرت — همه با تحویل ۱ تا ۷۲ ساعت.</p>
-      <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">ساده و حرفه‌ای</span><span class="pill y">۱ تا ۷۲ ساعت</span><span class="pill b">۵ سرویس</span></div>
+      <h1>طراحی لوگو، بنر، تامنیل و اسکین — از ۲۶۵٬۰۰۰ تومان</h1>
+      <p class="lead" style="margin-top:1rem">خدمات طراحی گرافیکی یوزورا برای سرور، کانال و استریم شما. لوگو و بنر اختصاصی، تامنیل کلیک‌خور و اسکین ماینکرفت — همه با تحویل ۱ تا ۷۲ ساعت.</p>
+      <div class="badges"><span class="pill g">اختصاصی</span><span class="pill ">ساده و حرفه‌ای</span><span class="pill y">۱ تا ۷۲ ساعت</span><span class="pill b">۴ سرویس</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۲۰٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۶۵٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" width="1600" height="1000"></div>
   </div>
-</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>توضیح</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>—</td><td>طراحی اختصاصی و خروجی با کیفیت</td></tr><tr><td>بنر</td><td>۳۶۰٬۰۰۰ تومان</td><td><b>۵۲۰٬۰۰۰ تومان</b></td><td>مناسب دیسکورد و شبکه‌های اجتماعی</td></tr><tr><td>تامنیل</td><td>۲۲۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>تامنیل یوتیوب و کاور ویدیو</td></tr><tr><td>اسکین ماینکرفت</td><td>۲۶۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>اسکین اختصاصی آمادهٔ آپلود</td></tr><tr><td>انیمه‌آرت</td><td>۲۷۰٬۰۰۰ تومان</td><td><b>۳۰۰٬۰۰۰</b> بک‌گراند / <b>۳۲۰٬۰۰۰</b> بک‌گراند + تکست</td><td>سه سطح طراحی</td></tr></tbody></table></div></div></section>
+</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>توضیح</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>—</td><td>طراحی اختصاصی و خروجی با کیفیت</td></tr><tr><td>بنر</td><td>۴۳۰٬۰۰۰ تومان</td><td><b>۶۲۰٬۰۰۰ تومان</b></td><td>مناسب دیسکورد و شبکه‌های اجتماعی</td></tr><tr><td>تامنیل</td><td>۲۶۵٬۰۰۰ تومان</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>تامنیل یوتیوب و کاور ویدیو</td></tr><tr><td>اسکین ماینکرفت</td><td>۳۱۰٬۰۰۰ تومان</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>اسکین اختصاصی آمادهٔ آپلود</td></tr></tbody></table></div></div></section>
     <section><div class="wrap"><div class="sec-hd"><span class="eyebrow">چه چیزی تحویل می‌گیری</span><h2 class="sec">فرآیند طراحی</h2></div>
       <div class="steps">
         <div class="step rv"><h3>بریف</h3><p>در تیکت می‌گویید چه چیزی می‌خواهید و نمونه‌های مورد علاقه‌تان را می‌فرستید.</p></div>
@@ -457,7 +456,7 @@ ${hs(s)}
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۷۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -467,7 +466,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -476,20 +475,20 @@ ${hs(s)}
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">دونات اس ام پی</span>
-      <h1>پول دونات اس ام پی — از ۳٬۹۰۰ تومان به ازای هر میلیون</h1>
+      <h1>پول دونات اس ام پی — از ۴٬۷۰۰ تومان به ازای هر میلیون</h1>
       <p class="lead" style="margin-top:1rem">پول سرور دونات اس ام پی با قیمت رقابتی و تحویل مستقیم روی اکانت شما. موجودی فعلی ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون.</p>
-      <div class="badges"><span class="pill g">موجودی ۳۰۰ میلیون</span><span class="pill ">حداقل ۵۰ میلیون</span><span class="pill y">۳٬۹۰۰ / میلیون</span><span class="pill b">۴۸ ساعت</span></div>
+      <div class="badges"><span class="pill g">موجودی ۳۰۰ میلیون</span><span class="pill ">حداقل ۵۰ میلیون</span><span class="pill y">۴٬۷۰۰ / میلیون</span><span class="pill b">۴۸ ساعت</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">هر میلیون: ۳٬۹۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">هر میلیون: ۴٬۷۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/02-donutsmp.jpg" alt="دونات اس ام پی" width="1600" height="1000"></div>
   </div>
 </section><section class="tight"><div class="wrap grid g2">
       <div class="ccard">
-        <h3>محاسبه‌گر پول دونات <span class="pill y">هر میلیون ۳٬۹۰۰</span></h3>
+        <h3>محاسبه‌گر پول دونات <span class="pill y">هر میلیون ۴٬۷۰۰</span></h3>
         <p class="hint">حداقل ۵۰ میلیون • موجودی فعلی ۳۰۰ میلیون</p>
         <div class="crow"><span>مقدار</span><b><span id="dv">۱۰۰</span> میلیون</b></div>
         <input type="range" min="50" max="300" step="10" value="100" data-rate="4000" data-out="dp" data-lbl="dv">
@@ -497,10 +496,10 @@ ${hs(s)}
         <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۳۹۰٬۰۰۰</span> تومان</b></div>
       </div>
       <div>
-        <div class="kv"><div class="row"><span>قیمت هر میلیون</span><b>۳٬۹۰۰ تومان</b></div><div class="row"><span>حداقل خرید</span><b>۵۰ میلیون</b></div><div class="row"><span>موجودی فعلی</span><b>۳۰۰ میلیون</b></div><div class="row"><span>زمان تحویل</span><b>حداقل ۴۸ ساعت</b></div></div>
+        <div class="kv"><div class="row"><span>قیمت هر میلیون</span><b>۴٬۷۰۰ تومان</b></div><div class="row"><span>حداقل خرید</span><b>۵۰ میلیون</b></div><div class="row"><span>موجودی فعلی</span><b>۳۰۰ میلیون</b></div><div class="row"><span>زمان تحویل</span><b>حداقل ۴۸ ساعت</b></div></div>
         <div style="margin-top:1rem"><div class="note "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div>موجودی سرور محدود است؛ بعد از اتمام، مجدد شارژ می‌شود. برای مقدار زیاد قبل از پرداخت موجودی را در تیکت چک کنید.</div></div></div>
       </div>
-    </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>حداقل خرید چقدر است؟</summary><p>۵۰ میلیون. کمتر از این مقدار سفارش ثبت نمی‌شود.</p></details><details class="q"><summary>موجودی چقدر است؟</summary><p>در حال حاضر ۳۰۰ میلیون؛ بعد از اتمام مجدد شارژ می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>حداقل ۴۸ ساعت. برای مقدار زیاد زمان ممکن است بیشتر شود.</p></details><details class="q"><summary>سقف خرید چقدر است؟</summary><p>سقف خرید همان موجودی سرور است؛ تا ۳۰۰ میلیون با قیمت ۳٬۹۰۰ تومان به‌ازای هر میلیون.</p></details></div></div></section>
+    </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>حداقل خرید چقدر است؟</summary><p>۵۰ میلیون. کمتر از این مقدار سفارش ثبت نمی‌شود.</p></details><details class="q"><summary>موجودی چقدر است؟</summary><p>در حال حاضر ۳۰۰ میلیون؛ بعد از اتمام مجدد شارژ می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>حداقل ۴۸ ساعت. برای مقدار زیاد زمان ممکن است بیشتر شود.</p></details><details class="q"><summary>سقف خرید چقدر است؟</summary><p>سقف خرید همان موجودی سرور است؛ تا ۳۰۰ میلیون با قیمت ۴٬۷۰۰ تومان به‌ازای هر میلیون.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
 <a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
@@ -508,7 +507,7 @@ ${hs(s)}
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
+  <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل و اسکین</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
   <img class="bg" src="assets/img/05-overlay.jpg" alt="" loading="lazy" width="1600" height="900">
   <div class="cta-in">
@@ -516,7 +515,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -527,9 +526,9 @@ ${hs(s)}
       <span class="eyebrow">هایپیکسل و اسکای‌بلاک</span>
       <h1>محصولات هایپیکسل و کوین اسکای‌بلاک — سریع و قانونی</h1>
       <p class="lead" style="margin-top:1rem">همهٔ محصولات موجود هایپیکسل با تحویل سریع و کاملاً قانونی. قیمت‌ها بر اساس دلار روز محاسبه می‌شود؛ برای استعلام دقیق در دیسکورد تیکت بزنید.</p>
-      <div class="badges"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span><span class="pill y">قیمت دلار روز</span><span class="pill b">اسکای‌بلاک ۵٬۸۰۰</span></div>
+      <div class="badges"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span><span class="pill y">قیمت دلار روز</span><span class="pill b">اسکای‌بلاک ۶٬۹۰۰</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
       <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: استعلام در تیکت</span></div>
@@ -538,23 +537,23 @@ ${hs(s)}
   </div>
 </section><section class="tight"><div class="wrap grid g2">
       <div class="ccard">
-        <h3>محاسبه‌گر کوین اسکای‌بلاک <span class="pill y">هر میلیون ۵٬۸۰۰</span></h3>
+        <h3>محاسبه‌گر کوین اسکای‌بلاک <span class="pill y">هر میلیون ۶٬۹۰۰</span></h3>
         <p class="hint">تحویل ۱ تا ۷۲ ساعت • مناسب هایپیکسل</p>
         <div class="crow"><span>مقدار</span><b><span id="sv">۱۰۰</span> میلیون</b></div>
         <input type="range" min="10" max="500" step="10" value="100" data-rate="6000" data-out="sp" data-lbl="sv">
         <div class="crow" style="margin-top:1rem;font-size:.78rem;color:#7f8798"><span>۱۰ میلیون</span><span>۵۰۰ میلیون</span></div>
         <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="sp">۶۰۰٬۰۰۰</span> تومان</b></div>
       </div>
-      <div><div class="kv"><div class="row"><span>محصولات هایپیکسل</span><b>قیمت دلار روز</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۲۴ ساعت</b></div><div class="row"><span>کوین اسکای‌بلاک</span><b>۵٬۸۰۰ / میلیون</b></div><div class="row"><span>زمان تحویل اسکای‌بلاک</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>وضعیت</span><b>امن و قانونی</b></div></div></div>
+      <div><div class="kv"><div class="row"><span>محصولات هایپیکسل</span><b>قیمت دلار روز</b></div><div class="row"><span>زمان تحویل</span><b>۱ تا ۲۴ ساعت</b></div><div class="row"><span>کوین اسکای‌بلاک</span><b>۶٬۹۰۰ / میلیون</b></div><div class="row"><span>زمان تحویل اسکای‌بلاک</span><b>۱ تا ۷۲ ساعت</b></div><div class="row"><span>وضعیت</span><b>امن و قانونی</b></div></div></div>
     </div></section><section><div class="wrap"><div class="sec-hd"><span class="eyebrow">سوالات این محصول</span><h2 class="sec">پرسش‌های پرتکرار</h2></div><div class="faq "><details class="q" open><summary>چرا قیمت ثابت نیست؟</summary><p>قیمت محصولات هایپیکسل و کازمتیک بر اساس دلار روز محاسبه می‌شود.</p></details><details class="q"><summary>تحویل چقدر طول می‌کشد؟</summary><p>هایپیکسل ۱ تا ۲۴ ساعت و کوین اسکای‌بلاک ۱ تا ۷۲ ساعت.</p></details><details class="q"><summary>آیا امن است؟</summary><p>بله، همهٔ سفارش‌ها به‌صورت قانونی و امن انجام می‌شود.</p></details><details class="q"><summary>چه محصولی از هایپیکسل موجود است؟</summary><p>در حال حاضر همهٔ محصولات موجود قابل تهیه است؛ در تیکت بپرسید.</p></details></div></div></section>
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
 <a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-minecraft/">
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۷۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
+  <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل و اسکین</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
   <img class="bg" src="assets/img/05-overlay.jpg" alt="" loading="lazy" width="1600" height="900">
   <div class="cta-in">
@@ -562,7 +561,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -575,10 +574,10 @@ ${hs(s)}
       <p class="lead" style="margin-top:1rem">اکانت اقتصادی ماینکرفت با دسترسی کامل، مناسب بازیکنانی که می‌خواهند بدون دردسر وارد بازی شوند. هم نسخهٔ جاوا و هم بدراک، با امکان تغییر اطلاعات بعد از تحویل.</p>
       <div class="badges"><span class="pill g">فول اکسس</span><span class="pill ">جاوا + بدراک</span><span class="pill y">تغییر اطلاعات</span><span class="pill b">۴۸ ساعت</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۲٬۸۹۰٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">قیمت: ۳٬۴۷۰٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" width="1600" height="1000"></div>
   </div>
@@ -596,11 +595,11 @@ ${hs(s)}
 <section><div class="wrap"><div class="sec-hd row"><div><span class="eyebrow">بیشتر ببین</span><h2 class="sec">محصولات مرتبط</h2></div>
 <a class="btn btn-ghost btn-sm" href="products/">همهٔ محصولات ←</a></div><div class="grid g3"><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۷۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-design/">
   <img src="assets/img/04-photoshop.jpg" alt="خدمات فتوشاپ" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل، اسکین و انیمه‌آرت</p><span class="go">مشاهده ←</span></div></a></div></div></section>
+  <div class="cat-in"><h3>خدمات فتوشاپ</h3><p>لوگو، بنر، تامنیل و اسکین</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
   <img class="bg" src="assets/img/05-overlay.jpg" alt="" loading="lazy" width="1600" height="900">
   <div class="cta-in">
@@ -608,7 +607,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -617,18 +616,18 @@ ${hs(s)}
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow">اورلی استریم</span>
-      <h1>اورلی استریم حرفه‌ای — کیفیت خوب ۲۶۰٬۰۰۰ و عالی ۳۲۰٬۰۰۰</h1>
+      <h1>اورلی استریم حرفه‌ای — کیفیت خوب ۳۱۰٬۰۰۰ و عالی ۳۸۵٬۰۰۰</h1>
       <p class="lead" style="margin-top:1rem">پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و المان‌های دونیت. در دو کیفیت و با امکان افزودن پک فونت اختصاصی.</p>
       <div class="badges"><span class="pill ">کیفیت خوب</span><span class="pill g">کیفیت عالی</span><span class="pill y">پک فونت</span><span class="pill b">۱ تا ۷۲ ساعت</span></div>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
+        <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ثبت سفارش در دیسکورد</a>
         <a class="btn btn-ghost" href="prices/">دیدن جدول قیمت</a>
       </div>
-      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۲۶۰٬۰۰۰ تومان</span></div>
+      <div class="badges" style="margin-top:1.4rem"><span class="pill y" style="font-size:.9rem;padding:.5rem 1rem">از ۳۱۰٬۰۰۰ تومان</span></div>
     </div>
     <div class="frame"><img src="assets/img/05-overlay.jpg" alt="اورلی استریم" width="1600" height="1000"></div>
   </div>
-</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th><th>شامل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۲۶۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>فریم وب‌کم، چت‌باکس، هشدارها</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>نسخهٔ کامل و پرجزئیات</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۲۰٬۰۰۰ تومان</b></td><td>فوری</td><td>فونت فارسی/لاتین هماهنگ با اورلی</td></tr></tbody></table></div></div></section>
+</section><section class="tight"><div class="wrap"><div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th><th>شامل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۳۱۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>فریم وب‌کم، چت‌باکس، هشدارها</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td><td>نسخهٔ کامل و پرجزئیات</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۴۵٬۰۰۰ تومان</b></td><td>فوری</td><td>فونت فارسی/لاتین هماهنگ با اورلی</td></tr></tbody></table></div></div></section>
     <section><div class="wrap grid g3">
       <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg></div><h3>هماهنگ با برند</h3><p>رنگ و فونت اورلی با لوگو و استایل کانال شما هماهنگ می‌شود.</p></div>
       <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div><h3>آمادهٔ استفاده</h3><p>فایل‌های لایه‌باز و آمادهٔ ایمپورت در نرم‌افزار استریم.</p></div>
@@ -639,7 +638,7 @@ ${hs(s)}
   <img src="assets/img/01-minecraft.jpg" alt="اکانت ماینکرفت" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>اکانت ماینکرفت</h3><p>فول اکسس، جاوا و بدراک، تحویل تا ۴۸ ساعت</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-donut/">
   <img src="assets/img/02-donutsmp.jpg" alt="پول دونات اس ام پی" loading="lazy" width="1600" height="900">
-  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۳٬۹۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
+  <div class="cat-in"><h3>پول دونات اس ام پی</h3><p>موجودی ۳۰۰ میلیون، هر میلیون ۴٬۷۰۰ تومان</p><span class="go">مشاهده ←</span></div></a><a class="cat rv" href="cat-hypixel/">
   <img src="assets/img/03-hypixel.jpg" alt="هایپیکسل و اسکای‌بلاک" loading="lazy" width="1600" height="900">
   <div class="cat-in"><h3>هایپیکسل و اسکای‌بلاک</h3><p>همهٔ محصولات هایپیکسل + کوین اسکای‌بلاک</p><span class="go">مشاهده ←</span></div></a></div></div></section>
 <section><div class="wrap"><div class="cta rv">
@@ -649,7 +648,7 @@ ${hs(s)}
     <h2>همین حالا سفارش بده</h2>
     <p>قیمت نهایی و زمان تحویل را در تیکت دیسکورد بگیر و سفارشت را نهایی کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -662,7 +661,7 @@ ${hs(s)}
 </div></section>
 <section style="padding-top:0"><div class="wrap grid g3">
   <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg></div><h3>دیسکورد (اصلی)</h3><p>سرور یوزورا شاپ؛ ثبت سفارش، پیگیری و پشتیبانی.</p>
-    <div style="margin-top:1rem"><a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">ورود به سرور</a></div></div>
+    <div style="margin-top:1rem"><a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">ورود به سرور</a></div></div>
   <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div><h3>ساعت پاسخ‌گویی</h3><p>همه‌روزه؛ معمولاً در کمتر از چند ساعت پاسخ داده می‌شود.</p></div>
   <div class="card hover rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3.5v5c0 4.4-3.1 8.3-7.5 9.5-4.4-1.2-7.5-5.1-7.5-9.5v-5L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>پیگیری سفارش</h3><p>هر سفارش یک تیکت جدا دارد؛ همان‌جا وضعیت را می‌بینی.</p></div>
 </div></section>
@@ -678,7 +677,7 @@ ${hs(s)}
     <h2>آماده‌ای؟ تیکت بزن</h2>
     <p>ثبت سفارش در دیسکورد کمتر از یک دقیقه وقت می‌برد.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -695,7 +694,7 @@ ${hs(s)}
     <h2>جوابت اینجا نبود؟</h2>
     <p>در دیسکورد بپرس؛ پشتیبانی یوزورا همه‌روزه آنلاین است.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -740,7 +739,7 @@ ${hs(s)}
     <h2>با خیال راحت سفارش بده</h2>
     <p>اگر سوالی دربارهٔ ضمانت داری، قبل از خرید در تیکت بپرس.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -755,24 +754,24 @@ ${hs(s)}
 
 <section style="padding-top:0"><div class="wrap">
   <h3 class="sub">اکانت و پول سرورها</h3>
-  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>دسته</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اکانت ماینکرفت اقتصادی</td><td>ماینکرفت</td><td><b>۲٬۸۹۰٬۰۰۰ تومان</b></td><td>تا ۴۸ ساعت</td></tr><tr><td>پول دونات — هر میلیون</td><td>دونات اس ام پی</td><td><b>۳٬۹۰۰ تومان</b></td><td>حداقل ۴۸ ساعت</td></tr><tr><td>کوین اسکای‌بلاک — هر میلیون</td><td>هایپیکسل</td><td><b>۵٬۸۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>محصولات هایپیکسل</td><td>هایپیکسل</td><td>استعلام (دلار روز)</td><td>۱ تا ۲۴ ساعت</td></tr><tr><td>کازمتیک کلاینت‌ها</td><td>کازمتیک</td><td>استعلام (آیتم دلاری)</td><td>بسته به آیتم</td></tr></tbody></table></div>
+  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>دسته</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اکانت ماینکرفت اقتصادی</td><td>ماینکرفت</td><td><b>۳٬۴۷۰٬۰۰۰ تومان</b></td><td>تا ۴۸ ساعت</td></tr><tr><td>پول دونات — هر میلیون</td><td>دونات اس ام پی</td><td><b>۴٬۷۰۰ تومان</b></td><td>حداقل ۴۸ ساعت</td></tr><tr><td>کوین اسکای‌بلاک — هر میلیون</td><td>هایپیکسل</td><td><b>۶٬۹۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>محصولات هایپیکسل</td><td>هایپیکسل</td><td>استعلام (دلار روز)</td><td>۱ تا ۲۴ ساعت</td></tr><tr><td>کازمتیک کلاینت‌ها</td><td>کازمتیک</td><td>استعلام (آیتم دلاری)</td><td>بسته به آیتم</td></tr></tbody></table></div>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
   <h3 class="sub">خدمات طراحی</h3>
-  <div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>—</td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>بنر</td><td>۳۶۰٬۰۰۰ تومان</td><td><b>۵۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>تامنیل</td><td>۲۲۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اسکین ماینکرفت</td><td>۲۶۰٬۰۰۰ تومان</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>انیمه‌آرت</td><td>۲۷۰٬۰۰۰ تومان</td><td>۳۰۰٬۰۰۰ (بک‌گراند) / <b>۳۲۰٬۰۰۰</b> (+تکست)</td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
+  <div class="tablewrap rv"><table><thead><tr><th>خدمت</th><th>ساده</th><th>حرفه‌ای</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>لوگو</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>—</td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>بنر</td><td>۴۳۰٬۰۰۰ تومان</td><td><b>۶۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>تامنیل</td><td>۲۶۵٬۰۰۰ تومان</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اسکین ماینکرفت</td><td>۳۱۰٬۰۰۰ تومان</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
   <h3 class="sub">اورلی و کیپ</h3>
-  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۲۶۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۲۰٬۰۰۰ تومان</b></td><td>فوری</td></tr><tr><td>کیپ اپتیفاین</td><td><b>۳۴۹٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
+  <div class="tablewrap rv"><table><thead><tr><th>محصول</th><th>قیمت</th><th>زمان تحویل</th></tr></thead><tbody><tr><td>اورلی استریم — کیفیت خوب</td><td><b>۳۱۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>اورلی استریم — کیفیت عالی</td><td><b>۳۸۵٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr><tr><td>پک فونت اختصاصی</td><td><b>۱۴۵٬۰۰۰ تومان</b></td><td>فوری</td></tr><tr><td>کیپ اپتیفاین</td><td><b>۴۲۰٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr></tbody></table></div>
 </div></section>
 
 <section><div class="wrap">
   <div class="sec-hd"><span class="eyebrow">محاسبه‌گر</span><h2 class="sec">قیمت پول سرورها را حساب کن</h2></div>
   <div class="grid g2">
     <div class="ccard rv">
-      <h3>پول دونات اس ام پی <span class="pill y">هر میلیون ۳٬۹۰۰</span></h3>
+      <h3>پول دونات اس ام پی <span class="pill y">هر میلیون ۴٬۷۰۰</span></h3>
       <p class="hint">حداقل خرید ۵۰ میلیون • موجودی ۳۰۰ میلیون</p>
       <div class="crow"><span>مقدار</span><b><span id="dv">۱۰۰</span> میلیون</b></div>
       <input type="range" min="50" max="300" step="10" value="100" data-rate="4000" data-out="dp" data-lbl="dv">
@@ -780,7 +779,7 @@ ${hs(s)}
       <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۳۹۰٬۰۰۰</span> تومان</b></div>
     </div>
     <div class="ccard rv">
-      <h3>کوین اسکای‌بلاک <span class="pill y">هر میلیون ۵٬۸۰۰</span></h3>
+      <h3>کوین اسکای‌بلاک <span class="pill y">هر میلیون ۶٬۹۰۰</span></h3>
       <p class="hint">تحویل ۱ تا ۷۲ ساعت</p>
       <div class="crow"><span>مقدار</span><b><span id="sv">۱۰۰</span> میلیون</b></div>
       <input type="range" min="10" max="500" step="10" value="100" data-rate="6000" data-out="sp" data-lbl="sv">
@@ -797,7 +796,7 @@ ${hs(s)}
     <h2>قیمت را دیدی؟ حالا سفارش بده.</h2>
     <p>در دیسکورد تیکت بزن، محصول و مقدار را بگو، فاکتور بگیر و پرداخت کن.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -843,7 +842,7 @@ ${hs(s)}
     <h2>سوالی داری؟ تیکت بزن</h2>
     <p>پشتیبانی یوزورا همه‌روزه در دیسکورد آنلاین است.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -852,7 +851,7 @@ ${hs(s)}
 <section class="phero"><div class="wrap">
   <span class="eyebrow">کاتالوگ کامل</span>
   <h1>همهٔ محصولات یوزورا شاپ</h1>
-  <p class="lead" style="max-width:70ch">۱۸ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
+  <p class="lead" style="max-width:70ch">۱۷ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
   یا روی هر محصول بزن تا وارد صفحهٔ اختصاصی‌اش شوی.</p>
   <div class="badges"><span class="pill g">پرداخت ریالی</span><span class="pill y">ضمانت بازگشت وجه</span><span class="pill b">سفارش با تیکت</span></div>
 </div></section>
@@ -874,8 +873,8 @@ ${hs(s)}
     <p class="desc">اکانت کامل با فول اکسس؛ جاوا و بدراک؛ اطلاعات قابل تغییر.</p>
     <div class="pills"><span class="pill g">فول اکسس</span><span class="pill y">۴۸ ساعت</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲٬۸۹۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳٬۴۷۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="minecraft" class="pcard rv">
@@ -885,8 +884,8 @@ ${hs(s)}
     <p class="desc">ثبت سفارش با اولویت در تیکت برای تحویل در کمترین زمان.</p>
     <div class="pills"><span class="pill g">اولویت</span><span class="pill ">فول اکسس</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲٬۸۹۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳٬۴۷۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="donut" class="pcard rv">
@@ -896,8 +895,8 @@ ${hs(s)}
     <p class="desc">حداقل ۵۰ میلیون؛ موجودی سرور ۳۰۰ میلیون.</p>
     <div class="pills"><span class="pill g">۳۰۰M موجودی</span><span class="pill y">۴۸ ساعت</span></div>
     <div class="pfoot">
-      <div class="price"><span>هر میلیون</span><b>۳٬۹۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>هر میلیون</span><b>۴٬۷۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="hypixel" class="pcard rv">
@@ -908,7 +907,7 @@ ${hs(s)}
     <div class="pills"><span class="pill g">۱ تا ۲۴ ساعت</span><span class="pill ">امن و قانونی</span></div>
     <div class="pfoot">
       <div class="price ask"><span>قیمت</span><b>استعلام در تیکت</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="hypixel" class="pcard rv">
@@ -918,8 +917,8 @@ ${hs(s)}
     <p class="desc">کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.</p>
     <div class="pills"><span class="pill g">۷۲ ساعت</span><span class="pill ">قیمت میلیونی</span></div>
     <div class="pfoot">
-      <div class="price"><span>هر میلیون</span><b>۵٬۸۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>هر میلیون</span><b>۶٬۹۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -929,8 +928,8 @@ ${hs(s)}
     <p class="desc">لوگوی اختصاصی برای سرور یا کانال شما.</p>
     <div class="pills"><span class="pill g">اختصاصی</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳۸۵٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -940,8 +939,8 @@ ${hs(s)}
     <p class="desc">بنر مناسب دیسکورد و شبکه‌های اجتماعی.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۶۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۴۳۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -951,8 +950,8 @@ ${hs(s)}
     <p class="desc">نسخهٔ کامل با جزئیات و بازنگری بیشتر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۵۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۶۲۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -962,8 +961,8 @@ ${hs(s)}
     <p class="desc">تامنیل کلیک‌خور برای ویدیوهای گیمینگ.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۲۶۵٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -973,8 +972,8 @@ ${hs(s)}
     <p class="desc">نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳۸۵٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -984,8 +983,8 @@ ${hs(s)}
     <p class="desc">اسکین اختصاصی آمادهٔ آپلود.</p>
     <div class="pills"><span class="pill ">ساده</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲۶۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳۱۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="design" class="pcard rv">
@@ -995,19 +994,8 @@ ${hs(s)}
     <p class="desc">اسکین با جزئیات و سایه‌پردازی بیشتر.</p>
     <div class="pills"><span class="pill g">حرفه‌ای</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
-    </div>
-  </div>
-</article><article data-cat="design" class="pcard rv">
-  <a class="thumb" href="cat-design/"><img src="assets/img/products/p-anime.jpg" alt="انیمه‌آرت" loading="lazy" width="1600" height="900"><span class="tag">فتوشاپ</span></a>
-  <div class="body">
-    <h3><a href="cat-design/">انیمه‌آرت</a></h3>
-    <p class="desc">آرت انیمه‌استایل در سه سطح.</p>
-    <div class="pills"><span class="pill y">۳ سطح</span></div>
-    <div class="pfoot">
-      <div class="price"><span>از</span><b>۲۷۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳۸۵٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="overlay" class="pcard rv">
@@ -1017,8 +1005,8 @@ ${hs(s)}
     <p class="desc">پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.</p>
     <div class="pills"><span class="pill ">کیفیت خوب</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۲۶۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳۱۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="overlay" class="pcard rv">
@@ -1028,8 +1016,8 @@ ${hs(s)}
     <p class="desc">نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.</p>
     <div class="pills"><span class="pill g">کیفیت عالی</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۳۸۵٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="overlay" class="pcard rv">
@@ -1039,8 +1027,8 @@ ${hs(s)}
     <p class="desc">پک فونت فارسی/لاتین مناسب اورلی و تامنیل.</p>
     <div class="pills"><span class="pill ">پک فونت</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۱۲۰٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۱۴۵٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="cosmetic" class="pcard rv">
@@ -1051,7 +1039,7 @@ ${hs(s)}
     <div class="pills"><span class="pill g">همهٔ کلاینت‌ها</span><span class="pill y">دلاری</span></div>
     <div class="pfoot">
       <div class="price ask"><span>قیمت</span><b>استعلام در تیکت</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article><article data-cat="cape" class="pcard rv">
@@ -1061,8 +1049,8 @@ ${hs(s)}
     <p class="desc">کیپ اختصاصی روی اکانت شما.</p>
     <div class="pills"><span class="pill g">اختصاصی</span><span class="pill y">۷۲ ساعت</span></div>
     <div class="pfoot">
-      <div class="price"><span>قیمت</span><b>۳۴۹٬۰۰۰ تومان</b></div>
-      <a class="btn btn-gold btn-sm" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener">سفارش</a>
+      <div class="price"><span>قیمت</span><b>۴۲۰٬۰۰۰ تومان</b></div>
+      <a class="btn btn-gold btn-sm" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">سفارش</a>
     </div>
   </div>
 </article></div>
@@ -1074,7 +1062,7 @@ ${hs(s)}
     <h2>محصولی پیدا نکردی؟ در تیکت بپرس.</h2>
     <p>اگر محصول یا سرویس خاصی می‌خواهی که در لیست نیست، در دیسکورد تیکت بزن؛ اگر قابل تهیه باشد برایت انجام می‌دهیم.</p>
     <div class="hero-btns" style="margin-top:1.6rem">
-      <a class="btn btn-gold" href="https://discord.gg/KHsEBj6kG3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
+      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.5A18 18 0 0 0 15.9 3.2l-.3.7a13 13 0 0 0-3.2 0l-.3-.7A18 18 0 0 0 7.7 4.5C4.9 8.6 4.1 12.6 4.5 16.5a18 18 0 0 0 5.4 2.7l.7-1.2c-.6-.2-1.2-.5-1.8-.9l.4-.3a13 13 0 0 0 11.6 0l.4.3c-.6.4-1.2.7-1.8.9l.7 1.2a18 18 0 0 0 5.4-2.7c.5-4.5-.6-8.5-3.2-11.9ZM9.7 14.1c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm4.6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"/></svg> ورود به دیسکورد یوزورا</a>
       <a class="btn btn-ghost" href="products/">همهٔ محصولات</a>
     </div>
   </div>
@@ -1091,7 +1079,7 @@ ${hs(s)}
   <h2>۵. بازگشت وجه</h2><p>اگر سفارش در بازهٔ اعلام‌شده انجام نشود و راه‌حل جایگزینی نباشد، مبلغ بازگردانده می‌شود. جزئیات در صفحهٔ ضمانت آمده است.</p>
   <h2>۶. مسئولیت‌ها</h2><p>مشتری مسئول درست بودن اطلاعاتی است که ارسال می‌کند. یوزورا مسئول عواقب ناشی از نقض قوانین خود بازی یا سرور مقصد نیست.</p>
   <h2>۷. حریم خصوصی</h2><p>اطلاعات شما فقط برای انجام سفارش استفاده می‌شود و در اختیار شخص ثالث قرار نمی‌گیرد.</p>
-</div></div></section>`},h=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"),o=s=>g[s],rs=s=>`<span class="pill ${s.tone==="green"?"g":s.tone==="gold"?"y":s.tone==="blue"?"b":""}">${h(s.text)}</span>`,V=(s,a={})=>`
+</div></div></section>`},h=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"),o=s=>g[s],rs=s=>`<span class="pill ${s.tone==="green"?"g":s.tone==="gold"?"y":s.tone==="blue"?"b":""}">${h(s.text)}</span>`,R=(s,a={})=>`
 <article class="pcard rv" data-cat="${s.category}">
   <a class="thumb" href="${s.href}" aria-label="${h(s.title)}">
     <img src="${s.image}" alt="${h(s.title)}" loading="lazy" width="900" height="900">
@@ -1119,7 +1107,7 @@ ${hs(s)}
   <h2 class="sec">${a}</h2>
   ${t?`<p class="sec-p">${h(t)}</p>`:""}
 </div>`,ls=s=>`
-<div class="faq">${s.map((a,t)=>`<details class="rv"${t===0?" open":""}><summary>${h(a.q)}</summary><div class="ans">${h(a.a)}</div></details>`).join("")}</div>`,Is=(s,a)=>`
+<div class="faq">${s.map((a,t)=>`<details class="rv"${t===0?" open":""}><summary>${h(a.q)}</summary><div class="ans">${h(a.a)}</div></details>`).join("")}</div>`,Ts=(s,a)=>`
 <section class="cta-band"><div class="wrap cta-in">
   <div>
     <h2>${h(s)}</h2>
@@ -1130,13 +1118,13 @@ ${hs(s)}
 <div class="wrap"><nav class="crumbs" aria-label="مسیر">
   <a href=".">خانه</a>
   ${s.map(a=>`<span>/</span>${a.href?`<a href="${a.href}">${h(a.label)}</a>`:`<span class="cur">${h(a.label)}</span>`}`).join("")}
-</nav></div>`,Ts=()=>`
+</nav></div>`,Ps=()=>`
 <div class="stat-strip rv">
   <div><b data-count="763">۷۶۳</b><span>عضو انجمن</span></div>
   <div><b data-count="30">۳۰</b><span>آنلاین</span></div>
   <div><b data-count="18">۱۸</b><span>محصول فعال</span></div>
   <div><b>۴۸h</b><span>حداکثر تحویل</span></div>
-</div>`,v="#3ab8f0",Ps="#a9e5ff",Vs="#b27a00",L=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,q=s=>`
+</div>`,v="#3ab8f0",Ns="#a9e5ff",Rs="#b27a00",A=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,L=s=>`
   <defs>
     <radialGradient id="${s}-gl" cx="50%" cy="46%" r="52%">
       <stop offset="0" stop-color="${v}" stop-opacity=".22"/>
@@ -1144,9 +1132,9 @@ ${hs(s)}
       <stop offset="1" stop-color="${v}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="${s}-g" x1="0" y1="0" x2=".35" y2="1">
-      <stop offset="0" stop-color="${Ps}"/>
+      <stop offset="0" stop-color="${Ns}"/>
       <stop offset=".48" stop-color="${v}"/>
-      <stop offset="1" stop-color="${Vs}"/>
+      <stop offset="1" stop-color="${Rs}"/>
     </linearGradient>
     <linearGradient id="${s}-f" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fff" stop-opacity=".10"/>
@@ -1159,7 +1147,7 @@ ${hs(s)}
       <circle cx="1.6" cy="1.6" r="1.05" fill="${v}" fill-opacity=".30"/>
     </pattern>
   </defs>
-  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,Ns=()=>L("ar-shield",`${q("ar-shield")}
+  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,Ys=()=>A("ar-shield",`${L("ar-shield")}
   <g stroke="url(#ar-shield-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هالهٔ بیرونی -->
     <path d="M120 22 206 56v62c0 50-34 82-86 100-52-18-86-50-86-100V56Z"
@@ -1194,7 +1182,7 @@ ${hs(s)}
       <path d="M120 12v9M120 219v-9M30 120h9M201 120h9"/>
       <path d="m62 62 5 5M173 173l5 5M178 62l-5 5M67 173l-5 5" stroke-opacity=".45"/>
     </g>
-  </g>`),Rs=()=>L("ar-refund",`${q("ar-refund")}
+  </g>`),Gs=()=>A("ar-refund",`${L("ar-refund")}
   <g stroke="url(#ar-refund-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="72" stroke-width="1.1" stroke-opacity=".28" stroke-dasharray="3 8"/>
     <circle cx="120" cy="118" r="58" stroke-width="2.4" fill="url(#ar-refund-f)"/>
@@ -1215,7 +1203,7 @@ ${hs(s)}
       <path d="M169 164v7c0 2.6 5.8 4.7 13 4.7s13-2.1 13-4.7v-7"/>
     </g>
     <circle cx="120" cy="118" r="72" fill="url(#ar-refund-h)" stroke="none" opacity=".35"/>
-  </g>`),Ys=()=>L("ar-support",`${q("ar-support")}
+  </g>`),Ds=()=>A("ar-support",`${L("ar-support")}
   <g stroke="url(#ar-support-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هدست -->
     <path d="M62 136v-16a58 58 0 0 1 116 0v16" stroke-width="2.6"/>
@@ -1239,7 +1227,7 @@ ${hs(s)}
       <path d="M34 142a34 34 0 0 0 0 36" stroke-opacity=".45"/>
     </g>
     <circle cx="120" cy="118" r="98" fill="url(#ar-support-h)" stroke="none" opacity=".22"/>
-  </g>`),Ds=()=>L("ar-pay",`${q("ar-pay")}
+  </g>`),Fs=()=>A("ar-pay",`${L("ar-pay")}
   <g stroke="url(#ar-pay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- کارت -->
     <rect x="40" y="86" width="160" height="96" rx="14" fill="url(#ar-pay-f)" stroke-width="2.4"/>
@@ -1267,7 +1255,7 @@ ${hs(s)}
     <path d="M104 34h44v18l-7-5-7 5-7-5-7 5-8-5-8 5Z" fill="#0d0e13" stroke-width="1.8"/>
     <g stroke-width="1.2" stroke-opacity=".55"><path d="M112 44h30M112 50h22"/></g>
     <circle cx="120" cy="118" r="100" fill="url(#ar-pay-h)" stroke="none" opacity=".18"/>
-  </g>`),Fs=()=>L("ar-delivery",`${q("ar-delivery")}
+  </g>`),Us=()=>A("ar-delivery",`${L("ar-delivery")}
   <g stroke="url(#ar-delivery-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- جعبه -->
     <path d="M74 108 120 88l46 20v58l-46 20-46-20Z" fill="url(#ar-delivery-f)" stroke-width="2.4"/>
@@ -1284,7 +1272,7 @@ ${hs(s)}
     <!-- عقربه/فلش بالا -->
     <path d="M120 66V30M108 42l12-12 12 12" stroke-width="2.6"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-delivery-h)" stroke="none" opacity=".2"/>
-  </g>`),Us=()=>L("ar-secure",`${q("ar-secure")}
+  </g>`),Xs=()=>A("ar-secure",`${L("ar-secure")}
   <g stroke="url(#ar-secure-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- شش‌ضلعی -->
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-f)" stroke-width="2.4"/>
@@ -1303,7 +1291,7 @@ ${hs(s)}
       <circle cx="150" cy="166" r="2.2" fill="${v}" stroke="none"/>
     </g>
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-d)" stroke="none" opacity=".3"/>
-  </g>`),Xs=()=>L("ar-design",`${q("ar-design")}
+  </g>`),Ws=()=>A("ar-design",`${L("ar-design")}
   <g stroke="url(#ar-design-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- بوم -->
     <rect x="42" y="56" width="120" height="120" rx="10" fill="url(#ar-design-f)" stroke-width="2.2"/>
@@ -1326,7 +1314,7 @@ ${hs(s)}
     </g>
     <path d="M30 186h108" stroke-width="1.2" stroke-opacity=".3"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-design-d)" stroke="none" opacity=".22"/>
-  </g>`),Ws=()=>L("ar-overlay",`${q("ar-overlay")}
+  </g>`),Ks=()=>A("ar-overlay",`${L("ar-overlay")}
   <g stroke="url(#ar-overlay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- مانیتور -->
     <rect x="34" y="58" width="172" height="112" rx="12" fill="url(#ar-overlay-f)" stroke-width="2.4"/>
@@ -1349,7 +1337,7 @@ ${hs(s)}
     <path d="M48 104h120" stroke-width="3" stroke-opacity=".25"/>
     <path d="M48 104h74" stroke-width="3"/>
     <circle cx="120" cy="118" r="102" fill="url(#ar-overlay-h)" stroke="none" opacity=".2"/>
-  </g>`),Qs=()=>L("ar-community",`${q("ar-community")}
+  </g>`),Qs=()=>A("ar-community",`${L("ar-community")}
   <g stroke="url(#ar-community-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="76" stroke-width="1.1" stroke-opacity=".3" stroke-dasharray="2 8"/>
     <!-- حلقهٔ اعضا -->
@@ -1367,12 +1355,12 @@ ${hs(s)}
     <circle cx="120" cy="118" r="34" fill="url(#ar-community-f)" stroke-width="2.4"/>
     <path d="M120 132c-12-8-18-14-18-21a9 9 0 0 1 18-4 9 9 0 0 1 18 4c0 7-6 13-18 21Z" stroke-width="2"/>
     <circle cx="120" cy="118" r="98" fill="url(#ar-community-d)" stroke="none" opacity=".22"/>
-  </g>`),H={shield:Ns(),refund:Rs(),support:Ys(),pay:Ds(),delivery:Fs(),secure:Us(),design:Xs(),overlay:Ws(),community:Qs()},M=(s,a,t)=>`
+  </g>`),B={shield:Ys(),refund:Gs(),support:Ds(),pay:Fs(),delivery:Us(),secure:Xs(),design:Ws(),overlay:Ks(),community:Qs()},M=(s,a,t)=>`
 <article class="art-card rv">
-  <div class="ac-art">${H[s]}</div>
+  <div class="ac-art">${B[s]}</div>
   <h3>${a}</h3>
   <p>${t}</p>
-</article>`,Js=s=>s.toLocaleString("fa-IR"),w=(s,a)=>`<span class="chap"><i>${s}</i><b>${a}</b><span class="chap-line" aria-hidden="true"></span></span>`,ss=[{eyebrow:"فروشگاه رسمی انجمن یوزورا",title:"اکانت ماینکرفت فول اکسس",em:"تحویل تا ۴۸ ساعت",text:"اکانت جاوا و بدراک، با اطلاعات قابل تغییر و ضمانت بازگشت وجه.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"جزئیات محصول",ghostHref:"cat-minecraft/",image:"assets/img/products/p-minecraft-account.jpg",tags:["فول اکسس","جاوا + بدراک","تغییر اطلاعات"],chipTop:"۷۶۳ عضو انجمن",chipBottom:"ضمانت بازگشت وجه"},{eyebrow:"دونات اس ام پی",title:"پول دونات از ۳٬۹۰۰ تومان",em:"به ازای هر میلیون",text:"موجودی ۳۰۰ میلیون؛ حداقل خرید ۵۰ میلیون و تحویل مستقیم روی اکانت خودت.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"محاسبهٔ قیمت",ghostHref:"cat-donut/",image:"assets/img/products/p-donut-million.jpg",tags:["موجودی ۳۰۰M","حداقل ۵۰M","تحویل ۴۸h"],chipTop:"تحویل زیر ۲۴ ساعت",chipBottom:"۳۰ نفر آنلاین"},{eyebrow:"خدمات گرافیک یوزورا",title:"لوگو، بنر، تامنیل و اورلی",em:"برای استریم و کامیونیتی",text:"لوگو، بنر، تامنیل، اسکین و اورلی استریم؛ تحویل ۱ تا ۳ روز کاری.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"دیدن خدمات",ghostHref:"cat-design/",image:"assets/img/products/p-logo.jpg",tags:["لوگو","اورلی","انیمه‌آرت"],chipTop:"۲ بازنگری رایگان",chipBottom:"فایل لایه‌باز"}],sa=()=>`
+</article>`,Js=s=>s.toLocaleString("fa-IR"),w=(s,a)=>`<span class="chap"><i>${s}</i><b>${a}</b><span class="chap-line" aria-hidden="true"></span></span>`,ss=[{eyebrow:"فروشگاه رسمی انجمن یوزورا",title:"اکانت ماینکرفت فول اکسس",em:"تحویل تا ۴۸ ساعت",text:"اکانت جاوا و بدراک، با اطلاعات قابل تغییر و ضمانت بازگشت وجه.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"جزئیات محصول",ghostHref:"cat-minecraft/",image:"assets/img/products/p-minecraft-account.jpg",tags:["فول اکسس","جاوا + بدراک","تغییر اطلاعات"],chipTop:"۷۶۳ عضو انجمن",chipBottom:"ضمانت بازگشت وجه"},{eyebrow:"دونات اس ام پی",title:"پول دونات از ۴٬۷۰۰ تومان",em:"به ازای هر میلیون",text:"موجودی ۳۰۰ میلیون؛ حداقل خرید ۵۰ میلیون و تحویل مستقیم روی اکانت خودت.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"محاسبهٔ قیمت",ghostHref:"cat-donut/",image:"assets/img/products/p-donut-million.jpg",tags:["موجودی ۳۰۰M","حداقل ۵۰M","تحویل ۴۸h"],chipTop:"تحویل زیر ۲۴ ساعت",chipBottom:"۳۰ نفر آنلاین"},{eyebrow:"خدمات گرافیک یوزورا",title:"لوگو، بنر، تامنیل و اورلی",em:"برای استریم و کامیونیتی",text:"لوگو، بنر، تامنیل، اسکین و اورلی استریم؛ تحویل ۱ تا ۳ روز کاری.",primary:"ثبت سفارش در دیسکورد",primaryHref:f,ghost:"دیدن خدمات",ghostHref:"cat-design/",image:"assets/img/products/p-logo.jpg",tags:["لوگو","اورلی","تامنیل"],chipTop:"۲ بازنگری رایگان",chipBottom:"فایل لایه‌باز"}],sa=()=>`
 <section class="hero2">
   <div class="hero-glow" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="wrap">
@@ -1435,7 +1423,7 @@ ${hs(s)}
     <div class="story-track" data-pin-track>
       ${as.map((s,a)=>`<article class="story-card${a===0?" is-on":""}" data-i="${a}">
         <span class="sc-k">${s.k}</span>
-        <div class="sc-art">${H[s.art]}</div>
+        <div class="sc-art">${B[s.art]}</div>
         <h3>${s.title}</h3>
         <p>${s.text}</p>
       </article>`).join("")}
@@ -1477,11 +1465,11 @@ ${hs(s)}
   <div class="filters" id="filters">
     ${a.map(([t,e],r)=>`<button${r===0?' class="act"':""} data-f="${t}">${e}</button>`).join("")}
   </div>
-  <div class="grid g3" id="grid">${s.map(t=>V(t,{})).join("")}</div>
-  <div class="center-cta"><a class="btn btn-ghost" href="products/">مشاهدهٔ همهٔ ۱۸ محصول ${o("arrow")}</a></div>
+  <div class="grid g3" id="grid">${s.map(t=>R(t,{})).join("")}</div>
+  <div class="center-cta"><a class="btn btn-ghost" href="products/">مشاهدهٔ همهٔ ۱۷ محصول ${o("arrow")}</a></div>
 </div></section>`},la=()=>`
 <section class="numbers">
-  <div class="num-art" data-par="-0.07" aria-hidden="true">${H.community}</div>
+  <div class="num-art" data-par="-0.07" aria-hidden="true">${B.community}</div>
   <div class="wrap">
     ${w("۰۵","عددها")}
     <h2 class="num-h split">یوزورا در یک نگاه</h2>
@@ -1494,7 +1482,7 @@ ${hs(s)}
   </div>
 </section>`,ca=()=>`
 <section class="statement">
-  <div class="st-orb" data-par="-0.08" aria-hidden="true">${H.secure}</div>
+  <div class="st-orb" data-par="-0.08" aria-hidden="true">${B.secure}</div>
   <div class="wrap st-in">
     ${w("۰۶","تعهد یوزورا")}
     <h2 class="st-h split">قیمت و زمان تحویل، شفاف.</h2>
@@ -1556,7 +1544,7 @@ ${ra()}
 ${la()}
 ${ca()}
 ${da()}
-<div class="wrap">${Ts()}</div>
+<div class="wrap">${Ps()}</div>
 ${na()}
 ${pa()}
 ${va()}
@@ -1566,7 +1554,7 @@ ${va()}
   ${ls(es)}
   <div class="center-cta"><a class="btn btn-ghost" href="faq/">همهٔ سوالات ${o("arrow")}</a></div>
 </div></section>
-${Is("سفارش را در دیسکورد ثبت کن","در سرور دیسکورد تیکت بزن؛ بقیهٔ کارها با ما.")}`,G=s=>s.toLocaleString("fa-IR"),ga=s=>$.filter(a=>a.category===s.category&&a.id!==s.id).slice(0,3),ma=s=>{const a=P[s.id],t=a==null?void 0:a.unit,e=t?t.price*(t.min+0):0;return`
+${Ts("سفارش را در دیسکورد ثبت کن","در سرور دیسکورد تیکت بزن؛ بقیهٔ کارها با ما.")}`,_=s=>s.toLocaleString("fa-IR"),ga=s=>$.filter(a=>a.category===s.category&&a.id!==s.id).slice(0,3),ma=s=>{const a=N[s.id],t=a==null?void 0:a.unit,e=t?t.price*(t.min+0):0;return`
 <aside class="buy-box rv">
   <div class="bb-head">
     <span class="bb-pill">${o("shield")} ضمانت بازگشت وجه</span>
@@ -1576,11 +1564,11 @@ ${Is("سفارش را در دیسکورد ثبت کن","در سرور دیسکو
 
   ${t?`<div class="calc">
     <label class="calc-lbl" for="qty">مقدار مورد نظر</label>
-    <div class="calc-val"><b id="qtyOut">${G(t.min)}</b> <span>${t.label}</span></div>
+    <div class="calc-val"><b id="qtyOut">${_(t.min)}</b> <span>${t.label}</span></div>
     <input id="qty" type="range" min="${t.min}" max="${t.max}" step="${t.step}" value="${t.min}"
            data-price="${t.price}" data-lbl="${t.label}">
-    <div class="calc-range"><span>${G(t.min)} ${t.label}</span><span>${t.maxLabel}</span></div>
-    <div class="calc-total">مبلغ کل: <b id="totalOut">${G(e)} تومان</b></div>
+    <div class="calc-range"><span>${_(t.min)} ${t.label}</span><span>${t.maxLabel}</span></div>
+    <div class="calc-total">مبلغ کل: <b id="totalOut">${_(e)} تومان</b></div>
   </div>`:`<div class="bb-note">${o("info")} قیمت نهایی و زمان دقیق تحویل در تیکت دیسکورد اعلام می‌شود.</div>`}
 
   <ul class="bb-list">
@@ -1594,7 +1582,7 @@ ${Is("سفارش را در دیسکورد ثبت کن","در سرور دیسکو
     ${o("cart")} کپی متن سفارش
   </button>
   <p class="bb-fine">قیمت‌ها به تومان است؛ عدد نهایی همان روز سفارش در تیکت تثبیت می‌شود.</p>
-</aside>`},ua=s=>{const a=$.find(i=>i.id===s);if(!a)return'<section class="tight"><div class="wrap"><h1>محصول پیدا نشد</h1></div></section>';const t=P[a.id],e=C.find(i=>i.key===a.category),r=ga(a);return`
+</aside>`},ua=s=>{const a=$.find(i=>i.id===s);if(!a)return'<section class="tight"><div class="wrap"><h1>محصول پیدا نشد</h1></div></section>';const t=N[a.id],e=C.find(i=>i.key===a.category),r=ga(a);return`
 ${cs([{label:"محصولات",href:"products/"},...e?[{label:e.title,href:e.slug}]:[],{label:a.title}])}
 
 <section class="prod"><div class="wrap prod-grid">
@@ -1618,20 +1606,20 @@ ${cs([{label:"محصولات",href:"products/"},...e?[{label:e.title,href:e.slug
 </div></section>
 
 ${t!=null&&t.steps?`<section class="tight"><div class="wrap">${j("مراحل","این محصول چطور تحویل داده می‌شود؟")}
-  <ol class="mini-steps">${t.steps.map((i,c)=>`<li><span>${G(c+1)}</span>${i}</li>`).join("")}</ol>
+  <ol class="mini-steps">${t.steps.map((i,c)=>`<li><span>${_(c+1)}</span>${i}</li>`).join("")}</ol>
 </div></section>`:""}
 
 ${t!=null&&t.faq?`<section class="tight"><div class="wrap">${j("سوالات","سؤال‌های این محصول")}${ls(t.faq)}</div></section>`:""}
 
 ${r.length?`<section class="tight"><div class="wrap">${j("محصولات مرتبط","این‌ها را هم ببین")}
-  <div class="grid g3">${r.map(i=>V(i,{compact:!0})).join("")}</div></div></section>`:""}
+  <div class="grid g3">${r.map(i=>R(i,{compact:!0})).join("")}</div></div></section>`:""}
 
 <div id="toast" class="toast" role="status" aria-live="polite"></div>`},ba=()=>{const s=[["all","همه"],...C.map(a=>[a.key,a.title.split(" ")[0]])];return`
 ${cs([{label:"محصولات"}])}
 <section class="phero"><div class="wrap">
   <span class="eyebrow">کاتالوگ کامل</span>
   <h1>همهٔ محصولات یوزورا شاپ</h1>
-  <p class="lead" style="max-width:70ch">۱۸ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
+  <p class="lead" style="max-width:70ch">۱۷ محصول و سرویس فعال در ۷ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
   یا روی هر محصول بزن تا صفحهٔ اختصاصی‌اش با قیمت و جزئیات کامل باز شود.</p>
   <div class="badges">
     <span class="pill g">پرداخت ریالی</span>
@@ -1643,6 +1631,6 @@ ${cs([{label:"محصولات"}])}
   <div class="filters" id="filters">
     ${s.map(([a,t],e)=>`<button${e===0?' class="act"':""} data-f="${a}">${t}</button>`).join("")}
   </div>
-  <div class="grid g4" id="grid">${$.map(a=>V(a,{compact:!0})).join("")}</div>
-</div></section>`},_={index:ha,products:ba},ya=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),fa=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),wa=(s,a)=>{let t=a;s==="guarantee"&&(t=t.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,`<div class="guar-art">${H.shield}</div>`));const r={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([i,c,l])=>M(i,c,l)).join(""),about:[["community","از یک انجمن ۷۶۳ نفری","یوزورا از دل انجمن دیسکورد خودش بیرون آمده؛ بیشتر مشتری‌ها همان اعضا هستند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([i,c,l])=>M(i,c,l)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([i,c,l])=>M(i,c,l)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در یک مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([i,c,l])=>M(i,c,l)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([i,c,l])=>M(i,c,l)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([i,c,l])=>M(i,c,l)).join("")}[s];if(r){const i=t.indexOf("</section>");i>-1&&(t=`${t.slice(0,i+10)}
-<section class="art-row"><div class="wrap"><div class="grid g3">${r}</div></div></section>${t.slice(i+10)}`)}return s==="blog"&&(t=t.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),t=t.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),t};for(const[s,a]of Object.entries(Ks))s in _||(_[s]=()=>wa(s,fa(ya(a))));const N=document.body,I=N.dataset.page??"index",ka=N.dataset.active??I,ts=document.getElementById("app");if(ts){const s=N.dataset.product,a=s?()=>ua(s):_[I]??_.index;ts.innerHTML=`${ms(ka)}${a()}</main>${gs()}`,document.querySelectorAll(".sec-hd, .center-cta, .filters, .phero .lead, .phero .badges, .guar > div, .kv, .note, .mini-steps li, .story-head, .st-in > *, .bcard, .spec-row, .art-panel").forEach(t=>t.classList.add("rv")),document.body.classList.add("ready"),Ss(),Os(I,s)}else console.error("[kiniwa] #app not found");
+  <div class="grid g4" id="grid">${$.map(a=>R(a,{compact:!0})).join("")}</div>
+</div></section>`},O={index:ha,products:ba},ya=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),fa=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),wa=(s,a)=>{let t=a;s==="guarantee"&&(t=t.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,`<div class="guar-art">${B.shield}</div>`));const r={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([i,c,l])=>M(i,c,l)).join(""),about:[["community","از یک انجمن ۷۶۳ نفری","یوزورا از دل انجمن دیسکورد خودش بیرون آمده؛ بیشتر مشتری‌ها همان اعضا هستند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([i,c,l])=>M(i,c,l)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([i,c,l])=>M(i,c,l)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در یک مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([i,c,l])=>M(i,c,l)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([i,c,l])=>M(i,c,l)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([i,c,l])=>M(i,c,l)).join("")}[s];if(r){const i=t.indexOf("</section>");i>-1&&(t=`${t.slice(0,i+10)}
+<section class="art-row"><div class="wrap"><div class="grid g3">${r}</div></div></section>${t.slice(i+10)}`)}return s==="blog"&&(t=t.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),t=t.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),t};for(const[s,a]of Object.entries(Is))s in O||(O[s]=()=>wa(s,fa(ya(a))));const Y=document.body,T=Y.dataset.page??"index",ka=Y.dataset.active??T,ts=document.getElementById("app");if(ts){const s=Y.dataset.product,a=s?()=>ua(s):O[T]??O.index;ts.innerHTML=`${ms(ka)}${a()}</main>${gs()}`,document.querySelectorAll(".sec-hd, .center-cta, .filters, .phero .lead, .phero .badges, .guar > div, .kv, .note, .mini-steps li, .story-head, .st-in > *, .bcard, .spec-row, .art-panel").forEach(t=>t.classList.add("rv")),document.body.classList.add("ready"),Vs(),Hs(T,s)}else console.error("[kiniwa] #app not found");
