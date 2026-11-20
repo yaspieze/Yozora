@@ -166,6 +166,7 @@
 </footer>
 <div class="side-wm" aria-hidden="true">YOZORA · GASLIGHT STUDIO</div>
 <div class="mobar"><a class="btn btn-gold" href="${k}" target="_blank" rel="noopener">${g.discord} ثبت سفارش در دیسکورد</a></div>`,xs=a=>`
+<div class="night-bg" aria-hidden="true" style="background-image:url('assets/img/night-sky.webp')"></div>
 <div id="progress"></div>
 <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
 ${ys(a)}
