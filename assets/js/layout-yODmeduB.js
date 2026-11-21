@@ -1,4 +1,4 @@
-import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const p=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],h=()=>`
+import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DN_U859h.js";const p=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],h=()=>`
 <div class="mega" role="menu">
   <div class="mega-grid">
     ${n.map((e,s)=>`<a class="mega-item" href="${e.slug}" role="menuitem" style="--i:${s}">
@@ -11,6 +11,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const
     <a href="products/">دیدن کاتالوگ کامل ${a.chevron}</a>
   </div>
 </div>`,v=e=>`
+<div class="nav-shell" id="navShell">
 <div class="topstrip">
   <div class="wrap ts-in">
     <div class="ts-msg"><i class="dotlive"></i> پشتیبانی آنلاین در دیسکورد · پاسخ‌گویی لحظه‌ای</div>
@@ -38,6 +39,10 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const
     <div class="head-actions">
       <a class="head-chip" href="prices/">${a.card}<span>لیست قیمت</span></a>
       <a class="btn btn-gold head-cta" href="${i}" target="_blank" rel="noopener">${a.discord} ثبت سفارش</a>
+      <button class="theme-btn" id="themeBtn" data-theme-btn type="button" aria-label="حالت روشن و تیره" aria-pressed="false" title="تغییر حالت نمایش">
+        <span class="tb-ico tb-sun" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg></span>
+        <span class="tb-ico tb-moon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.3 8.3 0 1 0 10.5 10.5Z"/></svg></span>
+      </button>
       <button class="burger" id="burger" aria-label="منو" aria-expanded="false">${a.menu}</button>
     </div>
   </div>
@@ -46,7 +51,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const
 <nav class="main-nav" id="mainNav" aria-label="منوی اصلی">
   <div class="wrap nav-in">
     <ul>
-      ${p.map(s=>{const l=s.key===e?' class="act"':"",d=s.key&&s.key in r?r[s.key]:"";if(s.key==="products")return`<li class="has-mega"><a href="${s.href}"${l} aria-haspopup="true" aria-expanded="false">${d}<span>${s.label}</span> ${a.chevron}</a>${h()}</li>`;const t=s.key==="hosting"?'<i class="nav-new nav-off">تعمیر</i>':"";return`<li><a href="${s.href}"${l}>${d}<span>${s.label}</span>${t}</a></li>`}).join("")}
+      ${p.map(s=>{const l=s.key===e?' class="act"':"",t=s.key&&s.key in r?r[s.key]:"";if(s.key==="products")return`<li class="has-mega"><a href="${s.href}"${l} aria-haspopup="true" aria-expanded="false">${t}<span>${s.label}</span> ${a.chevron}</a>${h()}</li>`;const d=s.key==="hosting"?'<i class="nav-new nav-off">تعمیر</i>':"";return`<li><a href="${s.href}"${l}>${t}<span>${s.label}</span>${d}</a></li>`}).join("")}
     </ul>
     <span class="nav-note">
       <svg class="nav-signal" viewBox="0 0 34 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
@@ -56,6 +61,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const
     </span>
   </div>
 </nav>
+</div><!-- /nav-shell -->
 
 <div class="drawer" id="drawer" hidden>
   <div class="drawer-panel">
@@ -78,7 +84,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const
     <a href="faq/">سوالات متداول</a>
     <a class="btn btn-gold" href="${i}" target="_blank" rel="noopener">${a.discord} ورود به دیسکورد</a>
   </div>
-</div>`,g=()=>`
+</div>`,b=()=>`
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div class="fbrand">
@@ -129,9 +135,8 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-Qpx3m4aZ.js";const
   <div class="foot-mark" aria-hidden="true">YOZORA</div>
 </footer>
 <div class="side-wm" aria-hidden="true">YOZORA · GASLIGHT STUDIO</div>
-<div class="mobar"><a class="btn btn-gold" href="${i}" target="_blank" rel="noopener">${a.discord} ثبت سفارش در دیسکورد</a></div>`,b=e=>`
-<div class="night-bg" aria-hidden="true" style="background-image:url('assets/img/night-sky.webp')"></div>
+<div class="mobar"><a class="btn btn-gold" href="${i}" target="_blank" rel="noopener">${a.discord} ثبت سفارش در دیسکورد</a></div>`,g=e=>`
 <div id="progress"></div>
 <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
 ${v(e)}
-<main id="main">`;export{p as NAV,g as renderFooter,v as renderHeader,b as renderLayout};
+<main id="main">`;export{p as NAV,b as renderFooter,v as renderHeader,g as renderLayout};
