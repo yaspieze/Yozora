@@ -1,4 +1,4 @@
-import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const p=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],h=()=>`
+import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-C-3O3MrX.js";const p=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],h=()=>`
 <div class="mega" role="menu">
   <div class="mega-grid">
     ${n.map((e,s)=>`<a class="mega-item" href="${e.slug}" role="menuitem" style="--i:${s}">
@@ -7,7 +7,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
       </a>`).join("")}
   </div>
   <div class="mega-foot">
-    <span>۲۷ محصول + ۱۰ پلن هاست</span>
+    <span>۶ محصول فعال · تحویل ۱ تا ۴۸ ساعت</span>
     <a href="products/">دیدن کاتالوگ کامل ${a.chevron}</a>
   </div>
 </div>`,v=e=>`
@@ -46,7 +46,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
 <nav class="main-nav" id="mainNav" aria-label="منوی اصلی">
   <div class="wrap nav-in">
     <ul>
-      ${p.map(s=>{const l=s.key===e?' class="act"':"",d=s.key&&s.key in r?r[s.key]:"";if(s.key==="products")return`<li class="has-mega"><a href="${s.href}"${l} aria-haspopup="true" aria-expanded="false">${d}<span>${s.label}</span> ${a.chevron}</a>${h()}</li>`;const t=s.key==="hosting"?'<i class="nav-new">جدید</i>':"";return`<li><a href="${s.href}"${l}>${d}<span>${s.label}</span>${t}</a></li>`}).join("")}
+      ${p.map(s=>{const l=s.key===e?' class="act"':"",d=s.key&&s.key in r?r[s.key]:"";if(s.key==="products")return`<li class="has-mega"><a href="${s.href}"${l} aria-haspopup="true" aria-expanded="false">${d}<span>${s.label}</span> ${a.chevron}</a>${h()}</li>`;const t=s.key==="hosting"?'<i class="nav-new nav-off">تعمیر</i>':"";return`<li><a href="${s.href}"${l}>${d}<span>${s.label}</span>${t}</a></li>`}).join("")}
     </ul>
     <span class="nav-note">
       <svg class="nav-signal" viewBox="0 0 34 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
@@ -64,7 +64,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
       <button id="drawerClose" aria-label="بستن">${a.close}</button>
     </div>
     <a href=".">${r.home}<span>خانه</span></a>
-    <a href="hosting/">${r.products}<span>سرور و هاستینگ</span><i class="nav-new">جدید</i></a>
+    <a href="hosting/">${r.products}<span>سرور و هاستینگ</span><i class="nav-new nav-off">تعمیر</i></a>
     <a href="products/">${r.products}<span>همهٔ محصولات</span></a>
     <a href="prices/">${r.prices}<span>قیمت‌ها</span></a>
     <a href="guarantee/">${r.guarantee}<span>ضمانت</span></a>
@@ -78,7 +78,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
     <a href="faq/">سوالات متداول</a>
     <a class="btn btn-gold" href="${i}" target="_blank" rel="noopener">${a.discord} ورود به دیسکورد</a>
   </div>
-</div>`,f=()=>`
+</div>`,g=()=>`
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div class="fbrand">
@@ -86,7 +86,7 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
         <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="یوزورا شاپ" width="165" height="165" loading="lazy" decoding="async">
         <span class="brand-txt"><b>یوزورا <em>شاپ</em></b><i>YOZORA SHOP</i></span>
       </a>
-      <p>فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول سرورها، خدمات طراحی، اورلی استریم، کازمتیک و کیپ اپتیفاین — با پرداخت ریالی و ضمانت بازگشت وجه.</p>
+      <p>فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت دستهٔ اول و دوم، اولویت تحویل، پول دونات اس‌ام‌پی، محصولات هایپیکسل و کیپ اپتیفاین عمده — با پرداخت ریالی و ضمانت بازگشت وجه.</p>
       <div class="fsocial">
         <a href="${i}" target="_blank" rel="noopener" aria-label="دیسکورد">${a.discord}</a>
       </div>
@@ -97,9 +97,9 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
     </div>
     <div class="fcol">
       <h4>خدمات</h4>
-      <a href="cat-design/">طراحی لوگو و بنر</a>
-      <a href="cat-design/">تامنیل و اسکین</a>
-      <a href="cat-overlay/">اورلی استریم</a>
+      <a href="cat-donut/">پول دونات اس ام پی</a>
+      <a href="cat-hypixel/">محصولات هایپیکسل</a>
+      <a href="cat-cape/">کیپ اپتیفاین عمده</a>
       <a href="prices/">جدول قیمت‌ها</a>
     </div>
     <div class="fcol">
@@ -134,4 +134,4 @@ import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-DKO2uLsg.js";const
 <div id="progress"></div>
 <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
 ${v(e)}
-<main id="main">`;export{p as NAV,f as renderFooter,v as renderHeader,b as renderLayout};
+<main id="main">`;export{p as NAV,g as renderFooter,v as renderHeader,b as renderLayout};
