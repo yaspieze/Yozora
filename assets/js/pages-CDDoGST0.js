@@ -1,4 +1,4 @@
-import{splashPage as z}from"./home-CPR8jdLV.js";import{m as n,p as C}from"./product-C9D30O5m.js";import{P as h,C as A,D as w,b as Z,i as m,a as V}from"./entry-b7Xcaj06.js";import"./details-CplyxElW.js";const j={404:`<section class="e404"><div class="wrap-narrow">
+import{splashPage as z}from"./home-CPR8jdLV.js";import{m as n,p as C}from"./product-CHOdaSej.js";import{P as h,C as A,D as w,b as Z,i as m,a as V}from"./entry-Qpx3m4aZ.js";import"./details-D3bUx_A8.js";const j={404:`<section class="e404"><div class="wrap-narrow">
   <div class="art404"><svg class="e404art" width="676" height="260" viewBox="0 0 676 260" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip404)"><path d="M214.999 154.986V205.896H189.017V239.315H122.949V205.896H9V154.986L86.5745 20.6849H160.066L81.7493 154.986H122.949V115.633H189.017V154.986H214.999Z" fill="currentColor"/><path d="M667 154.986V205.896H641.018V239.315H574.95V205.896H461.001V154.986L538.575 20.6849H612.067L533.75 154.986H574.95V115.633H641.018V154.986H667Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M279.5 28.6747C315.7 7.77505 360.299 7.77504 396.499 28.6747C432.699 49.5746 454.999 88.1999 454.999 130C454.999 171.8 432.699 210.425 396.499 231.325C360.299 252.225 315.7 252.225 279.5 231.325C243.3 210.425 221 171.8 221 130C221 88.1999 243.3 49.5746 279.5 28.6747ZM340 51.3231C338.763 50.6086 337.238 50.6087 336 51.3231L270.863 88.9295C269.626 89.644 268.863 90.9644 268.863 92.3934V167.606C268.863 169.035 269.626 170.356 270.863 171.07L336 208.677C337.238 209.391 338.762 209.391 340 208.677L405.136 171.07C406.373 170.356 407.136 169.035 407.136 167.606V92.3934C407.136 90.9644 406.373 89.644 405.136 88.9295L340 51.3231Z" fill="currentColor"/></g><defs><clipPath id="clip404"><rect width="676" height="260" fill="white"/></clipPath></defs></svg></div>
   <h1 style="margin-top:1.4rem">این صفحه پیدا نشد</h1>
   <p class="lead" style="margin-top:.8rem">شاید آدرس عوض شده باشد. از این‌جا ادامه بده:</p>
@@ -63,7 +63,7 @@ import{splashPage as z}from"./home-CPR8jdLV.js";import{m as n,p as C}from"./prod
 <p>در سرورهای SMP، پول درون‌بازی عنصر اصلی معامله است. بازیکن‌ها با پول، آیتم، زمین یا خدمات می‌خرند.
 دونات اس ام پی هم یک سرور محبوب با اقتصاد فعال است و «پول» آن به‌صورت میلیونی معامله می‌شود.</p>
 <h2>قیمت چطور محاسبه می‌شود؟</h2>
-<p>قیمت پول دونات بر اساس «هر میلیون» حساب می‌شود. در یوزورا شاپ این نرخ ۴٬۷۰۰ تومان به ازای هر میلیون است،
+<p>قیمت پول دونات بر اساس «هر میلیون» حساب می‌شود. در فروشگاه‌های ایرانی این نرخ متغیر است و در یوزورا شاپ به‌صورت پک شرد و رنک عرضه می‌شود به ازای هر میلیون است،
 یعنی مثلاً ۱۰۰ میلیون می‌شود ۳۹۰٬۰۰۰ تومان. حداقل خرید هم ۵۰ میلیون تعیین شده است.</p>
 <h2>موجودی سرور چه معنایی دارد؟</h2>
 <p>هر فروشنده‌ای مقدار محدودی پول در سرور دارد. موجودی فعلی یوزورا ۳۰۰ میلیون است و بعد از اتمام مجدد شارژ می‌شود.
@@ -622,8 +622,8 @@ import{splashPage as z}from"./home-CPR8jdLV.js";import{m as n,p as C}from"./prod
   <tr><td>اکانت ماینکرفت دستهٔ اول</td><td>اکانت ماینکرفت</td><td><b>۲٬۴۹۰٬۰۰۰ تومان</b></td><td>تا ۴۸ ساعت</td></tr>
   <tr><td>اکانت ماینکرفت دستهٔ دوم</td><td>اکانت ماینکرفت</td><td><b>۱٬۷۹۰٬۰۰۰ تومان</b></td><td>تا ۴۸ ساعت</td></tr>
   <tr><td>اکانت ماینکرفت با اولویت تحویل</td><td>اکانت ماینکرفت</td><td><b>۲٬۹۹۰٬۰۰۰ تومان</b></td><td>۱۲ تا ۲۴ ساعت</td></tr>
-  <tr><td>پول دونات اس ام پی — هر میلیون</td><td>دونات اس ام پی</td><td><b>۳٬۹۰۰ تومان</b></td><td>۱ تا ۲۴ ساعت</td></tr>
-  <tr><td>محصولات هایپیکسل (تمامی محصولات) + کوین اسکای‌بلاک هدیه</td><td>هایپیکسل</td><td><b>۲٬۹۹۰٬۰۰۰ تومان</b></td><td>۱ تا ۲۴ ساعت</td></tr>
+  <tr><td>تمامی محصولات دونات اس ام پی (رنک + شرد)</td><td>دونات اس ام پی</td><td><b>از ۴۶۰٬۰۰۰ تومان</b></td><td>۱ تا ۲۴ ساعت</td></tr>
+  <tr><td>محصولات هایپیکسل (تمامی محصولات) + کوین اسکای‌بلاک هدیه</td><td>هایپیکسل</td><td><b>از ۱٬۲۷۰٬۰۰۰ تومان</b></td><td>۱ تا ۲۴ ساعت</td></tr>
   <tr><td>کیپ اپتیفاین عمده‌ای</td><td>کیپ اپتیفاین</td><td><b>۲۴۹٬۰۰۰ تومان</b></td><td>۱ تا ۷۲ ساعت</td></tr>
   </tbody></table></div>
   <p class="sec-note">فروشگاه هاستینگ و فروشگاه محصولات دیگر موقتاً برای به‌روزرسانی بسته هستند.</p>
@@ -632,14 +632,6 @@ import{splashPage as z}from"./home-CPR8jdLV.js";import{m as n,p as C}from"./prod
 <section><div class="wrap">
   <div class="sec-hd"><span class="eyebrow">محاسبه‌گر</span><h2 class="sec">قیمت پول دونات را حساب کن</h2></div>
   <div class="grid g2">
-    <div class="ccard rv">
-      <h3>پول دونات اس ام پی <span class="pill y">هر میلیون ۳٬۹۰۰</span></h3>
-      <p class="hint">حداقل خرید ۵۰ میلیون • موجودی ۳۰۰ میلیون</p>
-      <div class="crow"><span>مقدار</span><b><span id="dv">۱۰۰</span> میلیون</b></div>
-      <input type="range" min="50" max="300" step="10" value="100" data-rate="3500" data-out="dp" data-lbl="dv">
-      <div class="crow" style="margin-top:1rem;font-size:.78rem;color:#7f8798"><span>۵۰ میلیون</span><span>۳۰۰ میلیون</span></div>
-      <div class="cout"><span>مبلغ قابل پرداخت</span><b><span id="dp">۳۵۰٬۰۰۰</span> تومان</b></div>
-    </div>
     <div class="ccard rv">
       <h3>کیپ اپتیفاین عمده <span class="pill y">هر عدد ۲۴۹٬۰۰۰</span></h3>
       <p class="hint">حداقل ۵ عدد • از ۱۰ عدد به بالا ارزان‌تر</p>
@@ -970,7 +962,7 @@ ${Z([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
   <h2>سفارش را در دیسکورد ثبت کن</h2>
   <p>همهٔ سفارش‌ها با تیکت انجام می‌شود؛ مبلغ ریالی، فاکتور رسمی و پیگیری تا تحویل.</p>
   <a class="btn btn-gold btn-lg" href="${w}" target="_blank" rel="noopener">${m("discord")} ورود به دیسکورد</a>
-</div></div></section>`,$=()=>u({title:"فروشگاه محصولات ماینکرفت",kicker:`ماینکرفت · ${h.filter(s=>b.includes(s.category)).length} محصول`,lead:"اکانت ماینکرفت، پول دونات اس‌ام‌پی، کوین و رنک هایپیکسل و اسکای‌بلاک. همهٔ محصولات با تحویل مشخص و ضمانت بازگشت وجه.",tags:["اکانت فول اکسس","تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور"],items:h.filter(s=>b.includes(s.category))}),q=()=>n("فروشگاه محصولات دیگر"),B={minecraft:"اکانت ماینکرفت دستهٔ اول، دستهٔ دوم و اکانت با اولویت تحویل؛ همه با فول اکسس، ایمیل و رمز و تحویل ۱ تا ۴۸ ساعت.",donut:"پول دونات اس ام پی با تعرفهٔ هر میلیون؛ حداقل خرید ۵۰ میلیون و موجودی تا ۳۰۰ میلیون با تحویل ۱ تا ۲۴ ساعت.",hypixel:"همهٔ محصولات هایپیکسل در یک پکیج، به‌همراه کوین اسکای‌بلاک هدیه؛ تحویل ۱ تا ۲۴ ساعت.",cape:"کیپ اپتیفاین عمده با قیمت هر عدد؛ حداقل سفارش ۵ عدد و طرح اختصاصی روی اکانت خودتان."},v=s=>{const a=A.find(p=>p.key===s),t=h.filter(p=>p.category===s);return u({title:(a==null?void 0:a.title)??"محصولات",kicker:`${(a==null?void 0:a.en)??""} · ${t.length} محصول`,lead:B[s]??(a==null?void 0:a.short)??"",tags:[(a==null?void 0:a.note)??"تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور","ضمانت بازگشت وجه"],items:t})},f=s=>`<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">${s}</span></div></div>`,x=(s,a,t,p)=>`
+</div></div></section>`,$=()=>u({title:"فروشگاه محصولات ماینکرفت",kicker:`ماینکرفت · ${h.filter(s=>b.includes(s.category)).length} محصول`,lead:"اکانت ماینکرفت، پول دونات اس‌ام‌پی، کوین و رنک هایپیکسل و اسکای‌بلاک. همهٔ محصولات با تحویل مشخص و ضمانت بازگشت وجه.",tags:["اکانت فول اکسس","تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور"],items:h.filter(s=>b.includes(s.category))}),q=()=>n("فروشگاه محصولات دیگر"),B={minecraft:"اکانت ماینکرفت دستهٔ اول، دستهٔ دوم و اکانت با اولویت تحویل؛ همه با فول اکسس، ایمیل و رمز و تحویل ۱ تا ۴۸ ساعت.",donut:"همهٔ محصولات Donut SMP: رنک‌های Donut+، Donut++ و Donut+++ و پک‌های شرد از ۴۰۰ تا ۷۰٬۰۰۰ — با قیمت ریالی و تحویل ۱ تا ۲۴ ساعت.",hypixel:"همهٔ محصولات هایپیکسل در یک پکیج، به‌همراه کوین اسکای‌بلاک هدیه؛ تحویل ۱ تا ۲۴ ساعت.",cape:"کیپ اپتیفاین عمده با قیمت هر عدد؛ حداقل سفارش ۵ عدد و طرح اختصاصی روی اکانت خودتان."},v=s=>{const a=A.find(p=>p.key===s),t=h.filter(p=>p.category===s);return u({title:(a==null?void 0:a.title)??"محصولات",kicker:`${(a==null?void 0:a.en)??""} · ${t.length} محصول`,lead:B[s]??(a==null?void 0:a.short)??"",tags:[(a==null?void 0:a.note)??"تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور","ضمانت بازگشت وجه"],items:t})},f=s=>`<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">${s}</span></div></div>`,x=(s,a,t,p)=>`
 <section class="phero"><div class="wrap-narrow" style="text-align:center">
   <span class="eyebrow">${s}</span><h1 style="font-size:clamp(1.55rem,3.3vw,2.4rem)">${a}</h1>
   <p class="lead" style="margin-top:.8rem">${t}</p>
@@ -1081,7 +1073,7 @@ ${x("راهنمای وی‌پی‌اس","سرور مجازی گیم (VPS) چیس
 <p>همهٔ این‌ها در <a href="hosting/">پلن‌های سرور و هاستینگ یوزورا</a> هست؛ از VPS اقتصادی ۴ گیگابایت تا سرور اختصاصی ۱۶ هسته‌ای.
 اگر بین دو پلن شک داری، در دیسکورد بپرس تا بر اساس بازیکن و بازی‌ات راهنمایی کنیم.</p>
 </div></div></section>
-${k()}`,S={"blog-minecraft-hosting":_,"blog-vps-gaming":P},i="#3ab8f0",L="#a9e5ff",H="#b27a00",c=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,d=s=>`
+${k()}`,S={"blog-minecraft-hosting":_,"blog-vps-gaming":P},i="#3ab8f0",L="#a9e5ff",D="#b27a00",c=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,d=s=>`
   <defs>
     <radialGradient id="${s}-gl" cx="50%" cy="46%" r="52%">
       <stop offset="0" stop-color="${i}" stop-opacity=".22"/>
@@ -1091,7 +1083,7 @@ ${k()}`,S={"blog-minecraft-hosting":_,"blog-vps-gaming":P},i="#3ab8f0",L="#a9e5f
     <linearGradient id="${s}-g" x1="0" y1="0" x2=".35" y2="1">
       <stop offset="0" stop-color="${L}"/>
       <stop offset=".48" stop-color="${i}"/>
-      <stop offset="1" stop-color="${H}"/>
+      <stop offset="1" stop-color="${D}"/>
     </linearGradient>
     <linearGradient id="${s}-f" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fff" stop-opacity=".10"/>
@@ -1104,7 +1096,7 @@ ${k()}`,S={"blog-minecraft-hosting":_,"blog-vps-gaming":P},i="#3ab8f0",L="#a9e5f
       <circle cx="1.6" cy="1.6" r="1.05" fill="${i}" fill-opacity=".30"/>
     </pattern>
   </defs>
-  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,D=()=>c("ar-shield",`${d("ar-shield")}
+  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,H=()=>c("ar-shield",`${d("ar-shield")}
   <g stroke="url(#ar-shield-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هالهٔ بیرونی -->
     <path d="M120 22 206 56v62c0 50-34 82-86 100-52-18-86-50-86-100V56Z"
@@ -1312,7 +1304,7 @@ ${k()}`,S={"blog-minecraft-hosting":_,"blog-vps-gaming":P},i="#3ab8f0",L="#a9e5f
     <circle cx="120" cy="118" r="34" fill="url(#ar-community-f)" stroke-width="2.4"/>
     <path d="M120 132c-12-8-18-14-18-21a9 9 0 0 1 18-4 9 9 0 0 1 18 4c0 7-6 13-18 21Z" stroke-width="2"/>
     <circle cx="120" cy="118" r="98" fill="url(#ar-community-d)" stroke="none" opacity=".22"/>
-  </g>`),M={shield:D(),refund:G(),support:O(),pay:U(),delivery:I(),secure:N(),design:T(),overlay:R(),community:E()},o=(s,a,t)=>`
+  </g>`),M={shield:H(),refund:G(),support:O(),pay:U(),delivery:I(),secure:N(),design:T(),overlay:R(),community:E()},o=(s,a,t)=>`
 <article class="art-card rv">
   <div class="ac-art">${M[s]}</div>
   <h3>${a}</h3>
