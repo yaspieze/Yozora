@@ -1,4 +1,4 @@
-import{D as p}from"./details-CplyxElW.js";import{D as b,b as o,i as t,C as $,P as r,a as v,p as u,c as m,s as n,f as h}from"./entry-C-3O3MrX.js";const f=(i="این بخش")=>`
+import{D as p}from"./details-CplyxElW.js";import{D as b,b as o,i as t,C as $,P as r,a as g,p as u,c as m,s as n,f as h,d as f}from"./entry-b7Xcaj06.js";const y=(i="این بخش")=>`
 ${o([{label:"فروشگاه‌ها",href:"./"},{label:i}])}
 <section class="maint"><div class="wrap-narrow">
   <div class="maint-card">
@@ -14,7 +14,7 @@ ${o([{label:"فروشگاه‌ها",href:"./"},{label:i}])}
     <p class="maint-note">سفارش‌های ثبت‌شده و تیکت‌های باز در دیسکورد مثل قبل پیگیری می‌شوند.</p>
     <a class="maint-dc" href="${b}" target="_blank" rel="noopener">${t("discord")} پشتیبانی در دیسکورد</a>
   </div>
-</div></section>`,e=i=>i.toLocaleString("fa-IR"),y=i=>`product/${i}/`,w=i=>r.filter(a=>a.category===i.category&&a.id!==i.id).slice(0,3),k=i=>{const a=p[i.id],s=a==null?void 0:a.unit,l=s?s.price*(s.min+0):0;return`
+</div></section>`,e=i=>i.toLocaleString("fa-IR"),w=i=>`product/${i}/`,k=i=>r.filter(a=>a.category===i.category&&a.id!==i.id).slice(0,3),x=i=>{const a=p[i.id],s=a==null?void 0:a.unit,l=s?s.price*(s.min+0):0;return`
 <aside class="buy-box rv">
   <div class="bb-head">
     <span class="bb-pill">${t("shield")} ضمانت بازگشت وجه</span>
@@ -42,7 +42,7 @@ ${o([{label:"فروشگاه‌ها",href:"./"},{label:i}])}
     ${t("cart")} کپی متن سفارش
   </button>
   <p class="bb-fine">قیمت‌ها به تومان است؛ عدد نهایی همان روز سفارش در تیکت تثبیت می‌شود.</p>
-</aside>`},x=i=>{const a=r.find(c=>c.id===i);if(!a)return f("این محصول");const s=p[a.id],l=$.find(c=>c.key===a.category),d=w(a);return`
+</aside>`},j=i=>{const a=r.find(c=>c.id===i);if(!a)return y("این محصول");const s=p[a.id],l=$.find(c=>c.key===a.category),d=k(a);return`
 ${o([{label:"محصولات",href:"products/"},...l?[{label:l.title,href:l.slug}]:[],{label:a.title}])}
 
 <section class="prod"><div class="wrap prod-grid">
@@ -60,20 +60,20 @@ ${o([{label:"محصولات",href:"products/"},...l?[{label:l.title,href:l.slug}
     <ul class="feat">
       ${((s==null?void 0:s.features)??[]).map(c=>`<li>${t("spark")} ${c}</li>`).join("")}
     </ul>
-    ${k(a)}
+    ${x(a)}
   </div>
 </div></section>
 
 ${s!=null&&s.steps?`<section class="tight"><div class="wrap">${n("مراحل","این محصول چطور تحویل داده می‌شود؟")}
-  <ol class="mini-steps">${s.steps.map((c,g)=>`<li><span>${e(g+1)}</span>${c}</li>`).join("")}</ol>
+  <ol class="mini-steps">${s.steps.map((c,v)=>`<li><span>${e(v+1)}</span>${c}</li>`).join("")}</ol>
 </div></section>`:""}
 
 ${s!=null&&s.faq?`<section class="tight"><div class="wrap">${n("سوالات","سؤال‌های این محصول")}${h(s.faq)}</div></section>`:""}
 
 ${d.length?`<section class="tight"><div class="wrap">${n("محصولات مرتبط","این‌ها را هم ببین")}
-  <div class="grid g3">${d.map(c=>v(c,{compact:!0})).join("")}</div></div></section>`:""}
+  <div class="grid g3">${d.map(c=>f(c,{compact:!0})).join("")}</div></div></section>`:""}
 
-<div id="toast" class="toast" role="status" aria-live="polite"></div>`},j=()=>{const i=[["all","همه"],...$.map(a=>[a.key,a.title.split(" ")[0]])];return`
+<div id="toast" class="toast" role="status" aria-live="polite"></div>`},O=()=>{const i=[["all","همه"],...$.map(a=>[a.key,a.title.split(" ")[0]])];return`
 ${o([{label:"محصولات"}])}
 <section class="phero"><div class="wrap">
   <div class="phero-top">
@@ -98,5 +98,5 @@ ${o([{label:"محصولات"}])}
   <div class="filters" id="filters">
     ${i.map(([a,s],l)=>`<button${l===0?' class="act"':""} data-f="${a}">${s}</button>`).join("")}
   </div>
-  <div class="grid g4" id="grid">${r.map(a=>v(a,{compact:!0})).join("")}</div>
-</div></section>`},_=Object.freeze(Object.defineProperty({__proto__:null,productPage:x,productUrl:y,productsPage:j},Symbol.toStringTag,{value:"Module"}));export{_ as a,f as m,j as p};
+  <div class="poster-grid" id="grid">${r.map(a=>g(a)).join("")}</div>
+</div></section>`},q=Object.freeze(Object.defineProperty({__proto__:null,productPage:j,productUrl:w,productsPage:O},Symbol.toStringTag,{value:"Module"}));export{q as a,y as m,O as p};

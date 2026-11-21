@@ -1,4 +1,4 @@
-import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-C-3O3MrX.js";const p=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],h=()=>`
+import{D as i,I as a,G as o,N as r,C as n,p as c}from"./entry-b7Xcaj06.js";const p=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],h=()=>`
 <div class="mega" role="menu">
   <div class="mega-grid">
     ${n.map((e,s)=>`<a class="mega-item" href="${e.slug}" role="menuitem" style="--i:${s}">

@@ -1,4 +1,4 @@
-import{splashPage as k}from"./home-CPR8jdLV.js";import{m as o,p as M}from"./product-Ckx_LMbZ.js";import{P as h,D as g,b as z,i as w,a as C}from"./entry-C-3O3MrX.js";import"./details-CplyxElW.js";const A={404:`<section class="e404"><div class="wrap-narrow">
+import{splashPage as z}from"./home-CPR8jdLV.js";import{m as n,p as C}from"./product-C9D30O5m.js";import{P as h,C as A,D as w,b as Z,i as m,a as V}from"./entry-b7Xcaj06.js";import"./details-CplyxElW.js";const j={404:`<section class="e404"><div class="wrap-narrow">
   <div class="art404"><svg class="e404art" width="676" height="260" viewBox="0 0 676 260" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip404)"><path d="M214.999 154.986V205.896H189.017V239.315H122.949V205.896H9V154.986L86.5745 20.6849H160.066L81.7493 154.986H122.949V115.633H189.017V154.986H214.999Z" fill="currentColor"/><path d="M667 154.986V205.896H641.018V239.315H574.95V205.896H461.001V154.986L538.575 20.6849H612.067L533.75 154.986H574.95V115.633H641.018V154.986H667Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M279.5 28.6747C315.7 7.77505 360.299 7.77504 396.499 28.6747C432.699 49.5746 454.999 88.1999 454.999 130C454.999 171.8 432.699 210.425 396.499 231.325C360.299 252.225 315.7 252.225 279.5 231.325C243.3 210.425 221 171.8 221 130C221 88.1999 243.3 49.5746 279.5 28.6747ZM340 51.3231C338.763 50.6086 337.238 50.6087 336 51.3231L270.863 88.9295C269.626 89.644 268.863 90.9644 268.863 92.3934V167.606C268.863 169.035 269.626 170.356 270.863 171.07L336 208.677C337.238 209.391 338.762 209.391 340 208.677L405.136 171.07C406.373 170.356 407.136 169.035 407.136 167.606V92.3934C407.136 90.9644 406.373 89.644 405.136 88.9295L340 51.3231Z" fill="currentColor"/></g><defs><clipPath id="clip404"><rect width="676" height="260" fill="white"/></clipPath></defs></svg></div>
   <h1 style="margin-top:1.4rem">این صفحه پیدا نشد</h1>
   <p class="lead" style="margin-top:.8rem">شاید آدرس عوض شده باشد. از این‌جا ادامه بده:</p>
@@ -947,8 +947,8 @@ import{splashPage as k}from"./home-CPR8jdLV.js";import{m as o,p as M}from"./prod
   <h2>۵. بازگشت وجه</h2><p>اگر سفارش در بازهٔ اعلام‌شده انجام نشود و راه‌حل جایگزینی نباشد، مبلغ بازگردانده می‌شود. جزئیات در صفحهٔ ضمانت آمده است.</p>
   <h2>۶. مسئولیت‌ها</h2><p>مشتری مسئول درست بودن اطلاعاتی است که ارسال می‌کند. یوزورا مسئول عواقب ناشی از نقض قوانین خود بازی یا سرور مقصد نیست.</p>
   <h2>۷. حریم خصوصی</h2><p>اطلاعات شما فقط برای انجام سفارش استفاده می‌شود و در اختیار شخص ثالث قرار نمی‌گیرد.</p>
-</div></div></section>`},m=["minecraft","donut","hypixel","cape"],Z=s=>`
-${z([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
+</div></div></section>`},b=["minecraft","donut","hypixel","cape"],u=s=>`
+${Z([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
 <section class="phero"><div class="wrap">
   <div class="phero-top">
     <div class="phero-txt">
@@ -957,25 +957,25 @@ ${z([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
       <p class="lead" style="max-width:70ch">${s.lead}</p>
     </div>
     <div class="phero-act">
-      <a class="btn btn-gold" href="${g}" target="_blank" rel="noopener">${w("discord")} ثبت سفارش</a>
+      <a class="btn btn-gold" href="${w}" target="_blank" rel="noopener">${m("discord")} ثبت سفارش</a>
       <a class="btn btn-ghost" href="./">صفحهٔ اصلی</a>
     </div>
   </div>
-  <ul class="phero-tags">${s.tags.map(e=>`<li>${e}</li>`).join("")}</ul>
+  <ul class="phero-tags">${s.tags.map(a=>`<li>${a}</li>`).join("")}</ul>
 </div></section>
 <section class="tight"><div class="wrap">
-  <div class="grid g4" id="grid">${s.items.map(e=>C(e,{compact:!0})).join("")}</div>
+  <div class="poster-grid" id="grid">${s.items.map(a=>V(a)).join("")}</div>
 </div></section>
 <section class="tight"><div class="wrap"><div class="center-cta">
   <h2>سفارش را در دیسکورد ثبت کن</h2>
   <p>همهٔ سفارش‌ها با تیکت انجام می‌شود؛ مبلغ ریالی، فاکتور رسمی و پیگیری تا تحویل.</p>
-  <a class="btn btn-gold btn-lg" href="${g}" target="_blank" rel="noopener">${w("discord")} ورود به دیسکورد</a>
-</div></div></section>`,V=()=>Z({title:"فروشگاه محصولات ماینکرفت",kicker:`ماینکرفت · ${h.filter(s=>m.includes(s.category)).length} محصول`,lead:"اکانت ماینکرفت، پول دونات اس‌ام‌پی، کوین و رنک هایپیکسل و اسکای‌بلاک. همهٔ محصولات با تحویل مشخص و ضمانت بازگشت وجه.",tags:["اکانت فول اکسس","تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور"],items:h.filter(s=>m.includes(s.category))}),j=()=>o("فروشگاه محصولات دیگر"),y=s=>`<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">${s}</span></div></div>`,u=(s,e,i,n)=>`
+  <a class="btn btn-gold btn-lg" href="${w}" target="_blank" rel="noopener">${m("discord")} ورود به دیسکورد</a>
+</div></div></section>`,$=()=>u({title:"فروشگاه محصولات ماینکرفت",kicker:`ماینکرفت · ${h.filter(s=>b.includes(s.category)).length} محصول`,lead:"اکانت ماینکرفت، پول دونات اس‌ام‌پی، کوین و رنک هایپیکسل و اسکای‌بلاک. همهٔ محصولات با تحویل مشخص و ضمانت بازگشت وجه.",tags:["اکانت فول اکسس","تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور"],items:h.filter(s=>b.includes(s.category))}),q=()=>n("فروشگاه محصولات دیگر"),B={minecraft:"اکانت ماینکرفت دستهٔ اول، دستهٔ دوم و اکانت با اولویت تحویل؛ همه با فول اکسس، ایمیل و رمز و تحویل ۱ تا ۴۸ ساعت.",donut:"پول دونات اس ام پی با تعرفهٔ هر میلیون؛ حداقل خرید ۵۰ میلیون و موجودی تا ۳۰۰ میلیون با تحویل ۱ تا ۲۴ ساعت.",hypixel:"همهٔ محصولات هایپیکسل در یک پکیج، به‌همراه کوین اسکای‌بلاک هدیه؛ تحویل ۱ تا ۲۴ ساعت.",cape:"کیپ اپتیفاین عمده با قیمت هر عدد؛ حداقل سفارش ۵ عدد و طرح اختصاصی روی اکانت خودتان."},v=s=>{const a=A.find(p=>p.key===s),t=h.filter(p=>p.category===s);return u({title:(a==null?void 0:a.title)??"محصولات",kicker:`${(a==null?void 0:a.en)??""} · ${t.length} محصول`,lead:B[s]??(a==null?void 0:a.short)??"",tags:[(a==null?void 0:a.note)??"تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور","ضمانت بازگشت وجه"],items:t})},f=s=>`<div class="wrap"><div class="crumbs"><a href="./">خانه</a><span>/</span><a href="blog/">وبلاگ</a><span>/</span><span style="color:#c3c9d6">${s}</span></div></div>`,x=(s,a,t,p)=>`
 <section class="phero"><div class="wrap-narrow" style="text-align:center">
-  <span class="eyebrow">${s}</span><h1 style="font-size:clamp(1.55rem,3.3vw,2.4rem)">${e}</h1>
-  <p class="lead" style="margin-top:.8rem">${i}</p>
-  <div class="badges" style="justify-content:center"><span class="pill">${n} مطالعه</span><span class="pill y">یوزورا شاپ</span></div>
-</div></section>`,f=()=>`
+  <span class="eyebrow">${s}</span><h1 style="font-size:clamp(1.55rem,3.3vw,2.4rem)">${a}</h1>
+  <p class="lead" style="margin-top:.8rem">${t}</p>
+  <div class="badges" style="justify-content:center"><span class="pill">${p} مطالعه</span><span class="pill y">یوزورا شاپ</span></div>
+</div></section>`,k=()=>`
 <section><div class="wrap"><div class="cta rv">
   <h2>پلن مناسب را با هم انتخاب کنیم</h2>
   <p>بگو چند بازیکن داری و چه بازی‌ای؛ همان روز بهترین پلن را پیشنهاد می‌دهیم.</p>
@@ -983,9 +983,9 @@ ${z([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
     <a class="btn btn-red btn-lg" href="hosting/">دیدن پلن‌های هاستینگ</a>
     <a class="btn btn-ghost" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">مشاوره در دیسکورد</a>
   </div>
-</div></div></section>`,$=()=>`
-${y("راهنمای خرید هاست ماینکرفت")}
-${u("راهنمای هاستینگ","راهنمای خرید هاست ماینکرفت؛ چقدر رم و CPU لازم است؟","انتخاب هاست ماینکرفت فقط «چند گیگ رم» نیست. اینجا بر اساس تعداد بازیکن، مود و پلاگین، دقیق می‌شود که چه پلنی برای سرور تو درست است.","۹ دقیقه")}
+</div></div></section>`,_=()=>`
+${f("راهنمای خرید هاست ماینکرفت")}
+${x("راهنمای هاستینگ","راهنمای خرید هاست ماینکرفت؛ چقدر رم و CPU لازم است؟","انتخاب هاست ماینکرفت فقط «چند گیگ رم» نیست. اینجا بر اساس تعداد بازیکن، مود و پلاگین، دقیق می‌شود که چه پلنی برای سرور تو درست است.","۹ دقیقه")}
 <section style="padding-top:0"><div class="wrap-narrow"><div class="article">
 <p>بیشتر کسانی که سرور ماینکرفت راه می‌اندازند، اول سراغ «ارزان‌ترین هاست» می‌روند و بعد از دو هفته با لگ، کرش و
 از دست رفتن دنیا سراغ ما می‌آیند. تفاوت یک هاست خوب و یک هاست ارزان معمولاً در سه چیز است: <b>فرکانس پردازنده</b>،
@@ -1031,9 +1031,9 @@ ${u("راهنمای هاستینگ","راهنمای خرید هاست ماینک
 <p>پلن‌های هاست ماینکرفت یوزورا از ۲ گیگابایت تا سرور اختصاصی، روی NVMe و با آنتی‌دیداس آمادهٔ سفارش است؛
 اگر مطمئن نیستی کدام پلن برای تو درست است، در <a href="hosting/">صفحهٔ سرور و هاستینگ</a> مشخصات همه را کنار هم ببین.</p>
 </div></div></section>
-${f()}`,q=()=>`
-${y("سرور مجازی گیم و کاهش پینگ")}
-${u("راهنمای وی‌پی‌اس","سرور مجازی گیم (VPS) چیست و چطور پینگ را پایین نگه داریم؟","تفاوت هاست گیم و سرور مجازی، سخت‌افزاری که واقعاً مهم است، و اینکه چرا پینگ بیشتر از پهنای باند روی تجربهٔ بازی اثر می‌گذارد.","۸ دقیقه")}
+${k()}`,P=()=>`
+${f("سرور مجازی گیم و کاهش پینگ")}
+${x("راهنمای وی‌پی‌اس","سرور مجازی گیم (VPS) چیست و چطور پینگ را پایین نگه داریم؟","تفاوت هاست گیم و سرور مجازی، سخت‌افزاری که واقعاً مهم است، و اینکه چرا پینگ بیشتر از پهنای باند روی تجربهٔ بازی اثر می‌گذارد.","۸ دقیقه")}
 <section style="padding-top:0"><div class="wrap-narrow"><div class="article">
 <p>وقتی سرور بازی‌ات بزرگ می‌شود، معمولاً بین دو گزینه گیر می‌کنی: <b>هاست گیم آماده</b> یا <b>سرور مجازی (VPS)</b>.
 هر دو کار می‌کنند، اما برای هدف‌های متفاوتی ساخته شده‌اند.</p>
@@ -1081,30 +1081,30 @@ ${u("راهنمای وی‌پی‌اس","سرور مجازی گیم (VPS) چیس
 <p>همهٔ این‌ها در <a href="hosting/">پلن‌های سرور و هاستینگ یوزورا</a> هست؛ از VPS اقتصادی ۴ گیگابایت تا سرور اختصاصی ۱۶ هسته‌ای.
 اگر بین دو پلن شک داری، در دیسکورد بپرس تا بر اساس بازیکن و بازی‌ات راهنمایی کنیم.</p>
 </div></div></section>
-${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5ff",P="#b27a00",c=(s,e,i="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${i} xmlns="http://www.w3.org/2000/svg">${e}</svg>`,d=s=>`
+${k()}`,S={"blog-minecraft-hosting":_,"blog-vps-gaming":P},i="#3ab8f0",L="#a9e5ff",H="#b27a00",c=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,d=s=>`
   <defs>
     <radialGradient id="${s}-gl" cx="50%" cy="46%" r="52%">
-      <stop offset="0" stop-color="${a}" stop-opacity=".22"/>
-      <stop offset=".62" stop-color="${a}" stop-opacity=".07"/>
-      <stop offset="1" stop-color="${a}" stop-opacity="0"/>
+      <stop offset="0" stop-color="${i}" stop-opacity=".22"/>
+      <stop offset=".62" stop-color="${i}" stop-opacity=".07"/>
+      <stop offset="1" stop-color="${i}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="${s}-g" x1="0" y1="0" x2=".35" y2="1">
-      <stop offset="0" stop-color="${_}"/>
-      <stop offset=".48" stop-color="${a}"/>
-      <stop offset="1" stop-color="${P}"/>
+      <stop offset="0" stop-color="${L}"/>
+      <stop offset=".48" stop-color="${i}"/>
+      <stop offset="1" stop-color="${H}"/>
     </linearGradient>
     <linearGradient id="${s}-f" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fff" stop-opacity=".10"/>
       <stop offset="1" stop-color="#fff" stop-opacity=".015"/>
     </linearGradient>
     <pattern id="${s}-h" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="7" stroke="${a}" stroke-opacity=".24" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="${i}" stroke-opacity=".24" stroke-width="1"/>
     </pattern>
     <pattern id="${s}-d" width="9" height="9" patternUnits="userSpaceOnUse">
-      <circle cx="1.6" cy="1.6" r="1.05" fill="${a}" fill-opacity=".30"/>
+      <circle cx="1.6" cy="1.6" r="1.05" fill="${i}" fill-opacity=".30"/>
     </pattern>
   </defs>
-  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,S=()=>c("ar-shield",`${d("ar-shield")}
+  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,D=()=>c("ar-shield",`${d("ar-shield")}
   <g stroke="url(#ar-shield-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هالهٔ بیرونی -->
     <path d="M120 22 206 56v62c0 50-34 82-86 100-52-18-86-50-86-100V56Z"
@@ -1118,11 +1118,11 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <!-- قفل -->
     <rect x="98" y="110" width="44" height="36" rx="8" fill="#0d0e13" stroke-width="2.2"/>
     <path d="M107 110v-11a13 13 0 0 1 26 0v11" stroke-width="2.2"/>
-    <circle cx="120" cy="124" r="4.4" fill="${a}"/>
+    <circle cx="120" cy="124" r="4.4" fill="${i}"/>
     <path d="M120 128v9" stroke-width="2.2"/>
     <!-- پرچ‌ها -->
-    <circle cx="76" cy="88" r="1.9" fill="${a}" stroke="none"/>
-    <circle cx="164" cy="88" r="1.9" fill="${a}" stroke="none"/>
+    <circle cx="76" cy="88" r="1.9" fill="${i}" stroke="none"/>
+    <circle cx="164" cy="88" r="1.9" fill="${i}" stroke="none"/>
     <!-- برگ‌های لور -->
     <g stroke-width="1.3" stroke-opacity=".8">
       <path d="M52 172c-9-7-14-17-15-28"/>
@@ -1139,7 +1139,7 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
       <path d="M120 12v9M120 219v-9M30 120h9M201 120h9"/>
       <path d="m62 62 5 5M173 173l5 5M178 62l-5 5M67 173l-5 5" stroke-opacity=".45"/>
     </g>
-  </g>`),L=()=>c("ar-refund",`${d("ar-refund")}
+  </g>`),G=()=>c("ar-refund",`${d("ar-refund")}
   <g stroke="url(#ar-refund-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="72" stroke-width="1.1" stroke-opacity=".28" stroke-dasharray="3 8"/>
     <circle cx="120" cy="118" r="58" stroke-width="2.4" fill="url(#ar-refund-f)"/>
@@ -1160,21 +1160,21 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
       <path d="M169 164v7c0 2.6 5.8 4.7 13 4.7s13-2.1 13-4.7v-7"/>
     </g>
     <circle cx="120" cy="118" r="72" fill="url(#ar-refund-h)" stroke="none" opacity=".35"/>
-  </g>`),H=()=>c("ar-support",`${d("ar-support")}
+  </g>`),O=()=>c("ar-support",`${d("ar-support")}
   <g stroke="url(#ar-support-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هدست -->
     <path d="M62 136v-16a58 58 0 0 1 116 0v16" stroke-width="2.6"/>
     <rect x="48" y="130" width="26" height="44" rx="12" fill="url(#ar-support-f)" stroke-width="2.2"/>
     <rect x="166" y="130" width="26" height="44" rx="12" fill="url(#ar-support-f)" stroke-width="2.2"/>
     <path d="M74 152c0 18 12 28 28 30" stroke-width="2.2"/>
-    <rect x="98" y="176" width="20" height="11" rx="5.5" fill="${a}" stroke="none"/>
+    <rect x="98" y="176" width="20" height="11" rx="5.5" fill="${i}" stroke="none"/>
     <!-- حباب گفتگو -->
     <path d="M120 66c22 0 38 13 38 30s-16 30-38 30c-4 0-8-.4-11-1l-14 8 3-13c-10-5-16-14-16-24 0-17 16-30 38-30Z"
           fill="#0d0e13" stroke-width="2.2"/>
     <g stroke-width="1.8">
-      <circle cx="104" cy="96" r="2.4" fill="${a}" stroke="none"/>
-      <circle cx="120" cy="96" r="2.4" fill="${a}" stroke="none"/>
-      <circle cx="136" cy="96" r="2.4" fill="${a}" stroke="none"/>
+      <circle cx="104" cy="96" r="2.4" fill="${i}" stroke="none"/>
+      <circle cx="120" cy="96" r="2.4" fill="${i}" stroke="none"/>
+      <circle cx="136" cy="96" r="2.4" fill="${i}" stroke="none"/>
     </g>
     <!-- موج صدا -->
     <g stroke-width="1.8" stroke-opacity=".75">
@@ -1184,7 +1184,7 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
       <path d="M34 142a34 34 0 0 0 0 36" stroke-opacity=".45"/>
     </g>
     <circle cx="120" cy="118" r="98" fill="url(#ar-support-h)" stroke="none" opacity=".22"/>
-  </g>`),D=()=>c("ar-pay",`${d("ar-pay")}
+  </g>`),U=()=>c("ar-pay",`${d("ar-pay")}
   <g stroke="url(#ar-pay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- کارت -->
     <rect x="40" y="86" width="160" height="96" rx="14" fill="url(#ar-pay-f)" stroke-width="2.4"/>
@@ -1212,7 +1212,7 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <path d="M104 34h44v18l-7-5-7 5-7-5-7 5-8-5-8 5Z" fill="#0d0e13" stroke-width="1.8"/>
     <g stroke-width="1.2" stroke-opacity=".55"><path d="M112 44h30M112 50h22"/></g>
     <circle cx="120" cy="118" r="100" fill="url(#ar-pay-h)" stroke="none" opacity=".18"/>
-  </g>`),G=()=>c("ar-delivery",`${d("ar-delivery")}
+  </g>`),I=()=>c("ar-delivery",`${d("ar-delivery")}
   <g stroke="url(#ar-delivery-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- جعبه -->
     <path d="M74 108 120 88l46 20v58l-46 20-46-20Z" fill="url(#ar-delivery-f)" stroke-width="2.4"/>
@@ -1229,7 +1229,7 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <!-- عقربه/فلش بالا -->
     <path d="M120 66V30M108 42l12-12 12 12" stroke-width="2.6"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-delivery-h)" stroke="none" opacity=".2"/>
-  </g>`),O=()=>c("ar-secure",`${d("ar-secure")}
+  </g>`),N=()=>c("ar-secure",`${d("ar-secure")}
   <g stroke="url(#ar-secure-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- شش‌ضلعی -->
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-f)" stroke-width="2.4"/>
@@ -1237,18 +1237,18 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <!-- قفل بزرگ -->
     <rect x="94" y="112" width="52" height="44" rx="10" fill="#0d0e13" stroke-width="2.4"/>
     <path d="M104 112v-13a16 16 0 0 1 32 0v13" stroke-width="2.4"/>
-    <circle cx="120" cy="130" r="5.4" fill="${a}"/>
+    <circle cx="120" cy="130" r="5.4" fill="${i}"/>
     <path d="M120 135v10" stroke-width="2.4"/>
     <!-- مدارها -->
     <g stroke-width="1.3" stroke-opacity=".6">
       <path d="M76 92h14v-14M164 92h-14V78M76 152h14v14M164 152h-14v14"/>
-      <circle cx="90" cy="78" r="2.2" fill="${a}" stroke="none"/>
-      <circle cx="150" cy="78" r="2.2" fill="${a}" stroke="none"/>
-      <circle cx="90" cy="166" r="2.2" fill="${a}" stroke="none"/>
-      <circle cx="150" cy="166" r="2.2" fill="${a}" stroke="none"/>
+      <circle cx="90" cy="78" r="2.2" fill="${i}" stroke="none"/>
+      <circle cx="150" cy="78" r="2.2" fill="${i}" stroke="none"/>
+      <circle cx="90" cy="166" r="2.2" fill="${i}" stroke="none"/>
+      <circle cx="150" cy="166" r="2.2" fill="${i}" stroke="none"/>
     </g>
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-d)" stroke="none" opacity=".3"/>
-  </g>`),U=()=>c("ar-design",`${d("ar-design")}
+  </g>`),T=()=>c("ar-design",`${d("ar-design")}
   <g stroke="url(#ar-design-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- بوم -->
     <rect x="42" y="56" width="120" height="120" rx="10" fill="url(#ar-design-f)" stroke-width="2.2"/>
@@ -1265,13 +1265,13 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <path d="M182 136l14 14" stroke-width="1.6"/>
     <!-- سواچ‌ها -->
     <g stroke-width="1.6">
-      <circle cx="192" cy="70" r="9" fill="${a}" fill-opacity=".85" stroke="none"/>
+      <circle cx="192" cy="70" r="9" fill="${i}" fill-opacity=".85" stroke="none"/>
       <circle cx="192" cy="94" r="9" stroke-opacity=".8"/>
       <circle cx="192" cy="118" r="9" stroke-opacity=".8"/>
     </g>
     <path d="M30 186h108" stroke-width="1.2" stroke-opacity=".3"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-design-d)" stroke="none" opacity=".22"/>
-  </g>`),N=()=>c("ar-overlay",`${d("ar-overlay")}
+  </g>`),R=()=>c("ar-overlay",`${d("ar-overlay")}
   <g stroke="url(#ar-overlay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- مانیتور -->
     <rect x="34" y="58" width="172" height="112" rx="12" fill="url(#ar-overlay-f)" stroke-width="2.4"/>
@@ -1279,7 +1279,7 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <!-- فریم وب‌کم -->
     <rect x="128" y="118" width="62" height="40" rx="8" fill="#0d0e13" stroke-width="2"/>
     <circle cx="159" cy="138" r="9" stroke-width="1.8"/>
-    <circle cx="159" cy="138" r="3.4" fill="${a}" stroke="none"/>
+    <circle cx="159" cy="138" r="3.4" fill="${i}" stroke="none"/>
     <!-- چت‌باکس -->
     <g stroke-width="1.4" stroke-opacity=".8">
       <rect x="48" y="118" width="66" height="8" rx="4"/>
@@ -1287,14 +1287,14 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
       <rect x="48" y="146" width="56" height="8" rx="4" stroke-opacity=".4"/>
     </g>
     <!-- هدر استریم -->
-    <rect x="48" y="74" width="40" height="10" rx="5" fill="${a}" stroke="none" opacity=".9"/>
+    <rect x="48" y="74" width="40" height="10" rx="5" fill="${i}" stroke="none" opacity=".9"/>
     <rect x="96" y="74" width="22" height="10" rx="5" stroke-width="1.4" stroke-opacity=".7"/>
     <circle cx="190" cy="79" r="5" fill="#ff4d4d" stroke="none"/>
     <!-- نوار پیشرفت -->
     <path d="M48 104h120" stroke-width="3" stroke-opacity=".25"/>
     <path d="M48 104h74" stroke-width="3"/>
     <circle cx="120" cy="118" r="102" fill="url(#ar-overlay-h)" stroke="none" opacity=".2"/>
-  </g>`),I=()=>c("ar-community",`${d("ar-community")}
+  </g>`),E=()=>c("ar-community",`${d("ar-community")}
   <g stroke="url(#ar-community-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="76" stroke-width="1.1" stroke-opacity=".3" stroke-dasharray="2 8"/>
     <!-- حلقهٔ اعضا -->
@@ -1312,10 +1312,10 @@ ${f()}`,B={"blog-minecraft-hosting":$,"blog-vps-gaming":q},a="#3ab8f0",_="#a9e5f
     <circle cx="120" cy="118" r="34" fill="url(#ar-community-f)" stroke-width="2.4"/>
     <path d="M120 132c-12-8-18-14-18-21a9 9 0 0 1 18-4 9 9 0 0 1 18 4c0 7-6 13-18 21Z" stroke-width="2"/>
     <circle cx="120" cy="118" r="98" fill="url(#ar-community-d)" stroke="none" opacity=".22"/>
-  </g>`),x={shield:S(),refund:L(),support:H(),pay:D(),delivery:G(),secure:O(),design:U(),overlay:N(),community:I()},p=(s,e,i)=>`
+  </g>`),M={shield:D(),refund:G(),support:O(),pay:U(),delivery:I(),secure:N(),design:T(),overlay:R(),community:E()},o=(s,a,t)=>`
 <article class="art-card rv">
-  <div class="ac-art">${x[s]}</div>
-  <h3>${e}</h3>
-  <p>${i}</p>
-</article>`,b={index:k,products:M,minecraft:V,others:j,hosting:()=>o("فروشگاه سرور و هاستینگ"),...B,"cat-giftcard":()=>o("فروشگاه گیفت کارت و اشتراک"),"cat-design":()=>o("بخش خدمات طراحی"),"cat-overlay":()=>o("بخش اورلی استریم"),"cat-cosmetics":()=>o("بخش کازمتیک")},R=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),T=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),F=(s,e)=>{let i=e;s==="guarantee"&&(i=i.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,`<div class="guar-art">${x.shield}</div>`));const v={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([t,l,r])=>p(t,l,r)).join(""),about:[["community","از یک انجمن ۷۶۳ نفری","یوزورا از دل انجمن دیسکورد خودش بیرون آمده؛ بیشتر مشتری‌ها همان اعضا هستند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([t,l,r])=>p(t,l,r)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([t,l,r])=>p(t,l,r)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در یک مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([t,l,r])=>p(t,l,r)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([t,l,r])=>p(t,l,r)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([t,l,r])=>p(t,l,r)).join("")}[s];if(v){const t=i.indexOf("</section>");t>-1&&(i=`${i.slice(0,t+10)}
-<section class="art-row"><div class="wrap"><div class="grid g3">${v}</div></div></section>${i.slice(t+10)}`)}return s==="blog"&&(i=i.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),i=i.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),i};for(const[s,e]of Object.entries(A))s in b||(b[s]=()=>F(s,T(R(e))));export{b as pages};
+  <div class="ac-art">${M[s]}</div>
+  <h3>${a}</h3>
+  <p>${t}</p>
+</article>`,y={index:z,products:C,minecraft:$,others:q,hosting:()=>n("فروشگاه سرور و هاستینگ"),...S,"cat-minecraft":()=>v("minecraft"),"cat-donut":()=>v("donut"),"cat-hypixel":()=>v("hypixel"),"cat-cape":()=>v("cape"),"cat-giftcard":()=>n("فروشگاه گیفت کارت و اشتراک"),"cat-design":()=>n("بخش خدمات طراحی"),"cat-overlay":()=>n("بخش اورلی استریم"),"cat-cosmetics":()=>n("بخش کازمتیک")},F=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),J=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),K=(s,a)=>{let t=a;s==="guarantee"&&(t=t.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,`<div class="guar-art">${M.shield}</div>`));const g={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([e,l,r])=>o(e,l,r)).join(""),about:[["community","از یک انجمن ۷۶۳ نفری","یوزورا از دل انجمن دیسکورد خودش بیرون آمده؛ بیشتر مشتری‌ها همان اعضا هستند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([e,l,r])=>o(e,l,r)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([e,l,r])=>o(e,l,r)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در یک مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([e,l,r])=>o(e,l,r)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([e,l,r])=>o(e,l,r)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([e,l,r])=>o(e,l,r)).join("")}[s];if(g){const e=t.indexOf("</section>");e>-1&&(t=`${t.slice(0,e+10)}
+<section class="art-row"><div class="wrap"><div class="grid g3">${g}</div></div></section>${t.slice(e+10)}`)}return s==="blog"&&(t=t.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),t=t.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),t};for(const[s,a]of Object.entries(j))s in y||(y[s]=()=>K(s,J(F(a))));export{y as pages};
