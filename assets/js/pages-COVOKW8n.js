@@ -1,180 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const c of i.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&e(c)}).observe(document,{childList:!0,subtree:!0});function t(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(r){if(r.ep)return;r.ep=!0;const i=t(r);fetch(r.href,i)}})();const w=(s,a=24)=>`<svg width="${a}" height="${a}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,g={discord:'<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.9a13.7 13.7 0 0 0-.62 1.28 18.3 18.3 0 0 0-5.55 0A13.7 13.7 0 0 0 8.6 2.9a19.7 19.7 0 0 0-4.92 1.47C.6 9.05-.27 13.6.16 18.1a19.9 19.9 0 0 0 6.03 3.05c.48-.66.9-1.36 1.27-2.1-.7-.26-1.37-.58-2-.96.17-.12.33-.25.49-.38a14.2 14.2 0 0 0 12.1 0c.16.13.32.26.49.38-.63.38-1.3.7-2 .96.37.74.79 1.44 1.27 2.1a19.8 19.8 0 0 0 6.03-3.05c.5-5.2-.86-9.72-3.52-13.73ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.2 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4Z"/></svg>',bolt:w('<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>'),card:w('<rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 10h19"/>'),shield:w('<path d="M12 3l7.5 3v6c0 4.5-3.2 7.7-7.5 9-4.3-1.3-7.5-4.5-7.5-9V6L12 3Z"/><path d="M9 12.2l2.1 2.1L15.4 10"/>'),clock:w('<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>'),search:w('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>'),menu:w('<path d="M3.5 7h17M3.5 12h17M3.5 17h17"/>'),close:w('<path d="m6 6 12 12M18 6 6 18"/>'),cart:w('<path d="M3 4h2.4l2.2 11.2h9.9L19.5 7H6"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/>'),chevron:w('<path d="m9 6 6 6-6 6"/>'),arrow:w('<path d="M5 12h14M13 6l6 6-6 6"/>'),star:w('<path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.9-5.2 2.9 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/>'),info:w('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),spark:w('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.2 6.2l3 3M14.8 14.8l3 3M17.8 6.2l-3 3M9.2 14.8l-3 3"/>')},C=s=>`<svg class="nav-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s}</svg>`,M={home:C('<path d="M4 10.6 12 4l8 6.6V19a1.4 1.4 0 0 1-1.4 1.4h-3.2v-5.6H9.6V20.4H5.4A1.4 1.4 0 0 1 4 19Z"/><path d="M8.6 9.8 12 7l3.4 2.8" stroke-opacity=".55"/>'),products:C('<rect x="3.2" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="13.4" y="3.2" width="7.4" height="7.4" rx="1.8"/><rect x="3.2" y="13.4" width="7.4" height="7.4" rx="1.8"/><path d="M14.6 14.6h4.8v4.8h-4.8z" stroke-opacity=".45"/>'),prices:C('<path d="M12.6 3.4h6.4a.6.6 0 0 1 .6.6v6.4a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-5-5a2 2 0 0 1 0-2.8l7.4-7.4a2 2 0 0 1 1.4-.6Z"/><circle cx="16.2" cy="7.4" r="1.5"/>'),guarantee:C('<path d="M12 3.2 19 6v6c0 4.3-3 7.3-7 8.8-4-1.5-7-4.5-7-8.8V6Z"/><path d="m9 12 2 2 4-4.2" />'),blog:C('<path d="M5 19.4 8.4 18.6 19 8a2.2 2.2 0 0 0-3.1-3.1L5.3 15.5 4.6 19Z"/><path d="m14.8 6.2 3 3M5.4 15.6l3 3" stroke-opacity=".55"/>'),about:C('<circle cx="12" cy="12" r="8.6"/><path d="M12 10.8v5.4"/><circle cx="12" cy="8" r=".9" fill="currentColor" stroke="none"/>'),contact:C('<path d="M4.4 6.6A2.2 2.2 0 0 1 6.6 4.4h10.8a2.2 2.2 0 0 1 2.2 2.2v7.2a2.2 2.2 0 0 1-2.2 2.2H9.8L5.6 19.2V16a2.2 2.2 0 0 1-1.2-2Z"/><path d="M8.4 9h7.2M8.4 11.8h4.6" stroke-opacity=".55"/>')},ms=`<svg class="gs-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-  <path d="M16 2.5 27.7 9v14L16 29.5 4.3 23V9Z" stroke="currentColor" stroke-width="1.2" stroke-opacity=".55"/>
-  <path d="M16 8.2 22.6 12v7.6L16 23.4 9.4 19.6V12Z" stroke="currentColor" stroke-width="1.1"/>
-  <path d="M16 12.4l3.2 1.9v3.8L16 20l-3.2-1.9v-3.8Z" fill="currentColor" fill-opacity=".85"/>
-  <path d="M16 2.5v5.7M27.7 9l-5.1 3M4.3 9l5.1 3" stroke="currentColor" stroke-width=".9" stroke-opacity=".4"/>
-</svg>`,y="https://discord.gg/sVAa2rw4wM",z=[{key:"minecraft",slug:"cat-minecraft/",title:"اکانت ماینکرفت",en:"Minecraft Accounts",short:"فول اکسس، جاوا و بدراک",image:"assets/img/products/p-minecraft-account.jpg",note:"تحویل تا ۴۸ ساعت"},{key:"donut",slug:"cat-donut/",title:"پول دونات اس ام پی",en:"Donut SMP",short:"هر میلیون ۴٬۷۰۰ تومان",image:"assets/img/products/p-donut-million.jpg",note:"موجودی ۳۰۰ میلیون"},{key:"hypixel",slug:"cat-hypixel/",title:"هایپیکسل و اسکای‌بلاک",en:"Hypixel & SkyBlock",short:"رنک، کوین و بوستر",image:"assets/img/products/p-hypixel.jpg",note:"تحویل ۱ تا ۲۴ ساعت"},{key:"design",slug:"cat-design/",title:"خدمات فتوشاپ",en:"Design Services",short:"لوگو، بنر، تامنیل، اسکین",image:"assets/img/products/p-logo.jpg",note:"از ۲۰۰٬۰۰۰ تومان"},{key:"overlay",slug:"cat-overlay/",title:"اورلی استریم",en:"Stream Overlay",short:"پک کامل + فونت اختصاصی",image:"assets/img/products/p-overlay-good.jpg",note:"از ۲۴۵٬۰۰۰ تومان"},{key:"cosmetics",slug:"cat-cosmetics/",title:"کازمتیک",en:"Cosmetics",short:"هاله، بال، کلاه",image:"assets/img/products/p-cosmetics.jpg",note:"قیمت دلاری آیتم"},{key:"cape",slug:"cat-cape/",title:"کیپ اپتیفاین",en:"OptiFine Capes",short:"اختصاصی روی اکانت شما",image:"assets/img/products/p-cape.jpg",note:"۳۲۹٬۰۰۰ تومان"},{key:"giftcard",slug:"cat-giftcard/",title:"گیفت کارت و اشتراک",en:"Gift Cards & Subscriptions",short:"استیم، روباکس، نیترو، اسپاتیفای",image:"assets/img/products/p-steam-gift.jpg",note:"تحویل فوری کد"}],f=[{id:"mc-account",title:"اکانت ماینکرفت اقتصادی",category:"minecraft",image:"assets/img/products/p-minecraft-account.jpg",desc:"اکانت کامل با فول اکسس برای جاوا و بدراک؛ اطلاعات هم قابل تغییر است.",priceLabel:"قیمت",price:"۳٬۴۷۰٬۰۰۰ تومان",pills:[{text:"فول اکسس",tone:"green"},{text:"جاوا + بدراک"},{text:"تغییر اطلاعات",tone:"gold"}],href:"product/mc-account/",badge:"پرفروش"},{id:"mc-priority",title:"اکانت با اولویت تحویل",category:"minecraft",image:"assets/img/products/p-mc-priority.jpg",desc:"همان اکانت با اولویت تحویل در تیکت.",priceLabel:"قیمت",price:"۳٬۸۹۰٬۰۰۰ تومان",pills:[{text:"اولویت",tone:"green"},{text:"فول اکسس"}],href:"product/mc-priority/"},{id:"donut-million",title:"پول دونات — هر میلیون",category:"donut",image:"assets/img/products/p-donut-million.jpg",desc:"حداقل خرید ۵۰ میلیون؛ موجودی فعلی سرور ۳۰۰ میلیون.",priceLabel:"هر میلیون",price:"۴٬۷۰۰ تومان",pills:[{text:"موجودی ۳۰۰M",tone:"green"},{text:"حداقل ۵۰M"},{text:"تحویل ۴۸h",tone:"gold"}],href:"product/donut-million/",badge:"تخفیف حجمی"},{id:"hypixel",title:"محصولات هایپیکسل",category:"hypixel",image:"assets/img/products/p-hypixel.jpg",desc:"رنک‌ها، بوستر و آیتم‌های هایپیکسل؛ قیمت وابسته به دلار روز.",priceLabel:"از",price:"۳٬۵۴۰٬۰۰۰ تومان",pills:[{text:"۱ تا ۲۴ ساعت",tone:"green"},{text:"امن و قانونی"}],href:"product/hypixel/"},{id:"skyblock",title:"کوین اسکای‌بلاک — هر میلیون",category:"hypixel",image:"assets/img/products/p-skyblock.jpg",desc:"کوین اسکای‌بلاک با تحویل ۱ تا ۷۲ ساعت.",priceLabel:"هر میلیون",price:"۶٬۹۰۰ تومان",pills:[{text:"۷۲ ساعت",tone:"green"},{text:"قیمت میلیونی"}],href:"product/skyblock/"},{id:"logo",title:"طراحی لوگو",category:"design",image:"assets/img/products/p-logo.jpg",desc:"لوگوی اختصاصی برای سرور یا کانال شما؛ سه پیشنهاد اولیه.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"}],href:"product/logo/"},{id:"banner-simple",title:"بنر ساده",category:"design",image:"assets/img/products/p-banner-simple.jpg",desc:"بنر مناسب دیسکورد و شبکه‌های اجتماعی.",priceLabel:"قیمت",price:"۴۳۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/banner-simple/"},{id:"banner-pro",title:"بنر حرفه‌ای",category:"design",image:"assets/img/products/p-banner-pro.jpg",desc:"نسخهٔ کامل با جزئیات و بازنگری بیشتر.",priceLabel:"قیمت",price:"۶۲۰٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/banner-pro/"},{id:"thumbnail-simple",title:"تامنیل یوتیوب (ساده)",category:"design",image:"assets/img/products/p-thumb-simple.jpg",desc:"تامنیل کلیک‌خور برای ویدیوهای گیمینگ.",priceLabel:"قیمت",price:"۲۶۵٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/thumbnail-simple/"},{id:"thumbnail-pro",title:"تامنیل یوتیوب (حرفه‌ای)",category:"design",image:"assets/img/products/p-thumb-pro.jpg",desc:"نسخهٔ حرفه‌ای با ترکیب‌بندی قوی‌تر.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/thumbnail-pro/"},{id:"skin-simple",title:"اسکین ماینکرفت (ساده)",category:"design",image:"assets/img/products/p-skin-simple.jpg",desc:"اسکین اختصاصی آمادهٔ آپلود.",priceLabel:"قیمت",price:"۳۱۰٬۰۰۰ تومان",pills:[{text:"ساده"}],href:"product/skin-simple/"},{id:"skin-pro",title:"اسکین ماینکرفت (حرفه‌ای)",category:"design",image:"assets/img/products/p-skin-pro.jpg",desc:"اسکین با جزئیات و سایه‌پردازی بیشتر.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"حرفه‌ای",tone:"green"}],href:"product/skin-pro/"},{id:"overlay-good",title:"اورلی استریم — کیفیت خوب",category:"overlay",image:"assets/img/products/p-overlay-good.jpg",desc:"پک اورلی شامل فریم وب‌کم، چت‌باکس و هشدارها.",priceLabel:"قیمت",price:"۳۱۰٬۰۰۰ تومان",pills:[{text:"کیفیت خوب"}],href:"product/overlay-good/"},{id:"overlay-best",title:"اورلی استریم — کیفیت عالی",category:"overlay",image:"assets/img/products/p-overlay-best.jpg",desc:"نسخهٔ کامل و پرجزئیات با هماهنگی کامل با برند شما.",priceLabel:"قیمت",price:"۳۸۵٬۰۰۰ تومان",pills:[{text:"کیفیت عالی",tone:"green"}],href:"product/overlay-best/"},{id:"font-pack",title:"پک فونت اختصاصی",category:"overlay",image:"assets/img/products/p-font.jpg",desc:"پک فونت فارسی/لاتین مناسب اورلی و تامنیل.",priceLabel:"قیمت",price:"۱۴۵٬۰۰۰ تومان",pills:[{text:"پک فونت"}],href:"product/font-pack/"},{id:"cosmetics",title:"کازمتیک کلاینت‌های ماینکرفت",category:"cosmetics",image:"assets/img/products/p-cosmetics.jpg",desc:"همهٔ کلاینت‌ها؛ قیمت بر اساس دلاری بودن آیتم.",priceLabel:"قیمت",price:"استعلام در تیکت",pills:[{text:"همهٔ کلاینت‌ها",tone:"green"},{text:"دلاری",tone:"gold"}],href:"product/cosmetics/",ask:!0},{id:"cape",title:"کیپ اپتیفاین",category:"cape",image:"assets/img/products/p-cape.jpg",desc:"کیپ اختصاصی روی اکانت شما؛ برای همهٔ بازیکن‌های سرور قابل مشاهده است.",priceLabel:"قیمت",price:"۴۲۰٬۰۰۰ تومان",pills:[{text:"اختصاصی",tone:"green"},{text:"۱ تا ۷۲ ساعت",tone:"gold"}],href:"product/cape/"},{id:"steam-gift",title:"گیفت کارت استیم",category:"giftcard",image:"assets/img/products/p-steam-gift.jpg",desc:"شارژ کیف پول استیم با کد اختصاصی؛ ریجن‌های موجود را در تیکت انتخاب می‌کنید.",priceLabel:"از",price:"۱٬۲۵۰٬۰۰۰ تومان",pills:[{text:"تحویل فوری",tone:"green"},{text:"کد اختصاصی"},{text:"همهٔ ریجن‌ها",tone:"gold"}],href:"product/steam-gift/",badge:"جدید"},{id:"robux",title:"روباکس روبلاکس",category:"giftcard",image:"assets/img/products/p-robux.jpg",desc:"روباکس با تحویل روی اکانت خودتان یا کد گیفت کارت؛ بستهٔ دلخواه را انتخاب کنید.",priceLabel:"از",price:"۸۹۰٬۰۰۰ تومان",pills:[{text:"ریجن ترکیه",tone:"green"},{text:"تحویل ۲ تا ۱۲ ساعت"}],href:"product/robux/",badge:"پرفروش"},{id:"nitro-discord",title:"نیترو دیسکورد",category:"giftcard",image:"assets/img/products/p-nitro-discord.jpg",desc:"اشتراک نیترو (بوست کامل) برای اکانت خودتان؛ بدون نیاز به رمز، فقط لینک هدیه.",priceLabel:"از",price:"۶۵۰٬۰۰۰ تومان",pills:[{text:"تحویل فوری",tone:"green"},{text:"۱ ماهه / ۱ ساله"},{text:"بوست ۲x",tone:"gold"}],href:"product/nitro-discord/"},{id:"spotify-premium",title:"اسپاتیفای پریمیوم",category:"giftcard",image:"assets/img/products/p-spotify-premium.jpg",desc:"اشتراک اسپاتیفای پریمیوم روی اکانت خودتان؛ بدون تبلیغ، دانلود آفلاین و کیفیت بالا.",priceLabel:"از",price:"۴۹۰٬۰۰۰ تومان",pills:[{text:"اکانت شخصی",tone:"green"},{text:"۱ / ۳ / ۱۲ ماه"},{text:"تحویل ۱ تا ۶h",tone:"gold"}],href:"product/spotify-premium/"},{id:"google-play",title:"گیفت کارت گوگل پلی",category:"giftcard",image:"assets/img/products/p-google-play.jpg",desc:"گیفت کارت گوگل پلی برای خرید اپ، بازی و اشتراک درون‌برنامه‌ای اندروید.",priceLabel:"از",price:"۹۵۰٬۰۰۰ تومان",pills:[{text:"کد اختصاصی",tone:"green"},{text:"ریجن US"}],href:"product/google-play/"},{id:"psn-gift",title:"گیفت کارت پلی‌استیشن",category:"giftcard",image:"assets/img/products/p-psn-gift.jpg",desc:"کیف پول PSN برای خرید بازی و اشتراک پلاس روی اکانت پلی‌استیشن.",priceLabel:"از",price:"۱٬۴۵۰٬۰۰۰ تومان",pills:[{text:"ریجن US/UK",tone:"green"},{text:"PLUS هم داریم"}],href:"product/psn-gift/"},{id:"xbox-gift",title:"گیفت کارت ایکس‌باکس",category:"giftcard",image:"assets/img/products/p-xbox-gift.jpg",desc:"گیفت کارت ایکس‌باکس برای بازی، DLC و اشتراک Game Pass.",priceLabel:"از",price:"۱٬۳۵۰٬۰۰۰ تومان",pills:[{text:"کد اختصاصی",tone:"green"},{text:"Game Pass"}],href:"product/xbox-gift/"},{id:"netflix",title:"اشتراک نتفلیکس",category:"giftcard",image:"assets/img/products/p-netflix.jpg",desc:"اشتراک نتفلیکس با پروفایل اختصاصی یا اکانت کامل؛ کیفیت 4K هم موجود است.",priceLabel:"از",price:"۷۸۰٬۰۰۰ تومان",pills:[{text:"پروفایل اختصاصی",tone:"green"},{text:"۱ ماهه"},{text:"4K",tone:"gold"}],href:"product/netflix/"},{id:"telegram-premium",title:"تلگرام پریمیوم",category:"giftcard",image:"assets/img/products/p-telegram-premium.jpg",desc:"اشتراک تلگرام پریمیوم روی اکانت خودتان؛ استیکر اختصاصی، آپلود بزرگ‌تر و بج.",priceLabel:"از",price:"۴۲۰٬۰۰۰ تومان",pills:[{text:"اکانت شخصی",tone:"green"},{text:"۳ / ۶ / ۱۲ ماه"}],href:"product/telegram-premium/"},{id:"apple-gift",title:"گیفت کارت اپل",category:"giftcard",image:"assets/img/products/p-apple-gift.jpg",desc:"گیفت کارت اپل استور برای خرید اپ، بازی، موسیقی و فضای iCloud.",priceLabel:"از",price:"۱٬۵۵۰٬۰۰۰ تومان",pills:[{text:"ریجن US",tone:"green"},{text:"کد اختصاصی"}],href:"product/apple-gift/"}],bs=[{q:"چطور سفارش ثبت کنم؟",a:"در سرور دیسکورد یوزورا تیکت بزنید و محصول را بنویسید؛ زمان تحویل اعلام می‌شود."},{q:"پرداخت چگونه انجام می‌شود؟",a:"پرداخت ریالی و داخل ایران است؛ کارت خارجی لازم نیست و فاکتور صادر می‌شود."},{q:"زمان تحویل چقدر است؟",a:"اکانت ماینکرفت تا ۴۸ ساعت، محصولات هایپیکسل ۱ تا ۲۴ ساعت، اسکای‌بلاک تا ۷۲ ساعت و خدمات طراحی بین ۱ تا ۳ روز کاری."},{q:"اگر سفارش انجام نشود چه می‌شود؟",a:"اگر تحویل انجام نشود، مبلغ کامل برمی‌گردد. جزئیات در صفحهٔ ضمانت است."}],h=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"),m=s=>g[s],ws=[400,800,1280],us=[280,480,900],O=(s,a)=>{const t=/^assets\/img\/(.+)\.(?:jpg|png)$/.exec(s),e=a.cls?` class="${a.cls}"`:"",r=a.eager?'fetchpriority="high"':'loading="lazy"';if(!t)return`<img src="${s}" alt="${h(a.alt)}" width="${a.w}" height="${a.h}"${e} ${r} decoding="async">`;const i=`assets/img/${t[1]}`,c=i.includes("/blog-")||i.includes("blog-")?ws:us,l=c.map(n=>`${i}-${n}.webp ${n}w`).join(", "),v=c[Math.min(1,c.length-1)];return`<img src="${i}-${v}.webp" srcset="${l}" sizes="${a.sizes}" alt="${h(a.alt)}" width="${a.w}" height="${a.h}"${e} ${r} decoding="async"${a.attrs?" "+a.attrs:""}>`},ds=s=>`<span class="pill ${s.tone==="green"?"g":s.tone==="gold"?"y":s.tone==="blue"?"b":""}">${h(s.text)}</span>`,F=(s,a={})=>`
-<article class="pcard rv" data-cat="${s.category}">
-  <a class="thumb" href="${s.href}" aria-label="${h(s.title)}">
-    ${O(s.image,{alt:s.title,sizes:"(max-width:700px) 90vw, (max-width:1100px) 45vw, 340px",w:900,h:900})}
-    ${s.badge?`<span class="badge-hot">${h(s.badge)}</span>`:""}
-  </a>
-  <div class="body">
-    <h3><a href="${s.href}">${h(s.title)}</a></h3>
-    ${a.compact?"":`<p class="desc">${h(s.desc)}</p>`}
-    <div class="pmeta">
-      <span class="pcode">کد ${h(s.id.slice(0,2).toUpperCase())}-${String(f.findIndex(t=>t.id===s.id)+1).padStart(2,"0")}</span>
-      <span class="prate">${m("star")} ۴٫۹ <i>(${18+s.id.length*7%60} نظر)</i></span>
-    </div>
-    <div class="pills">${s.pills.map(ds).join("")}</div>
-    <div class="pfoot">
-      <div class="price${s.ask?" ask":""}"><span>${h(s.priceLabel)}</span><b>${h(s.price)}</b></div>
-      <a class="btn btn-gold btn-sm" href="${y}" target="_blank" rel="noopener">سفارش ${m("arrow")}</a>
-    </div>
-  </div>
-</article>`,D=(s,a,t="",e=!0,r)=>r?`<div class="sec-hd row">
-  <div>${s?`<span class="eyebrow">${h(s)}</span>`:""}<h2 class="sec">${a}</h2>
-  ${t?`<p class="sec-p">${h(t)}</p>`:""}</div>
-  <a class="btn btn-ghost btn-sm" href="${r.href}">${h(r.label)} ${m("arrow")}</a>
-</div>`:`<div class="sec-hd${e?" center":""}">
-  ${s?`<span class="eyebrow">${h(s)}</span>`:""}
-  <h2 class="sec">${a}</h2>
-  ${t?`<p class="sec-p">${h(t)}</p>`:""}
-</div>`,ys=s=>`
-<div class="faq">${s.map((a,t)=>`<details class="rv"${t===0?" open":""}><summary>${h(a.q)}</summary><div class="ans">${h(a.a)}</div></details>`).join("")}</div>`,I=s=>`
-<div class="wrap"><nav class="crumbs" aria-label="مسیر">
-  <a href=".">خانه</a>
-  ${s.map(a=>`<span>/</span>${a.href?`<a href="${a.href}">${h(a.label)}</a>`:`<span class="cur">${h(a.label)}</span>`}`).join("")}
-</nav></div>`,fs=[{href:"./",label:"خانه",key:"home"},{href:"hosting/",label:"سرور و هاست",key:"hosting"},{href:"products/",label:"محصولات",key:"products"},{href:"prices/",label:"قیمت‌ها",key:"prices"},{href:"guarantee/",label:"ضمانت",key:"guarantee"},{href:"blog/",label:"وبلاگ",key:"blog"},{href:"about/",label:"درباره ما",key:"about"},{href:"contact/",label:"تماس",key:"contact"}],xs=()=>`
-<div class="mega" role="menu">
-  <div class="mega-grid">
-    ${z.map((s,a)=>`<a class="mega-item" href="${s.slug}" role="menuitem" style="--i:${a}">
-        ${O(s.image,{alt:"",sizes:"120px",w:120,h:120})}
-        <span><b>${s.title}</b><i>${s.short}</i></span>
-      </a>`).join("")}
-  </div>
-  <div class="mega-foot">
-    <span>۲۷ محصول + ۱۰ پلن هاست</span>
-    <a href="products/">دیدن کاتالوگ کامل ${g.chevron}</a>
-  </div>
-</div>`,ks=s=>`
-<div class="topstrip">
-  <div class="wrap ts-in">
-    <div class="ts-msg"><i class="dotlive"></i> پشتیبانی آنلاین در دیسکورد · پاسخ‌گویی لحظه‌ای</div>
-    <div class="ts-links">
-      <span>${g.shield} ضمانت بازگشت وجه</span>
-      <span>${g.card} پرداخت ریالی</span>
-      <a href="${y}" target="_blank" rel="noopener">${g.discord} ورود به دیسکورد</a>
-    </div>
-  </div>
-</div>
-
-<header class="site-head" id="siteHead">
-  <div class="wrap head-row">
-    <a class="brand" href="." aria-label="یوزورا شاپ">
-      <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="یوزورا شاپ" width="165" height="165" decoding="async">
-      <span class="brand-txt"><b>یوزورا <em>شاپ</em></b><i>YOZORA SHOP</i></span>
-    </a>
-
-    <form class="head-search" id="headSearch" autocomplete="off" role="search">
-      ${g.search}
-      <input id="searchInput" type="search" placeholder="جستجوی محصول، دسته یا قیمت…" aria-label="جستجو">
-      <div class="search-pop" id="searchPop" hidden></div>
-    </form>
-
-    <div class="head-actions">
-      <a class="head-chip" href="prices/">${g.card}<span>لیست قیمت</span></a>
-      <a class="btn btn-gold head-cta" href="${y}" target="_blank" rel="noopener">${g.discord} ثبت سفارش</a>
-      <button class="burger" id="burger" aria-label="منو" aria-expanded="false">${g.menu}</button>
-    </div>
-  </div>
-</header>
-
-<nav class="main-nav" id="mainNav" aria-label="منوی اصلی">
-  <div class="wrap nav-in">
-    <ul>
-      ${fs.map(a=>{const t=a.key===s?' class="act"':"",e=a.key&&a.key in M?M[a.key]:"";if(a.key==="products")return`<li class="has-mega"><a href="${a.href}"${t} aria-haspopup="true" aria-expanded="false">${e}<span>${a.label}</span> ${g.chevron}</a>${xs()}</li>`;const r=a.key==="hosting"?'<i class="nav-new">جدید</i>':"";return`<li><a href="${a.href}"${t}>${e}<span>${a.label}</span>${r}</a></li>`}).join("")}
-    </ul>
-    <span class="nav-note">
-      <svg class="nav-signal" viewBox="0 0 34 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
-        <path d="M1 7h4M9 3v8M14 1v12M19 4v6M24 2v10M29 5v4M33 7h-1"/>
-      </svg>
-      تحویل ۱ تا ۴۸ ساعت
-    </span>
-  </div>
-</nav>
-
-<div class="drawer" id="drawer" hidden>
-  <div class="drawer-panel">
-    <div class="drawer-head">
-      <b>منو</b>
-      <button id="drawerClose" aria-label="بستن">${g.close}</button>
-    </div>
-    <a href=".">${M.home}<span>خانه</span></a>
-    <a href="hosting/">${M.products}<span>سرور و هاستینگ</span><i class="nav-new">جدید</i></a>
-    <a href="products/">${M.products}<span>همهٔ محصولات</span></a>
-    <a href="prices/">${M.prices}<span>قیمت‌ها</span></a>
-    <a href="guarantee/">${M.guarantee}<span>ضمانت</span></a>
-    <a href="blog/">${M.blog}<span>وبلاگ</span></a>
-    <a href="about/">${M.about}<span>درباره ما</span></a>
-    <a href="contact/">${M.contact}<span>تماس</span></a>
-    <span class="dr-label">دسته‌بندی‌ها</span>
-    ${z.map(a=>`<a href="${a.slug}">${a.title}</a>`).join("")}
-    <span class="dr-label">بیشتر</span>
-    <a href="process/">مراحل سفارش</a>
-    <a href="faq/">سوالات متداول</a>
-    <a class="btn btn-gold" href="${y}" target="_blank" rel="noopener">${g.discord} ورود به دیسکورد</a>
-  </div>
-</div>`,Ms=()=>`
-<footer class="site-foot">
-  <div class="wrap foot-grid">
-    <div class="fbrand">
-      <a class="brand" href=".">
-        <img class="brand-mark" src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="یوزورا شاپ" width="165" height="165" loading="lazy" decoding="async">
-        <span class="brand-txt"><b>یوزورا <em>شاپ</em></b><i>YOZORA SHOP</i></span>
-      </a>
-      <p>فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول سرورها، خدمات طراحی، اورلی استریم، کازمتیک و کیپ اپتیفاین — با پرداخت ریالی و ضمانت بازگشت وجه.</p>
-      <div class="fsocial">
-        <a href="${y}" target="_blank" rel="noopener" aria-label="دیسکورد">${g.discord}</a>
-      </div>
-    </div>
-    <div class="fcol">
-      <h4>محصولات</h4>
-      ${z.map(s=>`<a href="${s.slug}">${s.title}</a>`).join("")}
-    </div>
-    <div class="fcol">
-      <h4>خدمات</h4>
-      <a href="cat-design/">طراحی لوگو و بنر</a>
-      <a href="cat-design/">تامنیل و اسکین</a>
-      <a href="cat-overlay/">اورلی استریم</a>
-      <a href="prices/">جدول قیمت‌ها</a>
-    </div>
-    <div class="fcol">
-      <h4>راهنما</h4>
-      <a href="process/">مراحل سفارش</a>
-      <a href="guarantee/">ضمانت و بازگشت وجه</a>
-      <a href="faq/">سوالات متداول</a>
-      <a href="terms/">قوانین و شرایط</a>
-      <a href="blog/">وبلاگ</a>
-    </div>
-  </div>
-  <div class="wrap foot-badges">
-    <span>${g.shield} ضمانت اصالت</span>
-    <span>${g.card} پرداخت ریالی</span>
-    <span>${g.bolt} تحویل سریع</span>
-    <span>${g.clock} پشتیبانی ۲۴/۷</span>
-  </div>
-  <div class="foot-credit"><div class="wrap fc-in">
-    <span class="fc-by">طراحی شده توسط ${ms} <b>گسلایت استودیو</b></span>
-    <span class="fc-line" aria-hidden="true"></span>
-    <span class="fc-note">Gaslight Studio — interface &amp; motion</span>
-  </div></div>
-  <div class="foot-bottom"><div class="wrap fb-in">
-    <span>© ۱۴۰۵ یوزورا شاپ — تمام حقوق محفوظ است.</span>
-    <span>پشتیبانی ۲۴/۷ در دیسکورد یوزورا</span>
-  </div></div>
-  <div class="foot-mark" aria-hidden="true">YOZORA</div>
-</footer>
-<div class="side-wm" aria-hidden="true">YOZORA · GASLIGHT STUDIO</div>
-<div class="mobar"><a class="btn btn-gold" href="${y}" target="_blank" rel="noopener">${g.discord} ثبت سفارش در دیسکورد</a></div>`,$s=s=>`
-<div class="night-bg" aria-hidden="true" style="background-image:url('assets/img/night-sky.webp')"></div>
-<div id="progress"></div>
-<a class="skip-link" href="#main">پرش به محتوای اصلی</a>
-${ks(s)}
-<main id="main">`;let N=!1;const U=new Set,ns=()=>{N||(N=!0,requestAnimationFrame(()=>{N=!1,U.forEach(s=>s())}))};function Ls(){const s=Array.from(document.querySelectorAll("[data-par]"));if(!s.length)return;const a=()=>{const t=window.innerHeight;s.forEach(e=>{const r=e.getBoundingClientRect();if(r.bottom<-200||r.top>t+200)return;const i=Number(e.dataset.par??.1),c=r.top+r.height/2-t/2;e.style.transform=`translate3d(0,${(-c*i).toFixed(2)}px,0)`})};U.add(a),addEventListener("scroll",ns,{passive:!0}),addEventListener("resize",a),a()}function B(){const s=document.querySelector(".site-head"),a=document.querySelector(".main-nav");if(!s)return;const t=Math.round(s.getBoundingClientRect().height),e=a&&getComputedStyle(a).display!=="none"?Math.round(a.getBoundingClientRect().height):0;t>0&&(document.documentElement.style.setProperty("--hd",`${t}px`),document.documentElement.style.setProperty("--hd-full",`${t+e}px`))}function As(s){const a=s.querySelector("[data-pin-track]");if(!a)return;const t=Array.from(s.querySelectorAll(".story-dots i, .pin-dots i"));if(window.innerWidth<=780){s.style.removeProperty("height"),a.style.transform="";return}const e=window.innerHeight,r=s.querySelector(".pin-pin"),i=r?r.offsetHeight:e,c=s.offsetHeight-i,l=Math.min(c,Math.max(0,-s.getBoundingClientRect().top)),v=c>0?l/c:0,n=Math.max(0,a.scrollWidth-a.clientWidth);a.style.transform=`translate3d(${(v*n).toFixed(2)}px,0,0)`;const p=Math.min(t.length-1,Math.round(v*(t.length-1||1)));t.forEach((x,A)=>x.classList.toggle("on",A===p)),a.querySelectorAll(".story-card, .theater-card").forEach((x,A)=>{x.classList.toggle("is-on",A===p)});const b=s.querySelector(".pin-bar i");b&&(b.style.transform=`scaleX(${Math.max(.02,v).toFixed(3)})`)}function Cs(){const s=Array.from(document.querySelectorAll("[data-pin]"));if(!s.length)return;const a=()=>s.forEach(As);U.add(a),addEventListener("scroll",ns,{passive:!0}),addEventListener("resize",a),a()}function zs(){document.querySelectorAll("[data-marquee]").forEach(s=>{const a=s.querySelector(".marq-in");if(!a||a.dataset.cloned)return;const t=document.createElement("div");t.className="marq-track",s.insertBefore(t,a);const e=a.cloneNode(!0);e.dataset.cloned="1",a.dataset.cloned="1",t.append(a),e.setAttribute("aria-hidden","true"),t.append(e),s.classList.add("mq-ready")})}function js(){if(window.matchMedia("(hover:none)").matches)return;Array.from(document.querySelectorAll("[data-tilt]")).forEach(a=>{const t=r=>{const i=a.getBoundingClientRect(),c=(r.clientX-i.left)/i.width-.5,l=(r.clientY-i.top)/i.height-.5;a.style.setProperty("--tx",`${(-l*7).toFixed(2)}deg`),a.style.setProperty("--ty",`${(c*9).toFixed(2)}deg`)},e=()=>{a.style.setProperty("--tx","0deg"),a.style.setProperty("--ty","0deg")};a.addEventListener("pointermove",t,{passive:!0}),a.addEventListener("pointerleave",e,{passive:!0})})}function qs(){Array.from(document.querySelectorAll(".split")).forEach(a=>{if(a.dataset.split)return;a.dataset.split="1";const t=(a.textContent??"").trim().split(/\s+/);a.innerHTML=t.map((e,r)=>`<span class="w" style="--i:${r}">${e}</span>`).join(" ")})}function Zs(){const s=Array.from(document.querySelectorAll("[data-count]"));if(!s.length)return;const a=e=>e.toLocaleString("fa-IR"),t=new IntersectionObserver(e=>{e.forEach(r=>{if(!r.isIntersecting)return;const i=r.target;t.unobserve(i);const c=Number(i.dataset.count??0),l=performance.now(),v=1100,n=p=>{const b=Math.min(1,(p-l)/v),x=1-Math.pow(1-b,3);i.textContent=a(Math.round(c*x)),b<1&&requestAnimationFrame(n)};requestAnimationFrame(n)})},{threshold:.4});s.forEach(e=>{e.textContent=a(0),t.observe(e)})}function Ss(){qs(),Ls(),Cs(),zs(),js()}let T=null;const Bs=(s,a=!1)=>{T?T.to(s,a):window.scrollTo({top:s,behavior:a?"auto":"smooth"})},Es='input,textarea,select,option,[contenteditable="true"],[data-native-scroll],.drawer,.mega,.search-pop,.modal,.table-wrap,.cat-rail,.h-rail,.no-smooth',is=s=>s instanceof Element?!!s.closest(Es):!1;function Vs(){const s=document.documentElement;let a=window.scrollY,t=window.scrollY,e=0;const r=()=>Math.max(0,s.scrollHeight-window.innerHeight),i=d=>Math.min(r(),Math.max(0,d)),c=()=>{const d=a-t;if(Math.abs(d)<.4){t=a,window.scrollTo(0,t),e=0;return}t+=d*.16,window.scrollTo(0,t),e=requestAnimationFrame(c)},l=()=>{e||(e=requestAnimationFrame(c))};T={to:(d,k=!1)=>{if(a=i(d),k){t=a,window.scrollTo(0,t);return}l()},by:d=>{a=i(a+d),l()},current:()=>t},s.classList.add("has-smooth"),window.addEventListener("scroll",()=>{if(document.documentElement.classList.contains("locked"))return;const d=window.scrollY;Math.abs(d-t)>2&&(t=d,a=d)},{passive:!0});const v=d=>{if(d.ctrlKey||d.metaKey||document.documentElement.classList.contains("locked")||is(d.target)||Math.abs(d.deltaY)<Math.abs(d.deltaX)*1.2)return;let k=d.deltaY;d.deltaMode===1?k*=18:d.deltaMode===2&&(k*=window.innerHeight),d.preventDefault(),a=i(a+k),l()};window.addEventListener("wheel",v,{passive:!1});let n=!1,p=0,b=0,x=0,A=null,W=0,J=0;window.addEventListener("touchstart",d=>{if(d.touches.length!==1){n=!1;return}if(document.documentElement.classList.contains("locked")||is(d.target)){n=!1;return}n=!0,A=null,W=d.touches[0].clientX,J=p=d.touches[0].clientY,b=performance.now(),x=0,t=a=window.scrollY},{passive:!0}),window.addEventListener("touchmove",d=>{if(!n||d.touches.length!==1)return;const k=d.touches[0],ss=performance.now();if(!A){const ts=Math.abs(k.clientX-W),es=Math.abs(k.clientY-J);if((ts>8||es>8)&&(A=es>=ts?"y":"x"),A!=="y"){n=!1;return}}d.preventDefault();const as=p-k.clientY,gs=Math.max(6,ss-b);p=k.clientY,b=ss,x=as/gs*16,a=i(a+as),l()},{passive:!1});const Q=()=>{if(!n)return;n=!1;const d=Math.max(-900,Math.min(900,x*11));a=i(a+d),l(),x=0};window.addEventListener("touchend",Q,{passive:!0}),window.addEventListener("touchcancel",Q,{passive:!0})}const u=(s,a=document)=>a.querySelector(s),q=(s,a=document)=>Array.from(a.querySelectorAll(s));function _s(){const s=u("#progress");if(!s)return;let a=!1;const t=()=>{a=!1;const r=document.documentElement,i=r.scrollHeight-r.clientHeight;s.style.transform=`scaleX(${i>0?r.scrollTop/i:0})`},e=()=>{a||(a=!0,requestAnimationFrame(t))};addEventListener("scroll",e,{passive:!0}),addEventListener("resize",e),t()}function Gs(){const s=q(".rv, .split");if(!("IntersectionObserver"in window)||s.length===0){s.forEach(t=>t.classList.add("in"));return}const a=new IntersectionObserver(t=>{t.forEach(e=>{e.isIntersecting&&(e.target.classList.add("in"),a.unobserve(e.target))})},{rootMargin:"0px 0px -8% 0px",threshold:.08});s.forEach((t,e)=>{t.style.transitionDelay=`${Math.min(e%6,5)*45}ms`,a.observe(t)})}function Hs(){const s=u("#siteHead"),a=()=>{s==null||s.classList.toggle("stuck",window.scrollY>24)};addEventListener("scroll",a,{passive:!0}),a();const t=u("#burger"),e=u("#drawer"),r=u("#drawerClose");let i=0;const c=l=>{e&&(t==null||t.setAttribute("aria-expanded",String(l)),document.documentElement.classList.toggle("locked",l),document.body.classList.toggle("locked",l),window.clearTimeout(i),l?(e.hidden=!1,requestAnimationFrame(()=>e.classList.add("open"))):(e.classList.remove("open"),i=window.setTimeout(()=>{e.classList.contains("open")||(e.hidden=!0)},460)))};addEventListener("pageshow",()=>{document.documentElement.classList.remove("locked"),document.body.classList.remove("locked"),e&&(e.classList.remove("open"),e.hidden=!0)}),e==null||e.querySelectorAll("a").forEach(l=>l.addEventListener("click",()=>c(!1))),t==null||t.addEventListener("click",()=>c(!(e!=null&&e.classList.contains("open")))),r==null||r.addEventListener("click",()=>c(!1)),e==null||e.addEventListener("click",l=>{l.target===e&&c(!1)}),document.addEventListener("keydown",l=>{l.key==="Escape"&&c(!1)}),Ps()}function Ps(){const s=q(".has-mega");s.length&&(s.forEach(a=>{const t=a.querySelector("a");let e=0;const r=i=>{window.clearTimeout(e),i?(a.classList.add("open"),t==null||t.setAttribute("aria-expanded","true")):(a.classList.remove("open"),t==null||t.setAttribute("aria-expanded","false"))};a.addEventListener("pointerenter",()=>r(!0)),a.addEventListener("pointerleave",()=>{e=window.setTimeout(()=>r(!1),140)}),t==null||t.addEventListener("click",i=>{window.matchMedia("(hover:none)").matches&&(i.preventDefault(),r(!a.classList.contains("open")))}),a.addEventListener("keydown",i=>{i.key==="Escape"&&r(!1)})}),document.addEventListener("pointerdown",a=>{const t=a.target;t&&!t.closest(".has-mega")&&s.forEach(e=>e.classList.remove("open"))}))}function Os(){const s=u("#searchInput"),a=u("#searchPop"),t=u("#headSearch");if(!s||!a)return;const e=r=>{const i=r.trim();if(i.length<2){a.hidden=!0,a.innerHTML="";return}const c=f.filter(l=>l.title.includes(i)||l.desc.includes(i)||l.price.includes(i)).slice(0,6);a.hidden=!1,a.innerHTML=c.length?c.map(l=>`<a href="${l.href}" class="sp-item">
-              ${O(l.image,{alt:"",sizes:"44px",w:44,h:44})}
-              <span><b>${l.title}</b><i>${l.price}</i></span></a>`).join(""):'<div class="sp-empty">چیزی پیدا نشد — در تیکت دیسکورد بپرس.</div>'};s.addEventListener("input",()=>e(s.value)),s.addEventListener("focus",()=>e(s.value)),t==null||t.addEventListener("submit",r=>{r.preventDefault();const i=a.querySelector("a");i instanceof HTMLAnchorElement&&(location.href=i.href)}),document.addEventListener("click",r=>{r.target instanceof Node&&(t!=null&&t.contains(r.target)||(a.hidden=!0))})}function Is(){if(matchMedia("(hover: none)").matches)return;let s=0,a=null;const t=()=>{s=0;const e=a;if(a=null,!e)return;const r=e.target;if(!(r instanceof Element))return;const i=r.closest(".pcard,.card,.mega-item,.cat-tile");if(!i)return;const c=i.getBoundingClientRect();i.style.setProperty("--mx",`${e.clientX-c.left}px`),i.style.setProperty("--my",`${e.clientY-c.top}px`)};document.addEventListener("pointermove",e=>{a=e,!s&&(s=requestAnimationFrame(t))},{passive:!0})}function Ds(){const s=u("#filters"),a=u("#grid");!s||!a||s.addEventListener("click",t=>{const e=t.target.closest("button[data-f]");if(!e)return;q("button",s).forEach(i=>i.classList.remove("act")),e.classList.add("act");const r=e.dataset.f??"all";q(".pcard",a).forEach(i=>{const c=r==="all"||i.dataset.cat===r;i.style.display=c?"":"none"})})}function Ns(){var l,v;const s=u("#heroSlider");if(!s)return;const a=q(".slide",s),t=q("#heroDots i");if(a.length<2)return;let e=0;const r=n=>{e=(n+a.length)%a.length,a.forEach((p,b)=>p.classList.toggle("on",b===e)),t.forEach((p,b)=>p.classList.toggle("on",b===e))};t.forEach((n,p)=>n.addEventListener("click",()=>r(p))),(l=u('[data-slide="prev"]'))==null||l.addEventListener("click",()=>r(e-1)),(v=u('[data-slide="next"]'))==null||v.addEventListener("click",()=>r(e+1));let i=!0;new IntersectionObserver(n=>n.forEach(p=>i=p.isIntersecting),{threshold:.15}).observe(s),setInterval(()=>{i&&!document.hidden&&r(e+1)},5200)}function Rs(){Vs(),_s(),Ts(),Gs(),Hs(),Os(),Is(),Ds(),Ns(),Fs(),Ss(),Zs()}function rs(s){const a=document.getElementById("toast");a&&(a.textContent=s,a.classList.add("on"),setTimeout(()=>a.classList.remove("on"),2600))}function Ts(){const s=document.getElementById("qty"),a=document.getElementById("qtyOut"),t=document.getElementById("totalOut"),e=document.getElementById("copyOrder"),r=s?Number(s.dataset.price??0):0,i=s?s.dataset.lbl??"":"",c=n=>n.toLocaleString("fa-IR"),l=()=>s?Number(s.value):0,v=()=>{if(!s)return;const n=l();a&&(a.textContent=c(n)),t&&(t.textContent=`${c(n*r)} تومان`),s.style.setProperty("--pct",`${(n-Number(s.min))/(Number(s.max)-Number(s.min))*100}%`)};s==null||s.addEventListener("input",v),v(),e==null||e.addEventListener("click",async()=>{const p=["سلام 👋",`درخواست سفارش: ${e.dataset.title??"محصول"}`];s&&p.push(`مقدار: ${c(l())} ${i}`,`مبلغ تقریبی: ${c(l()*r)} تومان`),p.push("ممنون، منتظر پاسخ هستم.");const b=p.join(`
-`);try{await navigator.clipboard.writeText(b),rs("متن سفارش کپی شد ✓ حالا در تیکت دیسکورد بچسبانید")}catch{rs("کپی نشد — متن را دستی بنویسید")}})}function Fs(){const s=document.getElementById("siteHead");document.addEventListener("click",a=>{var l,v,n;const t=(v=(l=a.target)==null?void 0:l.closest)==null?void 0:v.call(l,'a[href^="#"]');if(!(t instanceof HTMLAnchorElement))return;const e=(n=t.getAttribute("href"))==null?void 0:n.slice(1);if(!e)return;const r=document.getElementById(e);if(!r)return;a.preventDefault();const i=((s==null?void 0:s.offsetHeight)??0)+14,c=r.getBoundingClientRect().top+window.scrollY-i;Bs(c),r.setAttribute("tabindex","-1"),r.focus({preventScroll:!0})})}{const s=document.getElementById("hostFilters");if(s){const a=Array.from(document.querySelectorAll(".hcard[data-kind]"));s.addEventListener("click",t=>{const e=t.target.closest("button[data-k]");if(!e)return;s.querySelectorAll("button").forEach(i=>i.classList.toggle("act",i===e));const r=e.dataset.k??"all";a.forEach(i=>{i.hidden=!(r==="all"||i.dataset.kind===r)})})}}const Y={"mc-account":{long:"اکانت ماینکرفت با فول اکسس به‌صورت کامل تحویل داده می‌شود؛ ایمیل و رمز قابل تغییر است و روی هر دو نسخهٔ جاوا و بدراک کار می‌کند. اکانت‌ها بررسی‌شده هستند و پس از تحویل، راهنمای تغییر اطلاعات هم ارسال می‌شود.",features:["فول اکسس با ایمیل و رمز","فعال روی جاوا + بدراک","امکان تغییر ایمیل و رمز","تحویل حداکثر ۴۸ ساعت","ضمانت بازگشت وجه"],delivery:"۲۴ تا ۴۸ ساعت",steps:["تیکت با عنوان «اکانت ماینکرفت» بزنید","مبلغ را ریالی پرداخت کنید","اطلاعات اکانت در تیکت تحویل داده می‌شود"],faq:[{q:"اکانت هکری است؟",a:"نه. همهٔ اکانت‌ها فول اکسس هستند و اطلاعات کامل به شما منتقل می‌شود؛ نیازی به دور زدن هیچ محدودیتی نیست."},{q:"بعد از تحویل می‌توانم ایمیلش را عوض کنم؟",a:"بله، اطلاعات کامل در اختیار شماست و می‌توانید ایمیل و رمز را تغییر دهید."}]},"mc-priority":{long:"اگر عجله دارید، سفارش با اولویت در صف تیکت‌ها جلوتر قرار می‌گیرد و تحویل در کوتاه‌ترین زمان انجام می‌شود. مشخصات اکانت همان نسخهٔ فول اکسس است.",features:["اولویت در صف تحویل","فول اکسس کامل","جاوا + بدراک","پشتیبانی مستقیم تا تحویل"],delivery:"۱۲ تا ۲۴ ساعت",faq:[{q:"تفاوتش با اکانت معمولی چیست؟",a:"فقط زمان تحویل؛ محصول و اطلاعات اکانت دقیقاً یکسان است."}]},"donut-million":{long:"پول سرور دونات اس ام پی به‌صورت میلیونی فروخته می‌شود. موجودی سرور ۳۰۰ میلیون است و حداقل خرید ۵۰ میلیون. تحویل مستقیم روی اکانت شما انجام می‌شود.",features:["هر میلیون ۴٬۷۰۰ تومان","حداقل خرید ۵۰ میلیون","حداکثر موجودی ۳۰۰ میلیون","تحویل مستقیم روی اکانت","تحویل تا ۴۸ ساعت"],delivery:"حداقل ۴۸ ساعت",unit:{price:4e3,label:"میلیون",step:5,min:50,max:300,maxLabel:"۳۰۰ میلیون"},faq:[{q:"پول چطور تحویل داده می‌شود؟",a:"بعد از پرداخت، مبلغ در بازی یا از طریق روش توافق‌شده روی اکانت شما واریز می‌شود."},{q:"خرید بیشتر تخفیف دارد؟",a:"برای خریدهای حجم بالا در تیکت مذاکره کنید؛ قیمت پله‌ای داریم."}]},hypixel:{long:"تمام آیتم‌های فروشگاه هایپیکسل — از رنک و کوین تا بوستر و آیتم‌های ویژه — قابل تهیه است. قیمت بر اساس دلار روز محاسبه می‌شود و در تیکت استعلام می‌گیرید.",features:["رنک، کوین، بوستر و آیتم‌های ویژه","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت","امن برای اکانت شما"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"چرا قیمت ثابت نیست؟",a:"چون مبنای قیمت‌گذاری دلار است و روزانه تغییر می‌کند؛ قبل از پرداخت استعلام دقیق می‌گیرید."}]},skyblock:{long:"کوین اسکای‌بلاک هایپیکسل با قیمت هر میلیون ۶٬۹۰۰ تومان و تحویل بین ۱ تا ۷۲ ساعت. مناسب برای خریدهای ملایم و مطمئن بدون ریسک برای اکانت.",features:["هر میلیون ۶٬۹۰۰ تومان","تحویل ۱ تا ۷۲ ساعت","روش امن و بدون ریسک","پشتیبانی تا پایان سفارش"],delivery:"۱ تا ۷۲ ساعت",unit:{price:6e3,label:"میلیون",step:5,min:10,max:500,maxLabel:"۵۰۰ میلیون"},faq:[{q:"حداقل خرید چقدر است؟",a:"از ۱۰ میلیون به بالا سفارش ثبت می‌شود."}]},logo:{long:"طراحی لوگوی اختصاصی برای سرور، کانال یا برند شما. سه پیشنهاد اولیه دریافت می‌کنید و تا رسیدن به نتیجهٔ نهایی اصلاح انجام می‌شود.",features:["سه پیشنهاد اولیه","فایل خروجی PNG با پس‌زمینهٔ شفاف","اصلاح تا رضایت","تحویل ۱ تا ۳ روز کاری"],delivery:"۱ تا ۳ روز کاری",faq:[{q:"فایل لایه‌باز هم می‌دهید؟",a:"در صورت نیاز، فایل لایه‌باز با هزینهٔ جداگانه ارائه می‌شود."}]},"banner-simple":{long:"بنر ساده و تمیز برای دیسکورد و شبکه‌های اجتماعی، با ترکیب‌بندی سریع و مناسب استفادهٔ روزمره.",features:["ابعاد استاندارد دیسکورد","تحویل ۲۴ ساعته","یک بار اصلاح رایگان"],delivery:"۲۴ ساعت"},"banner-pro":{long:"بنر حرفه‌ای با ترکیب‌بندی قوی‌تر، جزئیات بیشتر و دو مرحله بازنگری؛ مناسب برندهای جدی و سرورهای بزرگ.",features:["طراحی اختصاصی","دو مرحله بازنگری","خروجی با کیفیت بالا","تحویل ۱ تا ۳ روز"],delivery:"۱ تا ۳ روز کاری"},"thumbnail-simple":{long:"تامنیل یوتیوب ساده و خوانا؛ مناسب ویدیوهای گیمینگ روزمره با نرخ کلیک بهتر.",features:["۱۲۸۰×۷۲۰","تحویل ۲۴ ساعته","یک بار اصلاح"],delivery:"۲۴ ساعت"},"thumbnail-pro":{long:"تامنیل حرفه‌ای با ترکیب‌بندی، رنگ‌بندی و تایپوگرافی قوی‌تر برای ویدیوهایی که باید دیده شوند.",features:["۱۲۸۰×۷۲۰","دو مرحله بازنگری","ترکیب‌بندی اختصاصی"],delivery:"۱ تا ۲ روز کاری"},"skin-simple":{long:"اسکین ماینکرفت ساده و آمادهٔ آپلود؛ فایل PNG استاندارد که مستقیم روی اکانت یا لانچر ست می‌شود.",features:["فایل PNG استاندارد","آمادهٔ آپلود","تحویل ۲۴ تا ۴۸ ساعت"],delivery:"۲۴ تا ۴۸ ساعت"},"skin-pro":{long:"اسکین حرفه‌ای با جزئیات، سایه‌پردازی و رندر سه‌بعدی برای معرفی؛ مناسب استریم و شبکه‌های اجتماعی.",features:["فایل PNG + رندر سه‌بعدی","سایه‌پردازی حرفه‌ای","تحویل ۲ تا ۳ روز"],delivery:"۲ تا ۳ روز کاری"},"overlay-good":{long:"پک اورلی استریم شامل فریم وب‌کم، چت‌باکس، هشدارها و اسکرین‌های حالت آماده‌به‌کار — با کیفیت خوب و قیمت مناسب.",features:["فریم وب‌کم","چت‌باکس","هشدارها و اسکرین","سازگار با OBS"],delivery:"۱ تا ۲ روز کاری"},"overlay-best":{long:"نسخهٔ کامل و پرجزئیات اورلی با هماهنگی کامل با برند شما؛ شامل تمام اجزای پک خوب به‌علاوهٔ اسکرین‌های اضافه و پک فونت هدیه.",features:["تمام اجزای پک کامل","هماهنگ با برند شما","پک فونت هدیه","دو مرحله بازنگری"],delivery:"۱ تا ۳ روز کاری"},"font-pack":{long:"پک فونت اختصاصی فارسی و لاتین، انتخاب‌شده برای خوانایی روی اورلی و تامنیل؛ همراه با راهنمای استفاده.",features:["فونت فارسی + لاتین","مناسب اورلی و تامنیل","راهنمای نصب","تحویل فوری"],delivery:"فوری تا ۲۴ ساعت"},cosmetics:{long:"کازمتیک کلاینت‌های ماینکرفت — هاله، بال، کلاه و آیتم‌های ظاهری — برای همهٔ کلاینت‌ها قابل تهیه است. قیمت بر اساس دلاری بودن آیتم محاسبه می‌شود.",features:["همهٔ کلاینت‌ها","هاله، بال، کلاه و بیشتر","قیمت بر اساس دلار روز","تحویل ۱ تا ۲۴ ساعت"],delivery:"۱ تا ۲۴ ساعت",faq:[{q:"کدام کلاینت‌ها پشتیبانی می‌شوند؟",a:"کازمتیک‌های کلاینت‌های محبوب ماینکرفت؛ در تیکت نام کلاینت و آیتم را بگویید تا استعلام بگیریم."}]},cape:{long:"کیپ اختصاصی اپتیفاین روی اکانت خودتان؛ طرح دلخواه شما روی کیپ اعمال می‌شود و برای همهٔ بازیکن‌های سرور قابل مشاهده است.",features:["اختصاصی روی اکانت شما","قابل مشاهده برای همه","طرح دلخواه","تحویل ۱ تا ۷۲ ساعت"],delivery:"۱ تا ۷۲ ساعت"},"steam-gift":{long:"گیفت کارت استیم به‌صورت کد اختصاصی تحویل داده می‌شود؛ کد را در حساب خود استیم Redeem می‌کنید و کیف پول شارژ می‌شود. ریجن کد را قبل از خرید در تیکت مشخص می‌کنیم تا با ریجن اکانت شما یکی باشد.",features:["کد استفاده‌نشده و اختصاصی","ریجنهای US / TR / AR / EU","شارژ کیف پول استیم","راهنمای Redeem همراه سفارش","ضمانت صحت کد"],delivery:"۱۵ دقیقه تا ۲ ساعت"},robux:{long:"روباکس از طریق گیفت کارت یا روش درون‌برنامه‌ای تحویل می‌شود. برای اکانت خودتان فقط نام کاربری لازم است و نیازی به رمز نیست؛ موجودی مستقیم به اکانت اضافه می‌شود.",features:["بدون نیاز به رمز اکانت","بستههای ۴۰۰ تا ۱۷٬۰۰۰ روباکس","فعال‌سازی روی اکانت شخصی","پشتیبانی تا واریز کامل"],delivery:"۲ تا ۱۲ ساعت"},"nitro-discord":{long:"نیترو به‌صورت لینک هدیه (Gift Link) ارسال می‌شود؛ لینک را در دیسکورد باز می‌کنید و اشتراک روی اکانت خودتان فعال می‌شود. برای بوست سرور هم می‌توانید از همان اشتراک استفاده کنید.",features:["لینک هدیهٔ رسمی دیسکورد","بدون نیاز به رمز","۱ ماهه و ۱ ساله","دسترسی به بوست ۲x سرور","امکان انتخاب Boost"],delivery:"۱۰ دقیقه تا ۳ ساعت"},"spotify-premium":{long:"پریمیوم روی اکانت شخصی خودتان فعال می‌شود؛ فقط ایمیل یا نام کاربری لازم است. پلی‌لیست‌ها و کتابخانهٔ شما دست‌نخورده می‌ماند و فقط پلن ارتقا پیدا می‌کند.",features:["اکانت شخصی خودتان","بدون تبلیغ + دانلود آفلاین","کیفیت Very High","۱ / ۳ / ۱۲ ماهه","پلن Family هم موجود"],delivery:"۱ تا ۶ ساعت"},"google-play":{long:"گیفت کارت گوگل پلی با کد اختصاصی ریجن US تحویل می‌شود؛ کد را در Play Store وارد می‌کنید و موجودی به اکانت اضافه می‌شود.",features:["کد اختصاصی استفادهنشده","ریجن US","خرید اپ، بازی و اشتراک","راهنمای وارد کردن کد"],delivery:"۱۵ دقیقه تا ۲ ساعت"},"psn-gift":{long:"کیف پول PSN برای اکانت پلی‌استیشن شما شارژ می‌شود؛ با آن می‌توانید بازی، DLC یا اشتراک PlayStation Plus بخرید.",features:["ریجن US و UK","خرید بازی و DLC","قابل استفاده برای PS Plus","راهنمای Redeem"],delivery:"۳۰ دقیقه تا ۴ ساعت"},"xbox-gift":{long:"گیفت کارت ایکس‌باکس با کد اختصاصی تحویل می‌شود و برای خرید بازی، DLC و اشتراک Game Pass قابل استفاده است.",features:["کد اختصاصی","سازگار با Game Pass","ریجن US","راهنمای Redeem"],delivery:"۳۰ دقیقه تا ۴ ساعت"},netflix:{long:"اشتراک نتفلیکس با پروفایل اختصاصی روی اکانت ما یا اکانت کامل تحویل می‌شود. پروفایل شما رمز جدا دارد و تاریخ انقضا در تیکت اعلام می‌شود.",features:["پروفایل اختصاصی با رمز","کیفیت 4K روی پلن مناسب","۱ ماهه و ۳ ماهه","تحویل اکانت کامل هم موجود"],delivery:"۱ تا ۱۲ ساعت"},"telegram-premium":{long:"پریمیوم روی اکانت تلگرام خودتان فعال می‌شود؛ فقط شماره یا نام کاربری لازم است. بدون نیاز به کد ورود یا رمز دو مرحله‌ای.",features:["اکانت شخصی خودتان","بدون نیاز به کد ورود","۳ / ۶ / ۱۲ ماهه","بج پریمیوم + استیکر اختصاصی"],delivery:"۱۰ دقیقه تا ۲ ساعت"},"apple-gift":{long:"گیفت کارت اپل استور با کد اختصاصی ریجن US تحویل می‌شود؛ برای خرید اپ، موسیقی، فیلم و فضای iCloud قابل استفاده است.",features:["کد اختصاصی استفادهنشده","ریجن US","خرید اپ و اشتراک","راهنمای Redeem"],delivery:"۱۵ دقیقه تا ۲ ساعت"}},Z="https://yozorastore.ir",E=s=>{const a=document.createElement("script");a.type="application/ld+json",a.textContent=JSON.stringify(s),document.head.appendChild(a)};function ls(s,a){if(E({"@context":"https://schema.org","@type":"Organization",name:"یوزورا شاپ",alternateName:"Yozora Shop",url:`${Z}/`,logo:`${Z}/assets/img/logo.png`,sameAs:[y],description:"فروشگاه گیمینگ یوزورا؛ اکانت ماینکرفت، پول دونات اس ام پی، هایپیکسل، خدمات فتوشاپ، اورلی استریم، کازمتیک و کیپ اپتیفاین."}),a){const t=f.find(e=>e.id===a);if(t){const e=Y[t.id];E({"@context":"https://schema.org","@type":"Product",name:t.title,description:(e==null?void 0:e.long)??t.desc,image:`${Z}/${t.image}`,brand:{"@type":"Brand",name:"یوزورا شاپ"},offers:{"@type":"Offer",priceCurrency:t.price.includes("تومان")?"IRR":void 0,price:t.price.replace(/[^۰-۹0-9]/g,"")||void 0,availability:"https://schema.org/InStock",url:`${Z}/product/${t.id}/`,seller:{"@type":"Organization",name:"یوزورا شاپ"}}})}}(s==="faq"||s==="index")&&E({"@context":"https://schema.org","@type":"FAQPage",mainEntity:bs.map(t=>({"@type":"Question",name:t.q,acceptedAnswer:{"@type":"Answer",text:t.a}}))}),s==="products"&&E({"@context":"https://schema.org","@type":"ItemList",itemListElement:[...f,...z.map(()=>null)].filter(Boolean).map((t,e)=>({"@type":"ListItem",position:e+1,name:t.title,url:`${Z}/product/${t.id}/`}))})}const Us={404:`<section class="e404"><div class="wrap-narrow">
+import{splashPage as x}from"./home-CPR8jdLV.js";import{productsPage as M}from"./product-BYTzGiU9.js";import{C as z,P as n,D as h,b as y,i as o,a as C}from"./entry-DmQP_zQH.js";import"./details-CQ70rdPg.js";const A={404:`<section class="e404"><div class="wrap-narrow">
   <div class="art404"><svg class="e404art" width="676" height="260" viewBox="0 0 676 260" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip404)"><path d="M214.999 154.986V205.896H189.017V239.315H122.949V205.896H9V154.986L86.5745 20.6849H160.066L81.7493 154.986H122.949V115.633H189.017V154.986H214.999Z" fill="currentColor"/><path d="M667 154.986V205.896H641.018V239.315H574.95V205.896H461.001V154.986L538.575 20.6849H612.067L533.75 154.986H574.95V115.633H641.018V154.986H667Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M279.5 28.6747C315.7 7.77505 360.299 7.77504 396.499 28.6747C432.699 49.5746 454.999 88.1999 454.999 130C454.999 171.8 432.699 210.425 396.499 231.325C360.299 252.225 315.7 252.225 279.5 231.325C243.3 210.425 221 171.8 221 130C221 88.1999 243.3 49.5746 279.5 28.6747ZM340 51.3231C338.763 50.6086 337.238 50.6087 336 51.3231L270.863 88.9295C269.626 89.644 268.863 90.9644 268.863 92.3934V167.606C268.863 169.035 269.626 170.356 270.863 171.07L336 208.677C337.238 209.391 338.762 209.391 340 208.677L405.136 171.07C406.373 170.356 407.136 169.035 407.136 167.606V92.3934C407.136 90.9644 406.373 89.644 405.136 88.9295L340 51.3231Z" fill="currentColor"/></g><defs><clipPath id="clip404"><rect width="676" height="260" fill="white"/></clipPath></defs></svg></div>
   <h1 style="margin-top:1.4rem">این صفحه پیدا نشد</h1>
   <p class="lead" style="margin-top:.8rem">شاید آدرس عوض شده باشد. از این‌جا ادامه بده:</p>
@@ -1126,105 +950,8 @@ ${ks(s)}
   <h2>۵. بازگشت وجه</h2><p>اگر سفارش در بازهٔ اعلام‌شده انجام نشود و راه‌حل جایگزینی نباشد، مبلغ بازگردانده می‌شود. جزئیات در صفحهٔ ضمانت آمده است.</p>
   <h2>۶. مسئولیت‌ها</h2><p>مشتری مسئول درست بودن اطلاعاتی است که ارسال می‌کند. یوزورا مسئول عواقب ناشی از نقض قوانین خود بازی یا سرور مقصد نیست.</p>
   <h2>۷. حریم خصوصی</h2><p>اطلاعات شما فقط برای انجام سفارش استفاده می‌شود و در اختیار شخص ثالث قرار نمی‌گیرد.</p>
-</div></div></section>`},R=(s,a,t,e=!1)=>`
-  <a class="splash-btn" href="${s}" aria-label="${t}">
-    <picture>
-      <source srcset="${a}.webp" type="image/webp">
-      <img src="${a}.png" alt="${t}" width="2520" height="1080"
-           ${e?'fetchpriority="high"':'loading="lazy"'} decoding="async">
-    </picture>
-  </a>`,os=()=>`
-<div class="splash">
-${R("minecraft/","assets/img/banner-minecraft","ورود به فروشگاه محصولات ماینکرفت",!0)}
-${R("hosting/","assets/img/banner-hosting","ورود به بخش سرور و هاستینگ")}
-${R("others/","assets/img/banner-others","ورود به فروشگاه محصولات دیگر")}
-</div>`,_=s=>s.toLocaleString("fa-IR"),Ys=s=>f.filter(a=>a.category===s.category&&a.id!==s.id).slice(0,3),Ks=s=>{const a=Y[s.id],t=a==null?void 0:a.unit,e=t?t.price*(t.min+0):0;return`
-<aside class="buy-box rv">
-  <div class="bb-head">
-    <span class="bb-pill">${m("shield")} ضمانت بازگشت وجه</span>
-    <div class="bb-price"><span>${s.priceLabel}</span><b>${s.price}</b></div>
-    <span class="bb-updated">${m("clock")} آخرین بازبینی قیمت: آبان ۱۴۰۵</span>
-  </div>
-
-  ${t?`<div class="calc">
-    <label class="calc-lbl" for="qty">مقدار مورد نظر</label>
-    <div class="calc-val"><b id="qtyOut">${_(t.min)}</b> <span>${t.label}</span></div>
-    <input id="qty" type="range" min="${t.min}" max="${t.max}" step="${t.step}" value="${t.min}"
-           data-price="${t.price}" data-lbl="${t.label}">
-    <div class="calc-range"><span>${_(t.min)} ${t.label}</span><span>${t.maxLabel}</span></div>
-    <div class="calc-total">مبلغ کل: <b id="totalOut">${_(e)} تومان</b></div>
-  </div>`:`<div class="bb-note">${m("info")} قیمت نهایی و زمان دقیق تحویل در تیکت دیسکورد اعلام می‌شود.</div>`}
-
-  <ul class="bb-list">
-    <li>${m("bolt")} زمان تحویل: <b>${(a==null?void 0:a.delivery)??"۱ تا ۴۸ ساعت"}</b></li>
-    <li>${m("card")} پرداخت ریالی، بدون کارت خارجی</li>
-    <li>${m("clock")} پشتیبانی ۲۴/۷ در دیسکورد</li>
-  </ul>
-
-  <a class="btn btn-gold btn-lg bb-cta" href="${y}" target="_blank" rel="noopener">${m("discord")} ثبت سفارش در دیسکورد</a>
-  <button class="btn btn-ghost btn-copy" id="copyOrder" data-title="${s.title}" data-unit="${t?t.label:""}">
-    ${m("cart")} کپی متن سفارش
-  </button>
-  <p class="bb-fine">قیمت‌ها به تومان است؛ عدد نهایی همان روز سفارش در تیکت تثبیت می‌شود.</p>
-</aside>`},Xs=s=>{const a=f.find(i=>i.id===s);if(!a)return'<section class="tight"><div class="wrap"><h1>محصول پیدا نشد</h1></div></section>';const t=Y[a.id],e=z.find(i=>i.key===a.category),r=Ys(a);return`
-${I([{label:"محصولات",href:"products/"},...e?[{label:e.title,href:e.slug}]:[],{label:a.title}])}
-
-<section class="prod"><div class="wrap prod-grid">
-  <div class="prod-media rv">
-    ${O(a.image,{alt:a.title,sizes:"(max-width:900px) 90vw, 500px",w:900,h:900,eager:!0})}
-    <div class="pm-badges">
-      ${a.pills.map(ds).join("")}
-    </div>
-  </div>
-  <div class="prod-info">
-    ${e?`<a class="eyebrow" href="${e.slug}">${e.title}</a>`:""}
-    <h1>${a.title}</h1>
-    <p class="lead">${a.desc}</p>
-    <p class="prod-long">${(t==null?void 0:t.long)??""}</p>
-    <ul class="feat">
-      ${((t==null?void 0:t.features)??[]).map(i=>`<li>${m("spark")} ${i}</li>`).join("")}
-    </ul>
-    ${Ks(a)}
-  </div>
-</div></section>
-
-${t!=null&&t.steps?`<section class="tight"><div class="wrap">${D("مراحل","این محصول چطور تحویل داده می‌شود؟")}
-  <ol class="mini-steps">${t.steps.map((i,c)=>`<li><span>${_(c+1)}</span>${i}</li>`).join("")}</ol>
-</div></section>`:""}
-
-${t!=null&&t.faq?`<section class="tight"><div class="wrap">${D("سوالات","سؤال‌های این محصول")}${ys(t.faq)}</div></section>`:""}
-
-${r.length?`<section class="tight"><div class="wrap">${D("محصولات مرتبط","این‌ها را هم ببین")}
-  <div class="grid g3">${r.map(i=>F(i,{compact:!0})).join("")}</div></div></section>`:""}
-
-<div id="toast" class="toast" role="status" aria-live="polite"></div>`},Ws=()=>{const s=[["all","همه"],...z.map(a=>[a.key,a.title.split(" ")[0]])];return`
-${I([{label:"محصولات"}])}
-<section class="phero"><div class="wrap">
-  <div class="phero-top">
-    <div class="phero-txt">
-      <span class="phero-k">کاتالوگ کامل · ۲۷ محصول</span>
-      <h1>همهٔ محصولات یوزورا شاپ</h1>
-      <p class="lead" style="max-width:70ch">۲۷ محصول و سرویس فعال در ۸ دسته. با فیلترها دستهٔ مورد نظرت را انتخاب کن،
-  یا روی هر محصول بزن تا صفحهٔ اختصاصی‌اش با قیمت و جزئیات کامل باز شود.</p>
-    </div>
-    <div class="phero-act">
-      <a class="btn btn-gold" href="https://discord.gg/sVAa2rw4wM" target="_blank" rel="noopener">ثبت سفارش</a>
-      <a class="btn btn-ghost" href="prices/">لیست قیمت</a>
-    </div>
-  </div>
-  <ul class="phero-tags">
-    <li>پرداخت ریالی با فاکتور</li>
-    <li>ضمانت بازگشت وجه</li>
-    <li>سفارش با تیکت دیسکورد</li>
-  </ul>
-</div></section>
-<section class="tight"><div class="wrap">
-  <div class="filters" id="filters">
-    ${s.map(([a,t],e)=>`<button${e===0?' class="act"':""} data-f="${a}">${t}</button>`).join("")}
-  </div>
-  <div class="grid g4" id="grid">${f.map(a=>F(a,{compact:!0})).join("")}</div>
-</div></section>`},H=["minecraft","donut","hypixel"],K=s=>`
-${I([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
+</div></div></section>`},g=["minecraft","donut","hypixel"],w=s=>`
+${y([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
 <section class="phero"><div class="wrap">
   <div class="phero-top">
     <div class="phero-txt">
@@ -1233,20 +960,20 @@ ${I([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
       <p class="lead" style="max-width:70ch">${s.lead}</p>
     </div>
     <div class="phero-act">
-      <a class="btn btn-gold" href="${y}" target="_blank" rel="noopener">${m("discord")} ثبت سفارش</a>
+      <a class="btn btn-gold" href="${h}" target="_blank" rel="noopener">${o("discord")} ثبت سفارش</a>
       <a class="btn btn-ghost" href="./">صفحهٔ اصلی</a>
     </div>
   </div>
   <ul class="phero-tags">${s.tags.map(a=>`<li>${a}</li>`).join("")}</ul>
 </div></section>
 <section class="tight"><div class="wrap">
-  <div class="grid g4" id="grid">${s.items.map(a=>F(a,{compact:!0})).join("")}</div>
+  <div class="grid g4" id="grid">${s.items.map(a=>C(a,{compact:!0})).join("")}</div>
 </div></section>
 <section class="tight"><div class="wrap"><div class="center-cta">
   <h2>سفارش را در دیسکورد ثبت کن</h2>
   <p>همهٔ سفارش‌ها با تیکت انجام می‌شود؛ مبلغ ریالی، فاکتور رسمی و پیگیری تا تحویل.</p>
-  <a class="btn btn-gold btn-lg" href="${y}" target="_blank" rel="noopener">${m("discord")} ورود به دیسکورد</a>
-</div></div></section>`,Js=()=>K({title:"فروشگاه محصولات ماینکرفت",kicker:`ماینکرفت · ${f.filter(s=>H.includes(s.category)).length} محصول`,lead:"اکانت ماینکرفت، پول دونات اس‌ام‌پی، کوین و رنک هایپیکسل و اسکای‌بلاک. همهٔ محصولات با تحویل مشخص و ضمانت بازگشت وجه.",tags:["اکانت فول اکسس","تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور"],items:f.filter(s=>H.includes(s.category))}),Qs=()=>K({title:"فروشگاه محصولات دیگر",kicker:`گیفت کارت، اشتراک و طراحی · ${f.filter(s=>!H.includes(s.category)).length} محصول`,lead:"گیفت کارت استیم، روباکس، نیترو دیسکورد، اسپاتیفای و بقیهٔ سرویس‌ها، همراه با خدمات طراحی لوگو، بنر، تامنیل، اورلی و کیپ.",tags:["تحویل فوری کد","اکانت شخصی خودتان","پشتیبانی ۲۴/۷"],items:f.filter(s=>!H.includes(s.category))}),sa=()=>{const s=z.find(a=>a.key==="giftcard");return K({title:(s==null?void 0:s.title)??"گیفت کارت و اشتراک",kicker:`گیفت کارت و اشتراک · ${f.filter(a=>a.category==="giftcard").length} محصول`,lead:"کد اختصاصی یا فعال‌سازی روی اکانت خودتان؛ استیم، روباکس، نیترو، اسپاتیفای، گوگل پلی، پلی‌استیشن، ایکس‌باکس، نتفلیکس، تلگرام و اپل.",tags:["کد استفاده‌نشده","بدون نیاز به رمز","ضمانت صحت کد"],items:f.filter(a=>a.category==="giftcard")})},aa=s=>s.toLocaleString("fa-IR"),ps=s=>`${aa(s.price)}`,hs=[{id:"host-mc-stone",kind:"minecraft",kindLabel:"ماینکرفت",title:"هاست ماینکرفت استون",tagline:"برای شروع؛ سرور جمع دوستانه تا ۱۵ نفر با مود سبک.",price:49e4,specs:{cpu:"۲ vCore ۳.۲GHz",ram:"۲GB DDR4",disk:"۲۰GB NVMe",port:"۱Gbps",slots:"تا ۱۵ بازیکن"},perks:["نصب یک‌کلیکی Paper/Fabric","پنل مدیریت اختصاصی","بکاپ روزانه"],ribbon:"اقتصادی"},{id:"host-mc-iron",kind:"minecraft",kindLabel:"ماینکرفت",title:"هاست ماینکرفت آیرون",tagline:"پرفروش‌ترین پلن؛ برای SMP و سرورهای تا ۴۰ نفر.",price:79e4,popular:!0,specs:{cpu:"۴ vCore ۳.۶GHz",ram:"۴GB DDR4",disk:"۴۰GB NVMe",port:"۱Gbps",slots:"تا ۴۰ بازیکن"},perks:["مود‌پک آماده","پلاگین‌های بهینه","آنتی‌دیداس رایگان","بکاپ هر ۶ ساعت"]},{id:"host-mc-diamond",kind:"minecraft",kindLabel:"ماینکرفت",title:"هاست ماینکرفت دایموند",tagline:"سرور بزرگ با مود‌پک سنگین و تعداد بازیکن بالا.",price:139e4,specs:{cpu:"۶ vCore ۴.۰GHz",ram:"۸GB DDR4",disk:"۸۰GB NVMe",port:"۱۰Gbps",slots:"تا ۱۰۰ بازیکن"},perks:["پورت ۱۰ گیگابیت","پشتیبانی از Bedrock + Java","بکاپ هر ۳ ساعت","مانیتورینگ زنده"]},{id:"host-cs2",kind:"cs2",kindLabel:"کانتر استریک",title:"سرور کانتر استریک ۲",tagline:"تick‌ریت ۱۲۸ با پینگ پایین؛ CS2 و CS 1.6.",price:119e4,specs:{cpu:"۴ vCore ۴.۲GHz",ram:"۶GB DDR4",disk:"۴۰GB NVMe",port:"۱۰Gbps",slots:"تا ۳۲ اسلات"},perks:["SourceMod + MetaMod","تغییر مپ و کانفیگ آزاد","آنتی‌چیت سمت سرور"],ribbon:"گیمر"},{id:"host-fivem",kind:"fivem",kindLabel:"فایوم / سمپ",title:"سرور فایوم و سمپ",tagline:"برای RP و مود‌های سنگین با منابع تضمینی.",price:159e4,specs:{cpu:"۶ vCore ۴.۰GHz",ram:"۸GB DDR4",disk:"۱۰۰GB NVMe",port:"۱۰Gbps",slots:"تا ۱۲۸ اسلات"},perks:["نصب txAdmin","منابع اختصاصی (بدون اشتراک)","بکاپ خودکار دیتابیس"]},{id:"host-vps-eco",kind:"vps",kindLabel:"سرور مجازی",title:"سرور مجازی اقتصادی",tagline:"VPS ایران با آنتی‌دیداس؛ مناسب وب و سرور نوپا.",price:89e4,specs:{cpu:"۲ vCore ۳.۲GHz",ram:"۴GB DDR4",disk:"۴۰GB SSD PRO",port:"۱Gbps",slots:"ترافیک نامحدود"},perks:["ویندوز یا لینوکس","IP اختصاصی","فایروال اختصاصی"]},{id:"host-vps-pro",kind:"vps",kindLabel:"سرور مجازی",title:"سرور مجازی حرفه‌ای NVMe",tagline:"پورت ۱۰ گیگابیت و NVMe برای گیم‌سرور و ترافیک بالا.",price:145e4,popular:!0,specs:{cpu:"۴ vCore ۴.۰GHz",ram:"۸GB DDR4",disk:"۶۰GB NVMe",port:"۱۰Gbps",slots:"ترافیک نامحدود"},perks:["آنتی‌دیداس حرفه‌ای","امکان آپلود ISO","دسترسی کامل روت","اسنپ‌شات رایگان"]},{id:"host-vps-ultra",kind:"vps",kindLabel:"سرور مجازی",title:"سرور مجازی قدرتمند",tagline:"برای چند گیم‌سرور هم‌زمان یا اپلیکیشن سنگین.",price:439e4,specs:{cpu:"۱۲ vCore ۴.۲GHz",ram:"۳۲GB DDR4",disk:"۱۶۰GB NVMe",port:"۱۰Gbps",slots:"ترافیک نامحدود"},perks:["منابع تضمینی","پشتیبانی اولویت‌دار","آنتی‌دیداس لایه ۳/۴/۷"]},{id:"host-dedicated",kind:"dedicated",kindLabel:"اختصاصی",title:"سرور اختصاصی گیم",tagline:"کل سخت‌افزار برای شما؛ بدون هیچ همسایه‌ای.",price:99e5,from:!0,specs:{cpu:"۱۶ vCore اختصاصی",ram:"۶۴GB DDR4 ECC",disk:"۲×۴۸۰GB NVMe",port:"۱۰Gbps",slots:"نامحدود"},perks:["سخت‌افزار اختصاصی","IPMI / KVM","راه‌اندازی و مهاجرت رایگان","SLA ۹۹.۹٪"],ribbon:"پرقدرت"},{id:"host-voice",kind:"voice",kindLabel:"ویس",title:"سرور تیم‌اسپیک و ویس",tagline:"برای تیم‌های گیمینگ؛ کیفیت صدا و اسلات بالا.",price:29e4,specs:{cpu:"اشتراکی اختصاصی",ram:"۱GB",disk:"۵GB",port:"۱Gbps",slots:"۵۱۲ اسلات"},perks:["پنل مدیریت TeamSpeak","بکاپ روزانه","پینگ پایین ایران"]}],ta=[{key:"minecraft",label:"ماینکرفت"},{key:"cs2",label:"کانتر استریک"},{key:"fivem",label:"فایوم / سمپ"},{key:"vps",label:"سرور مجازی"},{key:"dedicated",label:"اختصاصی"},{key:"voice",label:"ویس"}],S=(s,a)=>`<li><b>${s}</b><span>${a}</span></li>`,ea=s=>`
+  <a class="btn btn-gold btn-lg" href="${h}" target="_blank" rel="noopener">${o("discord")} ورود به دیسکورد</a>
+</div></div></section>`,$=()=>w({title:"فروشگاه محصولات ماینکرفت",kicker:`ماینکرفت · ${n.filter(s=>g.includes(s.category)).length} محصول`,lead:"اکانت ماینکرفت، پول دونات اس‌ام‌پی، کوین و رنک هایپیکسل و اسکای‌بلاک. همهٔ محصولات با تحویل مشخص و ضمانت بازگشت وجه.",tags:["اکانت فول اکسس","تحویل ۱ تا ۴۸ ساعت","پرداخت ریالی با فاکتور"],items:n.filter(s=>g.includes(s.category))}),Z=()=>w({title:"فروشگاه محصولات دیگر",kicker:`گیفت کارت، اشتراک و طراحی · ${n.filter(s=>!g.includes(s.category)).length} محصول`,lead:"گیفت کارت استیم، روباکس، نیترو دیسکورد، اسپاتیفای و بقیهٔ سرویس‌ها، همراه با خدمات طراحی لوگو، بنر، تامنیل، اورلی و کیپ.",tags:["تحویل فوری کد","اکانت شخصی خودتان","پشتیبانی ۲۴/۷"],items:n.filter(s=>!g.includes(s.category))}),j=()=>{const s=z.find(a=>a.key==="giftcard");return w({title:(s==null?void 0:s.title)??"گیفت کارت و اشتراک",kicker:`گیفت کارت و اشتراک · ${n.filter(a=>a.category==="giftcard").length} محصول`,lead:"کد اختصاصی یا فعال‌سازی روی اکانت خودتان؛ استیم، روباکس، نیترو، اسپاتیفای، گوگل پلی، پلی‌استیشن، ایکس‌باکس، نتفلیکس، تلگرام و اپل.",tags:["کد استفاده‌نشده","بدون نیاز به رمز","ضمانت صحت کد"],items:n.filter(a=>a.category==="giftcard")})},B=s=>s.toLocaleString("fa-IR"),u=s=>`${B(s.price)}`,f=[{id:"host-mc-stone",kind:"minecraft",kindLabel:"ماینکرفت",title:"هاست ماینکرفت استون",tagline:"برای شروع؛ سرور جمع دوستانه تا ۱۵ نفر با مود سبک.",price:49e4,specs:{cpu:"۲ vCore ۳.۲GHz",ram:"۲GB DDR4",disk:"۲۰GB NVMe",port:"۱Gbps",slots:"تا ۱۵ بازیکن"},perks:["نصب یک‌کلیکی Paper/Fabric","پنل مدیریت اختصاصی","بکاپ روزانه"],ribbon:"اقتصادی"},{id:"host-mc-iron",kind:"minecraft",kindLabel:"ماینکرفت",title:"هاست ماینکرفت آیرون",tagline:"پرفروش‌ترین پلن؛ برای SMP و سرورهای تا ۴۰ نفر.",price:79e4,popular:!0,specs:{cpu:"۴ vCore ۳.۶GHz",ram:"۴GB DDR4",disk:"۴۰GB NVMe",port:"۱Gbps",slots:"تا ۴۰ بازیکن"},perks:["مود‌پک آماده","پلاگین‌های بهینه","آنتی‌دیداس رایگان","بکاپ هر ۶ ساعت"]},{id:"host-mc-diamond",kind:"minecraft",kindLabel:"ماینکرفت",title:"هاست ماینکرفت دایموند",tagline:"سرور بزرگ با مود‌پک سنگین و تعداد بازیکن بالا.",price:139e4,specs:{cpu:"۶ vCore ۴.۰GHz",ram:"۸GB DDR4",disk:"۸۰GB NVMe",port:"۱۰Gbps",slots:"تا ۱۰۰ بازیکن"},perks:["پورت ۱۰ گیگابیت","پشتیبانی از Bedrock + Java","بکاپ هر ۳ ساعت","مانیتورینگ زنده"]},{id:"host-cs2",kind:"cs2",kindLabel:"کانتر استریک",title:"سرور کانتر استریک ۲",tagline:"تick‌ریت ۱۲۸ با پینگ پایین؛ CS2 و CS 1.6.",price:119e4,specs:{cpu:"۴ vCore ۴.۲GHz",ram:"۶GB DDR4",disk:"۴۰GB NVMe",port:"۱۰Gbps",slots:"تا ۳۲ اسلات"},perks:["SourceMod + MetaMod","تغییر مپ و کانفیگ آزاد","آنتی‌چیت سمت سرور"],ribbon:"گیمر"},{id:"host-fivem",kind:"fivem",kindLabel:"فایوم / سمپ",title:"سرور فایوم و سمپ",tagline:"برای RP و مود‌های سنگین با منابع تضمینی.",price:159e4,specs:{cpu:"۶ vCore ۴.۰GHz",ram:"۸GB DDR4",disk:"۱۰۰GB NVMe",port:"۱۰Gbps",slots:"تا ۱۲۸ اسلات"},perks:["نصب txAdmin","منابع اختصاصی (بدون اشتراک)","بکاپ خودکار دیتابیس"]},{id:"host-vps-eco",kind:"vps",kindLabel:"سرور مجازی",title:"سرور مجازی اقتصادی",tagline:"VPS ایران با آنتی‌دیداس؛ مناسب وب و سرور نوپا.",price:89e4,specs:{cpu:"۲ vCore ۳.۲GHz",ram:"۴GB DDR4",disk:"۴۰GB SSD PRO",port:"۱Gbps",slots:"ترافیک نامحدود"},perks:["ویندوز یا لینوکس","IP اختصاصی","فایروال اختصاصی"]},{id:"host-vps-pro",kind:"vps",kindLabel:"سرور مجازی",title:"سرور مجازی حرفه‌ای NVMe",tagline:"پورت ۱۰ گیگابیت و NVMe برای گیم‌سرور و ترافیک بالا.",price:145e4,popular:!0,specs:{cpu:"۴ vCore ۴.۰GHz",ram:"۸GB DDR4",disk:"۶۰GB NVMe",port:"۱۰Gbps",slots:"ترافیک نامحدود"},perks:["آنتی‌دیداس حرفه‌ای","امکان آپلود ISO","دسترسی کامل روت","اسنپ‌شات رایگان"]},{id:"host-vps-ultra",kind:"vps",kindLabel:"سرور مجازی",title:"سرور مجازی قدرتمند",tagline:"برای چند گیم‌سرور هم‌زمان یا اپلیکیشن سنگین.",price:439e4,specs:{cpu:"۱۲ vCore ۴.۲GHz",ram:"۳۲GB DDR4",disk:"۱۶۰GB NVMe",port:"۱۰Gbps",slots:"ترافیک نامحدود"},perks:["منابع تضمینی","پشتیبانی اولویت‌دار","آنتی‌دیداس لایه ۳/۴/۷"]},{id:"host-dedicated",kind:"dedicated",kindLabel:"اختصاصی",title:"سرور اختصاصی گیم",tagline:"کل سخت‌افزار برای شما؛ بدون هیچ همسایه‌ای.",price:99e5,from:!0,specs:{cpu:"۱۶ vCore اختصاصی",ram:"۶۴GB DDR4 ECC",disk:"۲×۴۸۰GB NVMe",port:"۱۰Gbps",slots:"نامحدود"},perks:["سخت‌افزار اختصاصی","IPMI / KVM","راه‌اندازی و مهاجرت رایگان","SLA ۹۹.۹٪"],ribbon:"پرقدرت"},{id:"host-voice",kind:"voice",kindLabel:"ویس",title:"سرور تیم‌اسپیک و ویس",tagline:"برای تیم‌های گیمینگ؛ کیفیت صدا و اسلات بالا.",price:29e4,specs:{cpu:"اشتراکی اختصاصی",ram:"۱GB",disk:"۵GB",port:"۱Gbps",slots:"۵۱۲ اسلات"},perks:["پنل مدیریت TeamSpeak","بکاپ روزانه","پینگ پایین ایران"]}],V=[{key:"minecraft",label:"ماینکرفت"},{key:"cs2",label:"کانتر استریک"},{key:"fivem",label:"فایوم / سمپ"},{key:"vps",label:"سرور مجازی"},{key:"dedicated",label:"اختصاصی"},{key:"voice",label:"ویس"}],v=(s,a)=>`<li><b>${s}</b><span>${a}</span></li>`,q=s=>`
 <article class="hcard${s.popular?" is-pop":""}" id="${s.id}" data-kind="${s.kind}">
   ${s.ribbon?`<span class="hc-ribbon">${s.ribbon}</span>`:""}
   ${s.popular?'<span class="hc-pop">پیشنهاد ویژه</span>':""}
@@ -1256,40 +983,40 @@ ${I([{label:"فروشگاه‌ها",href:"./"},{label:s.title}])}
     <p>${s.tagline}</p>
   </div>
   <ul class="hc-specs">
-    ${S("پردازنده",s.specs.cpu)}
-    ${S("رم",s.specs.ram)}
-    ${S("فضا",s.specs.disk)}
-    ${S("پورت",s.specs.port)}
-    ${S("ظرفیت",s.specs.slots)}
+    ${v("پردازنده",s.specs.cpu)}
+    ${v("رم",s.specs.ram)}
+    ${v("فضا",s.specs.disk)}
+    ${v("پورت",s.specs.port)}
+    ${v("ظرفیت",s.specs.slots)}
   </ul>
   <ul class="hc-perks">${s.perks.map(a=>`<li>${a}</li>`).join("")}</ul>
   <div class="hc-foot">
     <div class="hc-price">
       <span>ماهانه${s.from?" · از":""}</span>
-      <b>${ps(s)}</b>
+      <b>${u(s)}</b>
       <i>تومان</i>
     </div>
-    <a class="btn btn-red btn-sm" href="${y}" target="_blank" rel="noopener">سفارش ${m("arrow")}</a>
+    <a class="btn btn-red btn-sm" href="${h}" target="_blank" rel="noopener">سفارش ${o("arrow")}</a>
   </div>
-</article>`,ia=()=>`
+</article>`,_=()=>`
 <div class="host-table-wrap">
   <table class="host-table">
     <thead>
       <tr><th>پلن</th><th>پردازنده</th><th>رم</th><th>فضا</th><th>پورت</th><th>ماهانه</th></tr>
     </thead>
     <tbody>
-      ${hs.map(s=>`<tr>
+      ${f.map(s=>`<tr>
         <td><b>${s.title}</b><i>${s.kindLabel}</i></td>
         <td>${s.specs.cpu}</td>
         <td>${s.specs.ram}</td>
         <td>${s.specs.disk}</td>
         <td>${s.specs.port}</td>
-        <td class="ht-price">${ps(s)}<span> تومان</span></td>
+        <td class="ht-price">${u(s)}<span> تومان</span></td>
       </tr>`).join("")}
     </tbody>
   </table>
-</div>`,ra=()=>`
-${I([{label:"سرور و هاستینگ"}])}
+</div>`,G=()=>`
+${y([{label:"سرور و هاستینگ"}])}
 <section class="host-hero"><div class="wrap">
   <div class="host-hero-in">
     <div class="hh-txt">
@@ -1298,8 +1025,8 @@ ${I([{label:"سرور و هاستینگ"}])}
       <p class="lead">از هاست ماینکرفت و سرور کانتراستریک و فایوم تا سرور مجازی NVMe با پورت ۱۰ گیگابیت و سرور اختصاصی؛
       همه با آنتی‌دیداس حرفه‌ای، آپ‌تایم ۹۹.۹٪ و پشتیبانی ۲۴/۷ خود یوزورا.</p>
       <div class="hh-acts">
-        <a class="btn btn-red btn-lg" href="#plans">دیدن پلن‌ها ${m("arrow")}</a>
-        <a class="btn btn-ghost" href="${y}" target="_blank" rel="noopener">${m("discord")} مشاوره در دیسکورد</a>
+        <a class="btn btn-red btn-lg" href="#plans">دیدن پلن‌ها ${o("arrow")}</a>
+        <a class="btn btn-ghost" href="${h}" target="_blank" rel="noopener">${o("discord")} مشاوره در دیسکورد</a>
       </div>
       <ul class="hh-stats">
         <li><b>۹۹.۹٪</b><span>آپ‌تایم تضمینی</span></li>
@@ -1322,14 +1049,14 @@ ${I([{label:"سرور و هاستینگ"}])}
   <p>قیمت‌ها ماهانه و به تومان است؛ منابع هر پلن تضمین‌شده و منابع سرورهای مجازی روی سخت‌افزار اختصاصی ارائه می‌شود.</p></div>
   <div class="host-filters" id="hostFilters">
     <button class="act" data-k="all">همه</button>
-    ${ta.map(s=>`<button data-k="${s.key}">${s.label}</button>`).join("")}
+    ${V.map(s=>`<button data-k="${s.key}">${s.label}</button>`).join("")}
   </div>
-  <div class="host-grid">${hs.map(ea).join("")}</div>
+  <div class="host-grid">${f.map(q).join("")}</div>
 </div></section>
 
 <section class="tight"><div class="wrap">
   <div class="sec-hd"><span class="eyebrow">مقایسه</span><h2>همهٔ پلن‌ها در یک نگاه</h2></div>
-  ${ia()}
+  ${_()}
 </div></section>
 
 <section class="tight"><div class="wrap"><div class="host-faq">
@@ -1342,31 +1069,31 @@ ${I([{label:"سرور و هاستینگ"}])}
 <section class="tight"><div class="wrap"><div class="center-cta host-cta">
   <h2>پلن مناسب را با هم انتخاب کنیم</h2>
   <p>بگو چند بازیکن داری و چه بازی‌ای؛ همان روز بهترین پلن را پیشنهاد می‌دهیم.</p>
-  <a class="btn btn-red btn-lg" href="${y}" target="_blank" rel="noopener">${m("discord")} ثبت سفارش در دیسکورد</a>
-</div></div></section>`,o="#3ab8f0",la="#a9e5ff",ca="#b27a00",$=(s,a,t="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${t} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,L=s=>`
+  <a class="btn btn-red btn-lg" href="${h}" target="_blank" rel="noopener">${o("discord")} ثبت سفارش در دیسکورد</a>
+</div></div></section>`,t="#3ab8f0",L="#a9e5ff",D="#b27a00",c=(s,a,i="")=>`<svg class="art-svg" viewBox="0 0 240 240" role="img" aria-hidden="true" fill="none" ${i} xmlns="http://www.w3.org/2000/svg">${a}</svg>`,d=s=>`
   <defs>
     <radialGradient id="${s}-gl" cx="50%" cy="46%" r="52%">
-      <stop offset="0" stop-color="${o}" stop-opacity=".22"/>
-      <stop offset=".62" stop-color="${o}" stop-opacity=".07"/>
-      <stop offset="1" stop-color="${o}" stop-opacity="0"/>
+      <stop offset="0" stop-color="${t}" stop-opacity=".22"/>
+      <stop offset=".62" stop-color="${t}" stop-opacity=".07"/>
+      <stop offset="1" stop-color="${t}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="${s}-g" x1="0" y1="0" x2=".35" y2="1">
-      <stop offset="0" stop-color="${la}"/>
-      <stop offset=".48" stop-color="${o}"/>
-      <stop offset="1" stop-color="${ca}"/>
+      <stop offset="0" stop-color="${L}"/>
+      <stop offset=".48" stop-color="${t}"/>
+      <stop offset="1" stop-color="${D}"/>
     </linearGradient>
     <linearGradient id="${s}-f" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fff" stop-opacity=".10"/>
       <stop offset="1" stop-color="#fff" stop-opacity=".015"/>
     </linearGradient>
     <pattern id="${s}-h" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="7" stroke="${o}" stroke-opacity=".24" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="${t}" stroke-opacity=".24" stroke-width="1"/>
     </pattern>
     <pattern id="${s}-d" width="9" height="9" patternUnits="userSpaceOnUse">
-      <circle cx="1.6" cy="1.6" r="1.05" fill="${o}" fill-opacity=".30"/>
+      <circle cx="1.6" cy="1.6" r="1.05" fill="${t}" fill-opacity=".30"/>
     </pattern>
   </defs>
-  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,da=()=>$("ar-shield",`${L("ar-shield")}
+  <circle cx="120" cy="118" r="106" fill="url(#${s}-gl)"/>`,S=()=>c("ar-shield",`${d("ar-shield")}
   <g stroke="url(#ar-shield-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هالهٔ بیرونی -->
     <path d="M120 22 206 56v62c0 50-34 82-86 100-52-18-86-50-86-100V56Z"
@@ -1380,11 +1107,11 @@ ${I([{label:"سرور و هاستینگ"}])}
     <!-- قفل -->
     <rect x="98" y="110" width="44" height="36" rx="8" fill="#0d0e13" stroke-width="2.2"/>
     <path d="M107 110v-11a13 13 0 0 1 26 0v11" stroke-width="2.2"/>
-    <circle cx="120" cy="124" r="4.4" fill="${o}"/>
+    <circle cx="120" cy="124" r="4.4" fill="${t}"/>
     <path d="M120 128v9" stroke-width="2.2"/>
     <!-- پرچ‌ها -->
-    <circle cx="76" cy="88" r="1.9" fill="${o}" stroke="none"/>
-    <circle cx="164" cy="88" r="1.9" fill="${o}" stroke="none"/>
+    <circle cx="76" cy="88" r="1.9" fill="${t}" stroke="none"/>
+    <circle cx="164" cy="88" r="1.9" fill="${t}" stroke="none"/>
     <!-- برگ‌های لور -->
     <g stroke-width="1.3" stroke-opacity=".8">
       <path d="M52 172c-9-7-14-17-15-28"/>
@@ -1401,7 +1128,7 @@ ${I([{label:"سرور و هاستینگ"}])}
       <path d="M120 12v9M120 219v-9M30 120h9M201 120h9"/>
       <path d="m62 62 5 5M173 173l5 5M178 62l-5 5M67 173l-5 5" stroke-opacity=".45"/>
     </g>
-  </g>`),na=()=>$("ar-refund",`${L("ar-refund")}
+  </g>`),H=()=>c("ar-refund",`${d("ar-refund")}
   <g stroke="url(#ar-refund-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="72" stroke-width="1.1" stroke-opacity=".28" stroke-dasharray="3 8"/>
     <circle cx="120" cy="118" r="58" stroke-width="2.4" fill="url(#ar-refund-f)"/>
@@ -1422,21 +1149,21 @@ ${I([{label:"سرور و هاستینگ"}])}
       <path d="M169 164v7c0 2.6 5.8 4.7 13 4.7s13-2.1 13-4.7v-7"/>
     </g>
     <circle cx="120" cy="118" r="72" fill="url(#ar-refund-h)" stroke="none" opacity=".35"/>
-  </g>`),oa=()=>$("ar-support",`${L("ar-support")}
+  </g>`),P=()=>c("ar-support",`${d("ar-support")}
   <g stroke="url(#ar-support-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- هدست -->
     <path d="M62 136v-16a58 58 0 0 1 116 0v16" stroke-width="2.6"/>
     <rect x="48" y="130" width="26" height="44" rx="12" fill="url(#ar-support-f)" stroke-width="2.2"/>
     <rect x="166" y="130" width="26" height="44" rx="12" fill="url(#ar-support-f)" stroke-width="2.2"/>
     <path d="M74 152c0 18 12 28 28 30" stroke-width="2.2"/>
-    <rect x="98" y="176" width="20" height="11" rx="5.5" fill="${o}" stroke="none"/>
+    <rect x="98" y="176" width="20" height="11" rx="5.5" fill="${t}" stroke="none"/>
     <!-- حباب گفتگو -->
     <path d="M120 66c22 0 38 13 38 30s-16 30-38 30c-4 0-8-.4-11-1l-14 8 3-13c-10-5-16-14-16-24 0-17 16-30 38-30Z"
           fill="#0d0e13" stroke-width="2.2"/>
     <g stroke-width="1.8">
-      <circle cx="104" cy="96" r="2.4" fill="${o}" stroke="none"/>
-      <circle cx="120" cy="96" r="2.4" fill="${o}" stroke="none"/>
-      <circle cx="136" cy="96" r="2.4" fill="${o}" stroke="none"/>
+      <circle cx="104" cy="96" r="2.4" fill="${t}" stroke="none"/>
+      <circle cx="120" cy="96" r="2.4" fill="${t}" stroke="none"/>
+      <circle cx="136" cy="96" r="2.4" fill="${t}" stroke="none"/>
     </g>
     <!-- موج صدا -->
     <g stroke-width="1.8" stroke-opacity=".75">
@@ -1446,7 +1173,7 @@ ${I([{label:"سرور و هاستینگ"}])}
       <path d="M34 142a34 34 0 0 0 0 36" stroke-opacity=".45"/>
     </g>
     <circle cx="120" cy="118" r="98" fill="url(#ar-support-h)" stroke="none" opacity=".22"/>
-  </g>`),pa=()=>$("ar-pay",`${L("ar-pay")}
+  </g>`),R=()=>c("ar-pay",`${d("ar-pay")}
   <g stroke="url(#ar-pay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- کارت -->
     <rect x="40" y="86" width="160" height="96" rx="14" fill="url(#ar-pay-f)" stroke-width="2.4"/>
@@ -1474,7 +1201,7 @@ ${I([{label:"سرور و هاستینگ"}])}
     <path d="M104 34h44v18l-7-5-7 5-7-5-7 5-8-5-8 5Z" fill="#0d0e13" stroke-width="1.8"/>
     <g stroke-width="1.2" stroke-opacity=".55"><path d="M112 44h30M112 50h22"/></g>
     <circle cx="120" cy="118" r="100" fill="url(#ar-pay-h)" stroke="none" opacity=".18"/>
-  </g>`),ha=()=>$("ar-delivery",`${L("ar-delivery")}
+  </g>`),O=()=>c("ar-delivery",`${d("ar-delivery")}
   <g stroke="url(#ar-delivery-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- جعبه -->
     <path d="M74 108 120 88l46 20v58l-46 20-46-20Z" fill="url(#ar-delivery-f)" stroke-width="2.4"/>
@@ -1491,7 +1218,7 @@ ${I([{label:"سرور و هاستینگ"}])}
     <!-- عقربه/فلش بالا -->
     <path d="M120 66V30M108 42l12-12 12 12" stroke-width="2.6"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-delivery-h)" stroke="none" opacity=".2"/>
-  </g>`),va=()=>$("ar-secure",`${L("ar-secure")}
+  </g>`),N=()=>c("ar-secure",`${d("ar-secure")}
   <g stroke="url(#ar-secure-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- شش‌ضلعی -->
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-f)" stroke-width="2.4"/>
@@ -1499,18 +1226,18 @@ ${I([{label:"سرور و هاستینگ"}])}
     <!-- قفل بزرگ -->
     <rect x="94" y="112" width="52" height="44" rx="10" fill="#0d0e13" stroke-width="2.4"/>
     <path d="M104 112v-13a16 16 0 0 1 32 0v13" stroke-width="2.4"/>
-    <circle cx="120" cy="130" r="5.4" fill="${o}"/>
+    <circle cx="120" cy="130" r="5.4" fill="${t}"/>
     <path d="M120 135v10" stroke-width="2.4"/>
     <!-- مدارها -->
     <g stroke-width="1.3" stroke-opacity=".6">
       <path d="M76 92h14v-14M164 92h-14V78M76 152h14v14M164 152h-14v14"/>
-      <circle cx="90" cy="78" r="2.2" fill="${o}" stroke="none"/>
-      <circle cx="150" cy="78" r="2.2" fill="${o}" stroke="none"/>
-      <circle cx="90" cy="166" r="2.2" fill="${o}" stroke="none"/>
-      <circle cx="150" cy="166" r="2.2" fill="${o}" stroke="none"/>
+      <circle cx="90" cy="78" r="2.2" fill="${t}" stroke="none"/>
+      <circle cx="150" cy="78" r="2.2" fill="${t}" stroke="none"/>
+      <circle cx="90" cy="166" r="2.2" fill="${t}" stroke="none"/>
+      <circle cx="150" cy="166" r="2.2" fill="${t}" stroke="none"/>
     </g>
     <path d="M120 30 196 72v88l-76 42-76-42V72Z" fill="url(#ar-secure-d)" stroke="none" opacity=".3"/>
-  </g>`),ga=()=>$("ar-design",`${L("ar-design")}
+  </g>`),I=()=>c("ar-design",`${d("ar-design")}
   <g stroke="url(#ar-design-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- بوم -->
     <rect x="42" y="56" width="120" height="120" rx="10" fill="url(#ar-design-f)" stroke-width="2.2"/>
@@ -1527,13 +1254,13 @@ ${I([{label:"سرور و هاستینگ"}])}
     <path d="M182 136l14 14" stroke-width="1.6"/>
     <!-- سواچ‌ها -->
     <g stroke-width="1.6">
-      <circle cx="192" cy="70" r="9" fill="${o}" fill-opacity=".85" stroke="none"/>
+      <circle cx="192" cy="70" r="9" fill="${t}" fill-opacity=".85" stroke="none"/>
       <circle cx="192" cy="94" r="9" stroke-opacity=".8"/>
       <circle cx="192" cy="118" r="9" stroke-opacity=".8"/>
     </g>
     <path d="M30 186h108" stroke-width="1.2" stroke-opacity=".3"/>
     <circle cx="120" cy="118" r="100" fill="url(#ar-design-d)" stroke="none" opacity=".22"/>
-  </g>`),ma=()=>$("ar-overlay",`${L("ar-overlay")}
+  </g>`),T=()=>c("ar-overlay",`${d("ar-overlay")}
   <g stroke="url(#ar-overlay-g)" stroke-linecap="round" stroke-linejoin="round">
     <!-- مانیتور -->
     <rect x="34" y="58" width="172" height="112" rx="12" fill="url(#ar-overlay-f)" stroke-width="2.4"/>
@@ -1541,7 +1268,7 @@ ${I([{label:"سرور و هاستینگ"}])}
     <!-- فریم وب‌کم -->
     <rect x="128" y="118" width="62" height="40" rx="8" fill="#0d0e13" stroke-width="2"/>
     <circle cx="159" cy="138" r="9" stroke-width="1.8"/>
-    <circle cx="159" cy="138" r="3.4" fill="${o}" stroke="none"/>
+    <circle cx="159" cy="138" r="3.4" fill="${t}" stroke="none"/>
     <!-- چت‌باکس -->
     <g stroke-width="1.4" stroke-opacity=".8">
       <rect x="48" y="118" width="66" height="8" rx="4"/>
@@ -1549,14 +1276,14 @@ ${I([{label:"سرور و هاستینگ"}])}
       <rect x="48" y="146" width="56" height="8" rx="4" stroke-opacity=".4"/>
     </g>
     <!-- هدر استریم -->
-    <rect x="48" y="74" width="40" height="10" rx="5" fill="${o}" stroke="none" opacity=".9"/>
+    <rect x="48" y="74" width="40" height="10" rx="5" fill="${t}" stroke="none" opacity=".9"/>
     <rect x="96" y="74" width="22" height="10" rx="5" stroke-width="1.4" stroke-opacity=".7"/>
     <circle cx="190" cy="79" r="5" fill="#ff4d4d" stroke="none"/>
     <!-- نوار پیشرفت -->
     <path d="M48 104h120" stroke-width="3" stroke-opacity=".25"/>
     <path d="M48 104h74" stroke-width="3"/>
     <circle cx="120" cy="118" r="102" fill="url(#ar-overlay-h)" stroke="none" opacity=".2"/>
-  </g>`),ba=()=>$("ar-community",`${L("ar-community")}
+  </g>`),U=()=>c("ar-community",`${d("ar-community")}
   <g stroke="url(#ar-community-g)" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="120" cy="118" r="76" stroke-width="1.1" stroke-opacity=".3" stroke-dasharray="2 8"/>
     <!-- حلقهٔ اعضا -->
@@ -1574,10 +1301,10 @@ ${I([{label:"سرور و هاستینگ"}])}
     <circle cx="120" cy="118" r="34" fill="url(#ar-community-f)" stroke-width="2.4"/>
     <path d="M120 132c-12-8-18-14-18-21a9 9 0 0 1 18-4 9 9 0 0 1 18 4c0 7-6 13-18 21Z" stroke-width="2"/>
     <circle cx="120" cy="118" r="98" fill="url(#ar-community-d)" stroke="none" opacity=".22"/>
-  </g>`),vs={shield:da(),refund:na(),support:oa(),pay:pa(),delivery:ha(),secure:va(),design:ga(),overlay:ma(),community:ba()},j=(s,a,t)=>`
+  </g>`),k={shield:S(),refund:H(),support:P(),pay:R(),delivery:O(),secure:N(),design:I(),overlay:T(),community:U()},p=(s,a,i)=>`
 <article class="art-card rv">
-  <div class="ac-art">${vs[s]}</div>
+  <div class="ac-art">${k[s]}</div>
   <h3>${a}</h3>
-  <p>${t}</p>
-</article>`,P={index:os,products:Ws,minecraft:Js,others:Qs,hosting:ra,"cat-giftcard":sa},wa=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),ua=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),ya=(s,a)=>{let t=a;s==="guarantee"&&(t=t.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,`<div class="guar-art">${vs.shield}</div>`));const r={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([i,c,l])=>j(i,c,l)).join(""),about:[["community","از یک انجمن ۷۶۳ نفری","یوزورا از دل انجمن دیسکورد خودش بیرون آمده؛ بیشتر مشتری‌ها همان اعضا هستند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([i,c,l])=>j(i,c,l)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([i,c,l])=>j(i,c,l)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در یک مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([i,c,l])=>j(i,c,l)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([i,c,l])=>j(i,c,l)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([i,c,l])=>j(i,c,l)).join("")}[s];if(r){const i=t.indexOf("</section>");i>-1&&(t=`${t.slice(0,i+10)}
-<section class="art-row"><div class="wrap"><div class="grid g3">${r}</div></div></section>${t.slice(i+10)}`)}return s==="blog"&&(t=t.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),t=t.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),t};for(const[s,a]of Object.entries(Us))s in P||(P[s]=()=>ya(s,ua(wa(a))));const X=document.body,G=X.dataset.page??"index",fa=X.dataset.active??G,V=document.getElementById("app");var cs;if(V&&G==="index")V.innerHTML=os(),document.body.classList.add("bare","ready"),ls("index");else if(V){const s=X.dataset.product,a=s?()=>Xs(s):P[G]??P.index;V.innerHTML=`${$s(fa)}${a()}</main>${Ms()}`,document.querySelectorAll(".sec-hd, .center-cta, .filters, .phero .lead, .phero .badges, .guar > div, .kv, .note, .mini-steps li, .story-head, .st-in > *, .bcard, .spec-row, .art-panel").forEach(t=>t.classList.add("rv")),document.body.classList.add("ready"),Rs(),ls(G,s),B(),addEventListener("resize",B,{passive:!0}),(cs=document.fonts)!=null&&cs.ready&&document.fonts.ready.then(B),addEventListener("load",B)}else console.error("[kiniwa] #app not found");
+  <p>${i}</p>
+</article>`,b={index:x,products:M,minecraft:$,others:Z,hosting:G,"cat-giftcard":j},E=s=>s.replace(/href="index\.html"/g,'href="./"').replace(/href="((?:cat|blog|p)-[a-z0-9-]+|products|prices|process|guarantee|faq|about|contact|terms)\.html"/g,'href="$1/"'),F=s=>s.replace(/<img class="bg" src="assets\/img\/[a-z0-9./-]+"[^>]*>/g,"").replace(/(<div class="wrap"><div class="crumbs">[\s\S]*?<\/div><\/div>)\s*(?=<div class="wrap"><div class="crumbs">)/g,""),K=(s,a)=>{let i=a;s==="guarantee"&&(i=i.replace(/<img src="assets\/img\/07-cape-optifine\.jpg" alt="ضمانت یوزورا"[^>]*>/,`<div class="guar-art">${k.shield}</div>`));const m={guarantee:[["secure","امنیت حساب","اطلاعات اکانت بعد از تحویل کامل به شما منتقل می‌شود و در اختیار ما نمی‌ماند."],["refund","بازگشت وجه واقعی","اگر سفارش انجام نشود، مبلغ بدون بحث و شرط اضافه برمی‌گردد."],["support","پیگیری تا نتیجه","تیکت باز می‌ماند تا مطمئن شویم سفارش درست به دستتان رسیده است."]].map(([e,l,r])=>p(e,l,r)).join(""),about:[["community","از یک انجمن ۷۶۳ نفری","یوزورا از دل انجمن دیسکورد خودش بیرون آمده؛ بیشتر مشتری‌ها همان اعضا هستند."],["delivery","تحویل ۱ تا ۴۸ ساعت","بازهٔ تحویل هر محصول روی همان صفحه نوشته شده، نه در تبلیغ."],["pay","پرداخت ریالی و فاکتور","بدون کارت خارجی؛ فاکتور رسمی برای هر سفارش صادر می‌شود."]].map(([e,l,r])=>p(e,l,r)).join(""),process:[["support","قدم ۱ — تیکت","در دیسکورد تیکت می‌زنید و محصول را انتخاب می‌کنید."],["pay","قدم ۲ — پرداخت","فاکتور ریالی صادر و پرداخت انجام می‌شود."],["delivery","قدم ۳ — تحویل","تحویل در بازهٔ اعلام‌شده و پیگیری تا رضایت شما."]].map(([e,l,r])=>p(e,l,r)).join(""),prices:[["pay","قیمت شفاف","قیمت هر محصول روی سایت است؛ عدد نهایی در تیکت تثبیت می‌شود."],["secure","ضمانت معامله","پرداخت و تحویل در یک مسیر مشخص و قابل پیگیری انجام می‌شود."],["refund","بدون ریسک","اگر تحویل نشود، مبلغ برمی‌گردد."]].map(([e,l,r])=>p(e,l,r)).join(""),faq:[["support","سؤالی داری؟","اگر جوابت اینجا نبود، در دیسکورد تیکت بزن؛ زیر چند دقیقه جواب می‌گیری."],["secure","قبل از خرید","شرایط ضمانت و بازگشت وجه را قبل از پرداخت بخوان."],["delivery","بعد از خرید","زمان تحویل هر محصول در صفحهٔ خودش نوشته شده است."]].map(([e,l,r])=>p(e,l,r)).join(""),contact:[["community","دیسکورد","سریع‌ترین راه ارتباط، تیکت در سرور یوزورا شاپ است."],["support","پشتیبانی ۲۴/۷","تیم پشتیبانی همیشه آنلاین است؛ حتی نصفه‌شب."],["pay","هماهنگی پرداخت","برای فاکتور و تسویه، در همان تیکت هماهنگ می‌کنیم."]].map(([e,l,r])=>p(e,l,r)).join("")}[s];if(m){const e=i.indexOf("</section>");e>-1&&(i=`${i.slice(0,e+10)}
+<section class="art-row"><div class="wrap"><div class="grid g3">${m}</div></div></section>${i.slice(e+10)}`)}return s==="blog"&&(i=i.replace(/assets\/img\/01-minecraft\.jpg/g,"assets/img/blog-account.jpg"),i=i.replace(/assets\/img\/02-donutsmp\.jpg/g,"assets/img/blog-donut.jpg")),i};for(const[s,a]of Object.entries(A))s in b||(b[s]=()=>K(s,F(E(a))));export{b as pages};
