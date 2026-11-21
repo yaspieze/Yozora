@@ -1,4 +1,4 @@
-import{D as r}from"./details-CQ70rdPg.js";import{C as p,b,P as d,a as $,p as g,c as u,i as c,s as o,f as h,D as m}from"./entry-DmQP_zQH.js";const e=i=>i.toLocaleString("fa-IR"),k=i=>`product/${i}/`,f=i=>d.filter(a=>a.category===i.category&&a.id!==i.id).slice(0,3),y=i=>{const a=r[i.id],s=a==null?void 0:a.unit,t=s?s.price*(s.min+0):0;return`
+import{D as r}from"./details-CQ70rdPg.js";import{C as p,b,P as d,a as $,p as g,c as u,i as c,s as o,f as h,D as m}from"./entry-DKO2uLsg.js";const e=i=>i.toLocaleString("fa-IR"),k=i=>`product/${i}/`,f=i=>d.filter(a=>a.category===i.category&&a.id!==i.id).slice(0,3),y=i=>{const a=r[i.id],s=a==null?void 0:a.unit,t=s?s.price*(s.min+0):0;return`
 <aside class="buy-box rv">
   <div class="bb-head">
     <span class="bb-pill">${c("shield")} ضمانت بازگشت وجه</span>
