@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 165" role="img" aria-label="یوزورا شاپ">
+  <defs>
+    <linearGradient id="yz-bg" x1="0" y1="0" x2=".25" y2="1">
+      <stop offset="0" stop-color="#143f58"/>
+      <stop offset=".55" stop-color="#0b2637"/>
+      <stop offset="1" stop-color="#06121c"/>
+    </linearGradient>
+    <radialGradient id="yz-glow" cx=".62" cy=".24" r=".78">
+      <stop offset="0" stop-color="#4cc2f5" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#2f9fd4" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#4cc2f5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="yz-moon" x1=".15" y1="0" x2=".95" y2="1">
+      <stop offset="0" stop-color="#f2fcff"/>
+      <stop offset=".45" stop-color="#a9e5ff"/>
+      <stop offset="1" stop-color="#31a9e0"/>
+    </linearGradient>
+    <linearGradient id="yz-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bff0ff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#4cc2f5" stop-opacity=".05"/>
+    </linearGradient>
+    <mask id="yz-crescent">
+      <rect width="165" height="165" fill="#000"/>
+      <circle cx="80" cy="86" r="45" fill="#fff"/>
+      <circle cx="100.5" cy="70" r="37.5" fill="#000"/>
+    </mask>
+  </defs>
+
+  <rect x="1" y="1" width="163" height="163" rx="46" fill="url(#yz-bg)"/>
+  <rect x="1" y="1" width="163" height="163" rx="46" fill="url(#yz-glow)"/>
+
+  <!-- مدار نازک -->
+  <path d="M26 112c9 17 27 28 47 28 26 0 48-17 55-41" fill="none" stroke="#8fdcff" stroke-opacity=".22" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- ماه هلالی -->
+  <g mask="url(#yz-crescent)">
+    <circle cx="80" cy="86" r="45" fill="url(#yz-moon)"/>
+  </g>
+
+  <!-- ستاره‌ها -->
+  <path d="M120 39.5l4.6 10.4 10.4 4.6-10.4 4.6-4.6 10.4-4.6-10.4-10.4-4.6 10.4-4.6z" fill="#f2fcff" opacity=".96"/>
+  <circle cx="126" cy="108" r="2.6" fill="#bff0ff" opacity=".9"/>
+  <circle cx="137" cy="86" r="1.6" fill="#bff0ff" opacity=".7"/>
+  <circle cx="52" cy="54" r="1.5" fill="#bff0ff" opacity=".5"/>
+
+
+  <!-- پیکسل‌های بازی -->
+  <g fill="#a9e5ff">
+    <rect x="118" y="118" width="7" height="7" rx="2" opacity=".85"/>
+    <rect x="128" y="110" width="5" height="5" rx="1.5" opacity=".6"/>
+    <rect x="134" y="121" width="4" height="4" rx="1.2" opacity=".4"/>
+  </g>
+  <rect x="1.4" y="1.4" width="162.2" height="162.2" rx="45.6" fill="none" stroke="url(#yz-rim)" stroke-width="1.6"/>
+</svg>
